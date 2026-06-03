@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data files (too large for git)
+data/raw/
+data/processed/
+data/xg_*.csv
+*.csv
+!requirements*.txt
+!*.md
+!*.yml
+!*.yaml
+!*.toml
+!.gitignore
+
+# Models
+models/
+
+# Betting results
+betting_results/
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+coverage/
