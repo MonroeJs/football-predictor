@@ -1,25 +1,25 @@
 """
-缃俊搴﹀垎灞傛姇娉ㄧ郴缁?鈥?璧勯噾绠＄悊 + 璧旂巼浠峰€艰瘎浼?
+置信度分层投注系统 — 资金管理 + 赔率价值评估
 
-鏍稿績鎬濊矾:
-  鏁翠綋 ML 棰勬祴鍑嗙‘鐜?~51%锛屼絾鍒嗗眰鍚庨珮缃俊搴?(>60%) 鐨勫瓙闆嗗彲杈?65-70%銆?
-  閰嶅悎 Kelly 璧勯噾绠＄悊锛岀悊璁轰笂鍙互浠庡崥褰╁競鍦鸿幏寰楁鏈熸湜鏀剁泭銆?
+核心思路:
+  整体 ML 预测准确率 ~51%，但分层后高置信度 (>60%) 的子集可达 65-70%。
+  配合 Kelly 资金管理，理论上可以从博彩市场获得正期望收益。
 
-缃俊搴?= 妯″瀷棰勬祴鐨勬渶楂樻鐜?(max(P(H), P(D), P(A)))
+置信度 = 模型预测的最高概率 (max(P(H), P(D), P(A)))
 
-璧勯噾绠＄悊:
-  - Kelly 鍑嗗垯: f* = (p * b - q) / b
-    p = 妯″瀷姒傜巼, q = 1-p, b = 璧旂巼 - 1
-  - 鍒嗗眰 Kelly 鍒嗘暟: 缃俊搴﹁秺楂橈紝Kelly 姣斾緥瓒婂ぇ
-  - 闃叉杩囧害鎶曟敞: 鏈€澶ф娂娉ㄤ笉瓒呰繃 bankroll 鐨?20%
+资金管理:
+  - Kelly 准则: f* = (p * b - q) / b
+    p = 模型概率, q = 1-p, b = 赔率 - 1
+  - 分层 Kelly 分数: 置信度越高，Kelly 比例越大
+  - 防止过度投注: 最大押注不超过 bankroll 的 20%
 
-浣跨敤鏂瑰紡:
+使用方式:
     from src.betting_system import ConfidenceBettingSystem, run_tiered_backtest
 
-    # 鍦ㄥ凡鏈夋暟鎹笂鍥炴祴
+    # 在已有数据上回测
     results = run_tiered_backtest(df, predictor)
 
-    # 鎴栧崟鐙娇鐢?
+    # 或单独使用
     cbs = ConfidenceBettingSystem(initial_bankroll=1000)
     decision = cbs.evaluate_bet(model_probs, odds)
 """
@@ -36,20 +36,20 @@ from config import LEAGUES
 from src.utils import logger
 
 
-# 鈹€鈹€鈹€ 缃俊搴﹀垎灞?鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+# ─── 置信度分层 ───────────────────────────────────────────────
 
 class ConfidenceTier(Enum):
-    """缃俊搴﹀垎灞?""
-    LOW = "Low"          # 33-40%    鈫?涓嶆姇娉?
-    MEDIUM = "Medium"    # 40-50%   鈫?鏋佸皬棰濊瘯姘?
-    HIGH = "High"        # 50-60%   鈫?鍗?Kelly
-    VERY_HIGH = "VHigh"  # 60-70%   鈫?3/4 Kelly
-    ELITE = "Elite"      # 70%+     鈫?鍏?Kelly锛堜笂闄?15% 璧勯噾锛?
-    MAX = "Max"          # 80%+     鈫?鍏?Kelly锛堜笂闄?20% 璧勯噾锛?
+    """置信度分层"""
+    LOW = "Low"          # 33-40%    → 不投注
+    MEDIUM = "Medium"    # 40-50%   → 极小额试水
+    HIGH = "High"        # 50-60%   → 半 Kelly
+    VERY_HIGH = "VHigh"  # 60-70%   → 3/4 Kelly
+    ELITE = "Elite"      # 70%+     → 全 Kelly（上限 15% 资金）
+    MAX = "Max"          # 80%+     → 全 Kelly（上限 20% 资金）
 
 
 def get_confidence_tier(max_prob: float) -> ConfidenceTier:
-    """鏍规嵁鏈€澶ф鐜囩‘瀹氱疆淇″害鍒嗗眰"""
+    """根据最大概率确定置信度分层"""
     if max_prob >= 0.80:
         return ConfidenceTier.MAX
     elif max_prob >= 0.70:
@@ -66,14 +66,14 @@ def get_confidence_tier(max_prob: float) -> ConfidenceTier:
 
 def get_kelly_fraction(tier: ConfidenceTier) -> float:
     """
-    鍒嗗眰 Kelly 鍒嗘暟 鈥?缃俊搴﹁秺楂橈紝瓒婃暍鎶?
+    分层 Kelly 分数 — 置信度越高，越敢投
 
-    Low: 0 (涓嶆姇)
-    Medium: 0.05 (鏋佽交浠撹瘯姘?
-    High: 0.50 (鍗?Kelly)
+    Low: 0 (不投)
+    Medium: 0.05 (极轻仓试水)
+    High: 0.50 (半 Kelly)
     VHigh: 0.75 (3/4 Kelly)
-    Elite: 1.00 (鍏?Kelly锛屽彈涓婇檺绾︽潫)
-    Max: 1.00 (鍏?Kelly锛屽彈涓婇檺绾︽潫)
+    Elite: 1.00 (全 Kelly，受上限约束)
+    Max: 1.00 (全 Kelly，受上限约束)
     """
     mapping = {
         ConfidenceTier.LOW: 0.0,
@@ -88,61 +88,61 @@ def get_kelly_fraction(tier: ConfidenceTier) -> float:
 
 def get_max_stake_frac(tier: ConfidenceTier) -> float:
     """
-    鍗曚釜鎶曟敞鍗?bankroll 鐨勪笂闄愭瘮渚?
+    单个投注占 bankroll 的上限比例
 
-    淇濆畧璁捐锛氭渶楂樹笉瓒呰繃 10%锛堝叏 Kelly 濡傛灉寤鸿 20%锛屼篃瑕佹埅鏂埌 10%锛夈€?
-    鐪熷疄瓒崇悆棰勬祴鐨?edge 寰堝皬涓斾笉绋冲畾锛屽ぇ浠撲綅绛変簬璧屽崥銆?
+    保守设计：最高不超过 10%（全 Kelly 如果建议 20%，也要截断到 10%）。
+    真实足球预测的 edge 很小且不稳定，大仓位等于赌博。
     """
     mapping = {
         ConfidenceTier.LOW: 0.0,
-        ConfidenceTier.MEDIUM: 0.01,   # 璇曟按浠撲綅
-        ConfidenceTier.HIGH: 0.03,      # 淇濆畧
-        ConfidenceTier.VERY_HIGH: 0.06, # 姝ｅ父浠撲綅
-        ConfidenceTier.ELITE: 0.10,     # 鏈€澶т笉瓒呰繃 10%
-        ConfidenceTier.MAX: 0.10,       # 鏈€澶т笉瓒呰繃 10%
+        ConfidenceTier.MEDIUM: 0.01,   # 试水仓位
+        ConfidenceTier.HIGH: 0.03,      # 保守
+        ConfidenceTier.VERY_HIGH: 0.06, # 正常仓位
+        ConfidenceTier.ELITE: 0.10,     # 最大不超过 10%
+        ConfidenceTier.MAX: 0.10,       # 最大不超过 10%
     }
     return mapping[tier]
 
 
-# 鈹€鈹€鈹€ 鏁版嵁绫?鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+# ─── 数据类 ───────────────────────────────────────────────────
 
 @dataclass
 class BetDecision:
-    """鍗曞満鎶曟敞鍐崇瓥"""
-    match_id: str                # "涓婚槦 vs 瀹㈤槦"
+    """单场投注决策"""
+    match_id: str                # "主队 vs 客队"
     league: str
     date: str
     predicted_outcome: str       # H/D/A
     actual_outcome: str          # H/D/A
     model_probs: dict[str, float]  # {"H": ..., "D": ..., "A": ...}
     confidence: float            # max model probability
-    tier: str                    # 鍒嗗眰鍚嶇О
+    tier: str                    # 分层名称
 
-    odds_available: bool         # 鏄惁鏈夌湡瀹炶禂鐜?
+    odds_available: bool         # 是否有真实赔率
     odds_home: float
     odds_draw: float
     odds_away: float
 
-    # 鎶曟敞鍐崇瓥
-    bet_on: str | None           # 鎶曞摢涓粨鏋?(H/D/A/None)
-    bet_odds: float              # 鎶曟敞鏃剁殑璧旂巼
-    bet_stake: float             # 鎶曟敞閲戦锛堝崟浣嶈揣甯侊級
-    bet_kelly: float             # Kelly 寤鸿姣斾緥
-    bet_ev: float                # 鏈熸湜鍊?(p * odds - 1)
-    bet_stdout: float            # 濡傛灉璧簡锛屽噣鍒╂鼎
+    # 投注决策
+    bet_on: str | None           # 投哪个结果 (H/D/A/None)
+    bet_odds: float              # 投注时的赔率
+    bet_stake: float             # 投注金额（单位货币）
+    bet_kelly: float             # Kelly 建议比例
+    bet_ev: float                # 期望值 (p * odds - 1)
+    bet_stdout: float            # 如果赢了，净利润
 
-    # 缁撶畻
-    won: bool | None             # True/False/None(鏈姇)
-    profit: float                # 鍑€鍒╂鼎锛堣礋涓轰簭鎹燂級
+    # 结算
+    won: bool | None             # True/False/None(未投)
+    profit: float                # 净利润（负为亏损）
 
-    # 鍒嗘瀽
-    odds_implied_prob: float     # 璧旂巼闅愬惈姒傜巼
-    edge: float                  # 妯″瀷姒傜巼 - 闅愬惈姒傜巼锛堟=鏈変紭鍔匡級
+    # 分析
+    odds_implied_prob: float     # 赔率隐含概率
+    edge: float                  # 模型概率 - 隐含概率（正=有优势）
 
 
 @dataclass
 class TierStats:
-    """鍗曚釜缃俊搴﹀垎灞傜殑缁熻"""
+    """单个置信度分层的统计"""
     tier: str
     total_bets: int = 0
     won: int = 0
@@ -150,7 +150,7 @@ class TierStats:
     accuracy: float = 0.0
     total_staked: float = 0.0
     total_profit: float = 0.0
-    roi: float = 0.0           # 璇ュ眰鎶曟敞鐨?ROI
+    roi: float = 0.0           # 该层投注的 ROI
     avg_odds: float = 0.0
     avg_edge: float = 0.0
     kelly_profit: float = 0.0
@@ -158,57 +158,57 @@ class TierStats:
 
 @dataclass
 class BettingResult:
-    """鎶曟敞鍥炴祴缁撴灉"""
-    # 鍏ㄥ眬缁熻
+    """投注回测结果"""
+    # 全局统计
     total_matches: int
     total_bets: int
     bets_placed_pct: float
     total_staked: float
     total_profit: float
-    roi: float                  # 鎬绘敹鐩婄巼
+    roi: float                  # 总收益率
     initial_bankroll: float
     final_bankroll: float
     max_bankroll: float
     min_bankroll: float
-    drawdown: float             # 鏈€澶у洖鎾?
+    drawdown: float             # 最大回撤
     win_rate: float
     avg_odds: float
     avg_edge: float
-    kelly_final: float          # Kelly 璧勯噾绠＄悊鍚庣殑鏈€缁堣祫閲?
+    kelly_final: float          # Kelly 资金管理后的最终资金
     kelly_roi: float            # Kelly ROI
 
-    # 鍒嗗眰缁熻
+    # 分层统计
     tier_stats: dict[str, TierStats]
-    # 棰勬祴鍑嗙‘鐜囧垎灞?(涓嶅惈鎶曟敞锛岀函棰勬祴)
+    # 预测准确率分层 (不含投注，纯预测)
     tier_prediction_accuracy: dict[str, float]
 
-    # 璇︽儏
+    # 详情
     decisions: list[BetDecision]
     bankroll_history: list[dict]
     summary: dict
 
 
-# 鈹€鈹€鈹€ Kelly 璁＄畻鍣?鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+# ─── Kelly 计算器 ─────────────────────────────────────────────
 
 class KellyCalculator:
-    """Kelly 鍑嗗垯璧勯噾绠＄悊"""
+    """Kelly 准则资金管理"""
 
     @staticmethod
     def kelly_fraction(prob: float, odds: float) -> float:
         """
-        璁＄畻 Kelly 姣斾緥
+        计算 Kelly 比例
 
         f* = (p * b - q) / b
-          p = 妯″瀷棰勬祴姒傜巼
+          p = 模型预测概率
           q = 1 - p
-          b = 璧旂巼 - 1
+          b = 赔率 - 1
 
         Args:
-            prob: 妯″瀷棰勬祴璇ョ粨鏋滅殑姒傜巼 (0~1)
-            odds: 灏忔暟璧旂巼 (濡?2.5)
+            prob: 模型预测该结果的概率 (0~1)
+            odds: 小数赔率 (如 2.5)
 
         Returns:
-            Kelly 寤鸿姣斾緥 (0~1)銆傝礋鍊艰〃绀轰笉鎶曘€?
+            Kelly 建议比例 (0~1)。负值表示不投。
         """
         if prob <= 0 or odds <= 1 or prob >= 1:
             return 0.0
@@ -219,32 +219,32 @@ class KellyCalculator:
 
     @staticmethod
     def expected_value(prob: float, odds: float) -> float:
-        """鏈熸湜鍊?EV = p * odds - 1"""
+        """期望值 EV = p * odds - 1"""
         return prob * odds - 1.0
 
     @staticmethod
     def implied_prob(odds: float) -> float:
-        """璧旂巼 鈫?闅愬惈姒傜巼 (涓嶅惈鍘昏竟闄呭寲)"""
+        """赔率 → 隐含概率 (不含去边际化)"""
         if odds <= 1:
             return 0.0
         return 1.0 / odds
 
     @staticmethod
     def edge(prob: float, odds: float) -> float:
-        """杈归檯 = 妯″瀷姒傜巼 - 璧旂巼闅愬惈姒傜巼"""
+        """边际 = 模型概率 - 赔率隐含概率"""
         return prob - KellyCalculator.implied_prob(odds)
 
 
-# 鈹€鈹€鈹€ 鏍稿績鎶曟敞绯荤粺 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+# ─── 核心投注系统 ─────────────────────────────────────────────
 
 class ConfidenceBettingSystem:
     """
-    缃俊搴﹀垎灞傛姇娉ㄧ郴缁?
+    置信度分层投注系统
 
-    缁撳悎妯″瀷棰勬祴姒傜巼銆佺湡瀹炶禂鐜囥€並elly 璧勯噾绠＄悊鍜岀疆淇″害鍒嗗眰锛?
-    瀹炵幇姝ｆ湡鏈涙姇娉ㄣ€?
+    结合模型预测概率、真实赔率、Kelly 资金管理和置信度分层，
+    实现正期望投注。
 
-    浣跨敤鏂瑰紡:
+    使用方式:
         cbs = ConfidenceBettingSystem(initial_bankroll=1000)
         decision = cbs.evaluate_bet(
             model_probs={"H": 0.55, "D": 0.25, "A": 0.20},
@@ -266,11 +266,11 @@ class ConfidenceBettingSystem:
     ):
         """
         Args:
-            initial_bankroll: 鍒濆璧勯噾
-            min_edge: 鏈€灏忛棬妲涳紙妯″瀷姒傜巼 > 闅愬惈姒傜巼 + min_edge 鎵嶆姇锛?
-            use_kelly: 鏄惁浣跨敤 Kelly 璧勯噾绠＄悊
-            calibration_factors: 姒傜巼鏍″噯鍥犲瓙 per tier銆?
-                渚嬪 {"VHigh": 0.85} 琛ㄧず VHigh 灞傜殑 60% 姒傜巼瀹為檯鍙湁 51% 鍙俊銆?
+            initial_bankroll: 初始资金
+            min_edge: 最小门槛（模型概率 > 隐含概率 + min_edge 才投）
+            use_kelly: 是否使用 Kelly 资金管理
+            calibration_factors: 概率校准因子 per tier。
+                例如 {"VHigh": 0.85} 表示 VHigh 层的 60% 概率实际只有 51% 可信。
         """
         self.bankroll = initial_bankroll
         self.initial_bankroll = initial_bankroll
@@ -280,14 +280,14 @@ class ConfidenceBettingSystem:
         self.use_kelly = use_kelly
         self.calibration_factors = calibration_factors or {}
 
-        # Edge 闂ㄦ鎸夊眰閫掑锛氱疆淇″害瓒婇珮锛岃姹傛洿楂?edge 鏉ヨˉ鍋挎牎鍑嗕笉纭畾鎬?
+        # Edge 门槛按层递增：置信度越高，要求更高 edge 来补偿校准不确定性
         self.min_edge_by_tier = {
-            ConfidenceTier.LOW: 999.0,       # 姘歌繙涓嶆姇
-            ConfidenceTier.MEDIUM: 0.05,     # 浣庝俊蹇冨繀椤绘湁 5% edge
-            ConfidenceTier.HIGH: 0.04,       # 涓俊蹇?4%
-            ConfidenceTier.VERY_HIGH: 0.03,  # 楂樹俊蹇?3%
-            ConfidenceTier.ELITE: 0.02,      # 鏋侀珮 2%
-            ConfidenceTier.MAX: 0.02,        # 鏈€楂?2%
+            ConfidenceTier.LOW: 999.0,       # 永远不投
+            ConfidenceTier.MEDIUM: 0.05,     # 低信心必须有 5% edge
+            ConfidenceTier.HIGH: 0.04,       # 中信心 4%
+            ConfidenceTier.VERY_HIGH: 0.03,  # 高信心 3%
+            ConfidenceTier.ELITE: 0.02,      # 极高 2%
+            ConfidenceTier.MAX: 0.02,        # 最高 2%
         }
 
         self.kelly = KellyCalculator()
@@ -298,7 +298,7 @@ class ConfidenceBettingSystem:
         self._log_bankroll("init")
 
     def _log_bankroll(self, event: str):
-        """璁板綍璧勯噾鍙樺寲"""
+        """记录资金变化"""
         self.bankroll_history.append({
             "iteration": self.iteration,
             "event": event,
@@ -315,48 +315,48 @@ class ConfidenceBettingSystem:
         actual_outcome: str,
     ) -> BetDecision:
         """
-        璇勪及鍗曞満姣旇禌锛屽仛鍑烘姇娉ㄥ喅绛?
+        评估单场比赛，做出投注决策
 
-        绛栫暐:
-        1. 鎵炬ā鍨嬫鐜囨渶楂樼殑缁撴灉
-        2. 璁＄畻 Kelly 寤鸿鍗犳瘮
-        3. 鏍规嵁缃俊搴﹀垎灞傝皟鏁翠粨浣?
-        4. 鍙湪 edge > min_edge 鏃舵姇娉?
+        策略:
+        1. 找模型概率最高的结果
+        2. 计算 Kelly 建议占比
+        3. 根据置信度分层调整仓位
+        4. 只在 edge > min_edge 时投注
 
         Returns:
-            BetDecision锛堝惈鎶曟敞鍐崇瓥锛?
+            BetDecision（含投注决策）
         """
-        # 鎵惧嚭妯″瀷鏈€鐪嬪ソ鐨勭粨鏋?
+        # 找出模型最看好的结果
         pred_outcome = max(model_probs, key=model_probs.get)
         raw_confidence = model_probs[pred_outcome]
 
         tier = get_confidence_tier(raw_confidence)
 
-        # 鈹€鈹€ 鏍″噯淇 鈹€鈹€
-        # 鏍″噯鍥犲瓙 = accuracy / avg_confidence per tier
-        # >1.0 = 妯″瀷淇濆畧锛堥娴嬫鐜囦綆浜庡疄闄呰儨鐜囷級锛屼笂璋冩鐜?
-        # <1.0 = 妯″瀷杩囪嚜淇★紙棰勬祴姒傜巼楂樹簬瀹為檯鑳滅巼锛夛紝涓嬭皟姒傜巼
-        # 涓婇檺 1.5 闃叉杩囧害淇
+        # ── 校准修正 ──
+        # 校准因子 = accuracy / avg_confidence per tier
+        # >1.0 = 模型保守（预测概率低于实际胜率），上调概率
+        # <1.0 = 模型过自信（预测概率高于实际胜率），下调概率
+        # 上限 1.5 防止过度修正
         raw_cal = self.calibration_factors.get(tier.value, 1.0)
-        cal_factor = min(raw_cal, 1.5)  # 涓婇檺 1.5 闃叉杩囧害淇
+        cal_factor = min(raw_cal, 1.5)  # 上限 1.5 防止过度修正
         model_prob = model_probs[pred_outcome] * cal_factor
-        model_prob = min(model_prob, 0.92)  # 涓嶈秴杩?92%
-        confidence = model_prob  # 鏍″噯鍚庣殑缃俊搴?
+        model_prob = min(model_prob, 0.92)  # 不超过 92%
+        confidence = model_prob  # 校准后的置信度
 
-        # 鑾峰彇瀵瑰簲璧旂巼
+        # 获取对应赔率
         bet_odds = odds_series.get(pred_outcome, 0.0)
         odds_available = bet_odds > 0 and not np.isnan(bet_odds)
 
-        # 璁＄畻 Kelly 鍜?edge锛堜娇鐢ㄦ牎鍑嗗悗鐨勬鐜囷級
+        # 计算 Kelly 和 edge（使用校准后的概率）
         ev = self.kelly.expected_value(model_prob, bet_odds) if odds_available else 0.0
         implied_prob = self.kelly.implied_prob(bet_odds) if odds_available else 0.0
         edge_val = self.kelly.edge(model_prob, bet_odds) if odds_available else 0.0
         kelly_frac = self.kelly.kelly_fraction(model_prob, bet_odds) if odds_available else 0.0
 
-        # 璇ュ眰鐨勬渶灏?edge 闂ㄦ锛堢疆淇″害瓒婁綆瑕佹眰瓒婇珮锛?
+        # 该层的最小 edge 门槛（置信度越低要求越高）
         tier_edge_threshold = self.min_edge_by_tier.get(tier, self.min_edge)
 
-        # 鎶曟敞鍐崇瓥閫昏緫
+        # 投注决策逻辑
         bet_on = None
         bet_stake = 0.0
         won = None
@@ -373,12 +373,12 @@ class ConfidenceBettingSystem:
         if should_bet and self.bankroll > 10:
             bet_on = pred_outcome
 
-            # 鍒嗗眰鍒嗘暟
+            # 分层分数
             kelly_frac_tiered = kelly_frac * get_kelly_fraction(tier)
 
-            # 涓婇檺绾︽潫锛堜繚瀹堬細涓嶈秴杩?tier 涓婇檺锛屼笖鍏ㄥ眬涓嶈秴杩?10%锛?
+            # 上限约束（保守：不超过 tier 上限，且全局不超过 10%）
             max_stake = min(
-                self.bankroll * 0.10,  # 鍏ㄥ眬涓婇檺 10%
+                self.bankroll * 0.10,  # 全局上限 10%
                 self.bankroll * get_max_stake_frac(tier),
             )
 
@@ -388,7 +388,7 @@ class ConfidenceBettingSystem:
                     max_stake,
                 )
             else:
-                # 绛夐鎶曟敞
+                # 等额投注
                 if tier in (ConfidenceTier.ELITE, ConfidenceTier.MAX, ConfidenceTier.VERY_HIGH):
                     flat = 20.0
                 elif tier == ConfidenceTier.HIGH:
@@ -399,7 +399,7 @@ class ConfidenceBettingSystem:
 
             bet_stake = round(max(stake, 0.0), 2)
 
-        # 涓嶅湪姝ゅ缁撶畻 鈥?澶栭儴璋冪敤 settle()
+        # 不在此处结算 — 外部调用 settle()
         stdout_val = bet_stake * (bet_odds - 1) if bet_on else 0.0
 
         decision = BetDecision(
@@ -421,7 +421,7 @@ class ConfidenceBettingSystem:
             bet_kelly=round(kelly_frac, 4),
             bet_ev=round(ev, 4),
             bet_stdout=round(stdout_val, 2),
-            won=None,  # 寰呯粨绠?
+            won=None,  # 待结算
             profit=0.0,
             odds_implied_prob=round(implied_prob, 4),
             edge=round(edge_val, 4),
@@ -431,7 +431,7 @@ class ConfidenceBettingSystem:
 
     def settle_bet(self, decision: BetDecision) -> BetDecision:
         """
-        缁撶畻鎶曟敞锛氭牴鎹疄闄呯粨鏋滄洿鏂扮泩浜?
+        结算投注：根据实际结果更新盈亏
 
         Modifies decision in-place (won, profit) and updates bankroll.
         """
@@ -441,17 +441,17 @@ class ConfidenceBettingSystem:
             decision.won = None
             decision.profit = 0.0
         elif decision.bet_on == decision.actual_outcome:
-            # 璧簡
+            # 赢了
             decision.won = True
             decision.profit = decision.bet_stake * (decision.bet_odds - 1)
             self.bankroll += decision.profit
         else:
-            # 杈撲簡
+            # 输了
             decision.won = False
             decision.profit = -decision.bet_stake
             self.bankroll -= decision.bet_stake
 
-        # 璺熻釜鏋佸€?
+        # 跟踪极值
         self.max_bankroll = max(self.max_bankroll, self.bankroll)
         self.min_bankroll = min(self.min_bankroll, self.bankroll)
 
@@ -467,20 +467,20 @@ class ConfidenceBettingSystem:
     @staticmethod
     def compute_calibration_factors(y_true, y_prob_list, tiers, max_factor=1.5):
         """
-        浠庡巻鍙查娴嬫暟鎹绠楁瘡灞傜殑鏍″噯鍥犲瓙銆?
+        从历史预测数据计算每层的校准因子。
 
-        鏍″噯鍥犲瓙 = accuracy / avg_confidence锛堟瘡灞傚垎鍒绠楋級
-        鍚钩婊戦槻姝㈤櫎闆讹紝涓婇檺 max_factor 闃叉杩囧害淇銆?
+        校准因子 = accuracy / avg_confidence（每层分别计算）
+        含平滑防止除零，上限 max_factor 防止过度修正。
 
         Args:
-            y_true: list[str] 鈥?鐪熷疄缁撴灉 ['H','D','A',...]
-            y_prob_list: list[dict] 鈥?妯″瀷棰勬祴姒傜巼
+            y_true: list[str] — 真实结果 ['H','D','A',...]
+            y_prob_list: list[dict] — 模型预测概率
                          [{'H':0.6,'D':0.25,'A':0.15}, ...]
-            tiers: list[str] 鈥?姣忓満瀵瑰簲鐨勫垎灞?['VHigh','Medium',...]
-            max_factor: float 鈥?鏍″噯鍥犲瓙涓婇檺锛岄粯璁?1.5
+            tiers: list[str] — 每场对应的分层 ['VHigh','Medium',...]
+            max_factor: float — 校准因子上限，默认 1.5
 
         Returns:
-            dict[str, float] 鈥?姣忓眰鐨勬牎鍑嗗洜瀛?
+            dict[str, float] — 每层的校准因子
         """
         from collections import defaultdict
         tier_data = defaultdict(lambda: {'correct': 0, 'total': 0, 'conf_sum': 0.0})
@@ -500,7 +500,7 @@ class ConfidenceBettingSystem:
                 continue
             accuracy = data['correct'] / data['total']
             avg_conf = data['conf_sum'] / data['total']
-            # 骞虫粦锛氬鏋?accuracy 鎺ヨ繎 0 鎴?avg_conf 鎺ヨ繎 0锛岀敤 1.0
+            # 平滑：如果 accuracy 接近 0 或 avg_conf 接近 0，用 1.0
             if avg_conf < 0.01 or accuracy < 0.01:
                 factors[tier] = 1.0
             else:
@@ -509,7 +509,7 @@ class ConfidenceBettingSystem:
         return factors
 
     def get_betting_stats(self) -> BettingResult:
-        """姹囨€诲叏閮ㄦ姇娉ㄧ粺璁?""
+        """汇总全部投注统计"""
         if not self.decisions:
             return BettingResult(
                 total_matches=0, total_bets=0, bets_placed_pct=0,
@@ -526,21 +526,21 @@ class ConfidenceBettingSystem:
                 summary={},
             )
 
-        # 鈹€鈹€ 鎸夌疆淇″害鍒嗗眰缁熻鎶曟敞 鈹€鈹€
+        # ── 按置信度分层统计投注 ──
         tier_decisions = {}
         tier_pred_total = {}
 
         for d in self.decisions:
-            # 鎶曟敞缁熻
+            # 投注统计
             if d.bet_on is not None:
                 tier_decisions.setdefault(d.tier, []).append(d)
-            # 棰勬祴鍑嗙‘鐜囩粺璁★紙鎵€鏈夋瘮璧涳紝涓嶇鏄惁鎶曟敞锛?
+            # 预测准确率统计（所有比赛，不管是否投注）
             tier_pred_total.setdefault(d.tier, {"total": 0, "correct": 0})
             tier_pred_total[d.tier]["total"] += 1
             if d.predicted_outcome == d.actual_outcome:
                 tier_pred_total[d.tier]["correct"] += 1
 
-        # 鎶曟敞缁熻
+        # 投注统计
         all_bets = [d for d in self.decisions if d.bet_on is not None]
         total_bets = len(all_bets)
         total_matches = len(self.decisions)
@@ -555,10 +555,10 @@ class ConfidenceBettingSystem:
         roi = total_profit / total_staked if total_staked > 0 else 0
         kelly_roi = (self.bankroll - self.initial_bankroll) / self.initial_bankroll
 
-        # 鏈€澶у洖鎾?
+        # 最大回撤
         max_drawdown = self._calc_max_drawdown()
 
-        # 鍒嗗眰缁熻
+        # 分层统计
         tier_stats = {}
         for tname, td in sorted(tier_decisions.items()):
             tstaked = sum(d.bet_stake for d in td)
@@ -582,7 +582,7 @@ class ConfidenceBettingSystem:
                 kelly_profit=0,
             )
 
-        # 鍒嗗眰棰勬祴鍑嗙‘鐜囷紙鎵€鏈夋瘮璧涳級
+        # 分层预测准确率（所有比赛）
         tier_pred_acc = {}
         for tname, info in sorted(tier_pred_total.items()):
             tier_pred_acc[tname] = round(
@@ -619,7 +619,7 @@ class ConfidenceBettingSystem:
         )
 
     def _calc_max_drawdown(self) -> float:
-        """璁＄畻 peak-to-trough 鏈€澶у洖鎾?""
+        """计算 peak-to-trough 最大回撤"""
         if len(self.bankroll_history) < 2:
             return 0.0
         values = [h["bankroll"] for h in self.bankroll_history]
@@ -635,7 +635,7 @@ class ConfidenceBettingSystem:
         return max_dd
 
     def _build_summary(self, *args) -> dict:
-        """鐢熸垚鍙鎽樿"""
+        """生成可读摘要"""
         tier_stats_dict, tier_pred_acc = args[-2], args[-1]
         total_matches, total_bets, total_staked, total_profit = args[0], args[1], args[2], args[3]
         roi, win_rate, avg_odds, kelly_roi = args[4], args[5], args[6], args[7]
@@ -668,7 +668,7 @@ class ConfidenceBettingSystem:
         }
 
 
-# 鈹€鈹€鈹€ 鍥炴祴杩愯鍣?鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+# ─── 回测运行器 ──────────────────────────────────────────────
 
 def run_tiered_backtest(
     df: pd.DataFrame,
@@ -679,18 +679,18 @@ def run_tiered_backtest(
     verbose: bool = True,
 ) -> BettingResult:
     """
-    鍦ㄥ凡鏈夌壒寰?棰勬祴鐨勬暟鎹笂璺戠疆淇″害鍒嗗眰鍥炴祴
+    在已有特征+预测的数据上跑置信度分层回测
 
     Args:
-        df: 鍚壒寰佸垪 + result 鍒楃殑姣旇禌鏁版嵁锛堝凡 predict_proba 浜嗗悧锛熼€氬父鍦ㄥ閮ㄩ娴嬶級
-        predictor: 宸茶缁冪殑 FootballPredictor 瀹炰緥
-        initial_bankroll: 鍒濆璧勯噾
-        min_edge: 鏈€灏?edge 闂ㄦ
-        use_kelly: 鏄惁浣跨敤 Kelly
-        verbose: 鏄惁鎵撳嵃杩涘害
+        df: 含特征列 + result 列的比赛数据（已 predict_proba 了吗？通常在外部预测）
+        predictor: 已训练的 FootballPredictor 实例
+        initial_bankroll: 初始资金
+        min_edge: 最小 edge 门槛
+        use_kelly: 是否使用 Kelly
+        verbose: 是否打印进度
 
     Returns:
-        BettingResult 瀵硅薄
+        BettingResult 对象
     """
     cbs = ConfidenceBettingSystem(
         initial_bankroll=initial_bankroll,
@@ -703,12 +703,12 @@ def run_tiered_backtest(
     n = len(df)
 
     for i, (_, row) in enumerate(df.iterrows()):
-        # 鏋勫缓鐗瑰緛琛?
+        # 构建特征行
         feat_row = row[available].fillna(0).to_frame().T
         try:
             pred = predictor.predict(feat_row)
         except Exception as e:
-            logger.warning(f"棰勬祴澶辫触 {row.get('home_team', '?')}: {e}")
+            logger.warning(f"预测失败 {row.get('home_team', '?')}: {e}")
             continue
 
         if isinstance(pred, list):
@@ -720,14 +720,14 @@ def run_tiered_backtest(
             "A": pred.away_win_prob,
         }
 
-        # 鑾峰彇璧旂巼锛堜粠鏁版嵁涓級
+        # 获取赔率（从数据中）
         odds_series = {
             "H": row.get("AvgH", row.get("B365H", 0)),
             "D": row.get("AvgD", row.get("B365D", 0)),
             "A": row.get("AvgA", row.get("B365A", 0)),
         }
 
-        # 澶勭悊 NaN 璧旂巼
+        # 处理 NaN 赔率
         for k in odds_series:
             if pd.isna(odds_series[k]) or odds_series[k] <= 1:
                 odds_series[k] = 0.0
@@ -760,19 +760,19 @@ def run_tiered_backtest(
 
 def run_tiered_backtest_with_model_probs(
     df: pd.DataFrame,
-    y_prob: np.ndarray,            # shape (n, 3) 鈥?宸茶缁冪殑妯″瀷瀵瑰悇鍦烘瘮璧涚殑棰勬祴姒傜巼
+    y_prob: np.ndarray,            # shape (n, 3) — 已训练的模型对各场比赛的预测概率
     inv_label_map: dict,
     verbose: bool = True,
     **cbs_kwargs,
 ) -> BettingResult:
     """
-    鐩存帴浼犲叆棰勬祴姒傜巼鐭╅樀锛岃烦杩囬噸鏂伴娴嬶紙鑺傜渷鏃堕棿锛?
+    直接传入预测概率矩阵，跳过重新预测（节省时间）
 
     Args:
-        df: 姣旇禌鏁版嵁锛堝惈璧旂巼鍒楀拰 result 鍒楋級
-        y_prob: (n, 3) 棰勬祴姒傜巼鐭╅樀 [P(H), P(D), P(A)]
+        df: 比赛数据（含赔率列和 result 列）
+        y_prob: (n, 3) 预测概率矩阵 [P(H), P(D), P(A)]
         inv_label_map: {0: "H", 1: "D", 2: "A"}
-        **cbs_kwargs: 浼犵粰 ConfidenceBettingSystem 鐨勫弬鏁?
+        **cbs_kwargs: 传给 ConfidenceBettingSystem 的参数
 
     Returns:
         BettingResult
@@ -822,44 +822,44 @@ def run_tiered_backtest_with_model_probs(
     return result
 
 
-# 鈹€鈹€鈹€ 杈撳嚭鎵撳嵃 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+# ─── 输出打印 ─────────────────────────────────────────────────
 
 def _print_results(result: BettingResult):
-    """缇庤鍦版墦鍗板洖娴嬬粨鏋?""
+    """美观地打印回测结果"""
     s = result.summary
 
     print(f"\n{'='*60}")
-    print(f"  缃俊搴﹀垎灞傛姇娉ㄥ洖娴嬬粨鏋?)
+    print(f"  置信度分层投注回测结果")
     print(f"{'='*60}")
-    print(f"  鍏ㄥ眬缁熻:")
-    print(f"    鎬绘瘮璧?    {s['total_matches']} 鍦?)
-    print(f"    鎶曟敞鍦烘:  {s['total_bets']} ({s['bet_rate']})")
-    print(f"    鑳滅巼:      {s['win_rate']}")
-    print(f"    鎬绘姇娉ㄩ:  {s['total_staked']}")
-    print(f"    鎬荤泩浜?    {s['total_profit']}")
+    print(f"  全局统计:")
+    print(f"    总比赛:    {s['total_matches']} 场")
+    print(f"    投注场次:  {s['total_bets']} ({s['bet_rate']})")
+    print(f"    胜率:      {s['win_rate']}")
+    print(f"    总投注额:  {s['total_staked']}")
+    print(f"    总盈亏:    {s['total_profit']}")
     print(f"    ROI:       {s['roi']}")
-    print(f"    骞冲潎璧旂巼:  {s['avg_odds']}")
-    print(f"    鏈€澶у洖鎾?  {s['drawdown']}")
-    print(f"\n  璧勯噾鍙樺寲:")
-    print(f"    鍒濆璧勯噾:  {s.get('final_bankroll', result.initial_bankroll)}")
+    print(f"    平均赔率:  {s['avg_odds']}")
+    print(f"    最大回撤:  {s['drawdown']}")
+    print(f"\n  资金变化:")
+    print(f"    初始资金:  {s.get('final_bankroll', result.initial_bankroll)}")
     print(f"    Kelly ROI: {s['kelly_roi']}")
-    print(f"    璧勯噾鍙樺寲:  {s['bankroll_change']}")
-    print(f"    鏈€澶у洖鎾?  {s['drawdown']}")
+    print(f"    资金变化:  {s['bankroll_change']}")
+    print(f"    最大回撤:  {s['drawdown']}")
 
-    print(f"\n  棰勬祴鍑嗙‘鐜囧垎灞?(鍏ㄩ儴 {result.total_matches} 鍦?:")
-    print(f"  {'鍒嗗眰':12s} {'鍦烘':>6s} {'鍑嗙‘鐜?:>8s}")
-    print(f"  {'鈹€'*28}")
-    # 鎸夌疆淇″害浠庨珮鍒颁綆鎺掑簭
+    print(f"\n  预测准确率分层 (全部 {result.total_matches} 场):")
+    print(f"  {'分层':12s} {'场次':>6s} {'准确率':>8s}")
+    print(f"  {'─'*28}")
+    # 按置信度从高到低排序
     tier_order = ["Max", "Elite", "VHigh", "High", "Medium", "Low"]
     for t in tier_order:
         if t in result.tier_prediction_accuracy:
-            # 鎵惧埌璇ュ眰姣旇禌鏁?
+            # 找到该层比赛数
             n_matches = sum(1 for d in result.decisions if d.tier == t)
             print(f"  {t:12s} {n_matches:>6d} {result.tier_prediction_accuracy[t]:>7.1%}")
 
-    print(f"\n  鎶曟敞鍒嗗眰缁熻:")
-    print(f"  {'鍒嗗眰':12s} {'鎶曟敞':>5s} {'鑳滅巼':>7s} {'ROI':>7s} {'鐩堜簭':>10s} {'鎶曟敞棰?:>10s}")
-    print(f"  {'鈹€'*52}")
+    print(f"\n  投注分层统计:")
+    print(f"  {'分层':12s} {'投注':>5s} {'胜率':>7s} {'ROI':>7s} {'盈亏':>10s} {'投注额':>10s}")
+    print(f"  {'─'*52}")
     for t in tier_order:
         if t in result.tier_stats:
             ts = result.tier_stats[t]
@@ -868,14 +868,14 @@ def _print_results(result: BettingResult):
             print(f"  {t:12s} {ts.total_bets:>5d} {ts.accuracy:>6.1%} {ts.roi:>6.2%} "
                   f"{profit_str:>10s} {staked_str:>10s}")
 
-    print(f"\n  {'鈹€'*52}")
-    print(f"  鍚堣: {result.total_bets:>5d}鎶?{result.win_rate:>6.1%} {result.roi:>6.2%} "
+    print(f"\n  {'─'*52}")
+    print(f"  合计: {result.total_bets:>5d}投 {result.win_rate:>6.1%} {result.roi:>6.2%} "
           f"{result.total_profit:+.0f} {result.total_staked:.0f}")
 
 
 def export_results(result: BettingResult, path: str | Path | None = None) -> dict:
     """
-    灏嗗洖娴嬬粨鏋滃鍑轰负鍙簭鍒楀寲瀛楀吀锛堝彲閫夊瓨 JSON锛?
+    将回测结果导出为可序列化字典（可选存 JSON）
     """
     data = {
         "summary": result.summary,
@@ -899,13 +899,13 @@ def export_results(result: BettingResult, path: str | Path | None = None) -> dic
                 "edge": d.edge,
                 "ev": d.bet_ev,
             }
-            for d in result.decisions[-50:]  # 鍙繚鐣欐渶杩?50 鍦?
+            for d in result.decisions[-50:]  # 只保留最近 50 场
         ],
     }
 
     if path:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        logger.info(f"缁撴灉宸插鍑? {path}")
+        logger.info(f"结果已导出: {path}")
 
     return data
