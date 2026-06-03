@@ -590,8 +590,17 @@ class ConfidenceBettingSystem:
             ) if info["total"] > 0 else 0.0
 
         summary = self._build_summary(
-            total_matches, total_bets, total_staked, total_profit,
-            roi, win_rate, avg_odds, kelly_roi, tier_stats, tier_pred_acc,
+            total_matches=total_matches,
+            total_bets=total_bets,
+            total_staked=total_staked,
+            total_profit=total_profit,
+            roi=roi,
+            win_rate=win_rate,
+            avg_odds=avg_odds,
+            kelly_roi=kelly_roi,
+            max_drawdown=max_drawdown,
+            tier_stats=tier_stats,
+            tier_prediction_accuracy=tier_pred_acc,
         )
 
         return BettingResult(
@@ -634,12 +643,10 @@ class ConfidenceBettingSystem:
 
         return max_dd
 
-    def _build_summary(self, *args) -> dict:
+    def _build_summary(self, total_matches, total_bets, total_staked, total_profit,
+                        roi, win_rate, avg_odds, kelly_roi,
+                        max_drawdown, tier_stats, tier_prediction_accuracy) -> dict:
         """生成可读摘要"""
-        tier_stats_dict, tier_pred_acc = args[-2], args[-1]
-        total_matches, total_bets, total_staked, total_profit = args[0], args[1], args[2], args[3]
-        roi, win_rate, avg_odds, kelly_roi = args[4], args[5], args[6], args[7]
-
         return {
             "total_matches": total_matches,
             "total_bets": total_bets,
@@ -650,9 +657,9 @@ class ConfidenceBettingSystem:
             "roi": f"{roi:.2%}",
             "avg_odds": f"{avg_odds:.2f}",
             "kelly_roi": f"{kelly_roi:.2%}",
-            "final_bankroll": f"{args[-6]:.0f}",
-            "bankroll_change": f"{args[-6] - args[-8]:+.0f}",
-            "drawdown": f"{args[-3]:.1%}",
+            "final_bankroll": f"{total_staked + total_profit:.0f}",
+            "bankroll_change": f"{total_profit:+.0f}",
+            "drawdown": f"{max_drawdown:.1%}",
             "tier_performance": {
                 t: {
                     "bets": s.total_bets,
@@ -660,10 +667,10 @@ class ConfidenceBettingSystem:
                     "roi": f"{s.roi:.2%}",
                     "profit": f"{s.total_profit:+.0f}",
                 }
-                for t, s in sorted(tier_stats_dict.items())
+                for t, s in sorted(tier_stats.items())
             },
             "prediction_accuracy_by_tier": {
-                t: f"{a:.1%}" for t, a in sorted(tier_pred_acc.items())
+                t: f"{a:.1%}" for t, a in sorted(tier_prediction_accuracy.items())
             },
         }
 
