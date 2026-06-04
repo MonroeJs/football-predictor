@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{{ data.league.name }} — Predictor</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--bg:#0b0f1a;--card:rgba(17,24,39,0.88);--card-border:rgba(255,255,255,0.06);--text:#f1f5f9;--text2:#cbd5e1;--muted:#64748b;--grn:#22c55e;--red:#ef4444;--gold:#eab308;--blu:#3b82f6;--purp:#8b5cf6}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;min-height:100vh}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
+.navbar{background:linear-gradient(135deg,#0f172a,#1e293b);border-bottom:1px solid var(--card-border);padding:.6rem 1.5rem}
+.hero{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.5rem}
+.hero>div{background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:1rem;text-align:center}
+.hero .val{font-size:1.8rem;font-weight:700}
+.hero .lbl{font-size:.75rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.nav-pills{display:flex;gap:6px;background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:4px;margin-bottom:1.5rem}
+.nav-pills button{flex:1;padding:.6rem .8rem;border-radius:10px;cursor:pointer;font-size:.85rem;font-weight:500;color:var(--muted);transition:all .25s;border:none;background:0 0}
+.nav-pills button:hover{color:var(--text2);background:rgba(255,255,255,.04)}
+.nav-pills button.active{background:linear-gradient(135deg,#1d4ed8,#3b82f6);color:#fff;box-shadow:0 4px 16px rgba(59,130,246,.3)}
+.card-box{background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:1.2rem;margin-bottom:1rem}
+.card-box .ct{font-size:.85rem;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:1rem}
+.sec{display:none}
+.sec.active{display:block;animation:fade .3s}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.badge-t{font-size:.65rem;padding:.2em .5em;border-radius:6px;font-weight:600;display:inline-block}
+.t-Max{background:linear-gradient(135deg,#7c3aed,#6366f1);color:#fff}
+.t-Elite{background:linear-gradient(135deg,#dc2626,#ef4444);color:#fff}
+.t-VHigh{background:linear-gradient(135deg,#ea580c,#f97316);color:#fff}
+.t-High{background:#1d4ed8;color:#fff}
+.t-Medium{background:#4b5563;color:#cbd5e1}
+.t-Low{background:#374151;color:#6b7280}
+.mc{background:rgba(30,41,59,.6);border:1px solid var(--card-border);border-radius:12px;padding:.8rem 1rem;margin-bottom:8px}
+.bet{border-left:3px solid var(--grn)}
+.bet-e{border-left:3px solid var(--red)}
+.bet-m{border-left:3px solid var(--purp)}
+.gbar{height:6px;border-radius:3px;background:#1e293b;overflow:hidden;margin-top:2px}
+.gbar .f{height:100%;border-radius:3px;transition:width .6s}
+.gbar .f.h{background:linear-gradient(90deg,#22c55e,#16a34a)}
+.odds-badge{background:rgba(30,41,59,.8);padding:.1rem .4rem;border-radius:4px;font-family:monospace;font-size:.75rem;color:var(--text2)}
+@media(max-width:992px){.hero{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<nav class="navbar d-flex justify-content-between align-items-center">
+  <div>
+    <a href="/" class="text-white text-decoration-none me-3" style="font-size:1.1rem;font-weight:700">
+      <i class="bi bi-trophy-fill text-warning"></i> Predictor
+    </a>
+    <div class="dropdown d-inline-block">
+      <button class="btn btn-sm dropdown-toggle" style="background:#1e293b;color:var(--text2);border:1px solid var(--card-border)" data-bs-toggle="dropdown">
+        <i class="bi bi-globe me-1"></i>{{ data.league.name }}
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="background:#1e293b">
+        {% for k, v in all_leagues.items() %}
+        <li><a class="dropdown-item" href="/{{ k }}{% if k == data.league.key %} style='font-weight:700;color:#fff'{% endif %}">{{ v }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div style="font-size:.8rem;color:var(--text2)">
+    <i class="bi bi-info-circle"></i> {{ data.league.data_source }}
+  </div>
+</nav>
+
+<div class="container-fluid px-3 px-md-4 py-3 py-md-4">
+
+<div class="hero">
+  <div><div class="val" style="color:var(--blu)">{{ data.predictions|length }}</div><div class="lbl">比赛</div></div>
+  <div><div class="val" style="color:var(--grn)">{{ data.total_recommended }}</div><div class="lbl">推荐</div></div>
+  <div><div class="val" style="color:var(--gold)">¥{{ "%.0f"|format(data.total_stake) }}</div><div class="lbl">金额</div></div>
+  <div><div class="val" style="color:var(--purp)">{{ data.tier_counts.get('Elite',0)+data.tier_counts.get('Max',0) }}</div><div class="lbl">精选+</div></div>
+</div>
+
+<div class="nav-pills" id="navPills">
+  <button class="active" data-sec="today"><i class="bi bi-calendar-check"></i>预测</button>
+  <button data-sec="all"><i class="bi bi-list-columns"></i>全部</button>
+  {% if data.league.show_standings and data.standings %}
+  <button data-sec="standings"><i class="bi bi-trophy"></i>积分榜</button>
+  {% endif %}
+  {% if data.league.show_groups and data.standings %}
+  <button data-sec="groups"><i class="bi bi-diagram-3"></i>分组</button>
+  {% endif %}
+  {% if data.tournament_probs %}
+  <button data-sec="tournament"><i class="bi bi-trophy-fill text-warning"></i>淘汰赛</button>
+  {% endif %}
+  {% if data.league.key is defined and data.league.key == "wc2026" %}
+  <button data-sec="track"><i class="bi bi-graph-up-arrow"></i>追踪</button>
+  {% endif %}
+</div>
+
+<div class="row g-3">
+<div class="col-lg-8">
+
+<!-- TODAY/PREDICTIONS -->
+<div id="sec-today" class="sec active">
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-calendar-check me-1"></i>比赛预测</div>
+    {% if data.predictions %}
+    {% for p in data.predictions %}
+    {% set s = p.suggested_stake|default(0) %}
+    <div class="mc {% if s>0 and p.tier=='Max' %}bet-m{% elif s>0 and p.tier=='Elite' %}bet-e{% elif s>0 %}bet{% endif %}">
+      <div class="d-flex justify-content-between align-items-center">
+        <div style="font-weight:600;font-size:.9rem">{{ p.home[:16] if p.home else p.home_team[:16] }} vs {{ p.away[:16] if p.away else p.away_team[:16] }}</div>
+        {% if p.tier %}
+        <span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span>
+        {% endif %}
+      </div>
+      <div class="d-flex justify-content-between mt-1">
+        <div style="font-size:.75rem;color:var(--text2)">
+          {% if p.date %}{{ p.date[5:10] if p.date else '' }} | {% endif %}
+          {% if p.confidence %}{{ p.confidence }}{% elif p.prob_H %}H={{ "%.0f"|format(p.prob_H*100) }}% D={{ "%.0f"|format(p.prob_D*100) }}% A={{ "%.0f"|format(p.prob_A*100) }}%{% endif %}
+          {% if p.fav_odds %} | 赔率 {{ "%.2f"|format(p.fav_odds) }}{% endif %}
+          {% if p.group %} | {{ p.group }}{% endif %}
+        </div>
+        {% if s>0 %}<div style="font-weight:700;color:var(--grn)">¥{{ "%.0f"|format(s) }}</div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="text-center py-4" style="color:var(--muted)"><i class="bi bi-inbox" style="font-size:2rem;display:block;margin-bottom:.5rem"></i>暂无预测数据</div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- ALL MATCHES -->
+<div id="sec-all" class="sec">
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-table me-1"></i>全部比赛</div>
+    {% if data.predictions %}
+    <div style="max-height:60vh;overflow-y:auto">
+    <table class="table table-dark mb-0" style="font-size:.8rem">
+      <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>日期</th><th>主队</th><th>客队</th>{% if data.league.show_groups %}<th>组</th>{% endif %}<th>置信度</th><th>分级</th><th>赔率</th><th>建议</th></tr></thead>
+      <tbody>
+      {% for p in data.predictions %}
+      {% set s = p.suggested_stake|default(0) %}
+      <tr {% if s>0 %}style="border-left:3px solid {% if p.tier=='Max' %}#8b5cf6{% elif p.tier=='Elite' %}#ef4444{% else %}#22c55e{% endif %}"{% endif %}>
+        <td>{{ p.date[5:10] if p.date else '' }}</td>
+        <td>{{ p.home[:14] if p.home else p.home_team[:14] }}</td>
+        <td>{{ p.away[:14] if p.away else p.away_team[:14] }}</td>
+        {% if data.league.show_groups %}<td>{{ p.group }}</td>{% endif %}
+        <td>{% if p.confidence %}{{ p.confidence }}{% elif p.prob_H %}{{ "%.0f"|format(p.prob_H*100) }}%{% endif %}</td>
+        <td>{% if p.tier %}<span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span>{% else %}-{% endif %}</td>
+        <td>{% if p.fav_odds %}<span class="odds-badge">{{ "%.2f"|format(p.fav_odds) }}</span>{% else %}-{% endif %}</td>
+        <td>{% if s>0 %}<strong style="color:var(--grn)">¥{{ "%.0f"|format(s) }}</strong>{% else %}<span style="color:var(--muted)">-</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% else %}
+    <div class="text-center py-4" style="color:var(--muted)">暂无数据</div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- STANDINGS -->
+{% if data.league.show_standings and data.standings %}
+<div id="sec-standings" class="sec">
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-trophy me-1"></i>积分榜 <span style="font-size:.7rem;color:var(--muted)">{{ data.standings.get('season','') }}</span></div>
+    <table class="table table-dark mb-0" style="font-size:.8rem">
+      <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>#</th><th>球队</th><th>赛</th><th>胜</th><th>平</th><th>负</th><th>净胜</th><th>积分</th></tr></thead>
+      <tbody>
+      {% for team in data.standings.teams %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td><strong>{{ team.name[:16] }}</strong></td>
+        <td>{{ team.pld }}</td>
+        {% set w = team.pts//3 %}  {# approximate wins #}
+        <td>{{ w }}</td>
+        <td>{{ team.pld - w - (team.ga - (team.gd + team.gf))//2 }}</td>
+        <td>{{ team.pld - w }}</td>
+        <td style="color:{% if team.gd>0 %}var(--grn){% elif team.gd<0 %}var(--red){% endif %}">{{ "%+d"|format(team.gd) }}</td>
+        <td><strong>{{ team.pts }}</strong></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <div style="font-size:.7rem;color:var(--muted);margin-top:8px">* 胜场数为近似值（基于积分估算）</div>
+  </div>
+</div>
+{% endif %}
+
+<!-- GROUPS (only for WC) -->
+{% if data.league.show_groups and data.standings and data.standings.groups %}
+<div id="sec-groups" class="sec">
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-diagram-3 me-1"></i>小组出线概率 <span style="font-size:.7rem;color:var(--muted)">Monte Carlo</span></div>
+    {% for g, teams_data in data.standings.groups.items() %}
+    <div class="mb-3">
+      <h6 style="font-size:.85rem;margin-bottom:8px">Group {{ g }}</h6>
+      {% set sorted = teams_data.items()|list|sort(attribute='1.advance', reverse=true) %}
+      {% for team, probs in sorted %}
+      <div class="mb-1">
+        <div class="d-flex justify-content-between">
+          <span style="font-size:.75rem">{{ team[:16] }}</span>
+          <span style="font-size:.7rem;color:var(--text2)">{{ "%.0f"|format(probs.advance*100) }}%</span>
+        </div>
+        <div class="gbar"><div class="f h" style="width:{{ probs.advance*100 }}%"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+</div>
+
+<!-- TOURNAMENT (knockout/champion probs, WC only) -->
+{% if data.tournament_probs %}
+<div id="sec-tournament" class="sec">
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-trophy-fill text-warning me-1"></i>夺冠概率 <span style="font-size:.7rem;color:var(--muted)">Monte Carlo 50k 模拟</span></div>
+    {% set champ_items = data.tournament_probs.champion_probs.items()|list|sort(attribute='1', reverse=true) %}
+    <div style="max-height:70vh;overflow-y:auto">
+      {% for team, p in champ_items %}
+      {% set kp = data.tournament_probs.knockout_probs.get(team, {}) %}
+      <div class="mb-2">
+        <div class="d-flex justify-content-between align-items-center">
+          <span style="font-size:.8rem;font-weight:500">{{ team[:18] }}</span>
+          <span style="font-size:.75rem;color:var(--text2)">
+            冠军 {{ "%.1f"|format(p*100) }}%
+            · 决赛 {{ "%.1f"|format(kp.get('Final',0)*100) }}%
+            · 四强 {{ "%.1f"|format(kp.get('SF',0)*100) }}%
+          </span>
+        </div>
+        <div class="gbar">
+          <div class="f h" style="width:{{ p*100 }}%;
+            {% if p > 0.08 %}background:linear-gradient(90deg,#7c3aed,#6366f1){% elif p > 0.04 %}background:linear-gradient(90deg,#dc2626,#ef4444){% elif p > 0.02 %}background:linear-gradient(90deg,#ea580c,#f97316){% else %}background:linear-gradient(90deg,#1d4ed8,#3b82f6){% endif %}"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- TRACK section -->
+<div id="sec-track" class="sec">
+  <div class="card-box">
+    <div class="ct d-flex justify-content-between">
+      <span><i class="bi bi-graph-up-arrow me-1"></i>实时追踪</span>
+      <span style="font-size:.7rem;color:var(--muted)">
+        <button class="btn btn-sm btn-outline-primary me-2" onclick="refreshOdds()" style="font-size:.7rem;padding:.1rem .4rem">
+          <i class="bi bi-arrow-clockwise"></i> 刷新赔率
+        </button>
+        开赛后自动更新
+      </span>
+    </div>
+    <div class="hero" style="grid-template-columns:repeat(4,1fr);margin-bottom:1rem">
+      <div><div class="val" style="color:var(--blu)">{{ track_stats.total|default(0) }}</div><div class="lbl">已录入</div></div>
+      <div><div class="val" style="color:var(--grn)">{{ track_stats.correct|default(0) }}</div><div class="lbl">命中</div></div>
+      <div><div class="val" style="color:var(--gold)">{{ track_stats.accuracy|default("N/A") }}</div><div class="lbl">准确率</div></div>
+      <div><div class="val" style="color:var(--purp)">{{ "%.0f"|format(track_stats.bets.total_profit|default(0)) }}</div><div class="lbl">盈亏(Y)</div></div>
+    </div>
+    {% if track_stats.total is defined and track_stats.total > 0 and track_stats.by_tier %}
+    <div class="mb-3">
+      <div style="font-size:.8rem;font-weight:600;color:var(--text2);margin-bottom:8px">分级准确率</div>
+      {% for t in ['Max','Elite','VHigh','High','Medium','Low'] %}{% if t in track_stats.by_tier %}{% set ts = track_stats.by_tier[t] %}
+      <div class="d-flex justify-content-between align-items-center mb-1" style="font-size:.75rem">
+        <span class="badge-t t-{{ t }}">{{ TIER_CN.get(t,t) }}</span>
+        <span style="color:var(--text2)">{{ ts.total }}场</span>
+        <span style="color:var(--grn)">{{ ts.accuracy }}</span>
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+    {% endif %}
+    <div style="max-height:40vh;overflow-y:auto">
+      <table class="table table-dark mb-0" style="font-size:.8rem">
+        <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>日期</th><th>对阵</th><th>预测</th><th>实际</th><th>结果</th><th>操作</th></tr></thead>
+        <tbody>
+        {% for m in wc_matches %}
+        {% set is_future = m.date > now.strftime('%Y-%m-%d') %}
+        {% set is_done = m.result_confirmed == 1 %}
+        <tr>
+          <td>{{ m.date[5:10] if m.date else '' }}</td>
+          <td>{{ m.home_team[:12] }} vs {{ m.away_team[:12] }}</td>
+          <td>{% if m.tier %}<span class="badge-t t-{{ m.tier }}">{{ TIER_CN.get(m.tier,m.tier) }}</span>{% else %}-{% endif %}</td>
+          <td>{% if is_done %}<strong>{{ {'H':'主胜','D':'平局','A':'客胜'}.get(m.actual_winner,'?') }}</strong>{% if m.home_goals is not none and m.away_goals is not none %}({{ m.home_goals|int }}-{{ m.away_goals|int }}){% endif %}{% elif is_future %}<span style="color:var(--muted)">未开始</span>{% else %}<span style="color:var(--gold)">等待录入</span>{% endif %}</td>
+          <td>{% if is_done %}{% if m.actual_winner == m.predicted_winner %}<span style="color:var(--grn);font-weight:700">命中</span>{% else %}<span style="color:var(--red);font-weight:700">未中</span>{% endif %}{% else %}<span style="color:var(--muted)">-</span>{% endif %}</td>
+          <td>{% if not is_future and not is_done %}<button class="btn btn-sm btn-outline-success" style="font-size:.7rem;padding:.1rem .4rem" onclick="recordResult({{ m.id }},'{{ m.home_team }}','{{ m.away_team }}')">录入</button>{% endif %}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Result Recording Modal -->
+<div class="modal fade" id="resultModal" tabindex="-1">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content" style="background:var(--card);color:var(--text);border:1px solid var(--card-border)">
+      <div class="modal-header border-0 pb-0">
+        <h6 class="modal-title" id="resultModalLabel">录入结果</h6>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p id="resultMatchName" style="font-size:.9rem;font-weight:600"></p>
+        <div class="d-flex gap-2 mb-3">
+          <div class="flex-fill text-center">
+            <div style="font-size:.8rem;color:var(--text2)" id="resultHomeName">主队</div>
+            <button class="btn btn-outline-success btn-sm mt-1 result-btn" data-winner="H">主胜</button>
+          </div>
+          <div class="flex-fill text-center">
+            <div style="font-size:.8rem;color:var(--text2)">平局</div>
+            <button class="btn btn-outline-warning btn-sm mt-1 result-btn" data-winner="D">平</button>
+          </div>
+          <div class="flex-fill text-center">
+            <div style="font-size:.8rem;color:var(--text2)" id="resultAwayName">客队</div>
+            <button class="btn btn-outline-danger btn-sm mt-1 result-btn" data-winner="A">客胜</button>
+          </div>
+        </div>
+        <div class="row g-2 mb-2">
+          <div class="col-6">
+            <label style="font-size:.75rem;color:var(--text2)" id="resultHomeGoalsLabel">主队进球</label>
+            <input type="number" id="resultHomeGoals" class="form-control form-control-sm" min="0" max="20" value="0" style="background:#1e293b;color:var(--text);border-color:var(--card-border)">
+          </div>
+          <div class="col-6">
+            <label style="font-size:.75rem;color:var(--text2)" id="resultAwayGoalsLabel">客队进球</label>
+            <input type="number" id="resultAwayGoals" class="form-control form-control-sm" min="0" max="20" value="0" style="background:#1e293b;color:var(--text);border-color:var(--card-border)">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0 pt-0">
+        <button class="btn btn-sm btn-secondary" data-bs-dismiss="modal" style="font-size:.8rem">取消</button>
+        <button class="btn btn-sm btn-primary" onclick="submitResult()" style="font-size:.8rem">确认录入</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RIGHT SIDEBAR -->
+
+<div class="col-lg-4">
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-info-circle me-1"></i>分级含义</div>
+    {% set legend = [('Max','>=80%','80'),('Elite','>=70%','50'),('VHigh','>=60%','30'),('High','>=50%','不投'),('Medium','40-50%','不投'),('Low','<40%','不投')] %}
+    {% for t,lbl,stk in legend %}
+    <div class="d-flex align-items-center mb-2" style="font-size:.8rem">
+      <span class="badge-t t-{{ t }} me-2">{{ TIER_CN.get(t,t) }}</span>
+      <span style="color:var(--text2);flex:1">{{ lbl }}</span>
+      <span style="font-weight:600">{{ stk }}</span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-star-fill text-warning me-1"></i>推荐 TOP 5</div>
+    {% set top = data.predictions|selectattr('suggested_stake')|list|sort(attribute='suggested_stake', reverse=true) %}
+    {% if top %}
+    {% for p in top[:5] %}
+    <div class="d-flex justify-content-between align-items-center mb-2" style="background:rgba(30,41,59,.5);border-radius:8px;padding:.5rem .8rem">
+      <div>
+        <div style="font-size:.8rem;font-weight:600">{{ (p.home or p.home_team)[:12] }} vs {{ (p.away or p.away_team)[:12] }}</div>
+        <div style="font-size:.65rem;color:var(--text2)">{{ p.date[5:10] if p.date else '' }} | {{ p.confidence if p.confidence else '' }}</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:.85rem;font-weight:700;color:var(--grn)">¥{{ "%.0f"|format(p.suggested_stake) }}</div>
+        {% if p.tier %}<div><span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span></div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="text-center py-3" style="color:var(--muted);font-size:.8rem">暂无</div>
+    {% endif %}
+  </div>
+
+  {% if data.calendar %}
+  <div class="card-box">
+    <div class="ct"><i class="bi bi-graph-up me-1"></i>每日推荐金额</div>
+    <canvas id="chartStakes" style="max-height:130px;width:100%"></canvas>
+  </div>
+  {% endif %}
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script>
+// NAV PILLS
+document.getElementById('navPills').addEventListener('click', function(e) {
+  var btn = e.target.closest('button');
+  if (!btn) return;
+  this.querySelectorAll('button').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.sec').forEach(function(s) { s.classList.remove('active'); });
+  btn.classList.add('active');
+  var sec = document.getElementById('sec-' + btn.getAttribute('data-sec'));
+  if (sec) sec.classList.add('active');
+});
+
+// CHART (daily stakes)
+setTimeout(function() {
+var sc = document.getElementById('chartStakes');
+if (!sc) return;
+fetch(window.location.pathname + '/../api/' + window.location.pathname.split('/')[1] + '/calendar').then(function(r){ return r.json(); }).then(function(data){
+  var dates = Object.keys(data).sort();
+  var stakes = dates.map(function(d) {
+    return data[d].reduce(function(sum, m) { return sum + (m.suggested_stake || 0); }, 0);
+  });
+  if (stakes.every(function(s) { return s === 0; })) return;
+  new Chart(sc, {
+    type: 'bar',
+    data: {
+      labels: dates.map(function(d) { return d.slice(5); }),
+      datasets: [{ label: '金额', data: stakes, backgroundColor: '#3b82f6', borderRadius: 3 }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { font: {size:9}, color: '#cbd5e1' } },
+        y: { grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true, ticks: { font: {size:9}, color: '#cbd5e1' } }
+      }
+    }
+  });
+}).catch(function(e){}); }, 500);
+
+// Result recording
+var currentResultMatchId = null;
+
+function recordResult(matchId, homeTeam, awayTeam) {
+  currentResultMatchId = matchId;
+  document.getElementById('resultMatchName').textContent = homeTeam + ' vs ' + awayTeam;
+  document.getElementById('resultHomeName').textContent = homeTeam;
+  document.getElementById('resultAwayName').textContent = awayTeam;
+  document.getElementById('resultHomeGoals').value = 0;
+  document.getElementById('resultAwayGoals').value = 0;
+  document.getElementById('resultHomeGoalsLabel').textContent = homeTeam.slice(0,10) + ' 进球';
+  document.getElementById('resultAwayGoalsLabel').textContent = awayTeam.slice(0,10) + ' 进球';
+  
+  // Highlight selection
+  document.querySelectorAll('.result-btn').forEach(function(b) { b.classList.remove('active'); });
+  
+  var modal = new bootstrap.Modal(document.getElementById('resultModal'));
+  modal.show();
+}
+
+document.querySelectorAll('.result-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.result-btn').forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+  });
+});
+
+function submitResult() {
+  var activeBtn = document.querySelector('.result-btn.active');
+  if (!activeBtn) { alert('请选择比赛结果'); return; }
+  var winner = activeBtn.getAttribute('data-winner');
+  var homeGoals = parseInt(document.getElementById('resultHomeGoals').value) || 0;
+  var awayGoals = parseInt(document.getElementById('resultAwayGoals').value) || 0;
+  
+  fetch('/api/wc2026/result', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      match_id: currentResultMatchId,
+      winner: winner,
+      home_goals: homeGoals,
+      away_goals: awayGoals
+    })
+  }).then(function(r) { return r.json(); }).then(function(data) {
+    if (data.status === 'ok') {
+      location.reload();
+    } else {
+      alert('录入失败: ' + JSON.stringify(data));
+    }
+  }).catch(function(e) { alert('错误: ' + e); });
+}
+
+// Accuracy trend chart
+setTimeout(function() {
+  var tc = document.getElementById('chartTrend');
+  if (!tc) return;
+  fetch('/api/wc2026/stats').then(function(r){ return r.json(); }).then(function(data){
+    if (data.trend && data.trend.length > 1) {
+      var labels = data.trend.map(function(d){ return d.date.slice(5); });
+      var acc = data.trend.map(function(d){ return d.accuracy * 100; });
+      new Chart(tc, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: '准确率 %',
+            data: acc,
+            borderColor: '#22c55e',
+            backgroundColor: 'rgba(34,197,94,0.1)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 3,
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { font: {size:9}, color: '#cbd5e1' } },
+            y: { grid: { color: 'rgba(255,255,255,0.04)' }, min: 0, max: 100, ticks: { font: {size:9}, color: '#cbd5e1', callback: function(v){ return v+'%'; } } }
+          }
+        }
+      });
+    }
+  }).catch(function(e){});
+}, 1000);
+
+function refreshOdds() {
+  var btn = event.target;
+  btn.disabled = true;
+  btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> 刷新中...';
+  fetch('/api/wc2026/refresh-odds', {method:'POST'})
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      btn.innerHTML = '<i class="bi bi-check"></i> 已更新 '+data.updated+' 场';
+      setTimeout(function(){ btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> 刷新赔率'; btn.disabled = false; }, 2000);
+    })
+    .catch(function(e){ btn.innerHTML = '<i class="bi bi-exclamation-triangle"></i> 失败'; btn.disabled = false; });
+}
+</script>
+</body>
+</html>

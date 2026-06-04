@@ -24,6 +24,7 @@ data/raw/
 data/processed/
 data/xg_*.csv
 *.csv
+!run_wc_odds.csv
 !requirements*.txt
 !*.md
 !*.yml
@@ -36,6 +37,22 @@ models/
 
 # Betting results
 betting_results/
+
+# Temp/debug scripts (root level only)
+/_*.py
+/check_*.py
+/diagnose_*.py
+/test_*.py
+/epl_focus.py
+/predict.py
+/run_*.py
+/fetch_all_xg.py
+
+# Database
+*.db
+
+# CatBoost info
+catboost_info/
 
 # Environment
 .env

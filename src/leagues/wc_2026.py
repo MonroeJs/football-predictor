@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.leagues.base import BaseLeague
 from src.leagues import register
 from src.wc_predictor import WCPredictor, TEAM_ELO
-from src.group_probs import calc_all_groups, GROUPS
+from src.group_probs import calc_all_groups, calc_full_tournament, GROUPS
 
 
 @register
@@ -85,10 +85,37 @@ class WC2026League(BaseLeague):
             'teams_by_group': GROUPS,
         }
 
+    def get_tournament_probs(self) -> Optional[dict]:
+        """完整赛事概率（夺冠 + 各轮次晋级）
+        使用缓存，后台预热完成前返回 None（页面不显示淘汰赛标签）。
+        """
+        try:
+            from src.group_probs import TOURNEY_CACHE
+            if not TOURNEY_CACHE:
+                return None
+            from src.group_probs import calc_full_tournament
+            return calc_full_tournament()
+        except Exception as e:
+            print(f'Tournament probs error: {e}')
+            return None
+
     def get_info(self) -> dict:
         info = super().get_info()
         info['groups'] = list(GROUPS.keys())
+        # 夺冠热门（仅缓存就绪时）
+        try:
+            from src.group_probs import TOURNEY_CACHE
+            if TOURNEY_CACHE:
+                top5 = sorted(TOURNEY_CACHE['champion_probs'].items(),
+                             key=lambda x: x[1], reverse=True)[:5]
+                info['favorites'] = [{'team': t, 'prob': f'{p*100:.1f}%'}
+                                    for t, p in top5]
+        except:
+            pass
         info['team_elo'] = {k: v for k, v in TEAM_ELO.items()
                            if k not in ['Czechia', 'Bosnia', 'Sweden', 'Turkey',
                                         'DR Congo', 'Iraq']}
         return info
+
+    def _serialize_predictions(self, predictions):
+        return predictions
