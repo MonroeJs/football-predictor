@@ -76,9 +76,26 @@ def standardize_new_format(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def download_csv(url: str, label: str = '') -> pd.DataFrame:
-    """下载 CSV 并返回 DataFrame"""
+    """下载 CSV 并返回 DataFrame
+    自动处理 SSL 错误，降级到 verify=False
+    """
     import requests
-    r = requests.get(url, timeout=30)
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    
+    try:
+        r = requests.get(url, timeout=30, verify=True)
+    except (requests.exceptions.SSLError, requests.exceptions.ConnectionError) as e:
+        print(f'  [{label}] SSL error, retrying without verify: {e}')
+        try:
+            r = requests.get(url, timeout=30, verify=False)
+        except Exception as e2:
+            print(f'  [{label}] download failed: {e2}')
+            return pd.DataFrame()
+    except Exception as e:
+        print(f'  [{label}] download failed: {e}')
+        return pd.DataFrame()
+    
     if r.status_code != 200:
         print(f'  [{label}] download failed: {r.status_code}')
         return pd.DataFrame()
