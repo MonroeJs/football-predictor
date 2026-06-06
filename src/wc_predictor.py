@@ -296,7 +296,37 @@ class WCPredictor:
         
         fav_odds_val = odds[max_outcome]
         
-        # 价值差异：独立模型 vs 市场
+        # ── 阈值 ──
+        MIN_ODDS = 1.3
+        MIN_VALUE_DIFF = 0.02
+        
+        # ── 让球盘分析（从 h2h 推导 -0.5 理论盘口）──
+        raw_implied = {k: 1.0 / max(odds[k], 1.01) for k in odds}
+        raw_sum = sum(raw_implied.values())
+        fair_probs = {k: raw_implied[k] / raw_sum for k in odds}
+        
+        mkt_hcp_h = fair_probs['H'] / (fair_probs['H'] + fair_probs['A']) if (fair_probs['H'] + fair_probs['A']) > 0 else 0.5
+        mkt_hcp_a = fair_probs['A'] / (fair_probs['H'] + fair_probs['A']) if (fair_probs['H'] + fair_probs['A']) > 0 else 0.5
+        hcp_h_odds = 1.0 / mkt_hcp_h if mkt_hcp_h > 0 else 0
+        hcp_a_odds = 1.0 / mkt_hcp_a if mkt_hcp_a > 0 else 0
+        
+        ind_hcp_h = indep['hcp_h']
+        ind_hcp_a = indep['hcp_a']
+        
+        hcp_pick_h = mkt_hcp_h >= 0.5
+        hcp_fav_odds = hcp_h_odds if hcp_pick_h else hcp_a_odds
+        hcp_mkt_prob = mkt_hcp_h if hcp_pick_h else mkt_hcp_a
+        hcp_ind_prob = ind_hcp_h if hcp_pick_h else ind_hcp_a
+        hcp_value_diff = hcp_ind_prob - hcp_mkt_prob
+        hcp_ev = (hcp_ind_prob * (hcp_fav_odds - 1) - (1 - hcp_ind_prob)) * 100
+        
+        is_hcp_value = (
+            hcp_value_diff > MIN_VALUE_DIFF
+            and hcp_ind_prob >= 0.50
+            and hcp_fav_odds >= MIN_ODDS
+        )
+        
+        # ── 胜平负价值分析 ──
         ind_predicted = max(ind_probs, key=ind_probs.get)
         ind_max_prob = ind_probs[ind_predicted]
         
@@ -308,11 +338,6 @@ class WCPredictor:
             value_diff = -(ind_max_prob + max_prob)  # 负数=不推荐
         
         # ── 推荐逻辑（方向A：价值投注）──
-        # 核心：独立模型看好的方向，市场赔率给的比我们预期高 → 有Value
-        # 不要求市场也高置信度（否则赔率太低出不了价值）
-        MIN_ODDS = 1.3  # 最低赔率，1.3以下利润空间太小
-        MIN_VALUE_DIFF = 0.02  # 最小价值差异 2%
-        
         is_value_bet = (
             value_diff > MIN_VALUE_DIFF       # 独立模型比市场更看好（价值核心）
             and max_outcome == ind_predicted  # 两套模型方向一致
@@ -363,6 +388,20 @@ class WCPredictor:
             'stake_unit': f'{int(stake/UNIT)}U' if stake > 0 else '-',
             'is_value_bet': is_value_bet,
             'value_diff': round(value_diff * 100, 1),
+            # Handicap analysis
+            'handicap': {
+                'hcp_h_odds': round(hcp_h_odds, 2),
+                'hcp_a_odds': round(hcp_a_odds, 2),
+                'mkt_hcp_h': round(mkt_hcp_h * 100, 1),
+                'mkt_hcp_a': round(mkt_hcp_a * 100, 1),
+                'ind_hcp_h': round(ind_hcp_h * 100, 1),
+                'ind_hcp_a': round(ind_hcp_a * 100, 1),
+                'is_hcp_value': is_hcp_value,
+                'hcp_value_diff': round(hcp_value_diff * 100, 1),
+                'hcp_ev': round(hcp_ev, 1),
+                'hcp_pick': 'H' if hcp_pick_h else 'A',
+                'hcp_fav_odds': round(hcp_fav_odds, 2),
+            },
             'analysis': self._get_analysis_text(home, away, max_outcome, max_prob, mkt_tier, elo_diff, is_value_bet, round(value_diff * 100, 1), ev_indep, indep, fav_odds_val),
             'analysis_data': self._get_analysis_data(home, away, max_outcome, max_prob, odds, elo_diff),
             'key_players_home': self.get_key_players(home, 4),
@@ -414,7 +453,7 @@ class WCPredictor:
 
     def _get_independent_prob(self, home: str, away: str) -> dict:
         """用 Elo + 球员评分计算独立概率（不依赖市场赔率）
-        返回归一化的 H/D/A 三路概率，总和为 1.0
+        返回归一化的 H/D/A 三路概率 + 让球概率，总和为 1.0
         """
         from src.wc_predictor import TEAM_ELO as ELO
         h_elo = ELO.get(home, 1800)
@@ -423,23 +462,29 @@ class WCPredictor:
         h_squad = self.get_team_avg_rating(home)
         a_squad = self.get_team_avg_rating(away)
         
-        # Composite strength: 70% Elo + 30% squad rating (normalized)
         h_strength = h_elo * 0.7 + h_squad * 20 * 0.3
         a_strength = a_elo * 0.7 + a_squad * 20 * 0.3
         
-        # Elo expected score for home win
         raw_h = 1.0 / (1.0 + 10 ** ((a_strength - h_strength) / 400))
         raw_a = 1.0 / (1.0 + 10 ** ((h_strength - a_strength) / 400))
-        # Draw: higher when teams are evenly matched
         strength_diff = abs(h_strength - a_strength) / max(h_strength, a_strength)
         raw_d = max(0.08, 0.28 * (1 - strength_diff * 2))
         
-        # Normalize to sum = 1.0
         total = raw_h + raw_d + raw_a
+        prob_h = raw_h / total
+        prob_d = raw_d / total
+        prob_a = raw_a / total
+        
+        # Handicap -0.5 probabilities (remove draw)
+        hcp_h = prob_h / (prob_h + prob_a) if (prob_h + prob_a) > 0 else 0.5
+        hcp_a = prob_a / (prob_h + prob_a) if (prob_h + prob_a) > 0 else 0.5
+        
         return {
-            'prob_h': round(raw_h / total, 3),
-            'prob_d': round(raw_d / total, 3),
-            'prob_a': round(raw_a / total, 3),
+            'prob_h': round(prob_h, 3),
+            'prob_d': round(prob_d, 3),
+            'prob_a': round(prob_a, 3),
+            'hcp_h': round(hcp_h, 3),  # Home -0.5 win prob
+            'hcp_a': round(hcp_a, 3),  # Away +0.5 win prob
             'strength_h': round(h_strength),
             'strength_a': round(a_strength),
         }
