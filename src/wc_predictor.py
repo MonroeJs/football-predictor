@@ -300,144 +300,128 @@ class WCPredictor:
         MIN_ODDS = 1.3
         MIN_VALUE_DIFF = 0.02
         
-        # ── 让球盘分析（从 h2h 推导 -0.5 理论盘口）──
+        # ── 公平概率（去掉庄家抽水）──
         raw_implied = {k: 1.0 / max(odds[k], 1.01) for k in odds}
         raw_sum = sum(raw_implied.values())
         fair_probs = {k: raw_implied[k] / raw_sum for k in odds}
         
-        mkt_hcp_h = fair_probs['H'] / (fair_probs['H'] + fair_probs['A']) if (fair_probs['H'] + fair_probs['A']) > 0 else 0.5
-        mkt_hcp_a = fair_probs['A'] / (fair_probs['H'] + fair_probs['A']) if (fair_probs['H'] + fair_probs['A']) > 0 else 0.5
-        hcp_h_odds = 1.0 / mkt_hcp_h if mkt_hcp_h > 0 else 0
-        hcp_a_odds = 1.0 / mkt_hcp_a if mkt_hcp_a > 0 else 0
+        # ── 所有投注选项评估 ──
+        # 选项1: 主胜 (H) - 同让球-0.5
+        # 选项2: 平局 (D)
+        # 选项3: 客胜 (A) - 同让球+0.5
+        # 选项4: 客队+0.5（客不败）= D + A
+        bet_options = []
         
-        ind_hcp_h = indep['hcp_h']
-        ind_hcp_a = indep['hcp_a']
+        # 从独立模型取概率
+        ind_h = indep['prob_h']
+        ind_d = indep['prob_d']
+        ind_a = indep['prob_a']
         
-        hcp_pick_h = mkt_hcp_h >= 0.5
-        hcp_fav_odds = hcp_h_odds if hcp_pick_h else hcp_a_odds
-        hcp_mkt_prob = mkt_hcp_h if hcp_pick_h else mkt_hcp_a
-        hcp_ind_prob = ind_hcp_h if hcp_pick_h else ind_hcp_a
-        hcp_value_diff = hcp_ind_prob - hcp_mkt_prob
-        hcp_ev = (hcp_ind_prob * (hcp_fav_odds - 1) - (1 - hcp_ind_prob)) * 100
+        options_data = [
+            {'key': 'H', 'label': f'{home} 胜 / {home}-0.5', 'odds': b365h,
+             'mkt_prob': fair_probs['H'], 'ind_prob': ind_h},
+            {'key': 'D', 'label': '平局', 'odds': b365d,
+             'mkt_prob': fair_probs['D'], 'ind_prob': ind_d},
+            {'key': 'A', 'label': f'{away} 胜 / {away}-0.5', 'odds': b365a,
+             'mkt_prob': fair_probs['A'], 'ind_prob': ind_a},
+            {'key': 'A+0.5', 'label': f'{away}+0.5 (客不败)',
+             'odds': 1.0 / (fair_probs['D'] + fair_probs['A']) if (fair_probs['D'] + fair_probs['A']) > 0 else 0,
+             'mkt_prob': fair_probs['D'] + fair_probs['A'],
+             'ind_prob': ind_d + ind_a},
+        ]
         
-        is_hcp_value = (
-            hcp_value_diff > MIN_VALUE_DIFF
-            and hcp_ind_prob >= 0.50
-            and hcp_fav_odds >= MIN_ODDS
-        )
+        for opt in options_data:
+            odds_val = opt['odds']
+            mkt_p = opt['mkt_prob']
+            ind_p = opt['ind_prob']
+            if odds_val <= 0:
+                continue
+            v_diff = ind_p - mkt_p
+            ev_p = (ind_p * (odds_val - 1) - (1 - ind_p)) * 100
+            opt['value_diff'] = round(v_diff * 100, 1)
+            opt['ev'] = round(ev_p, 1)
+            opt['is_value'] = (
+                v_diff > 0.02 and ind_p > 0.40 and odds_val >= 1.3
+            )
         
-        # ── 胜平负价值分析 ──
-        ind_predicted = max(ind_probs, key=ind_probs.get)
-        ind_max_prob = ind_probs[ind_predicted]
-        
-        # 只在我们和市场的预测方向一致时计算价值
-        if max_outcome == ind_predicted:
-            value_diff = ind_max_prob - max_prob
-        else:
-            # 独立模型和市场预测相反 — 不是价值，是分歧
-            value_diff = -(ind_max_prob + max_prob)  # 负数=不推荐
-        
-        # ── 推荐逻辑（方向A：价值投注）──
-        is_value_bet = (
-            value_diff > MIN_VALUE_DIFF       # 独立模型比市场更看好（价值核心）
-            and max_outcome == ind_predicted  # 两套模型方向一致
-            and ind_max_prob >= 0.50          # 独立模型至少有中等以上把握
-            and fav_odds_val >= MIN_ODDS      # 赔率够高才有利润空间
-        )
-        
-        # ── 投注决策 ──
-        UNIT = 10
-        
-        # 预期价值（使用独立概率）
-        ev_indep = (ind_max_prob * (fav_odds_val - 1) - (1 - ind_max_prob)) * 100
-        
-        # ── 仓位决策 ──
-        # 条件：正价值 + 有利润 + 差价够大
-        if is_value_bet and ev_indep > 1.0 and value_diff > 0.05:
-            if value_diff > 0.10:
-                stake = UNIT * 5  # 50¥   精选
-            elif value_diff > 0.07:
-                stake = UNIT * 3  # 30¥   推荐
+        # 找最佳投注选项（仅价值推荐）
+        value_options = [o for o in options_data if o['is_value']]
+        if value_options:
+            best = max(value_options, key=lambda o: o['ev'])
+            best_is_value = True
+            UNIT = 10
+            if best['ev'] > 0 and best['ev'] > 5 and abs(best['value_diff']) > 5:
+                stake = UNIT * 5
+            elif best['ev'] > 0 and best['ev'] > 3 and abs(best['value_diff']) > 3:
+                stake = UNIT * 3
+            elif best['ev'] > 0:
+                stake = UNIT * 1
             else:
-                stake = UNIT * 2  # 20¥   关注
-        elif is_value_bet and ev_indep > -2.0 and value_diff > 0.10:
-            # 边界情况：EV 略负但差价巨大
-            stake = UNIT * 1  # 10¥   小额
+                stake = 0
+            best_ev = best['ev'] if stake > 0 else 0
         else:
-            stake = 0  # 不推荐
+            best = max(options_data, key=lambda o: o['ev'])
+            best_is_value = False
+            stake = 0
+            best_ev = 0
         
-        ev_indep = round(ev_indep, 1) if stake > 0 else 0
-        
-        # ── 分级（保留市场分级用于展示）──
-        mkt_tier = get_confidence_tier(max_prob)
+        # ── 分级 ──
+        mkt_tier = get_confidence_tier(fair_probs[best['key']] if best['key'] in fair_probs else 0.5)
         
         return {
             'match': f'{home} vs {away}',
             'home': home,
             'away': away,
             'odds': odds,
-            'probs': {k: f'{v:.1%}' for k, v in mkt_probs.items()},
+            'probs': {k: f'{v:.1%}' for k, v in fair_probs.items()},
             'ind_probs': {k: f'{v:.1%}' for k, v in ind_probs.items()},
-            'predicted_outcome': max_outcome,
-            'confidence': f'{max_prob:.1%}',
-            'tier': mkt_tier.value,
-            'fav_odds': fav_odds_val,
-            'exp_value': f'{ev_indep:.1f}%' if stake > 0 else '-',
-            'elo_diff': elo_diff,
+            'best_bet': {
+                'key': best['key'],
+                'label': best['label'],
+                'odds': round(best['odds'], 2),
+                'mkt_prob': round(best['mkt_prob'] * 100, 1),
+                'ind_prob': round(best['ind_prob'] * 100, 1),
+                'value_diff': best['value_diff'],
+                'ev': best['ev'],
+                'is_value': best['is_value'],
+            },
+            'all_options': [{
+                'key': o['key'],
+                'label': o['label'],
+                'odds': round(o['odds'], 2),
+                'ev': o['ev'],
+                'value_diff': o['value_diff'],
+                'is_value': o['is_value'],
+            } for o in options_data],
             'suggested_stake': round(stake, 1),
             'stake_unit': f'{int(stake/UNIT)}U' if stake > 0 else '-',
-            'is_value_bet': is_value_bet,
-            'value_diff': round(value_diff * 100, 1),
-            # Handicap analysis
-            'handicap': {
-                'hcp_h_odds': round(hcp_h_odds, 2),
-                'hcp_a_odds': round(hcp_a_odds, 2),
-                'mkt_hcp_h': round(mkt_hcp_h * 100, 1),
-                'mkt_hcp_a': round(mkt_hcp_a * 100, 1),
-                'ind_hcp_h': round(ind_hcp_h * 100, 1),
-                'ind_hcp_a': round(ind_hcp_a * 100, 1),
-                'is_hcp_value': is_hcp_value,
-                'hcp_value_diff': round(hcp_value_diff * 100, 1),
-                'hcp_ev': round(hcp_ev, 1),
-                'hcp_pick': 'H' if hcp_pick_h else 'A',
-                'hcp_fav_odds': round(hcp_fav_odds, 2),
-            },
-            'analysis': self._get_analysis_text(home, away, max_outcome, max_prob, mkt_tier, elo_diff, is_value_bet, round(value_diff * 100, 1), ev_indep, indep, fav_odds_val),
-            'analysis_data': self._get_analysis_data(home, away, max_outcome, max_prob, odds, elo_diff),
+            'exp_value': f'{best_ev:.1f}%' if stake > 0 else '-',
+            'elo_diff': elo_diff,
+            'analysis': self._get_analysis_text(home, away, best['key'], best['mkt_prob'], mkt_tier, elo_diff, best_is_value, best['value_diff'], best_ev),
+            'analysis_data': self._get_analysis_data(home, away, best['key'], best['mkt_prob'], odds, elo_diff),
             'key_players_home': self.get_key_players(home, 4),
             'key_players_away': self.get_key_players(away, 4),
             'team_rating_home': round(self.get_team_avg_rating(home), 1),
             'team_rating_away': round(self.get_team_avg_rating(away), 1),
         }
 
-    def _get_analysis_text(self, home: str, away: str, outcome: str,
+    def _get_analysis_text(self, home: str, away: str, best_key: str,
                            prob: float, tier: ConfidenceTier, elo_diff: float,
                            is_value: bool = False, value_diff: float = 0,
-                           ev_pct: float = 0, indep: dict = None, fav_odds: float = 0) -> str:
-        """生成分析文本（含价值评估）"""
-        outcome_map = {'H': f'{home} 胜', 'D': '平局', 'A': f'{away} 胜'}
-        outcome_str = outcome_map[outcome]
+                           ev_pct: float = 0) -> str:
+        """生成分析文本"""
+        label_map = {'H': f'{home} 胜', 'D': '平局', 'A': f'{away} 胜', 'A+0.5': f'{away}+0.5'}
+        outcome_str = label_map.get(best_key, best_key)
         
-        parts = [f'预测: {outcome_str} (市场 {prob:.0%})']
+        parts = [f'推荐: {outcome_str}']
         
         if is_value and ev_pct > 0:
-            parts.append(f'[Value] 预期回报 {ev_pct:+.1f}%')
-        elif is_value:
-            parts.append('[Value] 价值发现')
-        elif tier.value in ('Max', 'Elite', 'VHigh'):
-            parts.append('[信息] 市场共识，无价值')
-        
-        # 独立模型对比
-        if indep and value_diff > 2:
-            parts.append(f'独立模型: 看好方向一致，差价+{value_diff:.0f}%')
-        elif indep and value_diff < -2:
-            parts.append(f'独立模型: 与市场分歧 {value_diff:.0f}%')
+            parts.append(f'[Value] EV {ev_pct:+.1f}%')
         
         if abs(elo_diff) > 50:
             stronger = home if elo_diff > 0 else away
             parts.append(f'Elo: {stronger} +{abs(elo_diff)}')
         
-        # 球员实力分析
         h_rating = self.get_team_avg_rating(home)
         a_rating = self.get_team_avg_rating(away)
         if h_rating > 0 and a_rating > 0:
@@ -445,9 +429,6 @@ class WCPredictor:
             if abs(diff) > 3:
                 stronger = home if diff > 0 else away
                 parts.append(f'阵容: {stronger} +{abs(diff):.0f}')
-                key_h = self.get_key_players(home, 1)
-                if key_h and key_h[0]['rating'] >= 85:
-                    parts.append(key_h[0]['name'])
     
         return ' | '.join(parts)
 
@@ -489,35 +470,31 @@ class WCPredictor:
             'strength_a': round(a_strength),
         }
 
-    def _get_analysis_data(self, home, away, outcome, prob, odds, elo_diff) -> dict:
-        """返回结构化分析数据（含独立概率对比）"""
+    def _get_analysis_data(self, home, away, best_key, prob, odds, elo_diff) -> dict:
+        """返回结构化分析数据"""
         h_rating = self.get_team_avg_rating(home)
         a_rating = self.get_team_avg_rating(away)
         indep = self._get_independent_prob(home, away)
         
-        mkt_h = prob if outcome == 'H' else (1 - prob if outcome == 'A' else prob)
-        ind_h = indep['prob_h'] if outcome == 'H' else (indep['prob_a'] if outcome == 'A' else 0.33)
-        value_diff = ind_h - mkt_h  # positive = market undervalues our pick
-        
         factors = []
         
         # Factor 1: Market odds
-        fav_odds = odds[outcome] if outcome in odds else 0
-        factors.append({
-            'label': '市场赔率',
-            'detail': f'隐含 {home if outcome=="H" else away if outcome=="A" else "平局"} {mkt_h:.0%} 胜率' + 
-                      f' (赔率 {fav_odds:.2f})' if fav_odds > 0 else '',
-            'impact': 'high',
-        })
-        
-        # Factor 2: Independent model
-        diff_pct = value_diff * 100
-        if abs(diff_pct) > 3:
-            direction = '低估' if value_diff > 0 else '高估'
+        outcome_map = {'H': home, 'D': '平局', 'A': away, 'A+0.5': f'{away}+0.5'}
+        fav_odds_val = odds.get(best_key, 0) if best_key in odds else 0
+        if fav_odds_val > 0:
             factors.append({
-                'label': '独立模型',
-                'detail': f'{direction} {abs(diff_pct):.0f}% (Elo+阵容分析)',
-                'impact': 'high' if abs(diff_pct) > 10 else 'medium',
+                'label': '市场赔率',
+                'detail': f'{outcome_map.get(best_key, best_key)} {fav_odds_val:.2f}',
+                'impact': 'high',
+            })
+        
+        # Factor 2: Elo
+        if abs(elo_diff) > 30:
+            stronger = home if elo_diff > 0 else away
+            factors.append({
+                'label': 'Elo 实力差',
+                'detail': f'{stronger} 领先 {abs(elo_diff)} 分',
+                'impact': 'medium' if abs(elo_diff) < 100 else 'high',
             })
         
         # Factor 3: Elo
@@ -540,12 +517,8 @@ class WCPredictor:
                     'impact': 'medium' if abs(diff) < 5 else 'high',
                 })
         
-        # Expected value using independent probability
-        fav_odds_val = odds.get(outcome, 0)
-        ev_indep = (ind_h * (fav_odds_val - 1) - (1 - ind_h)) * 100 if fav_odds_val > 1 else 0
-        
         return {
-            'prediction': {'H': f'{home} 胜', 'D': '平局', 'A': f'{away} 胜'}.get(outcome, '?'),
+            'prediction': '?',
             'confidence_pct': round(prob * 100, 1),
             'factors': factors,
             'team_ratings': {
@@ -553,8 +526,6 @@ class WCPredictor:
                 away: a_rating,
             },
             'independent': indep,
-            'value_diff': round(value_diff * 100, 1),
-            'ev_independent': round(ev_indep, 1),
         }
 
     def predict_2026_group_stage(self, matches: list[dict]) -> list[dict]:
