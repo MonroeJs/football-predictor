@@ -1,69 +1,21 @@
+# API keys & secrets
+.env
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
 *.egg-info/
 dist/
 build/
-*.egg
 
-# Virtual environment
-.venv/
-venv/
-env/
+# Data - raw data is versioned, but archives are not
+data/processed/
+data/archive/
+
+# Database
+*.db
 
 # IDE
 .idea/
 .vscode/
 *.swp
-*.swo
-
-# Data files (too large for git)
-data/raw/
-data/processed/
-data/xg_*.csv
-*.csv
-!run_wc_odds.csv
-!requirements*.txt
-!*.md
-!*.yml
-!*.yaml
-!*.toml
-!.gitignore
-
-# Models
-models/
-
-# Betting results
-betting_results/
-
-# Temp/debug scripts (root level only)
-/_*.py
-/check_*.py
-/diagnose_*.py
-/test_*.py
-/epl_focus.py
-/predict.py
-/run_*.py
-/fetch_all_xg.py
-
-# Database
-*.db
-
-# CatBoost info
-catboost_info/
-
-# Environment
-.env
-*.env
-
-# OS
-.DS_Store
-Thumbs.db
-
-# pytest
-.pytest_cache/
-htmlcov/
-.coverage
-coverage/
