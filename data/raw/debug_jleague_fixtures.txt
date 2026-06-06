@@ -1,0 +1,3288 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Fixtures &amp; Results All clubs | All competitions | 2026 | J.LEAGUE</title><meta name="title" content="Fixtures &amp; Results All clubs | All competitions | 2026 | J.LEAGUE"><meta name="description" content="Follow all J.LEAGUE club fixtures &amp; results of 2026 season, including J1, J2, J3 League and cup competitions on the official website of J.LEAGUE." /><link rel="preconnect" href="https://jleague.sgp1.cdn.digitaloceanspaces.com" /><link rel="manifest" href="/static/manifest.3f2819f51066.json" /><link rel="canonical" href="https://www.jleague.co/fixtures/?competition=j1&amp;year=2026" /><link rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.f435a6b5e7ad.ico" /><link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.781cebd7c677.png" /><link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.33eb614340b5.png" /><link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.df63fe267ac6.png" /><link rel="mask-icon" href="/static/icons/safari-pinned-tab.5d8da4e8d3dd.svg" color="#1A1919" /><meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1A1919"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#1A1919"><meta name="apple-mobile-web-app-title" content="J.League"><meta name="msapplication-TileImage" content="/static/icons/ms-tile-icon.e4349f983642.png"><meta name="msapplication-TileColor" content="#FFFFFF" /><meta property="og:locale" content="en_US" /><meta property="og:title" content="Fixtures &amp; Results All clubs | All competitions | 2026 | J.LEAGUE" /><meta property="og:description" content="Follow all J.LEAGUE club fixtures &amp; results of 2026 season, including J1, J2, J3 League and cup competitions on the official website of J.LEAGUE." /><meta property="og:type" content="website" /><meta property="og:url" content="https://www.jleague.co/fixtures/?competition=j1&amp;year=2026" /><meta property="og:image" content="https://www.jleague.co/static/images/og-images/default.png" /><meta property="og:image:secure_url" content="https://www.jleague.co/static/images/og-images/default.png" /><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="800" /><meta property="og:site_name" content="J.LEAGUE" /><meta property="fb:app_id" content="1590035654547971" /><meta name="facebook-domain-verification" content="4ausspvaaz6brvvdzv3tv68hbcrg5x" /><meta name="google-site-verification" content="AlLIDI4ELkmtnWODbJywL_pcwwzIWSF2v5Nsc3yElYw" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@J_League_En" /><meta name="msvalidate.01" content="02FC3C700B3216394DA25174ECC37638" /><script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "J.League",
+      "url" : "https://www.jleague.co/"
+    }
+  </script><link href="/static/css/vendor.b193ba64b4bb.css" rel="stylesheet" type="text/css" media="all" /><link href="/static/css/main.c2bb9dadc008.css" rel="stylesheet" type="text/css" media="all" /><link href="/static/css/sidebar.5413ce95f0d3.css" rel="stylesheet" type="text/css" media="all" /><link href="/static/css/fixtures-page.0e14ab22681b.css" rel="stylesheet" type="text/css" media="all" /><!-- videojs cdn --><script src="//vjs.zencdn.net/8.3.0/video.min.js"></script><link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet"><!-- End videojs cdn--><script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y5WJZ7456"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1Y5WJZ7456');
+    </script><script>
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PSW8LCFB');
+    </script><script>
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq)return;
+        n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;
+        n.push=n;
+        n.loaded=!0;
+        n.version='2.0';
+        n.queue=[];
+        t=b.createElement(e);
+        t.async=!0;
+        t.src=v;
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '3009992152602629');
+      fbq('track', 'PageView');
+    </script><script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){
+          (c[a].q=c[a].q||[]).push(arguments)
+        };
+        t=l.createElement(r);
+        t.async=1;
+        t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "dnbdjiv0fz");
+    </script></head><body class="body--sidebar no-transition no-animation lang-en template-fixtures"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSW8LCFB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3009992152602629&ev=PageView&noscript=1"/></noscript><input type="hidden" name="csrfmiddlewaretoken" value="MN4ZGT7thyeFmz8IGqGkSIGGX3lK7L9aIkq5hZgyDA2PTfyAIXwRoxGH8MFBjJJO"><header
+  class="lazy"
+  data-src="url('https://jleague-co.s3.ap-northeast-1.amazonaws.com/jleague-co/images/0531samuneiru.width-1200.format-webp-lossless.webp')"
+  style="background-image: linear-gradient(225deg, rgba(26, 25, 25, 0.85) 0%, rgba(37, 0, 0, 0.8) 100%)"
+><div class="header-teams-list"><div class="header-teams-list__body"><div class="header-teams-list__competitions"><select class="header-teams-list__competitions__selector" aria-label="J.League Competition"><option value="j1">J1</option><option value="j2">J2</option><option value="j3">J3</option></select><img
+        class="header-teams-list__competitions__icon lazy"
+        src="/static/images/icons/chevron-down-FFFFFF.1f73c6c0de13.svg"
+        width="12"
+        height="7"
+        alt=""
+        loading="lazy"
+      /></div><div class="header-teams-list__teams"></div></div></div><div class="nav-container"><div class="logo-container"><button class="search-modal-trigger" type="button"><img
+    class="lazy"
+    src="/static/images/icons/search-FFFFFF.ff3523a87427.svg"
+    alt=""
+    loading="lazy"
+  /></button><a class="logo-link" href="/" aria-label="Homepage"><img
+        class="lazy"
+        src="/static/images/logo/jleague-logo.069fe1adda10.svg"
+        width="185"
+        height="40"
+        alt="J.League Logo"
+        loading="lazy"
+      /></a><div class="mobile-menu"><button class="mobile-menu-trigger" type="button"><img class="lazy"
+    src="/static/images/icons/hamburger-FFFFFF.6b71776f5ba3.svg"
+    width="21.33"
+    height="16"
+    alt=""
+    loading="lazy"
+  /></button><div class="mobile-menu-modal d-none"><div class="logo-container"><img
+      class="lazy"
+      src="/static/images/logo/jleague-logo.069fe1adda10.svg"
+      width="185"
+      height="40"
+      alt="J.League Logo"
+      loading="lazy"
+    /><button id="mobile-menu-modal-close"><img
+        class="lazy"
+        src="/static/images/icons/cross-FFFFFF.f84a63c28536.svg"
+        width="16"
+        height="16"
+        alt=""
+        loading="lazy"
+      /></button></div><div class="moving-dot moving-dot--full-width moving-dot moving-dot--reverse"></div><div class="mobile-menu-nav"><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/
+            
+            
+            
+            aria-label="J.League Home"
+            onclick="sendSelectContentEvent('page', 'home');"
+          >
+            
+              Home
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/tickets/
+            
+            
+            
+            aria-label="J.League Tickets"
+            onclick="sendSelectContentEvent('page', 'tickets');"
+          >
+            
+              Tickets
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item active"
+            
+              href=/fixtures/
+            
+            
+            
+            aria-label="J.League Fixtures"
+            onclick="sendSelectContentEvent('page', 'fixtures');"
+          >
+            
+              Fixtures
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/standings/j1-100-year-vision/2026/
+            
+            
+            
+            aria-label="J.League Standings"
+            onclick="sendSelectContentEvent('page', 'standings');"
+          >
+            
+              Standings
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/news/
+            
+            
+            
+            aria-label="J.League News"
+            onclick="sendSelectContentEvent('page', 'news');"
+          >
+            
+              News
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/clubs/
+            
+            
+            
+            aria-label="J.League Clubs"
+            onclick="sendSelectContentEvent('page', 'clubs');"
+          >
+            
+              Clubs
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/stats/dashboard/j1-100-year-vision/2026/
+            
+            
+            
+            aria-label="J.League Stats"
+            onclick="sendSelectContentEvent('page', 'stats');"
+          >
+            
+              Stats
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href=/broadcast/
+            
+            
+            
+            aria-label="J.League Broadcast"
+            onclick="sendSelectContentEvent('page', 'broadcast');"
+          >
+            
+              Broadcast
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href="https://aboutj.jleague.jp/corporate/en/"
+            
+            
+              target="_blank"
+            
+            
+              rel="noopener"
+            
+            aria-label="J.League Coporate"
+            onclick="sendSelectContentEvent('page', 'coporate');"
+          >
+            
+              Corporate
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href="https://jleague.co/aboutj/"
+            
+            
+            
+            aria-label="J.League About"
+            onclick="sendSelectContentEvent('page', 'about');"
+          >
+            
+              About
+            
+          </a><a
+            class="no-decoration mobile-menu-nav__item"
+            
+              href="https://www.jleague.jp/"
+            
+            
+              target="_blank"
+            
+            
+              rel="noopener"
+            
+            aria-label="J.League JP"
+            onclick="sendSelectContentEvent('page', 'jp');"
+          >
+            
+              JP
+            
+          </a><!-- <a
+      class="no-decoration mobile-menu-nav__item mobile-menu-nav__item--language"
+      aria-label="Language Chooser"
+      role="button"
+    ><object type="image/svg+xml" data="/static/images/icons/internet-FFFFFF.20c975b4e633.svg" class="icon"></object><span class="current-language">
+        
+        English
+      </span><object type="image/svg+xml" data="/static/images/icons/chevron-down-thick-FFFFFF.325c61eeb666.svg" class="arrow"></object></a><ul class="language-choices"><li
+      class="language-choice language-choice--selected"
+      data-value="en"
+      role="button"
+    >
+      English
+    </li><li
+      class="language-choice"
+      data-value="id"
+      role="button"
+    >
+      Bahasa Indonesia
+    </li><li
+      class="language-choice"
+      data-value="th"
+      role="button"
+    >
+      ภาษาไทย
+    </li><li
+      class="language-choice"
+      data-value="vi"
+      role="button"
+    >
+      Tiếng Việt
+    </li><form action="/i18n/setlang/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MN4ZGT7thyeFmz8IGqGkSIGGX3lK7L9aIkq5hZgyDA2PTfyAIXwRoxGH8MFBjJJO"><input name="language" type="hidden" value="en"></form></ul>
+ --></div><div class="moving-dot moving-dot--bottom"></div></div></div></div><nav class="navbar" data-menu><button class="search-modal-trigger" type="button"><img
+    class="lazy"
+    src="/static/images/icons/search-FFFFFF.ff3523a87427.svg"
+    alt=""
+    loading="lazy"
+  /></button><a
+            class="no-decoration navbar-item"
+            
+              href=/
+            
+            
+            
+            aria-label="J.League Home"
+            onclick="sendSelectContentEvent('page', 'home');"
+          >
+            
+              Home
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href=/tickets/
+            
+            
+            
+            aria-label="J.League Tickets"
+            onclick="sendSelectContentEvent('page', 'tickets');"
+          >
+            
+              Tickets
+            
+            
+          </a><a
+            class="no-decoration navbar-item active"
+            
+              href=/fixtures/
+            
+            
+            
+            aria-label="J.League Fixtures"
+            onclick="sendSelectContentEvent('page', 'fixtures');"
+          >
+            
+              Fixtures
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href=/standings/j1-100-year-vision/2026/
+            
+            
+            
+            aria-label="J.League Standings"
+            onclick="sendSelectContentEvent('page', 'standings');"
+          >
+            
+              Standings
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href=/news/
+            
+            
+            
+            aria-label="J.League News"
+            onclick="sendSelectContentEvent('page', 'news');"
+          >
+            
+              News
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href=/clubs/
+            
+            
+            
+            aria-label="J.League Clubs"
+            onclick="sendSelectContentEvent('page', 'clubs');"
+          >
+            
+              Clubs
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href=/stats/dashboard/j1-100-year-vision/2026/
+            
+            
+            
+            aria-label="J.League Stats"
+            onclick="sendSelectContentEvent('page', 'stats');"
+          >
+            
+              Stats
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href=/broadcast/
+            
+            
+            
+            aria-label="J.League Broadcast"
+            onclick="sendSelectContentEvent('page', 'broadcast');"
+          >
+            
+              Broadcast
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href="https://aboutj.jleague.jp/corporate/en/"
+            
+            
+              target="_blank"
+            
+            
+              rel="noopener"
+            
+            aria-label="J.League Coporate"
+            onclick="sendSelectContentEvent('page', 'coporate');"
+          >
+            
+              Corporate
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href="https://jleague.co/aboutj/"
+            
+            
+            
+            aria-label="J.League About"
+            onclick="sendSelectContentEvent('page', 'about');"
+          >
+            
+              About
+            
+            
+          </a><a
+            class="no-decoration navbar-item"
+            
+              href="https://www.jleague.jp/"
+            
+            
+              target="_blank"
+            
+            
+              rel="noopener"
+            
+            aria-label="J.League JP"
+            onclick="sendSelectContentEvent('page', 'jp');"
+          >
+            
+              JP
+            
+            
+            <img
+            class="lazy flag-icon"
+            src="/static/images/flags/jp_flag.e7eab6eb2128.png"
+            alt="jp-flag"
+            loading="lazy"
+          /></a><!-- <div class="language-chooser"><button type="button" class="language-button"><object type="image/svg+xml" data="/static/images/icons/internet-FFFFFF.20c975b4e633.svg" class="icon"></object><span class="current-language">
+    
+    English
+  </span><object type="image/svg+xml" data="/static/images/icons/chevron-down-thick-FFFFFF.325c61eeb666.svg" class="arrow"></object></button><ul class="language-choices"><li
+      class="language-choice language-choice--selected"
+      data-value="en"
+      role="button"
+    >
+      English
+    </li><li
+      class="language-choice"
+      data-value="id"
+      role="button"
+    >
+      Bahasa Indonesia
+    </li><li
+      class="language-choice"
+      data-value="th"
+      role="button"
+    >
+      ภาษาไทย
+    </li><li
+      class="language-choice"
+      data-value="vi"
+      role="button"
+    >
+      Tiếng Việt
+    </li><form action="/i18n/setlang/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MN4ZGT7thyeFmz8IGqGkSIGGX3lK7L9aIkq5hZgyDA2PTfyAIXwRoxGH8MFBjJJO"><input name="language" type="hidden" value="en"></form></ul></div>
+ --><div class="more-menu"><button class="more-menu-trigger"><span class="more-menu-trigger__label">
+    More
+  </span><object
+    class="more-menu-trigger__arrow"
+    data="/static/images/icons/chevron-down-thick-FFFFFF.325c61eeb666.svg"
+    type="image/svg+xml"
+  ></object></button><div class="more-menu-modal"><div class="moving-dot moving-dot--full-width moving-dot--reverse"></div><div class="more-menu-nav"><a
+            class="no-decoration more-menu-nav__item"
+            
+              href=/stats/dashboard/j1-100-year-vision/2026/
+            
+            
+            
+            aria-label="J.League Stats"
+            onclick="sendSelectContentEvent('page', 'stats');"
+          >
+            
+              Stats
+            
+          </a><a
+            class="no-decoration more-menu-nav__item"
+            
+              href=/broadcast/
+            
+            
+            
+            aria-label="J.League Broadcast"
+            onclick="sendSelectContentEvent('page', 'broadcast');"
+          >
+            
+              Broadcast
+            
+          </a><a
+            class="no-decoration more-menu-nav__item"
+            
+              href="https://aboutj.jleague.jp/corporate/en/"
+            
+            
+              target="_blank"
+            
+            
+              rel="noopener"
+            
+            aria-label="J.League Corporate"
+            onclick="sendSelectContentEvent('page', 'corporate');"
+          >
+            
+              Corporate
+            
+          </a><a
+            class="no-decoration more-menu-nav__item"
+            
+              href="https://jleague.co/aboutj/"
+            
+            
+            
+            aria-label="J.League About"
+            onclick="sendSelectContentEvent('page', 'about');"
+          >
+            
+              About
+            
+          </a><a
+            class="no-decoration more-menu-nav__item"
+            
+              href="https://www.jleague.jp"
+            
+            
+              target="_blank"
+            
+            
+              rel="noopener"
+            
+            aria-label="J.League JP"
+            onclick="sendSelectContentEvent('page', 'jp');"
+          >
+            
+              JP
+            
+          </a><a
+      class="no-decoration more-menu-nav__item more-menu-nav__item--language"
+      aria-label="Language Chooser"
+      role="button"
+    ><object type="image/svg+xml" data="/static/images/icons/internet-FFFFFF.20c975b4e633.svg" class="icon"></object><span class="current-language">
+        
+        English
+      </span><object type="image/svg+xml" data="/static/images/icons/chevron-down-thick-FFFFFF.325c61eeb666.svg" class="arrow"></object></a><ul class="language-choices"><li
+      class="language-choice language-choice--selected"
+      data-value="en"
+      role="button"
+    >
+      English
+    </li><li
+      class="language-choice"
+      data-value="id"
+      role="button"
+    >
+      Bahasa Indonesia
+    </li><li
+      class="language-choice"
+      data-value="th"
+      role="button"
+    >
+      ภาษาไทย
+    </li><li
+      class="language-choice"
+      data-value="vi"
+      role="button"
+    >
+      Tiếng Việt
+    </li><form action="/i18n/setlang/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MN4ZGT7thyeFmz8IGqGkSIGGX3lK7L9aIkq5hZgyDA2PTfyAIXwRoxGH8MFBjJJO"><input name="language" type="hidden" value="en"></form></ul></div><div class="moving-dot moving-dot--bottom"></div></div></div></nav><div class="search-modal"><div class="search-modal__backdrop"></div><div class="search-modal__window"><div class="search-content"><div class="search-content__header"><div class="search-form"><div class="search-field"><div class="search-field__icon"><img
+                class="lazy"
+                src="/static/images/icons/search-6B5B52.c1b16f393ad8.svg"
+                alt=""
+                loading="lazy"
+              /></div><input
+              type="text"
+              class="search-field__input"
+              placeholder="Search"
+            /><button type="button" class="search-field__clear d-none"><img
+                class="lazy"
+                src="/static/images/icons/cross-646A78.4ec9de28a0bf.svg"
+                alt=""
+                loading="lazy"
+              /></button></div></div><div class="search-control"><button type="button" class="search-field__cancel">
+            Cancel
+          </button></div></div><div class="search-content__body"><div class="search-result"></div></div></div></div></div></div><div class="content-container"><h1 class="header-title">
+    
+      FIXTURES &amp; RESULTS
+    
+  </h1></div></header><main class="content-container fixtures"><div class="fixtures__header"><div class="swiper competitions-list competition-selector"><!-- <div class="swiper competitions-list competition-selector "> --><div class="swiper-wrapper"><a
+        class="swiper-slide competitions-list__item competitions-list__item--selected"
+        
+          href="/fixtures/"
+        
+        data-slug="all"
+        
+        style="width: fit-content"
+      ><span class="competition-name">
+          
+            All
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j1-100-year-vision/2026/latest/"
+        
+        data-slug="j1-100-year-vision"
+        
+          onclick="sendSearchEvent('fixture', 'j1-100-year-vision:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j1-100-year-vision competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1-100-year-vision_compact.svg"
+        
+        alt="competition-logo-j1-100-year-vision"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            MEIJI YASUDA J1 100 YEAR VISION LEAGUE
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j2j3-100-year-vision/2026/latest/"
+        
+        data-slug="j2j3-100-year-vision"
+        
+          onclick="sendSearchEvent('fixture', 'j2j3-100-year-vision:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j2j3-100-year-vision competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2j3-100-year-vision_compact.svg"
+        
+        alt="competition-logo-j2j3-100-year-vision"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            MEIJI YASUDA J2/J3 100 YEAR VISION LEAGUE
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/acle/2026/latest/"
+        
+        data-slug="acle"
+        
+          onclick="sendSearchEvent('fixture', 'acle:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--acle competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/acle_2026_compact.svg"
+        
+        alt="competition-logo-acle"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            AFC Champions League Elite
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/acl2/2026/latest/"
+        
+        data-slug="acl2"
+        
+          onclick="sendSearchEvent('fixture', 'acl2:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--acl2 competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/acl2_2026_compact.svg"
+        
+        alt="competition-logo-acl2"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            AFC Champions League Two
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j1/2026/latest/"
+        
+        data-slug="j1"
+        
+          onclick="sendSearchEvent('fixture', 'j1:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j1 competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1_compact.svg"
+        
+        alt="competition-logo-j1"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            J1 League
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j2/2026/latest/"
+        
+        data-slug="j2"
+        
+          onclick="sendSearchEvent('fixture', 'j2:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j2 competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2_compact.svg"
+        
+        alt="competition-logo-j2"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            J2 League
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j3/2026/latest/"
+        
+        data-slug="j3"
+        
+          onclick="sendSearchEvent('fixture', 'j3:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j3 competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j3_compact.svg"
+        
+        alt="competition-logo-j3"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            J3 League
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/levain/2026/latest/"
+        
+        data-slug="levain"
+        
+          onclick="sendSearchEvent('fixture', 'levain:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--levain competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/levain_2026_compact.svg"
+        
+        alt="competition-logo-levain"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            Levain Cup
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/ffsc/2026/latest/"
+        
+        data-slug="ffsc"
+        
+          onclick="sendSearchEvent('fixture', 'ffsc:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--ffsc competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/ffsc_2026_compact.svg"
+        
+        alt="competition-logo-ffsc"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            Fujifilm Super Cup
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j1-promotion-play-offs/2026/latest/"
+        
+        data-slug="j1-promotion-play-offs"
+        
+          onclick="sendSearchEvent('fixture', 'j1-promotion-play-offs:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j1-promotion-play-offs competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1-promotion-play-offs_compact.svg"
+        
+        alt="competition-logo-j1-promotion-play-offs"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            MEIJI YASUDA J1 Promotion Play-Offs 2025
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j2-promotion-play-off/2026/latest/"
+        
+        data-slug="j2-promotion-play-off"
+        
+          onclick="sendSearchEvent('fixture', 'j2-promotion-play-off:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j2-promotion-play-off competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2-promotion-play-off_compact.svg"
+        
+        alt="competition-logo-j2-promotion-play-off"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            MEIJI YASUDA J2 Promotion Play-Offs 2025
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/j3-jfl-replace/2026/latest/"
+        
+        data-slug="j3-jfl-replace"
+        
+          onclick="sendSearchEvent('fixture', 'j3-jfl-replace:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--j3-jfl-replace competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j3-jfl-replace_compact.svg"
+        
+        alt="competition-logo-j3-jfl-replace"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            J3/JFL PLAY-OFFS
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/cwc/2026/latest/"
+        
+        data-slug="cwc"
+        
+          onclick="sendSearchEvent('fixture', 'cwc:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--cwc competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/cwc_compact.svg"
+        
+        alt="competition-logo-cwc"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            Club World Cup
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/asia-challenge/2026/latest/"
+        
+        data-slug="asia-challenge"
+        
+          onclick="sendSearchEvent('fixture', 'asia-challenge:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--asia-challenge competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/asia-challenge_compact.svg"
+        
+        alt="competition-logo-asia-challenge"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            Asia Challenge
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/jwc/2026/latest/"
+        
+        data-slug="jwc"
+        
+          onclick="sendSearchEvent('fixture', 'jwc:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--jwc competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/jwc_2026_compact.svg"
+        
+        alt="competition-logo-jwc"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            J.LEAGUE WORLD CHALLENGE
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/friendly-match/2026/latest/"
+        
+        data-slug="friendly-match"
+        
+          onclick="sendSearchEvent('fixture', 'friendly-match:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--friendly-match competition-logo--small competition-logo--compact"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/friendly-match_compact.svg"
+        
+        alt="competition-logo-friendly-match"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            Club Friendly
+          
+        </span></a><a
+        class="swiper-slide competitions-list__item"
+        
+          href="/fixtures/jis-academy-match/2026/latest/"
+        
+        data-slug="jis-academy-match"
+        
+          onclick="sendSearchEvent('fixture', 'jis-academy-match:2026:latest');"
+        
+        style="width: fit-content"
+      ><div class="competition-logo competition-logo--jis-academy-match competition-logo--small competition-logo--compact" style="width: 50px;"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/jis-academy-match_compact.svg"
+        
+        alt="competition-logo-jis-academy-match"
+        loading="lazy"
+      /></div><span class="competition-name">
+          
+            JIS Academy Match
+          
+        </span></a></div></div><div class="selector-form"><div class="dropdown"><select class="dropdown__selector fixture-year-selector" aria-label="Year selector"><option value="2026" selected>
+  
+    
+      
+        2026
+      
+    
+  </option><option value="2025">
+  
+    
+      
+        2025
+      
+    
+  </option><option value="2024">
+  
+    
+      
+        2024
+      
+    
+  </option></select></div><div class="dropdown"><select class="dropdown__selector fixture-month-selector" aria-label="Month selector"><option value="all">
+  
+    
+      
+        All
+      
+    
+  </option><option value="latest" selected>
+  
+    
+      
+        Latest
+      
+    
+  </option><option value="01">
+  
+    
+      
+        January
+      
+    
+  </option><option value="02">
+  
+    
+      
+        February
+      
+    
+  </option><option value="03">
+  
+    
+      
+        March
+      
+    
+  </option><option value="04">
+  
+    
+      
+        April
+      
+    
+  </option><option value="05">
+  
+    
+      
+        May
+      
+    
+  </option><option value="06">
+  
+    
+      
+        June
+      
+    
+  </option><option value="07">
+  
+    
+      
+        July
+      
+    
+  </option><option value="08">
+  
+    
+      
+        August
+      
+    
+  </option><option value="09">
+  
+    
+      
+        September
+      
+    
+  </option><option value="10">
+  
+    
+      
+        October
+      
+    
+  </option><option value="11">
+  
+    
+      
+        November
+      
+    
+  </option><option value="12">
+  
+    
+      
+        December
+      
+    
+  </option></select></div><div class="dropdown"><select class="dropdown__selector fixture-club-selector" aria-label="Club selector"><option value="all" selected>
+      
+        
+          All Clubs
+        
+      </option><optgroup label="MEIJI YASUDA J1 100 YEAR VISION LEAGUE"><option value="kashima">
+  
+    
+      
+        Kashima Antlers
+      
+    
+  </option><option value="kashima">
+  
+    
+      
+        Kashima Antlers
+      
+    
+  </option><option value="mito">
+  
+    
+      
+        Mito Hollyhock
+      
+    
+  </option><option value="mito">
+  
+    
+      
+        Mito Hollyhock
+      
+    
+  </option><option value="urawa">
+  
+    
+      
+        Urawa Reds
+      
+    
+  </option><option value="urawa">
+  
+    
+      
+        Urawa Reds
+      
+    
+  </option><option value="chiba">
+  
+    
+      
+        JEF United Chiba
+      
+    
+  </option><option value="chiba">
+  
+    
+      
+        JEF United Chiba
+      
+    
+  </option><option value="kashiwa">
+  
+    
+      
+        Kashiwa Reysol
+      
+    
+  </option><option value="kashiwa">
+  
+    
+      
+        Kashiwa Reysol
+      
+    
+  </option><option value="ftokyo">
+  
+    
+      
+        FC TOKYO
+      
+    
+  </option><option value="ftokyo">
+  
+    
+      
+        FC TOKYO
+      
+    
+  </option><option value="tokyov">
+  
+    
+      
+        Tokyo Verdy
+      
+    
+  </option><option value="tokyov">
+  
+    
+      
+        Tokyo Verdy
+      
+    
+  </option><option value="machida">
+  
+    
+      
+        FC Machida Zelvia
+      
+    
+  </option><option value="machida">
+  
+    
+      
+        FC Machida Zelvia
+      
+    
+  </option><option value="kawasakif">
+  
+    
+      
+        Kawasaki Frontale
+      
+    
+  </option><option value="kawasakif">
+  
+    
+      
+        Kawasaki Frontale
+      
+    
+  </option><option value="yokohamafm">
+  
+    
+      
+        Yokohama F･Marinos
+      
+    
+  </option><option value="yokohamafm">
+  
+    
+      
+        Yokohama F･Marinos
+      
+    
+  </option><option value="shimizu">
+  
+    
+      
+        Shimizu S-Pulse
+      
+    
+  </option><option value="shimizu">
+  
+    
+      
+        Shimizu S-Pulse
+      
+    
+  </option><option value="nagoya">
+  
+    
+      
+        Nagoya Grampus
+      
+    
+  </option><option value="nagoya">
+  
+    
+      
+        Nagoya Grampus
+      
+    
+  </option><option value="kyoto">
+  
+    
+      
+        Kyoto Sanga F.C.
+      
+    
+  </option><option value="kyoto">
+  
+    
+      
+        Kyoto Sanga F.C.
+      
+    
+  </option><option value="gosaka">
+  
+    
+      
+        Gamba Osaka
+      
+    
+  </option><option value="gosaka">
+  
+    
+      
+        Gamba Osaka
+      
+    
+  </option><option value="cosaka">
+  
+    
+      
+        Cerezo Osaka
+      
+    
+  </option><option value="cosaka">
+  
+    
+      
+        Cerezo Osaka
+      
+    
+  </option><option value="kobe">
+  
+    
+      
+        Vissel Kobe
+      
+    
+  </option><option value="kobe">
+  
+    
+      
+        Vissel Kobe
+      
+    
+  </option><option value="okayama">
+  
+    
+      
+        Fagiano Okayama
+      
+    
+  </option><option value="okayama">
+  
+    
+      
+        Fagiano Okayama
+      
+    
+  </option><option value="hiroshima">
+  
+    
+      
+        Sanfrecce Hiroshima
+      
+    
+  </option><option value="hiroshima">
+  
+    
+      
+        Sanfrecce Hiroshima
+      
+    
+  </option><option value="fukuoka">
+  
+    
+      
+        Avispa Fukuoka
+      
+    
+  </option><option value="fukuoka">
+  
+    
+      
+        Avispa Fukuoka
+      
+    
+  </option><option value="nagasaki">
+  
+    
+      
+        V-Varen Nagasaki
+      
+    
+  </option><option value="nagasaki">
+  
+    
+      
+        V-Varen Nagasaki
+      
+    
+  </option></optgroup><optgroup label="MEIJI YASUDA J2/J3 100 YEAR VISION LEAGUE"><option value="sapporo">
+  
+    
+      
+        Hokkaido Consadole Sapporo
+      
+    
+  </option><option value="sapporo">
+  
+    
+      
+        Hokkaido Consadole Sapporo
+      
+    
+  </option><option value="hachinohe">
+  
+    
+      
+        Vanraure Hachinohe
+      
+    
+  </option><option value="hachinohe">
+  
+    
+      
+        Vanraure Hachinohe
+      
+    
+  </option><option value="sendai">
+  
+    
+      
+        Vegalta Sendai
+      
+    
+  </option><option value="sendai">
+  
+    
+      
+        Vegalta Sendai
+      
+    
+  </option><option value="akita">
+  
+    
+      
+        Blaublitz Akita
+      
+    
+  </option><option value="akita">
+  
+    
+      
+        Blaublitz Akita
+      
+    
+  </option><option value="yamagata">
+  
+    
+      
+        Montedio Yamagata
+      
+    
+  </option><option value="yamagata">
+  
+    
+      
+        Montedio Yamagata
+      
+    
+  </option><option value="fukushima">
+  
+    
+      
+        Fukushima United FC
+      
+    
+  </option><option value="fukushima">
+  
+    
+      
+        Fukushima United FC
+      
+    
+  </option><option value="iwaki">
+  
+    
+      
+        Iwaki FC
+      
+    
+  </option><option value="iwaki">
+  
+    
+      
+        Iwaki FC
+      
+    
+  </option><option value="tochigi">
+  
+    
+      
+        Tochigi SC
+      
+    
+  </option><option value="tochigi">
+  
+    
+      
+        Tochigi SC
+      
+    
+  </option><option value="tochigi-city">
+  
+    
+      
+        TOCHIGI CITY
+      
+    
+  </option><option value="tochigi-city">
+  
+    
+      
+        TOCHIGI CITY
+      
+    
+  </option><option value="gunma">
+  
+    
+      
+        Thespa Gunma
+      
+    
+  </option><option value="gunma">
+  
+    
+      
+        Thespa Gunma
+      
+    
+  </option><option value="omiya">
+  
+    
+      
+        RB Omiya Ardija	
+      
+    
+  </option><option value="omiya">
+  
+    
+      
+        RB Omiya Ardija	
+      
+    
+  </option><option value="yokohamafc">
+  
+    
+      
+        Yokohama FC
+      
+    
+  </option><option value="yokohamafc">
+  
+    
+      
+        Yokohama FC
+      
+    
+  </option><option value="shonan">
+  
+    
+      
+        Shonan Bellmare
+      
+    
+  </option><option value="shonan">
+  
+    
+      
+        Shonan Bellmare
+      
+    
+  </option><option value="sagamihara">
+  
+    
+      
+        S.C. Sagamihara
+      
+    
+  </option><option value="sagamihara">
+  
+    
+      
+        S.C. Sagamihara
+      
+    
+  </option><option value="kofu">
+  
+    
+      
+        Ventforet Kofu
+      
+    
+  </option><option value="kofu">
+  
+    
+      
+        Ventforet Kofu
+      
+    
+  </option><option value="matsumoto">
+  
+    
+      
+        Matsumoto Yamaga F.C.
+      
+    
+  </option><option value="matsumoto">
+  
+    
+      
+        Matsumoto Yamaga F.C.
+      
+    
+  </option><option value="nagano">
+  
+    
+      
+        AC Nagano Parceiro
+      
+    
+  </option><option value="nagano">
+  
+    
+      
+        AC Nagano Parceiro
+      
+    
+  </option><option value="niigata">
+  
+    
+      
+        Albirex Niigata
+      
+    
+  </option><option value="niigata">
+  
+    
+      
+        Albirex Niigata
+      
+    
+  </option><option value="toyama">
+  
+    
+      
+        Kataller Toyama
+      
+    
+  </option><option value="toyama">
+  
+    
+      
+        Kataller Toyama
+      
+    
+  </option><option value="kanazawa">
+  
+    
+      
+        Zweigen Kanazawa
+      
+    
+  </option><option value="kanazawa">
+  
+    
+      
+        Zweigen Kanazawa
+      
+    
+  </option><option value="iwata">
+  
+    
+      
+        Júbilo Iwata
+      
+    
+  </option><option value="iwata">
+  
+    
+      
+        Júbilo Iwata
+      
+    
+  </option><option value="fujieda">
+  
+    
+      
+        Fujieda MYFC
+      
+    
+  </option><option value="fujieda">
+  
+    
+      
+        Fujieda MYFC
+      
+    
+  </option><option value="gifu">
+  
+    
+      
+        FC Gifu
+      
+    
+  </option><option value="gifu">
+  
+    
+      
+        FC Gifu
+      
+    
+  </option><option value="shiga">
+  
+    
+      
+        Reilac Shiga FC
+      
+    
+  </option><option value="shiga">
+  
+    
+      
+        Reilac Shiga FC
+      
+    
+  </option><option value="fosaka">
+  
+    
+      
+        FC Osaka
+      
+    
+  </option><option value="fosaka">
+  
+    
+      
+        FC Osaka
+      
+    
+  </option><option value="nara">
+  
+    
+      
+        Nara Club
+      
+    
+  </option><option value="nara">
+  
+    
+      
+        Nara Club
+      
+    
+  </option><option value="tottori">
+  
+    
+      
+        Gainare Tottori
+      
+    
+  </option><option value="tottori">
+  
+    
+      
+        Gainare Tottori
+      
+    
+  </option><option value="yamaguchi">
+  
+    
+      
+        Renofa Yamaguchi FC
+      
+    
+  </option><option value="yamaguchi">
+  
+    
+      
+        Renofa Yamaguchi FC
+      
+    
+  </option><option value="sanuki">
+  
+    
+      
+        Kamatamare Sanuki
+      
+    
+  </option><option value="sanuki">
+  
+    
+      
+        Kamatamare Sanuki
+      
+    
+  </option><option value="tokushima">
+  
+    
+      
+        Tokushima Vortis
+      
+    
+  </option><option value="tokushima">
+  
+    
+      
+        Tokushima Vortis
+      
+    
+  </option><option value="ehime">
+  
+    
+      
+        Ehime FC
+      
+    
+  </option><option value="ehime">
+  
+    
+      
+        Ehime FC
+      
+    
+  </option><option value="imabari">
+  
+    
+      
+        FC Imabari
+      
+    
+  </option><option value="imabari">
+  
+    
+      
+        FC Imabari
+      
+    
+  </option><option value="kochi">
+  
+    
+      
+        Kochi United SC
+      
+    
+  </option><option value="kochi">
+  
+    
+      
+        Kochi United SC
+      
+    
+  </option><option value="kitakyushu">
+  
+    
+      
+        Giravanz Kitakyushu
+      
+    
+  </option><option value="kitakyushu">
+  
+    
+      
+        Giravanz Kitakyushu
+      
+    
+  </option><option value="tosu">
+  
+    
+      
+        Sagan Tosu
+      
+    
+  </option><option value="tosu">
+  
+    
+      
+        Sagan Tosu
+      
+    
+  </option><option value="kumamoto">
+  
+    
+      
+        Roasso Kumamoto
+      
+    
+  </option><option value="kumamoto">
+  
+    
+      
+        Roasso Kumamoto
+      
+    
+  </option><option value="oita">
+  
+    
+      
+        Oita Trinita
+      
+    
+  </option><option value="oita">
+  
+    
+      
+        Oita Trinita
+      
+    
+  </option><option value="miyazaki">
+  
+    
+      
+        Tegevajaro Miyazaki
+      
+    
+  </option><option value="miyazaki">
+  
+    
+      
+        Tegevajaro Miyazaki
+      
+    
+  </option><option value="kagoshima">
+  
+    
+      
+        Kagoshima United FC
+      
+    
+  </option><option value="kagoshima">
+  
+    
+      
+        Kagoshima United FC
+      
+    
+  </option><option value="ryukyu">
+  
+    
+      
+        FC RYUKYU
+      
+    
+  </option><option value="ryukyu">
+  
+    
+      
+        FC RYUKYU
+      
+    
+  </option></optgroup><optgroup label="J1"><option value="kashima">
+  
+    
+      
+        Kashima Antlers
+      
+    
+  </option><option value="mito">
+  
+    
+      
+        Mito Hollyhock
+      
+    
+  </option><option value="urawa">
+  
+    
+      
+        Urawa Reds
+      
+    
+  </option><option value="chiba">
+  
+    
+      
+        JEF United Chiba
+      
+    
+  </option><option value="kashiwa">
+  
+    
+      
+        Kashiwa Reysol
+      
+    
+  </option><option value="ftokyo">
+  
+    
+      
+        FC TOKYO
+      
+    
+  </option><option value="tokyov">
+  
+    
+      
+        Tokyo Verdy
+      
+    
+  </option><option value="machida">
+  
+    
+      
+        FC Machida Zelvia
+      
+    
+  </option><option value="kawasakif">
+  
+    
+      
+        Kawasaki Frontale
+      
+    
+  </option><option value="yokohamafm">
+  
+    
+      
+        Yokohama F･Marinos
+      
+    
+  </option><option value="shimizu">
+  
+    
+      
+        Shimizu S-Pulse
+      
+    
+  </option><option value="nagoya">
+  
+    
+      
+        Nagoya Grampus
+      
+    
+  </option><option value="kyoto">
+  
+    
+      
+        Kyoto Sanga F.C.
+      
+    
+  </option><option value="gosaka">
+  
+    
+      
+        Gamba Osaka
+      
+    
+  </option><option value="cosaka">
+  
+    
+      
+        Cerezo Osaka
+      
+    
+  </option><option value="kobe">
+  
+    
+      
+        Vissel Kobe
+      
+    
+  </option><option value="okayama">
+  
+    
+      
+        Fagiano Okayama
+      
+    
+  </option><option value="hiroshima">
+  
+    
+      
+        Sanfrecce Hiroshima
+      
+    
+  </option><option value="fukuoka">
+  
+    
+      
+        Avispa Fukuoka
+      
+    
+  </option><option value="nagasaki">
+  
+    
+      
+        V-Varen Nagasaki
+      
+    
+  </option></optgroup><optgroup label="J2"><option value="sapporo">
+  
+    
+      
+        Hokkaido Consadole Sapporo
+      
+    
+  </option><option value="hachinohe">
+  
+    
+      
+        Vanraure Hachinohe
+      
+    
+  </option><option value="sendai">
+  
+    
+      
+        Vegalta Sendai
+      
+    
+  </option><option value="akita">
+  
+    
+      
+        Blaublitz Akita
+      
+    
+  </option><option value="yamagata">
+  
+    
+      
+        Montedio Yamagata
+      
+    
+  </option><option value="iwaki">
+  
+    
+      
+        Iwaki FC
+      
+    
+  </option><option value="tochigi-city">
+  
+    
+      
+        TOCHIGI CITY
+      
+    
+  </option><option value="omiya">
+  
+    
+      
+        RB Omiya Ardija	
+      
+    
+  </option><option value="yokohamafc">
+  
+    
+      
+        Yokohama FC
+      
+    
+  </option><option value="shonan">
+  
+    
+      
+        Shonan Bellmare
+      
+    
+  </option><option value="kofu">
+  
+    
+      
+        Ventforet Kofu
+      
+    
+  </option><option value="niigata">
+  
+    
+      
+        Albirex Niigata
+      
+    
+  </option><option value="toyama">
+  
+    
+      
+        Kataller Toyama
+      
+    
+  </option><option value="iwata">
+  
+    
+      
+        Júbilo Iwata
+      
+    
+  </option><option value="fujieda">
+  
+    
+      
+        Fujieda MYFC
+      
+    
+  </option><option value="tokushima">
+  
+    
+      
+        Tokushima Vortis
+      
+    
+  </option><option value="imabari">
+  
+    
+      
+        FC Imabari
+      
+    
+  </option><option value="tosu">
+  
+    
+      
+        Sagan Tosu
+      
+    
+  </option><option value="oita">
+  
+    
+      
+        Oita Trinita
+      
+    
+  </option><option value="miyazaki">
+  
+    
+      
+        Tegevajaro Miyazaki
+      
+    
+  </option></optgroup><optgroup label="J3"><option value="fukushima">
+  
+    
+      
+        Fukushima United FC
+      
+    
+  </option><option value="tochigi">
+  
+    
+      
+        Tochigi SC
+      
+    
+  </option><option value="gunma">
+  
+    
+      
+        Thespa Gunma
+      
+    
+  </option><option value="sagamihara">
+  
+    
+      
+        S.C. Sagamihara
+      
+    
+  </option><option value="matsumoto">
+  
+    
+      
+        Matsumoto Yamaga F.C.
+      
+    
+  </option><option value="nagano">
+  
+    
+      
+        AC Nagano Parceiro
+      
+    
+  </option><option value="kanazawa">
+  
+    
+      
+        Zweigen Kanazawa
+      
+    
+  </option><option value="gifu">
+  
+    
+      
+        FC Gifu
+      
+    
+  </option><option value="shiga">
+  
+    
+      
+        Reilac Shiga FC
+      
+    
+  </option><option value="fosaka">
+  
+    
+      
+        FC Osaka
+      
+    
+  </option><option value="nara">
+  
+    
+      
+        Nara Club
+      
+    
+  </option><option value="tottori">
+  
+    
+      
+        Gainare Tottori
+      
+    
+  </option><option value="yamaguchi">
+  
+    
+      
+        Renofa Yamaguchi FC
+      
+    
+  </option><option value="sanuki">
+  
+    
+      
+        Kamatamare Sanuki
+      
+    
+  </option><option value="ehime">
+  
+    
+      
+        Ehime FC
+      
+    
+  </option><option value="kochi">
+  
+    
+      
+        Kochi United SC
+      
+    
+  </option><option value="kitakyushu">
+  
+    
+      
+        Giravanz Kitakyushu
+      
+    
+  </option><option value="kumamoto">
+  
+    
+      
+        Roasso Kumamoto
+      
+    
+  </option><option value="kagoshima">
+  
+    
+      
+        Kagoshima United FC
+      
+    
+  </option><option value="ryukyu">
+  
+    
+      
+        FC RYUKYU
+      
+    
+  </option></optgroup><option value="levain">
+  
+    
+      
+        J.LEAGUE YBC Levain CUP
+      
+    
+  </option></select></div></div></div><div class="fixtures__body"><section class="fixture-results-list"></section></div><div class="tickets-modal tickets-modal--closed"><div class="tickets-modal__backdrop"></div><div class="tickets-modal__content"><button type="button" class="tickets-modal__close"><i class="mi-close"></i></button><div class="tickets-list"><div class="tickets-list__header"><img class="ticket-icon" src="/static/images/icons/ticket-1A1919.a66430518628.svg" alt="" loading="Lazy"><h2 class="ticket-title">Buy Tickets</h2></div><div class="tickets-list__body"></div></div></div></div></main><div class="social-networks-area"><div class="social-networks-area__header"><div class="social-networks-area__header__title">
+      J.League on Social Media
+    </div><div class="moving-dot moving-dot--space-t"></div></div><div class="social-networks-area__body"><ul class="social-networks-list"><li class="social-networks-list__item"><a
+  class="social-network-item"
+  href="https://www.facebook.com/jleagueofficial.English"
+  aria-label="J.League Facebook"
+  target="_blank"
+  rel="noopener"
+  onclick="sendSelectContentEvent('socialmedia', 'facebook');"
+><div class="social-network-item__icon"><img
+      class="lazy social-network-item__icon__normal"
+      src="/static/images/social-media/facebook.svg"
+      alt="social-icon-facebook"
+      loading="lazy"
+    /><img
+      class="lazy social-network-item__icon__hovered"
+      src="/static/images/social-media/facebook-hover.svg"
+      alt="social-icon-facebook-hover"
+      loading="lazy"
+    /></div><div class="social-network-item__title">
+    @jleagueofficial.English
+  </div></a></li><li class="social-networks-list__item"><a
+  class="social-network-item"
+  href="https://twitter.com/j_league_en"
+  aria-label="J.League Twitter"
+  target="_blank"
+  rel="noopener"
+  onclick="sendSelectContentEvent('socialmedia', 'twitter');"
+><div class="social-network-item__icon"><img
+      class="lazy social-network-item__icon__normal"
+      src="/static/images/social-media/twitter.svg"
+      alt="social-icon-twitter"
+      loading="lazy"
+    /><img
+      class="lazy social-network-item__icon__hovered"
+      src="/static/images/social-media/twitter-hover.svg"
+      alt="social-icon-twitter-hover"
+      loading="lazy"
+    /></div><div class="social-network-item__title">
+    @J_League_En
+  </div></a></li><li class="social-networks-list__item"><a
+  class="social-network-item"
+  href="https://www.instagram.com/jleagueintl/"
+  aria-label="J.League Instagram"
+  target="_blank"
+  rel="noopener"
+  onclick="sendSelectContentEvent('socialmedia', 'instagram');"
+><div class="social-network-item__icon"><img
+      class="lazy social-network-item__icon__normal"
+      src="/static/images/social-media/instagram.svg"
+      alt="social-icon-instagram"
+      loading="lazy"
+    /><img
+      class="lazy social-network-item__icon__hovered"
+      src="/static/images/social-media/instagram-hover.svg"
+      alt="social-icon-instagram-hover"
+      loading="lazy"
+    /></div><div class="social-network-item__title">
+    @jleagueintl
+  </div></a></li><li class="social-networks-list__item"><a
+  class="social-network-item"
+  href="https://www.youtube.com/jleagueinternational?sub_confirmation=1"
+  aria-label="J.League Youtube"
+  target="_blank"
+  rel="noopener"
+  onclick="sendSelectContentEvent('socialmedia', 'youtube');"
+><div class="social-network-item__icon"><img
+      class="lazy social-network-item__icon__normal"
+      src="/static/images/social-media/youtube.svg"
+      alt="social-icon-youtube"
+      loading="lazy"
+    /><img
+      class="lazy social-network-item__icon__hovered"
+      src="/static/images/social-media/youtube-hover.svg"
+      alt="social-icon-youtube-hover"
+      loading="lazy"
+    /></div><div class="social-network-item__title">
+    J.LEAGUE International
+  </div></a></li><li class="social-networks-list__item"><a
+  class="social-network-item"
+  href="https://www.tiktok.com/@jleagueintl"
+  aria-label="J.League Tiktok"
+  target="_blank"
+  rel="noopener"
+  onclick="sendSelectContentEvent('socialmedia', 'tiktok');"
+><div class="social-network-item__icon"><img
+      class="lazy social-network-item__icon__normal"
+      src="/static/images/social-media/tiktok.svg"
+      alt="social-icon-tiktok"
+      loading="lazy"
+    /><img
+      class="lazy social-network-item__icon__hovered"
+      src="/static/images/social-media/tiktok-hover.svg"
+      alt="social-icon-tiktok-hover"
+      loading="lazy"
+    /></div><div class="social-network-item__title">
+    @jleagueintl
+  </div></a></li></div></div></div><div class="partners-area"><div class="partners-area__row"><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-title"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-title.svg"
+      
+      alt="partner-text-jleague-title"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.meijiyasuda.co.jp"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'meiji-yasuda');"
+  ><div class="partner-logo partner-logo--meiji-yasuda"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/meiji-yasuda.svg"
+      
+      alt="partner-logo-meiji-yasuda"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row"><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-broadcast"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-broadcast.svg"
+      
+      alt="partner-text-jleague-broadcast"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.dazn.com/en-JP/home"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'dazn');"
+  ><div class="partner-logo partner-logo--dazn"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/dazn.svg"
+      
+      alt="partner-logo-dazn"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row"><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-top"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-top.svg"
+      
+      alt="partner-text-jleague-top"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.aidem.co.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'aidem');"
+  ><div class="partner-logo partner-logo--aidem"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/aidem.svg"
+      
+      alt="partner-logo-aidem"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.route-inn.co.jp.e.ut.hp.transer.com/language/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'route-inn');"
+  ><div class="partner-logo partner-logo--route-inn"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/route-inn.svg"
+      
+      alt="partner-logo-route-inn"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.aeonretail.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'aeon');"
+  ><div class="partner-logo partner-logo--aeon"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/aeon.svg"
+      
+      alt="partner-logo-aeon"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row"><div class="partner-group"><div class="partner-group__header"></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.nttdocomo.co.jp/english/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'docomo');"
+  ><div class="partner-logo partner-logo--docomo"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/docomo.svg"
+      
+      alt="partner-logo-docomo"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.konami.com/games/us/en/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'konami');"
+  ><div class="partner-logo partner-logo--konami"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/konami.svg"
+      
+      alt="partner-logo-konami"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.ichigo.gr.jp/en/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'ichigo');"
+  ><div class="partner-logo partner-logo--ichigo"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/ichigo.svg"
+      
+      alt="partner-logo-ichigo"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row"><div class="partner-group"><div class="partner-group__header"></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.yamazaki-biscuits.co.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'yamazaki');"
+  ><div class="partner-logo partner-logo--yamazaki"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/yamazaki.svg"
+      
+      alt="partner-logo-yamazaki"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.suntory.com/our-brands/category/beer.html"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'suntory-beer');"
+  ><div class="partner-logo partner-logo--suntory-beer"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/suntory-beer.svg"
+      
+      alt="partner-logo-suntory-beer"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.bk.mufg.jp/global/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'mufg');"
+  ><div class="partner-logo partner-logo--mufg"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/mufg.svg"
+      
+      alt="partner-logo-mufg"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row partners-area__row--multi-groups"><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--sports-promotion"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/sports-promotion.svg"
+      
+      alt="partner-text-sports-promotion"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.toto-dream.com/winner/index.html"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'japan-sports-council');"
+  ><div class="partner-logo partner-logo--japan-sports-council"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/japan-sports-council.svg"
+      
+      alt="partner-logo-japan-sports-council"
+      loading="lazy"
+    /></div></a></div></div><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-ticketing"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-ticketing.svg"
+      
+      alt="partner-text-jleague-ticketing"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://corporate.pia.jp/en/corp/business/index.html"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'pia');"
+  ><div class="partner-logo partner-logo--pia"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/pia.svg"
+      
+      alt="partner-logo-pia"
+      loading="lazy"
+    /></div></a></div></div><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-ec-platform"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-ec-platform.svg"
+      
+      alt="partner-text-jleague-ec-platform"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://global.rakuten.com/corp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'rakuten');"
+  ><div class="partner-logo partner-logo--rakuten"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/rakuten.svg"
+      
+      alt="partner-logo-rakuten"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row partners-area__row--multi-groups"><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-technology"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-technology.svg"
+      
+      alt="partner-text-jleague-technology"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://group.ntt/en/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'ntt-group');"
+  ><div class="partner-logo partner-logo--ntt-group"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/ntt-group.svg"
+      
+      alt="partner-logo-ntt-group"
+      loading="lazy"
+    /></div></a></div></div><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-ball"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-ball.svg"
+      
+      alt="partner-text-jleague-ball"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://sfidasports.com/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'sfida');"
+  ><div class="partner-logo partner-logo--sfida"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/sfida.svg"
+      
+      alt="partner-logo-sfida"
+      loading="lazy"
+    /></div></a></div></div><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-equipment"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-equipment.svg"
+      
+      alt="partner-text-jleague-equipment"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://www.uniqlo.com/jp/ja/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'uniqlo');"
+  ><div class="partner-logo partner-logo--uniqlo"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/uniqlo.svg"
+      
+      alt="partner-logo-uniqlo"
+      loading="lazy"
+    /></div></a></div></div></div><div class="partners-area__row"><div class="partner-group"><div class="partner-group__header"><div class="partner-text partner-text--jleague-supporting-companies"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner-text/jleague-supporting-companies.svg"
+      
+      alt="partner-text-jleague-supporting-companies"
+      loading="lazy"
+    /></div></div><div class="partner-group__body"><a
+    class="partner-item"
+    
+      href="https://sportsnavi.co.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'sportsnavi');"
+  ><div class="partner-logo partner-logo--sportsnavi"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/sportsnavi.svg"
+      
+      alt="partner-logo-sportsnavi"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www2.deloitte.com/jp/en.html"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'deloitte');"
+  ><div class="partner-logo partner-logo--deloitte"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/deloitte.svg"
+      
+      alt="partner-logo-deloitte"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://datastadium.co.jp/en"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'data-stadium');"
+  ><div class="partner-logo partner-logo--data-stadium"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/data-stadium.svg"
+      
+      alt="partner-logo-data-stadium"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.photron.co.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'photron');"
+  ><div class="partner-logo partner-logo--photron"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/photron.svg"
+      
+      alt="partner-logo-photron"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.lycorp.co.jp/en/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'line');"
+  ><div class="partner-logo partner-logo--line"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/line.svg"
+      
+      alt="partner-logo-line"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.suntory-kenko.com/company/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'suntory-wellness');"
+  ><div class="partner-logo partner-logo--suntory-wellness"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/suntory-wellness.svg"
+      
+      alt="partner-logo-suntory-wellness"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.jp.kearney.com/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'at-kearney');"
+  ><div class="partner-logo partner-logo--at-kearney"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/at-kearney.svg"
+      
+      alt="partner-logo-at-kearney"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://kpmg.com/jp/en/home/about/kc.html"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'kpmg-consulting');"
+  ><div class="partner-logo partner-logo--kpmg-consulting"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/kpmg-consulting.svg"
+      
+      alt="partner-logo-kpmg-consulting"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://cpa-excellent-partners.co.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'cpa');"
+  ><div class="partner-logo partner-logo--cpa"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/cpa.svg"
+      
+      alt="partner-logo-cpa"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.japanican.com/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'jtb');"
+  ><div class="partner-logo partner-logo--jtb"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/jtb.svg"
+      
+      alt="partner-logo-jtb"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.mynet.co.jp/english"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'mynet');"
+  ><div class="partner-logo partner-logo--mynet"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/mynet.svg"
+      
+      alt="partner-logo-mynet"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.uzabase.com/en/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'uzabase');"
+  ><div class="partner-logo partner-logo--uzabase"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/uzabase.svg"
+      
+      alt="partner-logo-uzabase"
+      loading="lazy"
+    /></div></a><a
+    class="partner-item"
+    
+      href="https://www.suumocounter.jp/"
+    
+    target="_blank"
+    rel="noopener"
+    onclick="sendSelectContentEvent('partner', 'suumo');"
+  ><div class="partner-logo partner-logo--suumo"><img
+      class="lazy"
+      
+        src="/static/images/logo/partner/suumo.svg"
+      
+      alt="partner-logo-suumo"
+      loading="lazy"
+    /></div></a></div></div></div></div><footer class="footer"><div class="footer-nav"><div class="footer-nav__grid"><ul class="nav-list"><li class="nav-list__item"><a href="/" aria-label="J.League Homepage"><img
+            class="lazy"
+            src="/static/images/logo/jleague-logo-black.049e200037e4.svg"
+            width="128"
+            height="115"
+            alt="30 years j.league logo"
+            loading="lazy"
+          /></a></li></ul></div><div class="footer-nav__grid"><div class="title">
+      Competition
+    </div><ul class="nav-list"><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/fixtures/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'fixtures');"
+>
+  
+    Fixtures
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/standings/j1-100-year-vision/2026/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'standings');"
+>
+  
+    Standings
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/clubs/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'clubs');"
+>
+  
+    Clubs
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/stats/dashboard/j1-100-year-vision/2026/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'stats');"
+>
+  
+    Stats
+  
+</a></li></ul></div><div class="footer-nav__grid"><div class="title">
+      Content
+    </div><ul class="nav-list"><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/news/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'news');"
+>
+  
+    News
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/videos/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'videos');"
+>
+  
+    Videos
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/photos/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'photos');"
+>
+  
+    Photos
+  
+</a></li></ul></div><div class="footer-nav__grid"><div class="title">
+      J.LEAGUE
+    </div><ul class="nav-list"><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href="https://aboutj.jleague.jp/corporate/en/"
+  
+  
+    target="_blank"
+  
+  
+    rel="noopener"
+  
+  onclick="sendSelectContentEvent('page', 'corporate');"
+>
+  
+    Corporate
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/broadcast/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'broadcast');"
+>
+  
+    Broadcast
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href="https://www.jleague.jp/"
+  
+  
+    target="_blank"
+  
+  
+    rel="noopener"
+  
+  onclick="sendSelectContentEvent('page', 'japanese');"
+>
+  
+    Japanese
+  
+</a></li><li class="nav-list__item"><a
+  class="nav-item-text nav-item-text--link"
+  
+    href=/privacy-policy/
+  
+  
+  
+  onclick="sendSelectContentEvent('page', 'privacy');"
+>
+  
+    Privacy
+  
+</a></li></ul></div></div><div class="divider"></div><div class="copyright"><div class="copyright__text">
+      &copy; Japan Professional Football League
+    </div></div></footer><div class="floating-buttons"><a class="floating-button floating-button--tickets" href="/tickets/"><span class="floating-button__icon"></span><span class="floating-button__label">Tickets</span></a><button class="floating-button floating-button--copylink" type="button"><span class="floating-button__icon"></span><span class="floating-button__label">Copy Link</span><span class="floating-button__tooltip">Copied!</span></button><button class="floating-button floating-button--backtotop" type="button"><span class="floating-button__icon"></span><span class="floating-button__label">Back to top</span></button><button class="floating-button floating-button--install" type="button"><span class="floating-button__icon"></span><span class="floating-button__label">Install</span></button></div><div class="cookie-consent"><div class="cookie-consent__header"><p class="title-text">
+      We value your privacy
+    </p></div><div class="cookie-consent__content"><p class="body-text">
+      Our site uses cookies that help us remember you and improve your experience browsing our site. Click “Accept all cookies” to consent to the use of this technology on our site. Click “Cookie settings” to customize your choices. Learn more about your choices in our cookie policy.
+      <a href="/cookies-policy/">cookie policy</a>.
+    </p></div><div class="cookie-consent__actions"><button id="cookie-settings" class="jl-button button-settings" type="button"><span class="jl-button__label">
+        Cookie Settings
+      </span></button><button id="cookie-accept-all" class="jl-button jl-button--inverse button-accept" type="button"><span class="jl-button__label">
+        Accept all cookies
+      </span></button></div></div><div class="cookie-settings cookie-settings--closed"><div class="cookie-settings__content"><div class="setting-header"><h2 class="title">Cookie Settings</h2><button type="button" class="close"><img
+          class="lazy"
+          src="/static/images/icons/cross-646A78.4ec9de28a0bf.svg"
+          alt=""
+          loading="lazy"
+        /></button></div><div class="setting-body"><p>When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p><ul class="cookie-group"><li class="cookie-item accordion" role="button"><div class="accordion-header"><h3 class="title"><span class="icon"><img class="icon__closed" src="/static/images/icons/plus-6B5B52.b8251425f45d.svg" /><img class="icon__open" src="/static/images/icons/minus-6B5B52.0473e2535c7c.svg" /></span>
+              Strictly Necessary
+            </h3><div class="checkbox"><label class="jl-checkbox jl-checkbox--disabled" ><input
+    type="checkbox"
+    
+    
+     checked
+     disabled
+  /><span class="checkmark"></span></label></div></div><div class="accordion-body"><p>These cookies are required to enable core site functionality, and cannot be turned off. They allow you to navigate back and forth between pages without losing your previous actions from the same session.</p></div></li><li class="cookie-item accordion" role="button"><div class="accordion-header"><h3 class="title"><span class="icon"><img class="icon__closed" src="/static/images/icons/plus-6B5B52.b8251425f45d.svg" /><img class="icon__open" src="/static/images/icons/minus-6B5B52.0473e2535c7c.svg" /></span>
+              Functional
+            </h3><div class="checkbox"><label class="jl-checkbox"  for="functional"><input
+    type="checkbox"
+     id="functional"
+    
+     checked
+    
+  /><span class="checkmark"></span></label></div></div><div class="accordion-body"><p>These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or our service providers whose services we have added to our pages. If you do not allow these cookies, then some or all of these services may not function properly.</p></div></li><li class="cookie-item accordion" role="button"><div class="accordion-header"><h3 class="title"><span class="icon"><img class="icon__closed" src="/static/images/icons/plus-6B5B52.b8251425f45d.svg" /><img class="icon__open" src="/static/images/icons/minus-6B5B52.0473e2535c7c.svg" /></span>
+              Performance
+            </h3><div class="checkbox"><label class="jl-checkbox"  for="performance"><input
+    type="checkbox"
+     id="performance"
+    
+    
+    
+  /><span class="checkmark"></span></label></div></div><div class="accordion-body"><p>These cookies allow us to count visitors and traffic sources in order to evaluate and enhance the performance of our website. They help us determine which pages are more popular than others and how visitors navigate the site. All of the data collected by these cookies is of an aggregate nature and is therefore anonymous.</p></div></li><li class="cookie-item accordion" role="button"><div class="accordion-header"><h3 class="title"><span class="icon"><img class="icon__closed" src="/static/images/icons/plus-6B5B52.b8251425f45d.svg" /><img class="icon__open" src="/static/images/icons/minus-6B5B52.0473e2535c7c.svg" /></span>
+              Targeting
+            </h3><div class="checkbox"><label class="jl-checkbox"  for="targeting"><input
+    type="checkbox"
+     id="targeting"
+    
+    
+    
+  /><span class="checkmark"></span></label></div></div><div class="accordion-body"><p>These cookies are set through our site by third party providers. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</p></div></li></ul></div><div class="setting-footer"><div class="action-buttons"><button id="cookie-save" class="jl-button button-save" type="button"><span class="jl-button__label">
+            Save and close
+          </span></button><button id="cookie-accept-all" class="jl-button jl-button--inverse button-accept" type="button"><span class="jl-button__label">
+            Accept all
+          </span></button></div></div></div></div><div class="sidebar no-transition no-animation"><div class="sidebar__content"><div class="sidebar__header"><div class="sidebar-control"><div class="competition-dropdown sidebar-competition-dropdown"><div class="competition-dropdown__value" role="button"><div class="competition-logo competition-logo--j1-100-year-vision competition-logo--xsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1-100-year-vision.svg"
+        
+        alt="competition-logo-j1-100-year-vision"
+        loading="lazy"
+      /></div><div class="competition-logo competition-logo--j2j3-100-year-vision competition-logo--xsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2j3-100-year-vision.svg"
+        
+        alt="competition-logo-j2j3-100-year-vision"
+        loading="lazy"
+      /></div><div class="competition-logo competition-logo--j1 competition-logo--xsmall competition-logo--selected"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1.svg"
+        
+        alt="competition-logo-j1"
+        loading="lazy"
+      /></div><div class="competition-logo competition-logo--j2 competition-logo--xsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2.svg"
+        
+        alt="competition-logo-j2"
+        loading="lazy"
+      /></div><div class="competition-logo competition-logo--j3 competition-logo--xsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j3.svg"
+        
+        alt="competition-logo-j3"
+        loading="lazy"
+      /></div><div class="competition-logo competition-logo--levain competition-logo--xsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/levain_2026.svg"
+        
+        alt="competition-logo-levain"
+        loading="lazy"
+      /></div><img class="lazy" src="/static/images/icons/chevron-down-thick-1A1919.a4786e4c8733.svg" alt="" loading="lazy" /></div><div class="competition-dropdown__items" style="opacity:0;"><ul class="dropdown-list"><li class="dropdown-item" data-value="j1-100-year-vision" role="button"><div class="competition-logo competition-logo--j1-100-year-vision competition-logo--xxsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1-100-year-vision.svg"
+        
+        alt="competition-logo-j1-100-year-vision"
+        loading="lazy"
+      /></div><div class="competition-label">J1 100 YEAR VISION LEAGUE</div></li><li class="dropdown-item" data-value="j2j3-100-year-vision" role="button"><div class="competition-logo competition-logo--j2j3-100-year-vision competition-logo--xxsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2j3-100-year-vision.svg"
+        
+        alt="competition-logo-j2j3-100-year-vision"
+        loading="lazy"
+      /></div><div class="competition-label">J2/J3 100 YEAR VISION LEAGUE</div></li><li class="dropdown-item dropdown-item--selected" data-value="j1" role="button"><div class="competition-logo competition-logo--j1 competition-logo--xxsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j1.svg"
+        
+        alt="competition-logo-j1"
+        loading="lazy"
+      /></div><div class="competition-label">J1 LEAGUE</div></li><li class="dropdown-item" data-value="j2" role="button"><div class="competition-logo competition-logo--j2 competition-logo--xxsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j2.svg"
+        
+        alt="competition-logo-j2"
+        loading="lazy"
+      /></div><div class="competition-label">J2 LEAGUE</div></li><li class="dropdown-item" data-value="j3" role="button"><div class="competition-logo competition-logo--j3 competition-logo--xxsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/j3.svg"
+        
+        alt="competition-logo-j3"
+        loading="lazy"
+      /></div><div class="competition-label">J3 LEAGUE</div></li><li class="dropdown-item" data-value="levain" role="button"><div class="competition-logo competition-logo--levain competition-logo--xxsmall"><img
+        class="lazy"
+          
+          data-src="/static/images/logo/competition/levain_2026.svg"
+        
+        alt="competition-logo-levain"
+        loading="lazy"
+      /></div><div class="competition-label">Levain CUP</div></li></ul></div></div><button class="sidebar-toggle" type="button"><img class="icon" src="/static/images/icons/chevron-double-right-000000.6dab5ff24c6c.svg" alt="" loading="lazy" /></button></div><ul class="sidebar-tabs"><li class="sidebar-tabs__item sidebar-tabs__item--active" data-tab="matches" role="button">
+          Matches
+        </li><li class="sidebar-tabs__item" id="sidebar-table"  data-tab="table" role="button">
+          Table
+        </li><li class="sidebar-tabs__item" data-tab="stats" role="button">
+          Stats
+        </li></ul></div><div class="sidebar__body"></div></div><div class="sidebar__trigger"><div class="trigger-label"><span class="trigger-label-show">Show Match Zone</span><span class="trigger-label-hide">Hide Match Zone</span></div><div class="trigger-icon"><img class="trigger-icon-show" src="/static/images/icons/chevron-up-233360.d518ad3e4438.svg" loading="lazy"><img class="trigger-icon-hide" src="/static/images/icons/cross-FFFFFF.f84a63c28536.svg" loading="lazy"></div></div></div><div class="video-modal"><div class="video-modal__backdrop"></div><div class="video-modal__content"><div class="highlight-video-wrapper"></div></div></div><script defer type="text/javascript" src="/static/js/vendor.f3300d1330e5.js" charset="utf-8"></script><script defer type="text/javascript" src="/static/js/main.c61f9ee77403.js" charset="utf-8"></script><script defer type="text/javascript" src="/static/js/sidebar.7441375318ca.js" charset="utf-8"></script><script type="text/javascript">
+    const isFixturesStage = false;
+    let selectedStage = null;
+    let selectedCompetition  = 'all';
+    let selectedMonth = 'latest';
+    let selectedYear = 2026;
+    let selectedTeam = 'all';
+  </script><script defer type="text/javascript" src="/static/js/fixtures-page.30ee64553382.js" charset="utf-8"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"a561dd7db25c4b49868c9608f77cb1c3","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>

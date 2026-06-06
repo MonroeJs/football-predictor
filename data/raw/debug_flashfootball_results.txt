@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>J1 League 2026 Results, Statistics | Football, Japan - FlashFootball</title>
+        <script defer src="https://static.flashscore.com/res/onetrust/scripttemplates/otSDKStub.js"
+            type="text/javascript"
+            charset="UTF-8"
+            data-domain-script="87b1af71-567e-4428-89df-bf9aa88fcba3" data-document-language="true"
+        >
+        </script>
+        <link crossorigin rel="preload" href="https://static.flashscore.com/res/image/data/EPQtmZTp-t4zmA2CA.png" as="image">
+<link rel="preconnect" href="https://2002.ds.lsapp.eu/pq_graphql" crossorigin>
+<link rel="preconnect" href="https://2002.flashscore.ninja" crossorigin>
+<link rel="preload" href="https://static.flashscore.com/res/font/LivesportFinderLatin-Regular_Static.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://static.flashscore.com/res/font/LivesportFinderLatin-Bold_Static.woff2" as="font" type="font/woff2" crossorigin>
+        <noscript>
+            <meta http-equiv="refresh" content="0;url=https://www.flashscore.mobi/" />
+        </noscript>
+        <meta name="description" content="Stay updated with J1 League 2026 results, match details, statistics and betting odds. Follow lots of information for football fans and bettors.">
+        <meta name="copyright" content="Copyright (c) 2023-2026 Livesport s.r.o.">
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta property="og:title" content="J1 League 2026 Results, Statistics | Football, Japan - FlashFootball">
+	    <meta property="og:description" content="Stay updated with J1 League 2026 results, match details, statistics and betting odds. Follow lots of information for football fans and bettors.">
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://www.flashfootball.com/japan/j1-league/results/">
+	    <meta property="og:image" content="https://www.flashfootball.com/res/_ff/image/og/flashfootball.png">
+	    <meta name="fb:app_id" content="1127647145127971">
+            <link crossorigin rel="shortcut icon" href="https://static.flashscore.com/res/_fs/image/4_favicons/_ff/favicon.ico?v=8">
+            <link crossorigin rel="apple-touch-icon" sizes="180x180" href="https://static.flashscore.com/res/_fs/image/4_favicons/_ff/touch-icon-180x180.png?v=8">
+            <link crossorigin rel="icon" type="image/png" sizes="32x32" href="https://static.flashscore.com/res/_fs/image/4_favicons/_ff/favicon-32x32.png?v=8">
+            <link crossorigin rel="icon" type="image/png" sizes="16x16" href="https://static.flashscore.com/res/_fs/image/4_favicons/_ff/favicon-16x16.png?v=8">
+        <link crossorigin rel="manifest" href="/manifest/1/?v=7">
+        <meta name="theme-color" content="#001e28">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/LivesportFinderLatin.c26ee7c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/core.7baab49.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/variables.03a06d9.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/themes.5d059f4.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/common.2cce0fe.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/components_shared.3f89484.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/cookie.5722c22.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/multiLang.412195c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/single_page_app_temp.06a65ea.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/core_common.9d82c8e.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/lsid.29f4026.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/componentLibraryTheme2021.f8567fa.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_header.ede05ac.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_sidemenu.5748543.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_sections.b38306c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/league_onboarding.db44fa8.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_footer.3c7e926.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/tabs_filters.fd402ec.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_tabs.c7bbef2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/headline.0ea7e76.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/heading.c1cccb2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/fsnews_scores.d6c9d31.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/rssnews.6922e9d.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/rssnews_scores.64054c2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/player_table_spa.1671637.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/rest_player_tables.05b6bfd.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/playerProfilePageClientStyles.a6357cd.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/ranking.35305bb.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/seasonCalendar.5eea371.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/common_category.ef20fe2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/standings_draw.11da25c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/banner.6779d23.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/storeBadge.16e5e43.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/all_sport_templates.6c7dbd7.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/sport_templates_layouts.f345a3e.css">
+            
+    <link rel="canonical" href="https://www.flashfootball.com/japan/j1-league/results/">
+            <link rel="alternate" hreflang="en" href="https://www.flashfootball.com/japan/j1-league/results/">
+            <link rel="alternate" hreflang="en-us" href="https://www.flashsoccer.com/japan/j1-league/results/">
+            <link rel="alternate" hreflang="en-za" href="https://www.flashsoccer.com/japan/j1-league/results/">
+
+        <script type="text/javascript">class e{constructor(){this._callbacks=[],this._loaded=!1,this._handler=()=>{}}call(){for(var e=arguments.length,t=new Array(e),s=0;s<e;s++)t[s]=arguments[s];return this._loaded?this._call(...t):this._callbacks.push(t),!1}callPriority(){for(var e=arguments.length,t=new Array(e),s=0;s<e;s++)t[s]=arguments[s];return this._loaded?this._call(...t):this._callbacks.unshift(t),!1}callAfter(){return!!this._loaded&&(this._call(...arguments),!1)}fulfill(e,t){void 0===t&&(t="all"),this._handler=e;var s=[];switch(t){case"all":this._fulfill(this._callbacks);break;case"onceFirst":s.push(this._callbacks.shift()),this._fulfill(s);break;case"onceLast":s.push(this._callbacks.pop()),this._fulfill(s)}this._loaded=!0}_fulfill(e){for(var t;t=e.shift();)this._call(...t)}reset(){this._handler=()=>{},this._loaded=!1,this._callbacks=[]}_call(){this._handler(...arguments)}}var t="data_ttl",s="paths-migrated-from-cookies";class i{static get(e){if(i.isValidKey(e)){var t=window.localStorage.getItem(e);if(t){var s=i.getValidToForLocalStorage(e);return i.isValid(s)||0===s?t:null}}return null}static store(e,t,s){void 0===s&&(s=0),i.isValidKey(e)&&(i.storeValidToForLocalStorage(e,s),window.localStorage.setItem(e,t))}static drop(e){i.isValidKey(e)&&(i.deleteValidToForLocalStorage(e),window.localStorage.removeItem(e))}static getSession(e){if(i.isValidKey(e)){var t=i.getValidToForSession(e);return i.isValid(t)||0===t?window.sessionStorage.getItem(e):null}return null}static storeSession(e,t,s){void 0===s&&(s=0),i.isValidKey(e)&&(i.storeValidToForSession(e,s),window.sessionStorage.setItem(e,t))}static deleteSession(e){i.isValidKey(e)&&(i.deleteValidToForSession(e),window.sessionStorage.removeItem(e))}static getCookie(e){if(document.cookie.split(";").filter(t=>t.trim().startsWith(e+"=")).length){var t=new RegExp("(?:(?:^|.*;\\s*)"+e+"\\s*\\=\\s*([^;]*).*$)|^.*$");return document.cookie.replace(t,"$1")}return null}static storeCookie(e,t,s,a){void 0===s&&(s=31536e3),void 0===a&&(a=""),""===t&&(s=-86400);var r=i.getExpiresDate(s),o=i.getPath(a);document.cookie=e+"="+escape(t)+";"+r+o}static deleteCookie(e){i.storeCookie(e,"")}static migrate(){var e=window.localStorage.getItem(s)||"",t="<"+(window.location.pathname.replace(/\\/g,"/").replace(/\/[^/]*$/,"")||"/")+">";e.includes(t)||(document.cookie.split(";").filter(e=>{if(e){var[t,s]=e.split("=");window.localStorage.setItem(t.trim(),s)}}),window.localStorage.setItem(s,e+t))}static isValidKey(e){return e!==t}static storeValidToForLocalStorage(e,t){i.storeValidTo(e,t,window.localStorage)}static storeValidToForSession(e,t){i.storeValidTo(e,t,window.sessionStorage)}static storeValidTo(e,s,a){if(s){var r=a.getItem(t)||"{}",o=i.getTimestampNow();try{var l=JSON.parse(r);l[e]=o+s,a.setItem(t,JSON.stringify(l))}catch(i){a.setItem(t,JSON.stringify({[e]:o+s}))}}}static deleteValidToForLocalStorage(e){i.deleteValidTo(e,window.localStorage)}static deleteValidToForSession(e){i.deleteValidTo(e,window.sessionStorage)}static deleteValidTo(e,s){var i=s.getItem(t);if(i)try{var a=JSON.parse(i);delete a[e],s.setItem(t,JSON.stringify(a))}catch(e){s.setItem(t,"{}")}}static getValidToForLocalStorage(e){return i.getValidTo(e,window.localStorage)}static getValidToForSession(e){return i.getValidTo(e,window.sessionStorage)}static getValidTo(e,s){var i=s.getItem(t);if(i)try{var a=JSON.parse(i);return a[e]?a[e]:0}catch(e){return 0}return 0}static isValid(e){return e>=i.getTimestampNow()}static getTimestampNow(){return Math.round(Date.now()/1e3)}static getExpiresDate(e){if(e){var t=new Date;return t.setTime(t.getTime()+1e3*e),"expires="+t.toUTCString()+";"}return""}static getPath(e){return e?"path="+e:""}}var a="theme",r="default",o="dark",l="theme--dark";window.cjs=window.cjs||{},window.cjs.Api=window.cjs.Api||{},window.cjs.Api.loader=new class{constructor(){this._loaders={}}get(t){return t in this._loaders||(this._loaders[t]=new e),this._loaders[t]}},window.cjs.Api.darkModeLocal=new class{constructor(e){if(this.document=void 0,this.preferredDarkModeBasedOnBrowser=!1,this.isDefaultTheme=!0,this.userDefinedTheme=null,this.document=e,this.preferredDarkModeBasedOnBrowser=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,this.userDefinedTheme=i.get(a),window.matchMedia&&(window.matchMedia("(prefers-color-scheme: dark)").onchange=e=>{this.userDefinedTheme||this.document.body.classList.toggle(l,e.matches)}),window.location.hash.startsWith("#theme-")){var t=window.location.hash.substring(7);switch(t){case r:case o:this.userDefinedTheme=t}}this.userDefinedTheme?this.isDefaultTheme=this.userDefinedTheme===r:this.isDefaultTheme=!this.preferredDarkModeBasedOnBrowser}setDarkThemeAsDefault(){this.isDefaultTheme=!1,this.userDefinedTheme=o,i.store(a,this.userDefinedTheme)}getPreferredDarkModeBasedOnBrowser(){return this.preferredDarkModeBasedOnBrowser}isDarkModeEnabled(){return!this.isDefaultTheme}isUserDefinedTheme(){return!!this.userDefinedTheme}setThemeClass(){this.isDarkModeEnabled()&&this.document.body.classList.toggle(l,this.isDarkModeEnabled())}toggleDarkTheme(){this.isDefaultTheme=!this.isDefaultTheme,this.userDefinedTheme=this.isDefaultTheme?r:o,this.document.body.classList.toggle(l,this.isDarkModeEnabled()),i.store(a,this.userDefinedTheme),this.triggerToggleDarkThemeChange()}triggerToggleDarkThemeChange(){var e=new CustomEvent("userThemeChanged",{detail:{isDarkModeEnabled:this.isDarkModeEnabled()}});document.dispatchEvent(e)}}(document);</script>
+        <script crossorigin type="text/javascript" defer src="/x/js/browsercompatibility_5.js"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/x/js/translations-livetable.2002.5da824a6.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/x/js/translations-myteamsmenu.2002.afcc66c0.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/x/js/translations-headermenu.2002.903ec90d.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/x/js/translations-headerpromobar.2002.179cb15e.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/runtime.91069e8.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/constants.7729e84.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/loader.061c364.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/myTeamsMenu.1b60935.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/framework.dba02da.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/vendors.7a5a4b6.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/core-js.3a7f1e9.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/x/js/core_2002_2301000000.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/x/js/core_legacy_2002_2301000000.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/adBlockPlus.6d35307.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/internalTools.4812a71.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/legalAgeConfirmation.aaa9ccc.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/initBannerHandler.8dff2d4.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/modules.3aab5ac.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/tournamentPage.client.a90b21c.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/myLeaguesMenu.469883c.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/mainPageScripts.a6686aa.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/leftMenuCategory.965f01b.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/globalEvents.358d20f.js"
+    fetchpriority="auto"></script>
+                <script>
+        window.loggingServiceConfig = {"enable":true,"server":"https:\/\/logging-service.livesport.services\/","token":"Y3uhIv5Ges46mMdAZm53akso95sYOogk","percentage_of_sessions_to_log":1};
+    </script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/frontendLogger.3f8673f.js"
+    fetchpriority="low"></script>
+
+        <script type="text/javascript">
+            // <![CDATA[
+                cjs.Api.loader.get('cjs').call(function(_cjs) {
+                    _cjs.fromGlobalScope.initStaticPagesGamesNotification();
+                    _cjs.bookmakerSettings = { bookmakersData: {"default":[{"main_bookmaker_id":"16","project_id":"2002","geo_ip":"default","name":"bet365","has_inplay_odds":"0"},{"main_bookmaker_id":"5","project_id":"2002","geo_ip":"default","name":"Unibet","has_inplay_odds":"0"},{"main_bookmaker_id":"15","project_id":"2002","geo_ip":"default","name":"William Hill","has_inplay_odds":"0"},{"main_bookmaker_id":"417","project_id":"2002","geo_ip":"default","name":"1xBet","has_inplay_odds":"0"}],"CZ":[{"main_bookmaker_id":"49","project_id":"2002","geo_ip":"CZ","name":"Tipsport.cz","has_inplay_odds":"0"}],"TR":[{"main_bookmaker_id":"417","project_id":"2002","geo_ip":"TR","name":"1xBet","has_inplay_odds":"0"}],"GR":[{"main_bookmaker_id":"16","project_id":"2002","geo_ip":"GR","name":"bet365","has_inplay_odds":"0"},{"main_bookmaker_id":"409","project_id":"2002","geo_ip":"GR","name":"Stoiximan.gr","has_inplay_odds":"0"},{"main_bookmaker_id":"961","project_id":"2002","geo_ip":"GR","name":"PameStoixima","has_inplay_odds":"0"},{"main_bookmaker_id":"632","project_id":"2002","geo_ip":"GR","name":"Novibet","has_inplay_odds":"0"}],"ID":[],"US:USMD":[{"main_bookmaker_id":"1133","project_id":"2002","geo_ip":"US:USMD","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2002","geo_ip":"US:USMD","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2002","geo_ip":"US:USMD","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2002","geo_ip":"US:USMD","name":"bet365.us","has_inplay_odds":"1"}],"HR":[]} };
+                });
+            window.dynamicConfigs = {"app":{"registration":{"no_remote":false},"fs_news":{"use_new_pq":false}}};
+                //used in LiveTableStaticLeagues
+                var pageType = "tournament_page", sportId = 1;
+		                    var dataLayer = dataLayer || [];
+
+		function otAfterCallback() {
+		    window.setTimeout(() => {
+		        try {
+		            if (!window.hasOTAfterCallbackProceeded) {
+		                dataLayer.push({event:'gdpr_consent',user_consent:'agree'});
+		                document.dispatchEvent(new Event('onetrust'));
+		            }
+		        } catch(e) {
+		            console.error(e);
+		        }
+		        window.hasOTAfterCallbackProceeded = true;
+		    }, 0);
+		};
+
+		function otCallback() {
+		    document.dispatchEvent(new Event("oneTrustLoaded"));
+		    window.oneTrustLoaded = true;
+
+		    if (typeof cjs === 'undefined') {
+		        return;
+		    }
+
+		    if (!window.hasOTCallbackProceeded) {
+		        cjs.Api.loader.get('cjs').call(function(_cjs) {
+		            _cjs.Api.loader.get('onetrust').fulfill(cb => { cb() });
+		        });
+		    }
+
+		    window.hasOTCallbackProceeded = true;
+		};
+
+		function OptanonWrapper() {
+		    dataLayer.push({event:"OneTrustGroupsUpdated"});
+		    try {
+		        if (typeof __tcfapi === "function") {
+		            __tcfapi("getTCData",2,(e) => {
+		                if (e !== null) {
+		                    otCallback();
+		                    if (e.eventStatus === 'useractioncomplete' || e.eventStatus === 'tcloaded') {
+		                        otAfterCallback();
+		                    };
+		                };
+		            });
+		        } else if (typeof OneTrust === "object") {
+		            otCallback();
+		            if (!OneTrust.IsAlertBoxClosed()) {
+		                OneTrust.OnConsentChanged(() => otAfterCallback());
+		            }
+		        } else {
+		            otCallback();
+		        }
+		    } catch(e) {
+		        console.error(e);
+		    }
+		};
+            // ]]>
+        </script>
+        
+    </head>
+<body class="responsive background-add-off brand--flashscore soccer _ff flat pid_2002 mgc    tournament-page sport-page spa-page twoLineLayout  light-bg-1 v3 bg3 seoTopWrapperHidden" data-analytics-page-type="tournament_page">
+<div class="otPlaceholder otPlaceholder--hidden">
+    <div class="skOT skOT--ot">
+        <div class="skOT__co">
+            <div class="skOT__ti"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+        </div>
+        <div class="skOT__co">
+            <div class="skOT__ti"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    if(!document.cookie.match(/^(.*;)?\s*OptanonAlertBoxClosed\s*=\s*[^;]+(.*)?$/) && !window.localStorage.getItem("onetrust_placeholder")){
+        document.getElementsByClassName("otPlaceholder")[0].classList.remove("otPlaceholder--hidden");
+    }
+
+    document.addEventListener("click", function (e) {
+
+        var element = e.target.parentNode;
+    if(element === document) element = document.body;
+
+        if (element !== null && (element.classList.contains("ot-button-group") ||
+                (element.classList.contains("ot-btn-subcntr")) ||
+                (element.classList.contains("ot-btn-container")) ||
+                (element.id === "onetrust-button-group") ||
+                (element.id === "onetrust-close-btn-container") ||
+                (element.id === "ot-pc-content") ||
+                (e.target.closest(".otPlaceholder")))
+
+        )  {
+            window.localStorage.setItem("onetrust_placeholder", 1);
+            document.getElementsByClassName("otPlaceholder")[0].classList.add("otPlaceholder--hidden");
+        }
+    }, false);
+
+</script>
+<script type="text/javascript">
+    const defaultTheme = "";
+    const usersTheme = window.localStorage.getItem("theme");
+    if(!usersTheme && defaultTheme) {
+        cjs.Api.darkModeLocal.setDarkThemeAsDefault();
+    }
+
+    cjs.Api.darkModeLocal.setThemeClass()
+</script>
+
+<div id="zoneContainer-background" data-zone-group="background"></div>
+<div class="seoAdWrapper"><div class="seoTop">
+    <div class="seoTop__content">
+        <h1>J1 League 2026 Results, Statistics | Football, Japan</h1>
+    </div>
+</div>
+
+<script>
+    cjs.Api.loader.get("cjs").call((_cjs) => {
+        _cjs.Api.localLsid.beforeLoad((isLoggedIn) => {
+            if (isLoggedIn) {
+                const seoTopElement = document.getElementsByClassName('seoTop')[0];
+                seoTopElement.style.display = 'none';
+                seoTopElement.classList.add('seoTopHidden');
+                document.body.classList.add('isLoggedIn');
+                document.body.classList.remove('seoTopWrapperHidden');
+            }
+        });
+    });
+</script>
+
+<div id="zoneContainer-top" data-zone-group="top"></div>
+
+<div id="zoneContainer-responsive_fixed_bottom" data-zone-group="responsive_fixed_bottom"></div>
+</div>
+<header class="header">
+    <img src="https://static.flashscore.com/res/_fs/image/2_others/bg.png" alt="" fetchpriority="high" class="header__bg">
+    <div class="header__content">
+        <a class="header__logoWrapper" href="/">
+            <svg class="header__logo" preserveAspectRatio="xMinYMid meet" fill="none" height="80" viewBox="0 0 614 80" width="614" xmlns="http://www.w3.org/2000/svg"><path d="m53.6002 64.2002h-23.6l-5.8 7.9 5.8 7.9h23.6l5.7001-7.9z" fill="#fff"/><path d="m16.6 66.5002 5.8-7.9-3.7-11.2-3.6-11.2-8.79995-2.8-.5-.2-5.80005 7.9 7.30005 22.4z" fill="#fff"/><path d="m80.3003 32.2998-5.2001 1.7-6.6 2.2-3.6999 11.2-3.6001 11.2 5.7001 7.9 10.5999-3.4 15.6-30.8z" fill="#ff0046"/><path d="m46.5 13.4 9.5 6.9 9.6 6.9 12.2-3.9 15.3-23.3h-35.7l-10.9 3.59999z" fill="#ff0046"/><path d="m41.7998 21.6001-17.5 12.6 6.7 20.6h21.5l6.6999-20.6z" fill="#fff"/><path d="m18.0002 27.2 19.1-13.8v-9.80001l-9.2999-3.09999-19.1001 13.9v9.8z" fill="#fff"/><path d="m110.9 60.6001c-.2 0-.3-.1-.3-.3v-32.8c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h27.2c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-26.7c-.8 0-1.4.6-1.4 1.4v7.1c0 .8.6 1.4 1.4 1.4h21c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-21c-.8 0-1.4.6-1.4 1.4v15.3c0 .2-.1.3-.3.3h-6.4z" fill="#fff"/><path d="m158.3 60.5999c-.5 0-1.2-.3-1.5-.6l-5.8-5.8c-.3-.3-.6-1-.6-1.5v-33c0-.2.1-.3.3-.3h6.5c.2 0 .3.1.3.3v32.3c0 .8.6 1.4 1.4 1.4h21c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-21.6z" fill="#fff"/><path d="m184.6 60.6001c-.2 0-.3-.1-.3-.3v-32.8c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h19.6c.5 0 1.2.3 1.5.6l5.8 5.8c.3.3.6 1 .6 1.5v32.9c0 .2-.1.3-.3.3h-6.5c-.2 0-.3-.1-.3-.3v-12.5c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4v12.5c0 .2-.1.3-.3.3h-6.5zm6.8-22.7c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-9.9c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4z" fill="#fff"/><path d="m227.2 60.6001c-.2 0-.3-.1-.3-.3v-6.5c0-.2.1-.3.3-.3h25.2c.8 0 1.4-.6 1.4-1.4v-7.1c0-.8-.6-1.4-1.4-1.4h-18.9c-.5 0-1.2-.3-1.5-.6l-5.8-5.8c-.3-.3-.6-1-.6-1.5v-8.2c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h25.8c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-25.3c-.8 0-1.4.6-1.4 1.4v7.1c0 .8.6 1.4 1.4 1.4h18.9c.5 0 1.2.3 1.5.6l5.8 5.8c.3.3.6 1 .6 1.5v8.1c0 .5-.3 1.2-.6 1.5l-5.8 5.8c-.3.3-1 .6-1.5.6h-25.7z" fill="#fff"/><path d="m266.9 60.5999c-.2 0-.3-.1-.3-.3v-40.6c0-.2.1-.3.3-.3h6.5c.2 0 .3.1.3.3v15.3c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-15.3c0-.2.1-.3.3-.3h6.5c.2 0 .3.1.3.3v40.6c0 .2-.1.3-.3.3h-6.5c-.2 0-.3-.1-.3-.3v-15.3c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4v15.3c0 .2-.1.3-.3.3z" fill="#fff"/><g fill="#ff0046"><path d="m308 60.6001c-.2 0-.3-.1-.3-.3v-32.8c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h27.2c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-26.7c-.8 0-1.4.6-1.4 1.4v7.1c0 .8.6 1.4 1.4 1.4h21c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-21c-.8 0-1.4.6-1.4 1.4v15.3c0 .2-.1.3-.3.3h-6.4z"/><path d="m355.4 60.6002c-.5 0-1.2-.3-1.5-.6l-5.8-5.8c-.3-.3-.6-1-.6-1.5v-25.1c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h19.5c.5 0 1.2.3 1.5.6l5.8 5.8c.3.3.6 1 .6 1.5v25.1c0 .5-.3 1.2-.6 1.5l-5.8 5.8c-.3.3-1 .6-1.5.6zm-.9-8.5c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-24.1c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4z"/><path d="m396.6 60.6002c-.5 0-1.2-.3-1.5-.6l-5.8-5.8c-.3-.3-.6-1-.6-1.5v-25.1c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h19.5c.5 0 1.2.3 1.5.6l5.8 5.8c.3.3.6 1 .6 1.5v25.1c0 .5-.3 1.2-.6 1.5l-5.8 5.8c-.3.3-1 .6-1.5.6zm-1-8.5c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-24.1c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4z"/><path d="m442.2 60.5999c-.2 0-.3-.1-.3-.3v-32.3c0-.8-.6-1.4-1.4-1.4h-12.5c-.2 0-.3-.1-.3-.3v-6.6c0-.2.1-.3.3-.3h34.9c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-12.5c-.8 0-1.4.6-1.4 1.4v32.3c0 .2-.1.3-.3.3h-6.5z"/><path d="m467.7 60.5999c-.2 0-.3-.1-.3-.3v-40.6c0-.2.1-.3.3-.3h27.2c.5 0 1.2.3 1.5.6l5.8 5.8c.3.3.6 1 .6 1.5v8.2c0 .5-.3 1.2-.6 1.5l-2.7 2.7c-.2.2-.2.3 0 .5l2.7 2.7c.3.3.6 1 .6 1.5v8.1c0 .5-.3 1.2-.6 1.5l-5.8 5.8c-.3.3-1 .6-1.5.6h-27.2zm6.8-25.6c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-7.1c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4zm0 17.1c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-7.1c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4z"/><path d="m508.8 60.6001c-.2 0-.3-.1-.3-.3v-32.8c0-.5.3-1.2.6-1.5l5.8-5.8c.3-.3 1-.6 1.5-.6h19.6c.5 0 1.2.3 1.5.6l5.8 5.8c.3.3.6 1 .6 1.5v32.9c0 .2-.1.3-.3.3h-6.5c-.2 0-.3-.1-.3-.3v-12.5c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4v12.5c0 .2-.1.3-.3.3h-6.5zm6.8-22.7c0 .8.6 1.4 1.4 1.4h18.4c.8 0 1.4-.6 1.4-1.4v-9.9c0-.8-.6-1.4-1.4-1.4h-18.4c-.8 0-1.4.6-1.4 1.4z"/><path d="m557.7 60.5999c-.5 0-1.2-.3-1.5-.6l-5.8-5.8c-.3-.3-.6-1-.6-1.5v-33c0-.2.1-.3.3-.3h6.5c.2 0 .3.1.3.3v32.3c0 .8.6 1.4 1.4 1.4h21c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-21.6z"/><path d="m591.4 60.5999c-.5 0-1.2-.3-1.5-.6l-5.8-5.8c-.3-.3-.6-1-.6-1.5v-33c0-.2.1-.3.3-.3h6.5c.2 0 .3.1.3.3v32.3c0 .8.6 1.4 1.4 1.4h21c.2 0 .3.1.3.3v6.5c0 .2-.1.3-.3.3h-21.6z"/></g></svg>
+        </a>
+            <a id="bonus-comparison-gift" href="#" class="header__block header__block--gift"
+               data-lux-conversion="gift:gift">
+                <div class="header__button header__button">
+                    <svg class="header__icon header__icon">
+                        <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#gift"></use>
+                    </svg>
+                </div>
+            </a>
+            <div id="searchWindow" class="header__block header__block--search">
+                <div role="button" class="header__button">
+                    <svg class="header__icon header__icon--search">
+                        <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div id="header__block--user-menu" class="header__block header__block--user">
+                <script>
+                    cjs.Api.loader.get("cjs").call((_cjs) => {
+                        _cjs.Api.localLsid.beforeLoad((isLoggedIn, name) => {
+                            document.write('' +
+                                    '<div id="user-menu" role="button" class="header__button header__button--user">' +
+                                    '<svg class="header__icon header__icon--user">' +
+                                    '<use xlink:href="' + ("/res/_fs/image/13_symbols/action.svg?serial=1750#user-logged-in") + '"/>' +
+                                    '</svg>' +
+                                    (isLoggedIn
+                                            ? '<span class="header__text header__text--user header__text--loggedIn">' + name + '</span>'
+                                            : '<span class="header__text header__text--user">Login</span>') +
+                                    '</div>');
+                        });
+                    });
+                </script>
+            </div>
+        <div id="hamburger-menu"  class="header__block header__block--menu">
+            <div role="button" class="header__button">
+                <svg class="header__icon header__icon--menu">
+                    <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#menu"></use>
+                </svg>
+            </div>
+        </div>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/autotrack.f2f425f.js"
+    fetchpriority="low"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/loginClient.82c14a5.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/headerMenu.0066a5f.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/bonusComparisonGift.a6a50a5.js"
+    fetchpriority="auto"></script>
+        <script type="text/javascript">
+            window.headerMenuEnvironment = {"lsidEnabled":true,"langBoxEnabled":false,"displayLangFlagInsteadIcon":false,"langBoxData":[],"langBoxDataByGeoIps":[],"legalAgeGeoIps":["NL"],"giftUrls":{"NL":"\/betting\/bonuses\/?q=internal_promo_gift&keyword=betting_site_promo_static_content"},"gamblingOptOut":true};
+            window.isFlashfootball = true;
+            window.isDetail = false;
+            window.mobileBannerConfig = null;
+        </script>
+    </div>
+        <div id="legalAgeContainer"></div>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/legalAgeConfirmation.aaa9ccc.js"
+    fetchpriority="auto"></script>
+</header>
+    <script type="text/javascript">
+        cjs.defaultTopLeagues = ["1_1_8bP2bXmH","1_198_dYlOSQOD","1_6_xGrwqq16","1_6_KQMVOQ0g","1_6_ClDjv3V5","1_77_KIShoMk3","1_81_W6BOzpK2","1_98_COuk57Ci","1_139_Or1bBrWD","1_176_QVmLl54o","1_8_lvUBR5F8","1_8_UyQsXsNl","1_3_02x8YFgF","1_6_A9yxE9Ke","1_6_GfRbsVWM"];
+    </script>
+<div id="footballTopMenu" class="menuTopFF"><div class="wcl-navigation_g4VK4 wclNavigation wclNavigation--scores" data-testid="wcl-navigation"><div class="wcl-major_ARa-d"><a href="/favorites/" class="wcl-item_okxn- wcl-first_T9fFW wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><svg fill="currentColor" viewBox="0 0 20 20" data-testid="wcl-icon-action-state-favorite" class="wcl-icon_WGKvC wcl-icon_szkw5 wcl-sportIcon_r2ZYz" width="18" height="18"><path fill-rule="evenodd" class="action-state-favorite" d="m9.35 0-2.1 6.85L.4 6.83 0 8.14l5.54 4.21-2.13 6.84 1.06.81L10 15.76 15.53 20l1.05-.8-2.12-6.85L20 8.15l-.4-1.32-6.85.02L10.65 0h-1.3ZM8.4 7.8 10 2.57l1.6 5.21.66.5h5.2l-4.22 3.2-.25.81 1.63 5.21-4.22-3.23h-.8l-4.22 3.23 1.63-5.2-.26-.82-4.22-3.2h5.21l.66-.5Z"></path></svg><span class="wcl-text_moY9t wcl-textMobileHidden_aP2aR">Favorites</span></a><a href="/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">Matches</span></a><a href="/world/world-cup/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">World Cup</span></a><a href="/england/premier-league/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">Premier League</span></a><a href="/spain/laliga/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">LaLiga</span></a><a href="/italy/serie-a/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">Serie A</span></a><a href="/germany/bundesliga/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">Bundesliga</span></a><a href="/europe/champions-league/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">Champions League</span></a><a href="/europe/europa-league/" class="wcl-item_okxn- wcl-link_8XuKE" data-testid="wcl-navigationItem" data-active="false"><span class="wcl-text_moY9t">Europa League</span></a></div></div></div>
+<script
+    crossorigin type="text/javascript" defer
+    src="/res/_fs/build/footballMenuClient.55fd0b2.js"
+    fetchpriority="auto"></script>
+<script type="text/javascript">
+    window.footballMenuData = {"trans":{"TRANS_PROJECT_NAME":"Flashfootball.com","TRANS_PROJECT_NAME_NO_TLD":"Flashfootball","TRANS_PROJECT_URL":"https:\/\/www.flashfootball.com\/","TRANS_PROJECT_LABEL":"Flashfootball.com - First to deliver your scores!","TRANS_UNDER_LOGO_TEXT":"FIRST TO DELIVER YOUR SCORES!","TRANS_USER_SUPPORT_EMAIL":"support@flashfootball.com","TRANS_SPORT":"Sport","TRANS_SPORT_SOCCER":"Football","TRANS_SPORT_TENNIS":"Tennis","TRANS_SPORT_BASKETBALL":"Basketball","TRANS_SPORT_HOCKEY":"Hockey","TRANS_SPORT_AMERICAN_FOOTBALL":"American football","TRANS_SPORT_BASEBALL":"Baseball","TRANS_SPORT_HANDBALL":"Handball","TRANS_SPORT_RUGBY_UNION":"Rugby Union","TRANS_SPORT_FLOORBALL":"Floorball","TRANS_SPORT_BANDY":"Bandy","TRANS_SPORT_FUTSAL":"Futsal","TRANS_SPORT_AUSSIE_RULES":"Aussie rules","TRANS_SPORT_VOLLEYBALL":"Volleyball","TRANS_SPORT_RUGBY_LEAGUE":"Rugby League","TRANS_SPORT_CRICKET":"Cricket","TRANS_SPORT_DARTS":"Darts","TRANS_SPORT_SNOOKER":"Snooker","TRANS_SPORT_BOXING":"Boxing","TRANS_SPORT_BEACH_VOLLEYBALL":"Beach volleyball","TRANS_SPORT_BADMINTON":"Badminton","TRANS_SPORT_WATER_POLO":"Water polo","TRANS_SPORT_GOLF":"Golf","TRANS_SPORT_FIELD_HOCKEY":"Field hockey","TRANS_SPORT_TABLE_TENNIS":"Table tennis","TRANS_SPORT_BEACH_SOCCER":"Beach soccer","TRANS_SPORT_MMA":"MMA","TRANS_SPORT_NETBALL":"Netball","TRANS_SPORT_PESAPALLO":"Pesäpallo","TRANS_SPORT_MOTORSPORT":"Motorsport","TRANS_SPORT_MOTORSPORT_AUTO_RACING":"Auto Racing","TRANS_SPORT_MOTORSPORT_MOTO_RACING":"Moto Racing","TRANS_SPORT_CYCLING":"Cycling","TRANS_SPORT_HORSE_RACING":"Horse racing","TRANS_SPORT_ESPORTS":"eSports","TRANS_SPORT_WINTER_SPORTS":"Winter Sports","TRANS_SPORT_WINTER_SPORTS_SKI_JUMPING":"Ski Jumping","TRANS_SPORT_WINTER_SPORTS_ALPINE_SKIING":"Alpine Skiing","TRANS_SPORT_WINTER_SPORTS_CROSS_COUNTRY":"Cross-Country Skiing","TRANS_SPORT_WINTER_SPORTS_BIATHLON":"Biathlon","TRANS_SPORT_KABADDI":"Kabaddi","TRANS_MENU_SOCCER":"Football","TRANS_MENU_TENNIS":"Tennis","TRANS_MENU_BASKETBALL":"Basketball","TRANS_MENU_HOCKEY":"Hockey","TRANS_MENU_AMERICAN_FOOTBALL":"Am. football","TRANS_MENU_BASEBALL":"Baseball","TRANS_MENU_HANDBALL":"Handball","TRANS_MENU_RUGBY_UNION":"Rugby Union","TRANS_MENU_FLOORBALL":"Floorball","TRANS_MENU_BANDY":"Bandy","TRANS_MENU_FUTSAL":"Futsal","TRANS_MENU_AUSSIE_RULES":"Aussie rules","TRANS_MENU_VOLLEYBALL":"Volleyball","TRANS_MENU_RUGBY_LEAGUE":"Rugby League","TRANS_MENU_CRICKET":"Cricket","TRANS_MENU_DARTS":"Darts","TRANS_MENU_SNOOKER":"Snooker","TRANS_MENU_BOXING":"Boxing","TRANS_MENU_BEACH_VOLLEYBALL":"Beach volleyball","TRANS_MENU_BADMINTON":"Badminton","TRANS_MENU_WATER_POLO":"Water polo","TRANS_MENU_GOLF":"Golf","TRANS_MENU_FIELD_HOCKEY":"Field hockey","TRANS_MENU_TABLE_TENNIS":"Table tennis","TRANS_MENU_BEACH_SOCCER":"Beach soccer","TRANS_MENU_MMA":"MMA","TRANS_MENU_NETBALL":"Netball","TRANS_MENU_PESAPALLO":"Pesäpallo","TRANS_MENU_MOTORSPORT":"Motorsport","TRANS_MENU_MOTORSPORT_AUTO_RACING":"Auto Racing","TRANS_MENU_MOTORSPORT_MOTO_RACING":"Moto Racing","TRANS_MENU_CYCLING":"Cycling","TRANS_MENU_HORSE_RACING":"Horse racing","TRANS_MENU_ESPORTS":"eSports","TRANS_MENU_WINTER_SPORTS":"Winter Sports","TRANS_MENU_WINTER_SPORTS_SKI_JUMPING":"Ski Jumping","TRANS_MENU_WINTER_SPORTS_ALPINE_SKIING":"Alpine Skiing","TRANS_MENU_WINTER_SPORTS_CROSS_COUNTRY":"Cross-Country Skiing","TRANS_MENU_WINTER_SPORTS_BIATHLON":"Biathlon","TRANS_MENU_KABADDI":"Kabaddi","TRANS_MENU_MORE_SPORTS":"More","TRANS_MENU_MORE_DAYS":"More days","TRANS_MENU_TODAYS_MATCHES":"Today's Matches:","TRANS_MENU_TERMS_OF_USE":"Terms of Use","TRANS_MENU_PRIVACY_POLICY":"Privacy Policy","TRANS_MENU_GDPR":"GDPR and Journalism","TRANS_MENU_RECOMMENDED":"Recommended Sites","TRANS_MENU_WEBMASTERS":"Webmasters","TRANS_MENU_IMPRESSUM":"Impressum","TRANS_MENU_ADVERTISE":"Advertise","TRANS_MENU_TV_GONET":"xxx","TRANS_MENU_ODDS":"Odds","TRANS_MENU_TEST":"Test","TRANS_MENU_TEST_2":"Test 2","TRANS_MENU_LINKS":"Recommended Sites","TRANS_MENU_LIVE_SCORES":"Live Scores","TRANS_FOOTER_ABOUT_US":"About Us","TRANS_FOOTER_CONTACT":"Contact","TRANS_FOOTER_TOP":"Top","TRANS_FOOTER_TOP_ARROW":"Top","TRANS_MENU_IPHONE":"iPhone application","TRANS_MENU_ANDROID":"Android","TRANS_MENU_MOBILE":"Mobile version","TRANS_MENU_FAQ":"FAQ","TRANS_MENU_AUDIO":"Audio","TRANS_MENU_MYFS":"Favorites","TRANS_MENU_MYFS_NEWS":"News","TRANS_MENU_JOB":"Career at Livesport","TRANS_MENU_VIEW_SWITCH_TO_DESKTOP":"Switch to desktop","TRANS_MENU_VIEW_SWITCH_TO_MOBILE":"Switch to mobile","TRANS_MENU_RESULTS":"Scores","TRANS_MENU_FS_NEWS":"News","TRANS_URL_SOCCER":"\/","TRANS_URL_TENNIS":"\/tennis\/","TRANS_URL_BASKETBALL":"\/basketball\/","TRANS_URL_HOCKEY":"\/hockey\/","TRANS_URL_AMERICAN_FOOTBALL":"\/american-football\/","TRANS_URL_BASEBALL":"\/baseball\/","TRANS_URL_HANDBALL":"\/handball\/","TRANS_URL_RUGBY_UNION":"\/rugby-union\/","TRANS_URL_FLOORBALL":"\/floorball\/","TRANS_URL_BANDY":"\/bandy\/","TRANS_URL_FUTSAL":"\/futsal\/","TRANS_URL_AUSSIE_RULES":"\/aussie-rules\/","TRANS_URL_VOLLEYBALL":"\/volleyball\/","TRANS_URL_RUGBY_LEAGUE":"\/rugby-league\/","TRANS_URL_CRICKET":"\/cricket\/","TRANS_URL_DARTS":"\/darts\/","TRANS_URL_SNOOKER":"\/snooker\/","TRANS_URL_BOXING":"\/boxing\/","TRANS_URL_BEACH_VOLLEYBALL":"\/beach-volleyball\/","TRANS_URL_BADMINTON":"\/badminton\/","TRANS_URL_WATER_POLO":"\/water-polo\/","TRANS_URL_GOLF":"\/golf\/","TRANS_URL_FIELD_HOCKEY":"\/field-hockey\/","TRANS_URL_TABLE_TENNIS":"\/table-tennis\/","TRANS_URL_BEACH_SOCCER":"\/beach-soccer\/","TRANS_URL_MMA":"\/mma\/","TRANS_URL_NETBALL":"\/netball\/","TRANS_URL_PESAPALLO":"\/pesapallo\/","TRANS_URL_MOTORSPORT":"\/motorsport\/","TRANS_URL_MOTORSPORT_AUTO_RACING":"\/auto-racing\/","TRANS_URL_MOTORSPORT_MOTO_RACING":"\/moto-racing\/","TRANS_URL_CYCLING":"\/cycling\/","TRANS_URL_HORSE_RACING":"\/horse-racing\/","TRANS_URL_ESPORTS":"\/esports\/","TRANS_URL_OTHER":"\/others\/","TRANS_URL_WINTER_SPORTS":"\/winter-sports\/","TRANS_URL_WINTER_SPORTS_SKI_JUMPING":"\/ski-jumping\/","TRANS_URL_WINTER_SPORTS_ALPINE_SKIING":"\/alpine-skiing\/","TRANS_URL_WINTER_SPORTS_CROSS_COUNTRY":"\/cross-country-skiing\/","TRANS_URL_WINTER_SPORTS_BIATHLON":"\/biathlon\/","TRANS_URL_KABADDI":"\/kabaddi\/","TRANS_URL_CONTACT":"\/contact\/","TRANS_URL_TERMS_OF_USE_OLD":"\/terms\/","TRANS_URL_RECOMMENDED":"\/links\/","TRANS_URL_TIME_ZONE":"\/time-zone\/","TRANS_URL_BOOKMAKER_LINK":"\/bookmaker\/","TRANS_URL_BOX_OVER_CONTENT_LINK":"\/promobox\/","TRANS_URL_JOB":"\/cooperation\/","TRANS_URL_ADVERTISE":"\/advertise\/","TRANS_URL_ABOUT_US":"\/about-us\/","TRANS_URL_ANDROID":"\/android\/","TRANS_URL_TV_GONET":"\/tv\/","TRANS_URL_LINKS":"\/recommended\/","TRANS_URL_LIVE_SCORES":"\/live-scores\/","TRANS_URL_MATCH_DETAIL":"\/match\/","TRANS_URL_STANDINGS_TABLE":"\/standings\/","TRANS_URL_STANDINGS_DRAW":"\/draw\/","TRANS_URL_MOBILE":"\/mobile\/","TRANS_URL_TEAM":"\/team\/","TRANS_URL_FAQ":"\/faq\/","TRANS_URL_AUDIO":"\/audio\/","TRANS_URL_MYFS":"\/favorites\/","TRANS_URL_MYFS_NEWS":"\/mynews\/","TRANS_URL_FS_NEWS":"\/news\/","TRANS_URL_H2H":"\/h2h\/","TRANS_URL_RESULTS":"\/","TRANS_MOD_REWRITE_SOCCER":"football","TRANS_MOD_REWRITE_TENNIS":"tennis","TRANS_MOD_REWRITE_BASKETBALL":"basketball","TRANS_MOD_REWRITE_HOCKEY":"hockey","TRANS_MOD_REWRITE_AMERICAN_FOOTBALL":"american-football","TRANS_MOD_REWRITE_BASEBALL":"baseball","TRANS_MOD_REWRITE_HANDBALL":"handball","TRANS_MOD_REWRITE_RUGBY_UNION":"rugby-union","TRANS_MOD_REWRITE_FLOORBALL":"floorball","TRANS_MOD_REWRITE_BANDY":"bandy","TRANS_MOD_REWRITE_FUTSAL":"futsal","TRANS_MOD_REWRITE_AUSSIE_RULES":"aussie-rules","TRANS_MOD_REWRITE_VOLLEYBALL":"volleyball","TRANS_MOD_REWRITE_RUGBY_LEAGUE":"rugby-league","TRANS_MOD_REWRITE_CRICKET":"cricket","TRANS_MOD_REWRITE_DARTS":"darts","TRANS_MOD_REWRITE_SNOOKER":"snooker","TRANS_MOD_REWRITE_BOXING":"boxing","TRANS_MOD_REWRITE_BEACH_VOLLEYBALL":"beach-volleyball","TRANS_MOD_REWRITE_BADMINTON":"badminton","TRANS_MOD_REWRITE_WATER_POLO":"water-polo","TRANS_MOD_REWRITE_GOLF":"golf","TRANS_MOD_REWRITE_FIELD_HOCKEY":"field-hockey","TRANS_MOD_REWRITE_TABLE_TENNIS":"table-tennis","TRANS_MOD_REWRITE_BEACH_SOCCER":"beach-soccer","TRANS_MOD_REWRITE_MMA":"mma","TRANS_MOD_REWRITE_NETBALL":"netball","TRANS_MOD_REWRITE_PESAPALLO":"pesapallo","TRANS_MOD_REWRITE_MOTORSPORT":"motorsport","TRANS_MOD_REWRITE_MOTORSPORT_AUTO_RACING":"auto-racing","TRANS_MOD_REWRITE_MOTORSPORT_MOTO_RACING":"moto-racing","TRANS_MOD_REWRITE_CYCLING":"cycling","TRANS_MOD_REWRITE_HORSE_RACING":"horse-racing","TRANS_MOD_REWRITE_ESPORTS":"esports","TRANS_MOD_REWRITE_WINTER_SPORTS":"winter-sports","TRANS_MOD_REWRITE_WINTER_SPORTS_SKI_JUMPING":"ski-jumping","TRANS_MOD_REWRITE_WINTER_SPORTS_ALPINE_SKIING":"alpine-skiing","TRANS_MOD_REWRITE_WINTER_SPORTS_CROSS_COUNTRY":"cross-country-skiing","TRANS_MOD_REWRITE_WINTER_SPORTS_BIATHLON":"biathlon","TRANS_MOD_REWRITE_KABADDI":"kabaddi","TRANS_MOD_REWRITE_OTHER":"others","TRANS_MOD_REWRITE_CONTACT":"contact","TRANS_MOD_REWRITE_TERMS_OF_USE_OLD":"terms","TRANS_MOD_REWRITE_PRIVACY_POLICY":"privacy-policy","TRANS_MOD_REWRITE_TIME_ZONE":"time-zone","TRANS_MOD_REWRITE_BOOKMAKER_LINK":"bookmaker","TRANS_MOD_REWRITE_BOX_OVER_CONTENT_LINK":"promobox","TRANS_MOD_REWRITE_JOB":"cooperation","TRANS_MOD_REWRITE_ADVERTISE":"advertise","TRANS_MOD_REWRITE_ABOUT_US":"about-us","TRANS_MOD_REWRITE_ANDROID":"android","TRANS_MOD_REWRITE_TV_GONET":"xxx","TRANS_MOD_REWRITE_ODDS":"odds","TRANS_MOD_REWRITE_TEST":"test","TRANS_MOD_REWRITE_TEST_2":"test-2","TRANS_MOD_REWRITE_LINKS":"recommended","TRANS_MOD_REWRITE_LIVE_SCORES":"live-scores","TRANS_MOD_REWRITE_MATCH_DETAIL":"match","TRANS_MOD_REWRITE_STANDINGS_TABLE":"standings","TRANS_MOD_REWRITE_STANDINGS_DRAW":"draw","TRANS_MOD_REWRITE_MOBILE":"mobile","TRANS_MOD_REWRITE_TEAM":"team","TRANS_MOD_REWRITE_PLAYER":"player","TRANS_MOD_REWRITE_FAQ":"faq","TRANS_MOD_REWRITE_AUDIO":"audio","TRANS_MOD_REWRITE_MYFS":"favorites","TRANS_MOD_REWRITE_MYFS_NEWS":"mynews","TRANS_MOD_REWRITE_FS_NEWS":"news","TRANS_MOD_REWRITE_H2H":"h2h","TRANS_URL_IDENT_TOURNAMENT_SUMMARY":"summary","TRANS_URL_IDENT_TOURNAMENT_FIXTURES":"fixtures","TRANS_URL_IDENT_TOURNAMENT_RESULTS":"results","TRANS_URL_IDENT_TOURNAMENT_SQUAD":"squad","TRANS_URL_IDENT_TOURNAMENT_TRANSFERS":"transfers","TRANS_URL_IDENT_TOURNAMENT_INJURY_HISTORY":"injury-history","TRANS_URL_IDENT_TOURNAMENT_NEWS":"news","TRANS_URL_IDENT_TOURNAMENT_ARCHIVE":"archive","TRANS_URL_IDENT_TOURNAMENT_ODDS_COMPARISON":"odds","TRANS_URL_IDENT_TOURNAMENT_STANDINGS_TABLE":"standings","TRANS_URL_IDENT_TOURNAMENT_STANDINGS_DRAW":"draw","TRANS_URL_IDENT_TOURNAMENT_PARTICIPANTS_TEAMS":"teams","TRANS_URL_IDENT_TOURNAMENT_PARTICIPANTS_PLAYERS":"players","TRANS_BOOKMARK_LATEST_SCORES":"Latest Scores","TRANS_BOOKMARK_LATEST_TOURNAMENTS":"Previous Tournaments","TRANS_BOOKMARK_LATEST_RACES":"Previous Races","TRANS_BOOKMARK_ALL":"All Games","TRANS_BOOKMARK_LIVE":"LIVE Games","TRANS_BOOKMARK_SHORT_ALL":"All","TRANS_BOOKMARK_SHORT_MY":"My","TRANS_BOOKMARK_SHORT_LIVE":"LIVE","TRANS_BOOKMARK_FIN":"Finished","TRANS_BOOKMARK_SCHED":"Scheduled","TRANS_BOOKMARK_TV":"TV","TRANS_BOOKMARK_WATCH":"Watch","TRANS_BOOKMARK_SCHED_TOURNAMENTS":"Upcoming Tournaments","TRANS_BOOKMARK_SCHED_RACES":"Upcoming Races","TRANS_BOOKMARK_ODDS":"Odds","TRANS_BOOKMARK_CUSTOMIZE":"My Games","TRANS_SUB_BOOKMARK_MAIN":"Results","TRANS_SUB_BOOKMARK_ODDS":"bet365 Odds","TRANS_SUB_BOOKMARK_LIVE_ODDS":"LIVE Odds","TRANS_BLOCK_LABEL_PARTNERS":"Partners","TRANS_BLOCK_LABEL_RECOMMENDED":"Recommended Sites","TRANS_BLOCK_LABEL_SPORTS":"Sports","TRANS_BLOCK_LABEL_COUNTRIES":"Countries","TRANS_BLOCK_LABEL_OTHER_COMPETITION":"Other Competitions","TRANS_BLOCK_LABEL_CATEGORIES":"Categories","TRANS_BLOCK_LABEL_BANNER":"Link to us","TRANS_BLOCK_LABEL_TV_PROGRAM":"TV Schedule","TRANS_BLOCK_LABEL_POKER_ROOMS":"Poker rooms","TRANS_BLOCK_LABEL_POPULAR":"Popular","TRANS_BLOCK_LABEL_ALL_MATCHES":"All matches","TRANS_BLOCK_LABEL_TOURS":"Tours","TRANS_SOCCER_GOAL":"GOAL","TRANS_FUTSAL_GOAL":"GOAL","TRANS_HOCKEY_GOAL":"GOAL","TRANS_TENNIS_SET":"SET","TRANS_TV_GONET_NOW":"","TRANS_UPDATE_CORRECTION":"CORRECTION","TRANS_SOCCER_CORRECTION_OFFSIDE":"Offside","TRANS_TENNIS_CORRECTION_HAWK_EYE":"Hawk-Eye","TRANS_HOCKEY_CORRECTION_VIDEO_REFEREE":"Video referee","TRANS_CORRECTION_FOUL":"Foul","TRANS_CORRECTION_HANDBALL":"handball","TRANS_CORRECTION_OFFSIDE":"offside","TRANS_CORRECTION_VIDEO_REVIEW":"video review","TRANS_CORRECTION_COACHS_CHALLENGE":"coach's challenge","TRANS_GOAL_UNDER_REVIEW":"Goal under review","TRANS_POWERED_BY":"Live scores powered by <a href=\"https:\/\/www.flashscore.com\/\" title=\"Flashscore.com\" target=\"_blank\">Flashscore.com<\/a><br \/>Get your own free livescore now - register at <a href=\"https:\/\/www.enetpulse.com\/freelivescore\" title=\"LIVESCORE.in\" target=\"_blank\">LIVESCORE.in<\/a>","TRANS_DAY_SHORT_MON":"Mo","TRANS_DAY_SHORT_TUE":"Tu","TRANS_DAY_SHORT_WED":"We","TRANS_DAY_SHORT_THU":"Th","TRANS_DAY_SHORT_FRI":"Fr","TRANS_DAY_SHORT_SAT":"Sa","TRANS_DAY_SHORT_SUN":"Su","TRANS_DAY_MON":"Monday","TRANS_DAY_TUE":"Tuesday","TRANS_DAY_WED":"Wednesday","TRANS_DAY_THU":"Thursday","TRANS_DAY_FRI":"Friday","TRANS_DAY_SAT":"Saturday","TRANS_DAY_SUN":"Sunday","TRANS_DAY_TODAY":"Today","TRANS_DAY_TOMORROW":"Tomorrow","TRANS_DAY_YESTERDAY":"Yesterday","TRANS_DAY_NEXT":"Next day","TRANS_DAY_PREVIOUS":"Previous day","TRANS_DATE":"Date","TRANS_DETAIL_BOOKMARK_MATCH_SUMMARY":"Summary","TRANS_DETAIL_BOOKMARK_LINEUPS":"Lineups","TRANS_DETAIL_BOOKMARK_ODDS_COMPARISON":"Odds","TRANS_DETAIL_BOOKMARK_TV_SCHEDULE":"TV","TRANS_DETAIL_BOOKMARK_TV_LIVE_STREAMING":"TV \/ Live Streaming","TRANS_DETAIL_BOOKMARK_LIVE_CENTRE":"Live Centre","TRANS_DETAIL_BOOKMARK_MATCH":"Match","TRANS_DETAIL_BOOKMARK_MATCH_SUMMARY_2":"Summary","TRANS_DETAIL_BOOKMARK_MATCH_STATISTICS":"Match Statistics","TRANS_DETAIL_BOOKMARK_STATISTICS":"Stats","TRANS_DETAIL_BOOKMARK_PLAYER_STATISTICS":"Player stats","TRANS_DETAIL_BOOKMARK_PLAYER_STATISTICS_GOLF":"Statistics","TRANS_DETAIL_BOOKMARK_PLAYER_STATISTICS_CRICKET":"Scorecard","TRANS_DETAIL_BOOKMARK_FALL_OF_WICKETS":"Fall of Wickets","TRANS_DETAIL_BOOKMARK_OVERS":"Ball by Ball","TRANS_DETAIL_BOOKMARK_LIVE_COMMENTARY":"Commentary","TRANS_DETAIL_BOOKMARK_PRE_MATCH_ODDS":"Pre-match odds","TRANS_DETAIL_BOOKMARK_PRE_MATCH_ODDS_UNCLICKABLE":"Odds","TRANS_DETAIL_BOOKMARK_LIVE_ODDS":"Live odds","TRANS_DETAIL_BOOKMARK_LIVE_TABLE":"LIVE Table","TRANS_DETAIL_BOOKMARK_BONUS_OFFERS":"Bonus offers","TRANS_DETAIL_BOOKMARK_MATCH_HISTORY":"Match History","TRANS_DETAIL_BOOKMARK_MATCH_HISTORY_TENNIS":"Point by Point","TRANS_DETAIL_BOOKMARK_MATCH_HISTORY_DARTS":"Match History","TRANS_DETAIL_BOOKMARK_MATCH_HISTORY_DARTS_NEW":"Throw by throw","TRANS_DETAIL_BOOKMARK_H2H":"H2H","TRANS_DETAIL_BOOKMARK_VIDEO_HIGHLIGHTS":"Video","TRANS_DETAIL_BOOKMARK_PHOTOREPORT":"Photos","TRANS_DETAIL_BOOKMARK_ROUND_RESULTS":"Round Results","TRANS_DETAIL_BOOKMARK_STAGES":"Stages","TRANS_DETAIL_BOOKMARK_STAGE_RESULTS":"Stage Results","TRANS_DETAIL_BOOKMARK_PLAYER_CARD":"Player Card","TRANS_DETAIL_BOOKMARK_PLAYER_RESULTS":"Results","TRANS_DETAIL_BOOKMARK_ODDS":"Odds","TRANS_D

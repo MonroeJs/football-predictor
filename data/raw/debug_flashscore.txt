@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>J1 League 2026 live scores, results, Football Japan - Flashscore</title>
+        <script defer src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+            type="text/javascript"
+            charset="UTF-8"
+            data-domain-script="23d76a88-8ebd-439c-a0dd-6da91b895891" data-document-language="true"
+        >
+        </script>
+        <link crossorigin rel="preload" href="https://static.flashscore.com/res/image/data/EPQtmZTp-t4zmA2CA.png" as="image">
+<link rel="preconnect" href="https://2.ds.lsapp.eu/pq_graphql" crossorigin>
+<link rel="preconnect" href="https://2.flashscore.ninja" crossorigin>
+<link rel="preload" href="https://static.flashscore.com/res/font/LivesportFinderLatin-Regular_Static.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://static.flashscore.com/res/font/LivesportFinderLatin-Bold_Static.woff2" as="font" type="font/woff2" crossorigin>
+        <noscript>
+            <meta http-equiv="refresh" content="0;url=https://www.flashscore.mobi/" />
+        </noscript>
+        <meta name="description" content="J1 League 2026 live scores on Flashscore.com offer livescore, results, J1 League standings and match details (goal scorers, red cards, …).">
+        <meta name="copyright" content="Copyright (c) 2006-2026 Livesport s.r.o.">
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta property="og:title" content="J1 League 2026 live scores, results, Football Japan - Flashscore">
+	    <meta property="og:description" content="J1 League 2026 live scores on Flashscore.com offer livescore, results, J1 League standings and match details (goal scorers, red cards, …).">
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://www.flashscore.com/football/japan/j1-league/">
+	    <meta property="og:image" content="https://www.flashscore.com/res/_fs/image/og/flashscore.png">
+	    <meta name="fb:app_id" content="555890894461938">
+            <link crossorigin rel="shortcut icon" href="https://static.flashscore.com/res/_fs/image/4_favicons/_fs/favicon.ico?v=8">
+            <link crossorigin rel="apple-touch-icon" sizes="180x180" href="https://static.flashscore.com/res/_fs/image/4_favicons/_fs/touch-icon-180x180.png?v=8">
+            <link crossorigin rel="icon" type="image/png" sizes="32x32" href="https://static.flashscore.com/res/_fs/image/4_favicons/_fs/favicon-32x32.png?v=8">
+            <link crossorigin rel="icon" type="image/png" sizes="16x16" href="https://static.flashscore.com/res/_fs/image/4_favicons/_fs/favicon-16x16.png?v=8">
+        <link crossorigin rel="manifest" href="/manifest/1/?v=7">
+        <meta name="theme-color" content="#001e28">
+        <meta name="apple-itunes-app" content="app-id=766443283">
+            <meta name="google-site-verification" content="EW0kTHpWq9vtmZ2kox5aVFBTKObL7F1iMje1zAiWPkw" />
+<meta name="facebook-domain-verification" content="hqnhyeyu7q8c4nl5mouakrs3gnpqcy" />
+
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/LivesportFinderLatin.c26ee7c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/core.7baab49.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/variables.03a06d9.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/themes.5d059f4.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/common.2cce0fe.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/components_shared.3f89484.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/cookie.5722c22.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/multiLang.412195c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/single_page_app_temp.06a65ea.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/core_common.9d82c8e.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/lsid.29f4026.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/componentLibraryTheme2021.f8567fa.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_header.ede05ac.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_sidemenu.5748543.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_sections.b38306c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/league_onboarding.db44fa8.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_footer.3c7e926.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/tabs_filters.fd402ec.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/live_tabs.c7bbef2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/headline.0ea7e76.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/heading.c1cccb2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/fsnews_scores.d6c9d31.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/rssnews.6922e9d.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/rssnews_scores.64054c2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/player_table_spa.1671637.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/rest_player_tables.05b6bfd.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/playerProfilePageClientStyles.a6357cd.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/ranking.35305bb.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/seasonCalendar.5eea371.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/common_category.ef20fe2.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/standings_draw.11da25c.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/banner.6779d23.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/storeBadge.16e5e43.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/soccer_template.a47415f.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/flashfootball.285ad64.css">
+            <link crossorigin rel="stylesheet" href="https://static.flashscore.com/res/_fs/build/sport_templates_layouts.f345a3e.css">
+            
+    <link rel="canonical" href="https://www.flashscore.com/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en" href="https://www.flashscore.com/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-gb" href="https://www.flashscore.co.uk/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-au" href="https://www.flashscore.com.au/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ae" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-sa" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-lb" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-sy" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-jo" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ir" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-iq" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-qa" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-kw" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ye" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-om" href="https://www.flashscore.info/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-in" href="https://www.flashscore.in/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ca" href="https://www.flashscore.ca/soccer/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ke" href="https://www.flashscore.co.ke/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ng" href="https://www.flashscore.com.ng/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-za" href="https://www.flashscore.co.za/soccer/japan/j1-league/">
+            <link rel="alternate" hreflang="en-ph" href="https://www.flashscore.ph/en/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-gh" href="https://www.flashscore.com.gh/football/japan/j1-league/">
+            <link rel="alternate" hreflang="en-us" href="https://www.flashscoreusa.com/soccer/japan/j1-league/">
+            <link rel="alternate" hreflang="en-th" href="https://www.flashscore.com/football/japan/j1-league/">
+            <link rel="alternate" hreflang="th" href="https://www.flashscorethai.com/football/japan/j1-league/">
+
+        <script type="text/javascript">class e{constructor(){this._callbacks=[],this._loaded=!1,this._handler=()=>{}}call(){for(var e=arguments.length,t=new Array(e),s=0;s<e;s++)t[s]=arguments[s];return this._loaded?this._call(...t):this._callbacks.push(t),!1}callPriority(){for(var e=arguments.length,t=new Array(e),s=0;s<e;s++)t[s]=arguments[s];return this._loaded?this._call(...t):this._callbacks.unshift(t),!1}callAfter(){return!!this._loaded&&(this._call(...arguments),!1)}fulfill(e,t){void 0===t&&(t="all"),this._handler=e;var s=[];switch(t){case"all":this._fulfill(this._callbacks);break;case"onceFirst":s.push(this._callbacks.shift()),this._fulfill(s);break;case"onceLast":s.push(this._callbacks.pop()),this._fulfill(s)}this._loaded=!0}_fulfill(e){for(var t;t=e.shift();)this._call(...t)}reset(){this._handler=()=>{},this._loaded=!1,this._callbacks=[]}_call(){this._handler(...arguments)}}var t="data_ttl",s="paths-migrated-from-cookies";class i{static get(e){if(i.isValidKey(e)){var t=window.localStorage.getItem(e);if(t){var s=i.getValidToForLocalStorage(e);return i.isValid(s)||0===s?t:null}}return null}static store(e,t,s){void 0===s&&(s=0),i.isValidKey(e)&&(i.storeValidToForLocalStorage(e,s),window.localStorage.setItem(e,t))}static drop(e){i.isValidKey(e)&&(i.deleteValidToForLocalStorage(e),window.localStorage.removeItem(e))}static getSession(e){if(i.isValidKey(e)){var t=i.getValidToForSession(e);return i.isValid(t)||0===t?window.sessionStorage.getItem(e):null}return null}static storeSession(e,t,s){void 0===s&&(s=0),i.isValidKey(e)&&(i.storeValidToForSession(e,s),window.sessionStorage.setItem(e,t))}static deleteSession(e){i.isValidKey(e)&&(i.deleteValidToForSession(e),window.sessionStorage.removeItem(e))}static getCookie(e){if(document.cookie.split(";").filter(t=>t.trim().startsWith(e+"=")).length){var t=new RegExp("(?:(?:^|.*;\\s*)"+e+"\\s*\\=\\s*([^;]*).*$)|^.*$");return document.cookie.replace(t,"$1")}return null}static storeCookie(e,t,s,a){void 0===s&&(s=31536e3),void 0===a&&(a=""),""===t&&(s=-86400);var r=i.getExpiresDate(s),o=i.getPath(a);document.cookie=e+"="+escape(t)+";"+r+o}static deleteCookie(e){i.storeCookie(e,"")}static migrate(){var e=window.localStorage.getItem(s)||"",t="<"+(window.location.pathname.replace(/\\/g,"/").replace(/\/[^/]*$/,"")||"/")+">";e.includes(t)||(document.cookie.split(";").filter(e=>{if(e){var[t,s]=e.split("=");window.localStorage.setItem(t.trim(),s)}}),window.localStorage.setItem(s,e+t))}static isValidKey(e){return e!==t}static storeValidToForLocalStorage(e,t){i.storeValidTo(e,t,window.localStorage)}static storeValidToForSession(e,t){i.storeValidTo(e,t,window.sessionStorage)}static storeValidTo(e,s,a){if(s){var r=a.getItem(t)||"{}",o=i.getTimestampNow();try{var l=JSON.parse(r);l[e]=o+s,a.setItem(t,JSON.stringify(l))}catch(i){a.setItem(t,JSON.stringify({[e]:o+s}))}}}static deleteValidToForLocalStorage(e){i.deleteValidTo(e,window.localStorage)}static deleteValidToForSession(e){i.deleteValidTo(e,window.sessionStorage)}static deleteValidTo(e,s){var i=s.getItem(t);if(i)try{var a=JSON.parse(i);delete a[e],s.setItem(t,JSON.stringify(a))}catch(e){s.setItem(t,"{}")}}static getValidToForLocalStorage(e){return i.getValidTo(e,window.localStorage)}static getValidToForSession(e){return i.getValidTo(e,window.sessionStorage)}static getValidTo(e,s){var i=s.getItem(t);if(i)try{var a=JSON.parse(i);return a[e]?a[e]:0}catch(e){return 0}return 0}static isValid(e){return e>=i.getTimestampNow()}static getTimestampNow(){return Math.round(Date.now()/1e3)}static getExpiresDate(e){if(e){var t=new Date;return t.setTime(t.getTime()+1e3*e),"expires="+t.toUTCString()+";"}return""}static getPath(e){return e?"path="+e:""}}var a="theme",r="default",o="dark",l="theme--dark";window.cjs=window.cjs||{},window.cjs.Api=window.cjs.Api||{},window.cjs.Api.loader=new class{constructor(){this._loaders={}}get(t){return t in this._loaders||(this._loaders[t]=new e),this._loaders[t]}},window.cjs.Api.darkModeLocal=new class{constructor(e){if(this.document=void 0,this.preferredDarkModeBasedOnBrowser=!1,this.isDefaultTheme=!0,this.userDefinedTheme=null,this.document=e,this.preferredDarkModeBasedOnBrowser=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,this.userDefinedTheme=i.get(a),window.matchMedia&&(window.matchMedia("(prefers-color-scheme: dark)").onchange=e=>{this.userDefinedTheme||this.document.body.classList.toggle(l,e.matches)}),window.location.hash.startsWith("#theme-")){var t=window.location.hash.substring(7);switch(t){case r:case o:this.userDefinedTheme=t}}this.userDefinedTheme?this.isDefaultTheme=this.userDefinedTheme===r:this.isDefaultTheme=!this.preferredDarkModeBasedOnBrowser}setDarkThemeAsDefault(){this.isDefaultTheme=!1,this.userDefinedTheme=o,i.store(a,this.userDefinedTheme)}getPreferredDarkModeBasedOnBrowser(){return this.preferredDarkModeBasedOnBrowser}isDarkModeEnabled(){return!this.isDefaultTheme}isUserDefinedTheme(){return!!this.userDefinedTheme}setThemeClass(){this.isDarkModeEnabled()&&this.document.body.classList.toggle(l,this.isDarkModeEnabled())}toggleDarkTheme(){this.isDefaultTheme=!this.isDefaultTheme,this.userDefinedTheme=this.isDefaultTheme?r:o,this.document.body.classList.toggle(l,this.isDarkModeEnabled()),i.store(a,this.userDefinedTheme),this.triggerToggleDarkThemeChange()}triggerToggleDarkThemeChange(){var e=new CustomEvent("userThemeChanged",{detail:{isDarkModeEnabled:this.isDarkModeEnabled()}});document.dispatchEvent(e)}}(document);</script>
+        <script crossorigin type="text/javascript" defer src="https://static.flashscore.com/x/js/browsercompatibility_5.js"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/translations-livetable.2.55430fac.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/translations-myteamsmenu.2.afcc66c0.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/translations-headermenu.2.b32671cc.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/translations-headerpromobar.2.179cb15e.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/runtime.91069e8.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/constants.7729e84.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/loader.061c364.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/myTeamsMenu.1b60935.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/framework.dba02da.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/vendors.7a5a4b6.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/core-js.3a7f1e9.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/core_2_2301000000.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/core_legacy_2_2301000000.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/adBlockPlus.6d35307.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/internalTools.4812a71.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/legalAgeConfirmation.aaa9ccc.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/initBannerHandler.8dff2d4.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/modules.3aab5ac.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/tournamentPage.client.a90b21c.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/myLeaguesMenu.469883c.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/mainPageScripts.a6686aa.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/leftMenuCategory.965f01b.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/globalEvents.358d20f.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/x/js/translations-closingnativenotificationstoast.2.e371f8ed.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/closingNativeNotificationsToast.fc06d08.js"
+    fetchpriority="auto"></script>
+                <script>
+        window.loggingServiceConfig = {"enable":true,"server":"https:\/\/logging-service.livesport.services\/","token":"Y3uhIv5Ges46mMdAZm53akso95sYOogk","percentage_of_sessions_to_log":1};
+    </script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/frontendLogger.3f8673f.js"
+    fetchpriority="low"></script>
+
+        <script type="text/javascript">
+            // <![CDATA[
+                cjs.Api.loader.get('cjs').call(function(_cjs) {
+                    _cjs.bookmakerSettings = { bookmakersData: {"default":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"default","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"5","project_id":"2","geo_ip":"default","name":"Unibet","has_inplay_odds":"0"},{"main_bookmaker_id":"15","project_id":"2","geo_ip":"default","name":"William Hill","has_inplay_odds":"0"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"default","name":"1xBet","has_inplay_odds":"0"}],"GB":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"GB","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"707","project_id":"2","geo_ip":"GB","name":"BetMGM","has_inplay_odds":"1"},{"main_bookmaker_id":"21","project_id":"2","geo_ip":"GB","name":"Betfred","has_inplay_odds":"1"},{"main_bookmaker_id":"841","project_id":"2","geo_ip":"GB","name":"Midnite","has_inplay_odds":"1"},{"main_bookmaker_id":"26","project_id":"2","geo_ip":"GB","name":"Betway","has_inplay_odds":"1"},{"main_bookmaker_id":"895","project_id":"2","geo_ip":"GB","name":"7Bet","has_inplay_odds":"1"},{"main_bookmaker_id":"28","project_id":"2","geo_ip":"GB","name":"Ladbrokes","has_inplay_odds":"1"},{"main_bookmaker_id":"74","project_id":"2","geo_ip":"GB","name":"Skybet","has_inplay_odds":"0"}],"ES":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"ES","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"406","project_id":"2","geo_ip":"ES","name":"Sportium.es","has_inplay_odds":"1"},{"main_bookmaker_id":"991","project_id":"2","geo_ip":"ES","name":"Versus.es","has_inplay_odds":"1"},{"main_bookmaker_id":"26","project_id":"2","geo_ip":"ES","name":"Betway","has_inplay_odds":"1"},{"main_bookmaker_id":"15","project_id":"2","geo_ip":"ES","name":"William Hill","has_inplay_odds":"0"},{"main_bookmaker_id":"392","project_id":"2","geo_ip":"ES","name":"bwin.es","has_inplay_odds":"0"}],"IT":[{"main_bookmaker_id":"419","project_id":"2","geo_ip":"IT","name":"bet365.it","has_inplay_odds":"1"},{"main_bookmaker_id":"773","project_id":"2","geo_ip":"IT","name":"BetssonIT","has_inplay_odds":"1"},{"main_bookmaker_id":"335","project_id":"2","geo_ip":"IT","name":"Lottomatica","has_inplay_odds":"1"},{"main_bookmaker_id":"322","project_id":"2","geo_ip":"IT","name":"Eurobet.it","has_inplay_odds":"1"},{"main_bookmaker_id":"188","project_id":"2","geo_ip":"IT","name":"GoldBet","has_inplay_odds":"1"},{"main_bookmaker_id":"467","project_id":"2","geo_ip":"IT","name":"Planetwin365","has_inplay_odds":"1"},{"main_bookmaker_id":"159","project_id":"2","geo_ip":"IT","name":"Sisal","has_inplay_odds":"1"},{"main_bookmaker_id":"199","project_id":"2","geo_ip":"IT","name":"SNAI","has_inplay_odds":"1"},{"main_bookmaker_id":"823","project_id":"2","geo_ip":"IT","name":"BetflagIT","has_inplay_odds":"1"}],"FR":[{"main_bookmaker_id":"141","project_id":"2","geo_ip":"FR","name":"Betclic.fr","has_inplay_odds":"1"},{"main_bookmaker_id":"264","project_id":"2","geo_ip":"FR","name":"Winamax","has_inplay_odds":"1"},{"main_bookmaker_id":"160","project_id":"2","geo_ip":"FR","name":"Unibet.fr","has_inplay_odds":"1"},{"main_bookmaker_id":"1195","project_id":"2","geo_ip":"FR","name":"Pmu","has_inplay_odds":"1"},{"main_bookmaker_id":"905","project_id":"2","geo_ip":"FR","name":"Betsson.fr","has_inplay_odds":"1"},{"main_bookmaker_id":"1243","project_id":"2","geo_ip":"FR","name":"Bet365.fr","has_inplay_odds":"1"}],"AU":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"AU","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"628","project_id":"2","geo_ip":"AU","name":"Unibetau","has_inplay_odds":"0"}],"RU":[{"main_bookmaker_id":"454","project_id":"2","geo_ip":"RU","name":"Winline.ru","has_inplay_odds":"0"}],"KR":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"KR","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"581","project_id":"2","geo_ip":"KR","name":"10x10bet","has_inplay_odds":"1"},{"main_bookmaker_id":"638","project_id":"2","geo_ip":"KR","name":"Alphabet","has_inplay_odds":"1"},{"main_bookmaker_id":"1123","project_id":"2","geo_ip":"KR","name":"Momobet","has_inplay_odds":"1"},{"main_bookmaker_id":"1187","project_id":"2","geo_ip":"KR","name":"Betssen","has_inplay_odds":"1"},{"main_bookmaker_id":"573","project_id":"2","geo_ip":"KR","name":"Melbet","has_inplay_odds":"1"}],"CZ":[{"main_bookmaker_id":"49","project_id":"2","geo_ip":"CZ","name":"Tipsport.cz","has_inplay_odds":"1"},{"main_bookmaker_id":"46","project_id":"2","geo_ip":"CZ","name":"iFortuna.cz","has_inplay_odds":"1"},{"main_bookmaker_id":"657","project_id":"2","geo_ip":"CZ","name":"Betano.cz","has_inplay_odds":"1"}],"DK":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"DK","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"1229","project_id":"2","geo_ip":"DK","name":"LeoVegasDK","has_inplay_odds":"1"},{"main_bookmaker_id":"879","project_id":"2","geo_ip":"DK","name":"Betano.dk","has_inplay_odds":"1"},{"main_bookmaker_id":"620","project_id":"2","geo_ip":"DK","name":"Unibetdk","has_inplay_odds":"0"}],"US":[{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US","name":"bet365.us","has_inplay_odds":"0"}],"RO":[{"main_bookmaker_id":"623","project_id":"2","geo_ip":"RO","name":"Unibetro","has_inplay_odds":"1"},{"main_bookmaker_id":"592","project_id":"2","geo_ip":"RO","name":"Superbet.ro","has_inplay_odds":"1"},{"main_bookmaker_id":"516","project_id":"2","geo_ip":"RO","name":"Betano.ro","has_inplay_odds":"1"},{"main_bookmaker_id":"817","project_id":"2","geo_ip":"RO","name":"MrBitRO","has_inplay_odds":"1"},{"main_bookmaker_id":"965","project_id":"2","geo_ip":"RO","name":"Getsbet","has_inplay_odds":"1"}],"TR":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"TR","name":"1xBet","has_inplay_odds":"0"}],"PL":[{"main_bookmaker_id":"165","project_id":"2","geo_ip":"PL","name":"STS.pl","has_inplay_odds":"1"},{"main_bookmaker_id":"163","project_id":"2","geo_ip":"PL","name":"eFortuna.pl","has_inplay_odds":"1"},{"main_bookmaker_id":"591","project_id":"2","geo_ip":"PL","name":"Superbet.pl","has_inplay_odds":"1"},{"main_bookmaker_id":"539","project_id":"2","geo_ip":"PL","name":"Betclic.pl","has_inplay_odds":"1"},{"main_bookmaker_id":"1095","project_id":"2","geo_ip":"PL","name":"Betters.pl","has_inplay_odds":"0"}],"TN":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"TN","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"TN","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"997","project_id":"2","geo_ip":"TN","name":"Stake.com","has_inplay_odds":"1"}],"KE":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"KE","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"646","project_id":"2","geo_ip":"KE","name":"Mozzartbetke","has_inplay_odds":"1"}],"ZA":[{"main_bookmaker_id":"781","project_id":"2","geo_ip":"ZA","name":"Easybet","has_inplay_odds":"1"},{"main_bookmaker_id":"589","project_id":"2","geo_ip":"ZA","name":"Betway Africa","has_inplay_odds":"0"},{"main_bookmaker_id":"38","project_id":"2","geo_ip":"ZA","name":"Sportingbet","has_inplay_odds":"1"},{"main_bookmaker_id":"1183","project_id":"2","geo_ip":"ZA","name":"Worldsportsbetting","has_inplay_odds":"1"}],"AZ":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"AZ","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"573","project_id":"2","geo_ip":"AZ","name":"Melbet","has_inplay_odds":"1"},{"main_bookmaker_id":"15","project_id":"2","geo_ip":"AZ","name":"William Hill","has_inplay_odds":"0"}],"GH":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"GH","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"589","project_id":"2","geo_ip":"GH","name":"Betway Africa","has_inplay_odds":"0"}],"JP":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"JP","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"997","project_id":"2","geo_ip":"JP","name":"Stake.com","has_inplay_odds":"1"},{"main_bookmaker_id":"1015","project_id":"2","geo_ip":"JP","name":"Roobet","has_inplay_odds":"1"}],"LT":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"LT","name":"bet365","has_inplay_odds":"0"}],"TH":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"TH","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"573","project_id":"2","geo_ip":"TH","name":"Melbet","has_inplay_odds":"1"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"TH","name":"bet365","has_inplay_odds":"0"}],"UG":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"UG","name":"1xBet","has_inplay_odds":"1"}],"VN":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"VN","name":"bet365","has_inplay_odds":"0"}],"NG":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"NG","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"662","project_id":"2","geo_ip":"NG","name":"Betano.ng","has_inplay_odds":"1"},{"main_bookmaker_id":"849","project_id":"2","geo_ip":"NG","name":"Betking","has_inplay_odds":"1"}],"EE":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"EE","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"1179","project_id":"2","geo_ip":"EE","name":"Winz.io","has_inplay_odds":"1"},{"main_bookmaker_id":"627","project_id":"2","geo_ip":"EE","name":"Unibetee","has_inplay_odds":"1"},{"main_bookmaker_id":"1017","project_id":"2","geo_ip":"EE","name":"VivatBet","has_inplay_odds":"1"}],"ID":[],"NL":[{"main_bookmaker_id":"871","project_id":"2","geo_ip":"NL","name":"711","has_inplay_odds":"1"},{"main_bookmaker_id":"605","project_id":"2","geo_ip":"NL","name":"bet365.nl","has_inplay_odds":"0"}],"BE":[{"main_bookmaker_id":"2","project_id":"2","geo_ip":"BE","name":"bwin","has_inplay_odds":"1"},{"main_bookmaker_id":"642","project_id":"2","geo_ip":"BE","name":"Golden Palace","has_inplay_odds":"0"},{"main_bookmaker_id":"619","project_id":"2","geo_ip":"BE","name":"Unibetbe","has_inplay_odds":"1"}],"BG":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"BG","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"663","project_id":"2","geo_ip":"BG","name":"Betano.bg","has_inplay_odds":"1"},{"main_bookmaker_id":"751","project_id":"2","geo_ip":"BG","name":"Winbet","has_inplay_odds":"1"},{"main_bookmaker_id":"817","project_id":"2","geo_ip":"BG","name":"MrBitRO","has_inplay_odds":"1"}],"GR":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"GR","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"409","project_id":"2","geo_ip":"GR","name":"Stoiximan.gr","has_inplay_odds":"1"},{"main_bookmaker_id":"961","project_id":"2","geo_ip":"GR","name":"PameStoixima","has_inplay_odds":"1"},{"main_bookmaker_id":"632","project_id":"2","geo_ip":"GR","name":"Novibet","has_inplay_odds":"1"}],"KZ":[],"PT":[{"main_bookmaker_id":"545","project_id":"2","geo_ip":"PT","name":"Betano.pt","has_inplay_odds":"0"},{"main_bookmaker_id":"595","project_id":"2","geo_ip":"PT","name":"Solverde.pt","has_inplay_odds":"0"}],"SK":[{"main_bookmaker_id":"411","project_id":"2","geo_ip":"SK","name":"Tipsport.sk","has_inplay_odds":"1"},{"main_bookmaker_id":"23","project_id":"2","geo_ip":"SK","name":"DOXXbet","has_inplay_odds":"0"}],"UY":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"UY","name":"bet365","has_inplay_odds":"1"}],"GE":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"GE","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"GE","name":"1xBet","has_inplay_odds":"1"}],"MX":[{"main_bookmaker_id":"631","project_id":"2","geo_ip":"MX","name":"Calientemx","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"MX","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"1113","project_id":"2","geo_ip":"MX","name":"Winpot","has_inplay_odds":"0"},{"main_bookmaker_id":"945","project_id":"2","geo_ip":"MX","name":"Betboom.mx","has_inplay_odds":"0"}],"PE":[{"main_bookmaker_id":"43","project_id":"2","geo_ip":"PE","name":"Betsson","has_inplay_odds":"1"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"PE","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"660","project_id":"2","geo_ip":"PE","name":"Betano.pe","has_inplay_odds":"1"}],"LV":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"LV","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"1217","project_id":"2","geo_ip":"LV","name":"Fenikss","has_inplay_odds":"1"}],"CY":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"CY","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"656","project_id":"2","geo_ip":"CY","name":"Stoiximan.cy","has_inplay_odds":"1"},{"main_bookmaker_id":"632","project_id":"2","geo_ip":"CY","name":"Novibet","has_inplay_odds":"1"}],"SE":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"SE","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"652","project_id":"2","geo_ip":"SE","name":"Expektse","has_inplay_odds":"1"},{"main_bookmaker_id":"1085","project_id":"2","geo_ip":"SE","name":"BetMGM.se","has_inplay_odds":"1"}],"NO":[{"main_bookmaker_id":"907","project_id":"2","geo_ip":"NO","name":"Lilibet","has_inplay_odds":"1"},{"main_bookmaker_id":"775","project_id":"2","geo_ip":"NO","name":"Rabona","has_inplay_odds":"1"}],"AL":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"AL","name":"bet365","has_inplay_odds":"0"}],"ZM":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"ZM","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"589","project_id":"2","geo_ip":"ZM","name":"Betway Africa","has_inplay_odds":"0"}],"TZ":[{"main_bookmaker_id":"1071","project_id":"2","geo_ip":"TZ","name":"LeonBet","has_inplay_odds":"0"},{"main_bookmaker_id":"589","project_id":"2","geo_ip":"TZ","name":"Betway Africa","has_inplay_odds":"0"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"TZ","name":"1xBet","has_inplay_odds":"1"}],"FI":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"FI","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"1179","project_id":"2","geo_ip":"FI","name":"Winz.io","has_inplay_odds":"1"},{"main_bookmaker_id":"378","project_id":"2","geo_ip":"FI","name":"TonyBet","has_inplay_odds":"1"},{"main_bookmaker_id":"775","project_id":"2","geo_ip":"FI","name":"Rabona","has_inplay_odds":"1"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"FI","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"1017","project_id":"2","geo_ip":"FI","name":"VivatBet","has_inplay_odds":"1"}],"US:USNJ":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USNJ","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USNJ","name":"bet365.us","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USNJ","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USNJ","name":"DraftKings","has_inplay_odds":"1"}],"IN":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"IN","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"1015","project_id":"2","geo_ip":"IN","name":"Roobet","has_inplay_odds":"1"}],"CO":[{"main_bookmaker_id":"523","project_id":"2","geo_ip":"CO","name":"Wplay.co","has_inplay_odds":"1"},{"main_bookmaker_id":"1097","project_id":"2","geo_ip":"CO","name":"Betano.co","has_inplay_odds":"1"},{"main_bookmaker_id":"598","project_id":"2","geo_ip":"CO","name":"Bwin.co","has_inplay_odds":"1"}],"PH":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"PH","name":"1xBet","has_inplay_odds":"1"}],"DE":[{"main_bookmaker_id":"759","project_id":"2","geo_ip":"DE","name":"Neobet","has_inplay_odds":"1"},{"main_bookmaker_id":"2","project_id":"2","geo_ip":"DE","name":"bwin","has_inplay_odds":"0"},{"main_bookmaker_id":"194","project_id":"2","geo_ip":"DE","name":"Oddset.de","has_inplay_odds":"1"},{"main_bookmaker_id":"903","project_id":"2","geo_ip":"DE","name":"Winamax.de","has_inplay_odds":"1"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"DE","name":"bet365","has_inplay_odds":"0"}],"CA":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"CA","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"19","project_id":"2","geo_ip":"CA","name":"Sports Interaction","has_inplay_odds":"1"},{"main_bookmaker_id":"997","project_id":"2","geo_ip":"CA","name":"Stake.com","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"CA","name":"1xBet","has_inplay_odds":"0"}],"MT":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"MT","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"15","project_id":"2","geo_ip":"MT","name":"William Hill","has_inplay_odds":"0"}],"ET":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"ET","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"MZ":[{"main_bookmaker_id":"589","project_id":"2","geo_ip":"MZ","name":"Betway Africa","has_inplay_odds":"0"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"MZ","name":"1xBet","has_inplay_odds":"0"}],"RS":[{"main_bookmaker_id":"647","project_id":"2","geo_ip":"RS","name":"Mozzartbetrs","has_inplay_odds":"1"},{"main_bookmaker_id":"1001","project_id":"2","geo_ip":"RS","name":"1xBet.rs","has_inplay_odds":"1"},{"main_bookmaker_id":"1007","project_id":"2","geo_ip":"RS","name":"SoccerBet","has_inplay_odds":"1"},{"main_bookmaker_id":"1111","project_id":"2","geo_ip":"RS","name":"Admiralbet.rs","has_inplay_odds":"1"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"RS","name":"bet365","has_inplay_odds":"1"}],"CA:CAON":[{"main_bookmaker_id":"665","project_id":"2","geo_ip":"CA:CAON","name":"Betano.ca (Ontario)","has_inplay_odds":"1"},{"main_bookmaker_id":"26","project_id":"2","geo_ip":"CA:CAON","name":"Betway","has_inplay_odds":"1"},{"main_bookmaker_id":"19","project_id":"2","geo_ip":"CA:CAON","name":"Sports Interaction","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"CA:CAON","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"CA:CAON","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"27","project_id":"2","geo_ip":"CA:CAON","name":"888sport","has_inplay_odds":"0"}],"SG":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"SG","name":"1xBet","has_inplay_odds":"1"}],"CM":[{"main_bookmaker_id":"921","project_id":"2","geo_ip":"CM","name":"PremierBet.LR.ET","has_inplay_odds":"0"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"CM","name":"1xBet","has_inplay_odds":"1"}],"SI":[{"main_bookmaker_id":"3","project_id":"2","geo_ip":"SI","name":"bet-at-home","has_inplay_odds":"0"}],"MY":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"MY","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"1015","project_id":"2","geo_ip":"MY","name":"Roobet","has_inplay_odds":"1"}],"AE":[],"ME":[{"main_bookmaker_id":"1007","project_id":"2","geo_ip":"ME","name":"SoccerBet","has_inplay_odds":"1"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"ME","name":"bet365","has_inplay_odds":"0"}],"BR":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"BR","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"574","project_id":"2","geo_ip":"BR","name":"Betano.br","has_inplay_odds":"1"},{"main_bookmaker_id":"833","project_id":"2","geo_ip":"BR","name":"Estrelabet","has_inplay_odds":"1"},{"main_bookmaker_id":"933","project_id":"2","geo_ip":"BR","name":"Superbet.br","has_inplay_odds":"1"},{"main_bookmaker_id":"1157","project_id":"2","geo_ip":"BR","name":"1xBet.br","has_inplay_odds":"1"},{"main_bookmaker_id":"863","project_id":"2","geo_ip":"BR","name":"BetEsporte","has_inplay_odds":"1"},{"main_bookmaker_id":"959","project_id":"2","geo_ip":"BR","name":"Esportivabet","has_inplay_odds":"1"},{"main_bookmaker_id":"995","project_id":"2","geo_ip":"BR","name":"Betnacional","has_inplay_odds":"1"},{"main_bookmaker_id":"1049","project_id":"2","geo_ip":"BR","name":"Lotogreen","has_inplay_odds":"1"},{"main_bookmaker_id":"943","project_id":"2","geo_ip":"BR","name":"Betboom.br","has_inplay_odds":"1"},{"main_bookmaker_id":"1069","project_id":"2","geo_ip":"BR","name":"Bet7k","has_inplay_odds":"1"},{"main_bookmaker_id":"953","project_id":"2","geo_ip":"BR","name":"F12","has_inplay_odds":"1"}],"CH":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"CH","name":"bet365","has_inplay_odds":"0"},{"main_bookmaker_id":"3","project_id":"2","geo_ip":"CH","name":"bet-at-home","has_inplay_odds":"0"}],"MW":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"MW","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"},{"main_bookmaker_id":"589","project_id":"2","geo_ip":"MW","name":"Betway Africa","has_inplay_odds":"0"}],"HU":[],"US:USIA":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USIA","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USIA","name":"bet365.us","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USIA","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USIA","name":"DraftKings","has_inplay_odds":"1"}],"US:USKY":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USKY","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USKY","name":"bet365.us","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USKY","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USKY","name":"DraftKings","has_inplay_odds":"1"}],"US:USOH":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USOH","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USOH","name":"bet365.us","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USOH","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USOH","name":"DraftKings","has_inplay_odds":"1"}],"US:USNC":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USNC","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USNC","name":"bet365.us","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USNC","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USNC","name":"DraftKings","has_inplay_odds":"1"}],"IE":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"IE","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"1005","project_id":"2","geo_ip":"IE","name":"1xBet.ie","has_inplay_odds":"1"},{"main_bookmaker_id":"841","project_id":"2","geo_ip":"IE","name":"Midnite","has_inplay_odds":"1"},{"main_bookmaker_id":"632","project_id":"2","geo_ip":"IE","name":"Novibet","has_inplay_odds":"1"}],"US:USDC":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USDC","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USDC","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USDC","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"1221","project_id":"2","geo_ip":"US:USDC","name":"Kalshi","has_inplay_odds":"1"}],"US:USIL":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USIL","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USIL","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USIL","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USIL","name":"bet365.us","has_inplay_odds":"1"}],"US:USNV":[{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USNV","name":"BetMGM.us","has_inplay_odds":"1"}],"US:USNY":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USNY","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USNY","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USNY","name":"BetMGM.us","has_inplay_odds":"1"}],"US:USVT":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USVT","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USVT","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USVT","name":"BetMGM.us","has_inplay_odds":"1"}],"US:USWY":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USWY","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USWY","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USWY","name":"DraftKings","has_inplay_odds":"1"}],"US:USKS":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USKS","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USKS","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USKS","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USKS","name":"bet365.us","has_inplay_odds":"1"}],"US:USMS":[{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USMS","name":"BetMGM.us","has_inplay_odds":"1"}],"US:USTN":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USTN","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USTN","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USTN","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USTN","name":"bet365.us","has_inplay_odds":"1"}],"PG":[],"ZW":[{"main_bookmaker_id":"889","project_id":"2","geo_ip":"ZW","name":"PremierBet.ZW.GA","has_inplay_odds":"0"}],"TG":[],"AO":[{"main_bookmaker_id":"913","project_id":"2","geo_ip":"AO","name":"PremierBet.AO.TZ","has_inplay_odds":"0"},{"main_bookmaker_id":"875","project_id":"2","geo_ip":"AO","name":"Elephantbet.ao","has_inplay_odds":"0"}],"GN":[{"main_bookmaker_id":"917","project_id":"2","geo_ip":"GN","name":"PremierBetGN","has_inplay_odds":"0"}],"AT":[{"main_bookmaker_id":"825","project_id":"2","geo_ip":"AT","name":"Admiralat","has_inplay_odds":"0"},{"main_bookmaker_id":"16","project_id":"2","geo_ip":"AT","name":"bet365","has_inplay_odds":"0"}],"MN":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"MN","name":"1xBet","has_inplay_odds":"1"}],"LA":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"LA","name":"1xBet","has_inplay_odds":"1"}],"TW":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"TW","name":"1xBet","has_inplay_odds":"1"}],"LK":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"LK","name":"1xBet","has_inplay_odds":"1"}],"PK":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"PK","name":"1xBet","has_inplay_odds":"1"},{"main_bookmaker_id":"997","project_id":"2","geo_ip":"PK","name":"Stake.com","has_inplay_odds":"1"}],"BN":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"BN","name":"1xBet","has_inplay_odds":"1"}],"NP":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"NP","name":"1xBet","has_inplay_odds":"1"}],"BD":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"BD","name":"1xBet","has_inplay_odds":"1"}],"CI":[{"main_bookmaker_id":"655","project_id":"2","geo_ip":"CI","name":"Betclic.ci","has_inplay_odds":"0"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"CI","name":"1xBet","has_inplay_odds":"1"}],"SN":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"SN","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"LR":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"LR","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"CG":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"CG","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"ML":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"ML","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"CD":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"CD","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"TD":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"TD","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"SL":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"SL","name":"1xBet","has_inplay_odds":"1"}],"MA":[{"main_bookmaker_id":"997","project_id":"2","geo_ip":"MA","name":"Stake.com","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"MA","name":"1xBet","has_inplay_odds":"1"}],"BA":[{"main_bookmaker_id":"647","project_id":"2","geo_ip":"BA","name":"Mozzartbetrs","has_inplay_odds":"1"},{"main_bookmaker_id":"1007","project_id":"2","geo_ip":"BA","name":"SoccerBet","has_inplay_odds":"1"}],"US:USIN":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USIN","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USIN","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USIN","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USIN","name":"bet365.us","has_inplay_odds":"1"}],"DO":[{"main_bookmaker_id":"1137","project_id":"2","geo_ip":"DO","name":"Orobet","has_inplay_odds":"1"}],"US:USVA":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USVA","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USVA","name":"bet365.us","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USVA","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USVA","name":"DraftKings","has_inplay_odds":"1"}],"US:USWV":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USWV","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USWV","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USWV","name":"DraftKings","has_inplay_odds":"1"}],"MK":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"MK","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"MK","name":"1xBet","has_inplay_odds":"1"}],"US:USMO":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USMO","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USMO","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USMO","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USMO","name":"bet365.us","has_inplay_odds":"1"}],"US:USMD":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USMD","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USMD","name":"BetMGM.us","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USMD","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USMD","name":"bet365.us","has_inplay_odds":"1"}],"VE":[{"main_bookmaker_id":"749","project_id":"2","geo_ip":"VE","name":"Grupo Cordialito","has_inplay_odds":"1"},{"main_bookmaker_id":"947","project_id":"2","geo_ip":"VE","name":"Juegaenlinea","has_inplay_odds":"1"},{"main_bookmaker_id":"1181","project_id":"2","geo_ip":"VE","name":"Gogoroyal","has_inplay_odds":"1"},{"main_bookmaker_id":"1057","project_id":"2","geo_ip":"VE","name":"Sellatuparley","has_inplay_odds":"1"},{"main_bookmaker_id":"1059","project_id":"2","geo_ip":"VE","name":"Triunfobet","has_inplay_odds":"1"}],"UZ":[{"main_bookmaker_id":"417","project_id":"2","geo_ip":"UZ","name":"1xBet","has_inplay_odds":"1"}],"EC":[{"main_bookmaker_id":"16","project_id":"2","geo_ip":"EC","name":"bet365","has_inplay_odds":"1"},{"main_bookmaker_id":"661","project_id":"2","geo_ip":"EC","name":"Betano.ec","has_inplay_odds":"1"},{"main_bookmaker_id":"417","project_id":"2","geo_ip":"EC","name":"1xBet","has_inplay_odds":"1"}],"HR":[],"NA":[{"main_bookmaker_id":"919","project_id":"2","geo_ip":"NA","name":"PremierBet.CD.CG.CM.MW.MZ.SN","has_inplay_odds":"0"}],"BW:BWCE":[{"main_bookmaker_id":"589","project_id":"2","geo_ip":"BW:BWCE","name":"Betway Africa","has_inplay_odds":"0"}],"US:USAR":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USAR","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USAR","name":"DraftKings","has_inplay_odds":"1"}],"US:USMA":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USMA","name":"Fanduel","has_inplay_odds":"1"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USMA","name":"DraftKings","has_inplay_odds":"1"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USMA","name":"BetMGM.us","has_inplay_odds":"1"}],"US:USLA":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USLA","name":"Fanduel","has_inplay_odds":"0"},{"main_bookmaker_id":"549","project_id":"2","geo_ip":"US:USLA","name":"bet365.us","has_inplay_odds":"0"},{"main_bookmaker_id":"851","project_id":"2","geo_ip":"US:USLA","name":"BetMGM.us","has_inplay_odds":"0"}],"US:USCT":[{"main_bookmaker_id":"1133","project_id":"2","geo_ip":"US:USCT","name":"Fanduel","has_inplay_odds":"0"},{"main_bookmaker_id":"1205","project_id":"2","geo_ip":"US:USCT","name":"DraftKings","has_inplay_odds":"0"}],"US:USFL":[{"main_bookmaker_id":"1221","project_id":"2","geo_ip":"US:USFL","name":"Kalshi","has_inplay_odds":"1"}],"US:USCA":[{"main_bookmaker_id":"1221","project_id":"2","geo_ip":"US:USCA","name":"Kalshi","has_inplay_odds":"1"}]} };
+                });
+            window.dynamicConfigs = {"app":{"registration":{"no_remote":false},"fs_news":{"use_new_pq":false}}};
+                //used in LiveTableStaticLeagues
+                var pageType = "tournament_page", sportId = 1;
+		                    var dataLayer = dataLayer || [];
+
+		function otAfterCallback() {
+		    window.setTimeout(() => {
+		        try {
+		            if (!window.hasOTAfterCallbackProceeded) {
+		                dataLayer.push({event:'gdpr_consent',user_consent:'agree'});
+		                document.dispatchEvent(new Event('onetrust'));
+		            }
+		        } catch(e) {
+		            console.error(e);
+		        }
+		        window.hasOTAfterCallbackProceeded = true;
+		    }, 0);
+		};
+
+		function otCallback() {
+		    document.dispatchEvent(new Event("oneTrustLoaded"));
+		    window.oneTrustLoaded = true;
+
+		    if (typeof cjs === 'undefined') {
+		        return;
+		    }
+
+		    if (!window.hasOTCallbackProceeded) {
+		        cjs.Api.loader.get('cjs').call(function(_cjs) {
+		            _cjs.Api.loader.get('onetrust').fulfill(cb => { cb() });
+		        });
+		    }
+
+		    window.hasOTCallbackProceeded = true;
+		};
+
+		function OptanonWrapper() {
+		    dataLayer.push({event:"OneTrustGroupsUpdated"});
+		    try {
+		        if (typeof __tcfapi === "function") {
+		            __tcfapi("getTCData",2,(e) => {
+		                if (e !== null) {
+		                    otCallback();
+		                    if (e.eventStatus === 'useractioncomplete' || e.eventStatus === 'tcloaded') {
+		                        otAfterCallback();
+		                    };
+		                };
+		            });
+		        } else if (typeof OneTrust === "object") {
+		            otCallback();
+		            if (!OneTrust.IsAlertBoxClosed()) {
+		                OneTrust.OnConsentChanged(() => otAfterCallback());
+		            }
+		        } else {
+		            otCallback();
+		        }
+		    } catch(e) {
+		        console.error(e);
+		    }
+		};
+            // ]]>
+        </script>
+        
+    </head>
+<body class="responsive background-add-off brand--flashscore soccer _fs flat pid_2 mgc hasFsNews   tournament-page sport-page spa-page twoLineLayout  light-bg-1 v3 bg3 seoTopWrapperHidden" data-analytics-page-type="tournament_page">
+<div class="otPlaceholder otPlaceholder--hidden">
+    <div class="skOT skOT--ot">
+        <div class="skOT__co">
+            <div class="skOT__ti"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+        </div>
+        <div class="skOT__co">
+            <div class="skOT__ti"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+            <div class="skOT__te"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    if(!document.cookie.match(/^(.*;)?\s*OptanonAlertBoxClosed\s*=\s*[^;]+(.*)?$/) && !window.localStorage.getItem("onetrust_placeholder")){
+        document.getElementsByClassName("otPlaceholder")[0].classList.remove("otPlaceholder--hidden");
+    }
+
+    document.addEventListener("click", function (e) {
+
+        var element = e.target.parentNode;
+    if(element === document) element = document.body;
+
+        if (element !== null && (element.classList.contains("ot-button-group") ||
+                (element.classList.contains("ot-btn-subcntr")) ||
+                (element.classList.contains("ot-btn-container")) ||
+                (element.id === "onetrust-button-group") ||
+                (element.id === "onetrust-close-btn-container") ||
+                (element.id === "ot-pc-content") ||
+                (e.target.closest(".otPlaceholder")))
+
+        )  {
+            window.localStorage.setItem("onetrust_placeholder", 1);
+            document.getElementsByClassName("otPlaceholder")[0].classList.add("otPlaceholder--hidden");
+        }
+    }, false);
+
+</script>
+<script type="text/javascript">
+    const defaultTheme = "";
+    const usersTheme = window.localStorage.getItem("theme");
+    if(!usersTheme && defaultTheme) {
+        cjs.Api.darkModeLocal.setDarkThemeAsDefault();
+    }
+
+    cjs.Api.darkModeLocal.setThemeClass()
+</script>
+
+<div id="zoneContainer-background" data-zone-group="background"></div>
+<div class="seoAdWrapper"><div class="seoTop">
+    <div class="seoTop__content">
+        <h1>J1 League 2026 scores, live results, standings</h1>
+    </div>
+</div>
+
+<script>
+    cjs.Api.loader.get("cjs").call((_cjs) => {
+        _cjs.Api.localLsid.beforeLoad((isLoggedIn) => {
+            if (isLoggedIn) {
+                const seoTopElement = document.getElementsByClassName('seoTop')[0];
+                seoTopElement.style.display = 'none';
+                seoTopElement.classList.add('seoTopHidden');
+                document.body.classList.add('isLoggedIn');
+                document.body.classList.remove('seoTopWrapperHidden');
+            }
+        });
+    });
+</script>
+
+<div id="zoneContainer-top" data-zone-group="top"></div>
+
+<div id="zoneContainer-responsive_fixed_bottom" data-zone-group="responsive_fixed_bottom"></div>
+</div><script type="application/javascript">
+    window.publicPath = "https://static.flashscore.com/res/_fs/build/"
+</script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/public-path.a616cde.js"
+    fetchpriority="auto"></script>
+
+<header class="header">
+    <img src="https://static.flashscore.com/res/_fs/image/2_others/bg.png" alt="" fetchpriority="high" class="header__bg">
+    <div class="header__content">
+        <a class="header__logoWrapper" href="/">
+            <svg class="header__logo" preserveAspectRatio="xMinYMid meet" enable-background="new 0 0 615 100" height="100" viewBox="0 0 615 100" width="615" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><g fill="#fff"><path d="m180.8 24.9h-29.3c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v39.6c0 .2.2.3.3.3h7.9c.2 0 .3-.2.3-.3v-18.6c0-1 .8-1.7 1.7-1.7h25.5c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-25.5c-1 0-1.7-.8-1.7-1.7v-8.6c0-1 .8-1.7 1.7-1.7h29c.2 0 .3-.2.3-.3v-7.9c.1-.5 0-.6-.2-.6"/><path d="m264.4 47.3c0 1-.8 1.7-1.7 1.7h-22.4c-1 0-1.7-.8-1.7-1.7v-12.1c0-1 .8-1.7 1.7-1.7h22.4c1 0 1.7.8 1.7 1.7zm7.6-14.8-6.6-6.6c-.6-.6-1.5-1-2.4-1h-23c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v39.6c0 .2.2.3.3.3h7.9c.2 0 .3-.2.3-.3v-15.2c0-1 .8-1.7 1.7-1.7h22.4c1 0 1.7.8 1.7 1.7v15.2c0 .2.2.3.3.3h7.9c.2 0 .3-.2.3-.3v-39.6c.2-.9-.2-1.8-.8-2.4z"/><path d="m222.4 74.8h-24.1c-.9 0-1.8-.4-2.4-1l-6.6-6.6c-.6-.6-1-1.5-1-2.4v-39.6c0-.2.2-.3.3-.3h7.9c.2 0 .3.2.3.3v39.3c0 1 .8 1.7 1.7 1.7h23.8c.2 0 .3.2.3.3v7.9c.1.3 0 .4-.2.4"/><path d="m319.8 53.1-6.6-6.6c-.6-.6-1.5-1-2.4-1h-19.2c-1 0-1.7-.8-1.7-1.7v-8.6c0-1 .8-1.7 1.7-1.7h27.2c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-27.5c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v9.2c0 .9.4 1.8 1 2.4l6.6 6.6c.6.6 1.5 1 2.4 1h19.2c1 0 1.7.8 1.7 1.7v8.6c0 1-.8 1.7-1.7 1.7h-27.2c-.2 0-.3.2-.3.3v7.9c0 .2.2.3.3.3h27.5c.9 0 1.8-.4 2.4-1l6.6-6.6c.6-.6 1-1.5 1-2.4v-9.2c0-.8-.3-1.7-1-2.4"/><path d="m419 53.1-6.6-6.6c-.6-.6-1.5-1-2.4-1h-19.2c-.9 0-1.7-.8-1.7-1.7v-8.6c0-1 .8-1.7 1.7-1.7h27.2c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-27.5c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v9.2c0 .9.4 1.8 1 2.4l6.6 6.6c.6.6 1.5 1 2.4 1h19.2c1 0 1.7.8 1.7 1.7v8.6c0 1-.8 1.7-1.7 1.7h-27.2c-.2 0-.3.2-.3.3v7.9c0 .2.2.3.3.3h27.5c.9 0 1.8-.4 2.4-1l6.6-6.6c.6-.6 1-1.5 1-2.4v-9.2c0-.8-.4-1.7-1-2.4"/><path d="m436.8 35.2c0-1 .8-1.7 1.7-1.7h25.5c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-25.8c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v29.9c0 .9.4 1.8 1 2.4l6.6 6.6c.6.6 1.5 1 2.4 1h25.8c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-25.5c-1 0-1.7-.8-1.7-1.7z"/><path d="m507.1 64.5c0 1-.8 1.7-1.7 1.7h-22.4c-1 0-1.7-.8-1.7-1.7v-29.3c0-1 .8-1.7 1.7-1.7h22.4c1 0 1.7.8 1.7 1.7zm7.6-32-6.6-6.6c-.6-.6-1.5-1-2.4-1h-23c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v29.9c0 .9.4 1.8 1 2.4l6.6 6.6c.6.6 1.5 1 2.4 1h23c.9 0 1.8-.4 2.4-1l6.6-6.6c.6-.6 1-1.5 1-2.4v-29.9c0-.9-.3-1.8-1-2.4z"/><path d="m371.8 24.9h-7.9c-.2 0-.3.2-.3.3v18.6c0 1-.8 1.7-1.7 1.7h-22.4c-1 0-1.7-.8-1.7-1.7v-18.6c0-.2-.2-.3-.3-.3h-7.9c-.2 0-.3.2-.3.3v49.3c0 .2.2.3.3.3h7.9c.2 0 .3-.2.3-.3v-18.6c0-1 .8-1.7 1.7-1.7h22.4c1 0 1.7.8 1.7 1.7v18.6c0 .2.2.3.3.3h7.9c.2 0 .3-.2.3-.3v-49.3c0-.2-.1-.3-.3-.3"/><path d="m558.4 43.8c0 1-.8 1.7-1.7 1.7h-22.4c-.9 0-1.7-.8-1.7-1.7v-8.6c0-.9.8-1.7 1.7-1.7h22.4c1 0 1.7.8 1.7 1.7zm8.6-8.9c0-.9-.4-1.8-1-2.4l-6.5-6.6c-.6-.6-1.5-1-2.4-1h-32.8c-.2 0-.3.2-.3.3v49.3c0 .2.2.3.3.3h7.9c.2 0 .3-.2.3-.3v-18.6c0-.9.7-1.6 1.6-1.7h11.1l11.9 20.7h9.9l-11.9-20.7h1.9c.9 0 1.8-.4 2.4-1l6.5-6.6c.6-.6 1-1.5 1-2.4v-9.3z"/><path d="m585.7 33.5h28.9c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-29.2c-.9 0-1.8.4-2.4 1l-6.6 6.6c-.6.6-1 1.5-1 2.4v29.9c0 .9.4 1.8 1 2.4l6.6 6.6c.6.6 1.5 1 2.4 1h29.2c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-28.9c-1 0-1.7-.8-1.7-1.7v-8.6c0-1 .8-1.7 1.7-1.7h20.3c.2 0 .3-.2.3-.3v-7.9c0-.2-.2-.3-.3-.3h-20.3c-1 0-1.7-.8-1.7-1.7v-8.6c0-1.4.7-2.1 1.7-2.1"/><path d="m21.1 55.1c-.5-2.6-.6-5.1-.3-7.6l-20.6-1.9c-.4 4.3-.2 8.6.6 13s2.1 8.6 3.9 12.5l18.7-8.7c-1-2.3-1.8-4.7-2.3-7.3"/><path d="m27.6 68.8-15.9 13.3c4.7 5.6 10.6 10.1 17.2 13.2l8.7-18.7c-3.8-1.9-7.3-4.5-10-7.8"/><path d="m55.1 78.9c-2.6.5-5.2.6-7.6.3l-1.8 20.6c4.3.4 8.6.2 13-.6 1.4-.3 2.9-.6 4.3-.9l-5.4-20c-.8.2-1.7.4-2.5.6"/><path d="m44.9 21.1c3.5-.6 7.1-.6 10.4 0l8.9-19.1c-7.2-2.1-15-2.7-22.9-1.3-19.7 3.5-34.7 18.2-39.6 36.4l20 5.4c2.9-10.7 11.6-19.3 23.2-21.4"/><path d="m68.8 72.5 13.3 15.8c3.3-2.8 6.3-6.1 8.8-9.6l-16.9-11.9c-1.5 2.1-3.2 4-5.2 5.7"/><path d="m99.8 45.6-20.6 1.8c.2 1.7.2 3.4 0 5.1l20.6 1.8c.3-2.8.3-5.7 0-8.7"/></g><path d="m73.3 0-19.2 41.3 83.1-41.3z" fill="#ff0046"/></g></svg>
+        </a>
+            <div class="header__items">
+                <a href="/" class="header__item--active header__item"
+                   data-lux-conversion="headerItem:results">
+                    <svg class="header__itemIcon">
+                        <use xlink:href="/res/_fs/image/13_symbols/sport.svg#live-table"></use>
+                    </svg>
+                    <div class="header__itemText" data-tag="">
+                        Scores
+                    </div>
+                </a>
+                <a href="/news/" class="header__item"
+                   data-lux-conversion="headerItem:fsnews">
+                    <svg class="header__itemIcon">
+                        <use xlink:href="/res/_fs/image/13_symbols/bottom-nav.svg#news"></use>
+                    </svg>
+                    <div class="header__itemText">
+                        News
+                    </div>
+                </a>
+            </div>
+            <a id="bonus-comparison-gift" href="#" class="header__block header__block--gift"
+               data-lux-conversion="gift:gift">
+                <div class="header__button header__button">
+                    <svg class="header__icon header__icon">
+                        <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#gift"></use>
+                    </svg>
+                </div>
+            </a>
+            <div id="searchWindow" class="header__block header__block--search">
+                <div role="button" class="header__button">
+                    <svg class="header__icon header__icon--search">
+                        <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div id="header__block--user-menu" class="header__block header__block--user">
+                <script>
+                    cjs.Api.loader.get("cjs").call((_cjs) => {
+                        _cjs.Api.localLsid.beforeLoad((isLoggedIn, name) => {
+                            document.write('' +
+                                    '<div id="user-menu" role="button" class="header__button header__button--user">' +
+                                    '<svg class="header__icon header__icon--user">' +
+                                    '<use xlink:href="' + ("/res/_fs/image/13_symbols/action.svg?serial=1750#user-logged-in") + '"/>' +
+                                    '</svg>' +
+                                    (isLoggedIn
+                                            ? '<span class="header__text header__text--user header__text--loggedIn">' + name + '</span>'
+                                            : '<span class="header__text header__text--user">Login</span>') +
+                                    '</div>');
+                        });
+                    });
+                </script>
+            </div>
+        <div id="hamburger-menu"  class="header__block header__block--menu">
+            <div role="button" class="header__button">
+                <svg class="header__icon header__icon--menu">
+                    <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#menu"></use>
+                </svg>
+            </div>
+        </div>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/autotrack.f2f425f.js"
+    fetchpriority="low"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/loginClient.82c14a5.js"
+    fetchpriority="high"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/headerMenu.0066a5f.js"
+    fetchpriority="auto"></script>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/bonusComparisonGift.a6a50a5.js"
+    fetchpriority="auto"></script>
+        <script type="text/javascript">
+            window.headerMenuEnvironment = {"lsidEnabled":true,"langBoxEnabled":false,"displayLangFlagInsteadIcon":false,"langBoxData":[],"langBoxDataByGeoIps":{"US":{"shortName":"en-usa","fullName":"English","localLangName":"United States","list":[]},"BR":{"shortName":"pt-br","fullName":"Português (Brasil)","localLangName":"Português (Brasil)","list":[]},"FR":{"shortName":"fr","fullName":"Français","localLangName":"France","list":[]},"IN":{"shortName":"en-india","fullName":"English","localLangName":"India","list":[{"id":261,"projectId":2,"shortName":"hi","url":"\/hi\/","localLang":"हिंदी","localLangName":"Hindi","onclickUrl":"hi"},{"id":262,"projectId":2,"shortName":"bn","url":"\/bn\/","localLang":"বাংলা","localLangName":"Bengali","onclickUrl":"bn"},{"id":265,"projectId":2,"shortName":"te","url":"\/te\/","localLang":"తెలుగు","localLangName":"Telugu","onclickUrl":"te"},{"id":263,"projectId":2,"shortName":"ta","url":"\/ta\/","localLang":"தமிழ்","localLangName":"Tamil","onclickUrl":"ta"},{"id":264,"projectId":2,"shortName":"kn","url":"\/kn\/","localLang":"ಕನ್ನಡ","localLangName":"Kannada","onclickUrl":"kn"}]},"PL":{"shortName":"pl","fullName":"Polski","localLangName":"Polska","list":[]}},"legalAgeGeoIps":["NL"],"giftUrls":{"AT":"https:\/\/www.flashscore.at\/sportwetten\/boni\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","AU":"https:\/\/www.flashscore.com.au\/betting\/bonuses\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","BR":"https:\/\/www.flashscore.com.br\/apostas\/guia-casas-apostas-qual-escolher\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","DE":"https:\/\/www.flashscore.de\/sportwetten\/bonus-angebotscode\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","ES":"https:\/\/www.flashscore.es\/apuestas\/bonos-apuestas\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","FR":"https:\/\/www.flashscore.fr\/paris-sportifs\/promos-bonus\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","GB":"https:\/\/www.flashscore.co.uk\/betting\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","IT":"https:\/\/www.diretta.it\/scommesse\/bonus-codici-promozionali\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","NL":"https:\/\/www.flashscore.nl\/betting\/bonuses\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","PL":"https:\/\/www.flashscore.pl\/zaklady\/bonusy-bukmacherskie\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","PT":"https:\/\/www.flashscore.pt\/apostas\/bonus-apostas\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","RO":"https:\/\/www.flashscore.ro\/pariuri\/oferte-pariuri-bonusuri\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","SE":"https:\/\/www.flashscore.se\/betting\/bonusar\/?q=internal_promo_gift&keyword=betting_site_promo_static_content","ZA":"https:\/\/www.flashscore.co.za\/betting\/bonuses\/?q=internal_promo_gift&keyword=betting_site_promo_static_content"},"gamblingOptOut":true};
+            window.isFlashfootball = false;
+            window.isDetail = false;
+            window.mobileBannerConfig = null;
+        </script>
+    </div>
+        <div id="legalAgeContainer"></div>
+<script
+    crossorigin type="text/javascript" defer
+    src="https://static.flashscore.com/res/_fs/build/legalAgeConfirmation.aaa9ccc.js"
+    fetchpriority="auto"></script>
+</header>
+    <script type="text/javascript">
+        cjs.defaultTopLeagues = ["6_100_SW9D1eZo","6_128_Mg9H0Flh","6_200_zcDLaZ3b","6_8_0UPxbDYA","6_106_boA2KUSu","6_8_pUAv7KCe","6_200_GU1e3xjd","1_198_dYlOSQOD","1_6_xGrwqq16","1_6_KQMVOQ0g","1_6_ClDjv3V5","1_6_juCfwNpC","1_77_KIShoMk3","1_81_W6BOzpK2","1_98_COuk57Ci","1_139_Or1bBrWD","1_3_zmKRcPKu","1_176_QVmLl54o","1_8_jPwMeXtd","1_8_lvUBR5F8","1_1_nNbDAhrs","1_6_A9yxE9Ke","1_6_GfRbsVWM","2_9011_tItR6sEf","2_9011_nZi4fKds","2_9011_65k5lHxU","2_9012_Sd2Q088D","2_9012_hl1W8RZs","2_9012_6g0xhggi","2_9011_MP4jLdJh","2_9012_0G3fKGYb","3_6_naL1J006","3_6_fT0n14Vt","3_6_YJaj0Opm","3_77_nD0vn2bU","3_98_h2HoKRSi","3_176_0fiHAulF","3_191_MLmY2yB1","3_200_IBmris38","3_200_jPojkLXK","3_8_OQpzcCnS","3_6_nVvz91uS","4_62_QR1GYbvD","4_6_Cnt5FMOg","4_76_CnmCUGyG","4_81_nVp0wiqd","4_181_ObxFt3lm","4_182_naWckLmC","4_200_G2Op923t","4_8_SCGVmKHb","4_6_63di6Zed","5_47_MZFZnvX4","5_200_rJVAIaHo","7_6_KK4FaFV3","7_6_nNlLsRUr","7_77_rBi9iqU7","7_81_Mmsc26yL","7_176_nVpEwOrl","7_8_zkpajjvm","7_5_QmCLtHen","7_1_hbvyXELi","19_24_ETdxjU8a","19_198_QRQyQVpP","19_8_EHbj07Ys","19_8_rNL5LJER","8_198_za7D2lO5","8_6_G8FL0ShI","8_6_faEPan8O","8_77_SzD3Lkgt","8_8_Stv0V7h5","8_8_nmjJVR7B","8_8_xxwSbYzH","8_8_SExTbVeC","9_76_WxHfCw7j","9_181_UJRjmLT9","9_8_CrHenuqG","9_8_hbCfpabM","9_182_Ywy81Djb","9_8_ltlih78J","10_76_nLBbqJDS","10_181_jacSiHjd","10_8_8K9IG0Td","12_6_6ecm9Xlr","12_6_CvPuKVY0","12_98_nm8RF0ON","12_154_jNqF318i","12_8_hjY9yg16","12_8_Sp51ptwk","11_6_MFZy7Eom","11_6_tMoe7Y0g","11_8_UwAwNo2E","11_3_rZBAZLMT","11_3_Kr4UBrQ3","14_6_2RABlYFn","14_8_jXzWoWa5","14_8_KGO4pUqO","14_8_0SwtclaU","14_8_U7TfIXUu","14_197_8bSbHipn","14_8_hGLC5Bah","14_8_W6KG4VEb","14_8_hxHR9kGl","14_8_byRjyCJO","15_8_GS36K259","15_197_MRDsXMKF","15_8_42FbPIs2","15_8_Mmkx9baa","13_8_xjQ9xGBl","13_8_OG7nzYAD","13_8_AkPEBy3K","13_8_2i0B6Zul","13_93_KfDQ6H86","13_24_06GGMnLC","13_8_KhWRqihE","13_197_xUR0yjI4","17_8064_pSDwFmA2","17_8065_YwouxX6p","18_24_OICsE7P8","18_24_lnHbQKrJ","18_24_A9VciAso","18_24_GYMw4gKo","26_8_ruJ9pBzd","25_9995_EJ1XGOEs","25_9996_Oj29TrUm","22_8_f7ITstK5","22_6_CtMYh31I","23_8150_v5mY2VHL","23_8150_0WT9Phuh","23_8150_nqOdP4Wh","23_8150_CrmQoWqj","23_8150_WQvE7HHH","23_8150_buZKLqDG","23_8150_4K0lj5hO","23_8150_2N8xUvQK","23_8150_YVEWtJhI","30_76_xKNhAJXb","30_76_viM3lKQ8","30_76_p6fbtlPC","30_8_b3e31ohC","24_8_ttMTnaKq","24_8_z3LXoJZk","24_8_vXupZVde","24_8_z3VAZkC1","24_8_8xWQf8rq","24_8_nTUUgSck","34_7300_EcSVXVwf","34_7300_lptFeFBL","34_7300_ABz7kU4b","29_8_f9FDjiFt","29_24_xrUWQ5wn","29_140_pCTdRPhh","35_197_biXWRQSN","35_197_j3ZUJ1y7","35_197_lptXr60I","35_197_KbeZZGu8","35_197_vmEZ5XXJ","36_7402_8CN3d6SA","36_7404_zF9M0iH9","42_93_2mjPD8xq","42_5_tfrUHIzn","42_5_WK02yCWs","42_8_zmOsQ2kA"];
+    </script>
+<nav class="menuTop menuTop--soccer">
+    <div class="menuTop__content menuTop__group">
+        <a href="/favorites/" class="menuTop__item menuTop__myfs">
+            <svg class="menuTop__icon menuTop__icon--star">
+                <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#star"></use>
+            </svg>
+            <div class="menuTop__text">Favorites</div>
+        </a>
+        <div class="menuTop__items">
+            <a href="/" class="menuTop__item--active menuTop__item"
+               data-sport-id="1"
+               data-lux-conversion="navSport:soccer">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#soccer"></use>
+                </svg>
+                <div class="menuTop__text">Football</div>
+            </a>
+            <a href="/tennis/" class="menuTop__item"
+               data-sport-id="2"
+               data-lux-conversion="navSport:tennis">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#tennis"></use>
+                </svg>
+                <div class="menuTop__text">Tennis</div>
+            </a>
+            <a href="/basketball/" class="menuTop__item"
+               data-sport-id="3"
+               data-lux-conversion="navSport:basketball">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#basketball"></use>
+                </svg>
+                <div class="menuTop__text">Basketball</div>
+            </a>
+            <a href="/hockey/" class="menuTop__item"
+               data-sport-id="4"
+               data-lux-conversion="navSport:hockey">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#hockey"></use>
+                </svg>
+                <div class="menuTop__text">Hockey</div>
+            </a>
+            <a href="/golf/" class="menuTop__item"
+               data-sport-id="23"
+               data-lux-conversion="navSport:golf">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#golf"></use>
+                </svg>
+                <div class="menuTop__text">Golf</div>
+            </a>
+            <a href="/handball/" class="menuTop__item"
+               data-sport-id="7"
+               data-lux-conversion="navSport:handball">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#handball"></use>
+                </svg>
+                <div class="menuTop__text">Handball</div>
+            </a>
+            <a href="/baseball/" class="menuTop__item"
+               data-sport-id="6"
+               data-lux-conversion="navSport:baseball">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#baseball"></use>
+                </svg>
+                <div class="menuTop__text">Baseball</div>
+            </a>
+            <a href="/snooker/" class="menuTop__item"
+               data-sport-id="15"
+               data-lux-conversion="navSport:snooker">
+                <svg class="menuTop__icon">
+                    <use xlink:href="/res/_fs/image/13_symbols/sport.svg#snooker"></use>
+                </svg>
+                <div class="menuTop__text">Snooker</div>
+            </a>
+        </div>
+<div class="menuMinority">
+    <div class="menuMinority__title" onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });">
+        <svg class="menuMinority__arrow">
+            <use xlink:href="/res/_fs/image/13_symbols/action.svg?serial=1750#dropdown"></use>
+        </svg>
+        <div class="menuMinority__text"
+             data-text-long="More">
+        </div>
+    </div>
+    <div class="menuMinority__content" data-mobile-headline="More">
+        <a href="/american-football/" class="menuMinority__item"
+           data-lux-conversion="navSport:american-football"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="5">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#american-football"></use>
+            </svg>
+            <div class="menuMinority__text" >Am. football</div>
+        </a>
+        <a href="/aussie-rules/" class="menuMinority__item"
+           data-lux-conversion="navSport:aussie-rules"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="18">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#aussie-rules"></use>
+            </svg>
+            <div class="menuMinority__text" >Aussie rules</div>
+        </a>
+        <a href="/badminton/" class="menuMinority__item"
+           data-lux-conversion="navSport:badminton"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="21">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#badminton"></use>
+            </svg>
+            <div class="menuMinority__text" >Badminton</div>
+        </a>
+        <a href="/bandy/" class="menuMinority__item"
+           data-lux-conversion="navSport:bandy"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="10">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#bandy"></use>
+            </svg>
+            <div class="menuMinority__text" >Bandy</div>
+        </a>
+        <a href="/baseball/" class="menuMinority__item"
+           data-lux-conversion="navSport:baseball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="6">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#baseball"></use>
+            </svg>
+            <div class="menuMinority__text" >Baseball</div>
+        </a>
+        <a href="/basketball/" class="menuMinority__item"
+           data-lux-conversion="navSport:basketball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="3">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#basketball"></use>
+            </svg>
+            <div class="menuMinority__text" >Basketball</div>
+        </a>
+        <a href="/beach-soccer/" class="menuMinority__item"
+           data-lux-conversion="navSport:beach-soccer"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="26">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#beach-soccer"></use>
+            </svg>
+            <div class="menuMinority__text" >Beach soccer</div>
+        </a>
+        <a href="/beach-volleyball/" class="menuMinority__item"
+           data-lux-conversion="navSport:beach-volleyball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="17">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#beach-volleyball"></use>
+            </svg>
+            <div class="menuMinority__text" >Beach volleyball</div>
+        </a>
+        <a href="/boxing/" class="menuMinority__item"
+           data-lux-conversion="navSport:boxing"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="16">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#boxing"></use>
+            </svg>
+            <div class="menuMinority__text" >Boxing</div>
+        </a>
+        <a href="/cricket/" class="menuMinority__item"
+           data-lux-conversion="navSport:cricket"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="13">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#cricket"></use>
+            </svg>
+            <div class="menuMinority__text" >Cricket</div>
+        </a>
+        <a href="/cycling/" class="menuMinority__item"
+           data-lux-conversion="navSport:cycling"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="34">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#cycling"></use>
+            </svg>
+            <div class="menuMinority__text" >Cycling</div>
+        </a>
+        <a href="/darts/" class="menuMinority__item"
+           data-lux-conversion="navSport:darts"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="14">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#darts"></use>
+            </svg>
+            <div class="menuMinority__text" >Darts</div>
+        </a>
+        <a href="/esports/" class="menuMinority__item"
+           data-lux-conversion="navSport:esports"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="36">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#esports"></use>
+            </svg>
+            <div class="menuMinority__text" >eSports</div>
+        </a>
+        <a href="/field-hockey/" class="menuMinority__item"
+           data-lux-conversion="navSport:field-hockey"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="24">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#field-hockey"></use>
+            </svg>
+            <div class="menuMinority__text" >Field hockey</div>
+        </a>
+        <a href="/floorball/" class="menuMinority__item"
+           data-lux-conversion="navSport:floorball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="9">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#floorball"></use>
+            </svg>
+            <div class="menuMinority__text" >Floorball</div>
+        </a>
+        <a href="/football/" class="menuMinority__item--active menuMinority__item"
+           data-lux-conversion="navSport:soccer"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="1">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#soccer"></use>
+            </svg>
+            <div class="menuMinority__text" >Football</div>
+        </a>
+        <a href="/futsal/" class="menuMinority__item"
+           data-lux-conversion="navSport:futsal"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="11">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#futsal"></use>
+            </svg>
+            <div class="menuMinority__text" >Futsal</div>
+        </a>
+        <a href="/golf/" class="menuMinority__item"
+           data-lux-conversion="navSport:golf"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="23">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#golf"></use>
+            </svg>
+            <div class="menuMinority__text" >Golf</div>
+        </a>
+        <a href="/handball/" class="menuMinority__item"
+           data-lux-conversion="navSport:handball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="7">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#handball"></use>
+            </svg>
+            <div class="menuMinority__text" >Handball</div>
+        </a>
+        <a href="/hockey/" class="menuMinority__item"
+           data-lux-conversion="navSport:hockey"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="4">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#hockey"></use>
+            </svg>
+            <div class="menuMinority__text" >Hockey</div>
+        </a>
+        <a href="/horse-racing/" class="menuMinority__item"
+           data-lux-conversion="navSport:horse-racing"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="35">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#horse-racing"></use>
+            </svg>
+            <div class="menuMinority__text" >Horse racing</div>
+        </a>
+        <a href="/kabaddi/" class="menuMinority__item"
+           data-lux-conversion="navSport:kabaddi"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="42">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#kabaddi"></use>
+            </svg>
+            <div class="menuMinority__text" >Kabaddi</div>
+        </a>
+        <a href="/mma/" class="menuMinority__item"
+           data-lux-conversion="navSport:mma"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="28">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#mma"></use>
+            </svg>
+            <div class="menuMinority__text" >MMA</div>
+        </a>
+        <a href="/motorsport/" class="menuMinority__item"
+           data-lux-conversion="navSport:motorsport"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="31">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#motorsport"></use>
+            </svg>
+            <div class="menuMinority__text" >Motorsport</div>
+        </a>
+        <a href="/netball/" class="menuMinority__item"
+           data-lux-conversion="navSport:netball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="29">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#netball"></use>
+            </svg>
+            <div class="menuMinority__text" >Netball</div>
+        </a>
+        <a href="/pesapallo/" class="menuMinority__item"
+           data-lux-conversion="navSport:pesapallo"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="30">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#pesapallo"></use>
+            </svg>
+            <div class="menuMinority__text" >Pesäpallo</div>
+        </a>
+        <a href="/rugby-league/" class="menuMinority__item"
+           data-lux-conversion="navSport:rugby-league"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="19">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#rugby-league"></use>
+            </svg>
+            <div class="menuMinority__text" >Rugby League</div>
+        </a>
+        <a href="/rugby-union/" class="menuMinority__item"
+           data-lux-conversion="navSport:rugby-union"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="8">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#rugby-union"></use>
+            </svg>
+            <div class="menuMinority__text" >Rugby Union</div>
+        </a>
+        <a href="/snooker/" class="menuMinority__item"
+           data-lux-conversion="navSport:snooker"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="15">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#snooker"></use>
+            </svg>
+            <div class="menuMinority__text" >Snooker</div>
+        </a>
+        <a href="/table-tennis/" class="menuMinority__item"
+           data-lux-conversion="navSport:table-tennis"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="25">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#table-tennis"></use>
+            </svg>
+            <div class="menuMinority__text" >Table tennis</div>
+        </a>
+        <a href="/tennis/" class="menuMinority__item"
+           data-lux-conversion="navSport:tennis"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="2">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#tennis"></use>
+            </svg>
+            <div class="menuMinority__text" >Tennis</div>
+        </a>
+        <a href="/volleyball/" class="menuMinority__item"
+           data-lux-conversion="navSport:volleyball"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="12">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#volleyball"></use>
+            </svg>
+            <div class="menuMinority__text" >Volleyball</div>
+        </a>
+        <a href="/water-polo/" class="menuMinority__item"
+           data-lux-conversion="navSport:water-polo"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="22">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#water-polo"></use>
+            </svg>
+            <div class="menuMinority__text" >Water polo</div>
+        </a>
+        <a href="/winter-sports/" class="menuMinority__item"
+           data-lux-conversion="navSport:winter-sports"
+           onclick="cjs.Api.loader.get('sportMenu').call(function(sportMenu) { sportMenu.toggleMinority() });"
+           data-sport-id="37">
+            <svg class="menuMinority__icon">
+                <use xlink:href="/res/_fs/image/13_symbols/sport.svg#winter-sports"></use>
+            </svg>
+            <div class="menuMinority__text" >Winter Sports</div>
+        </a>
+    </div>
+</div>
+    </div>
+</nav>
+<div class="container">
+<div class="container__content content">
+<div class="container__main" id="main">
+<div class="container__mainInner" id="tc">
+<div class="container__bannerZone" id="rc-top"><div id="rccontent">
+<div id="zoneContainer-right_top" data-zone-group="right_top"></div>
+<div class="scrolling-banner-wrap">
+<div id="zoneContainer-right_zone_1" data-zone-group="right_zone_1"></div>
+
+<div id="zoneContainer-right_zone_2" data-zone-group="right_zone_2"></div>
+</div><div></div></div></div><main class="container__liveTableWrapper tournament_page" id="mc">
+<div id="box-over-content-revive" class="boxOverContentRevive">
+    <div class="boxOverContentRevive__placeholder">
+        <span class="boxOverContentRevive__placeholderText">AD</span>
+    </div>
+    
+<div id="zoneContainer-box_over_content" data-zone-group="box_over_content"></div>
+
+</div>
+<script>
+    (typeof window.initBoxOverContentIframe == 'function' || function() {
+        window.initBoxOverContentIframe = true
+    })();
+</script>
+<div id="box-over-content-b" class="boxOverContent--b"><script type="text/javascript">cjs.Api.loader.get("cjs").call(function(_cjs) { _cjs.Api.loader.get("boxContentManager").call(function(boxContentManager) { boxContentManager.setSupportedGeoIPGroups(["default","GB","ES","IT","FR","AU","RU","KR","CZ","DK","US","RO","TR","PL","TN","KE","ZA","AZ","GH","JP","LT","TH","UG","VN","NG","EE","ID","NL","BE","BG","GR","KZ","PT","SK","UY","GE","MX","PE","LV","CY","SE","NO","AL","ZM","TZ","FI","US:USNJ","IN","CO","PH","DE","CA","MT","ET","MZ","RS","CA:CAON","SG","CM","SI","MY","AE","ME","BR","CH","MW","HU","US:USIA","US:USKY","US:USOH","US:USNC","IE","US:USDC","US:USIL","US:USNV","US:USNY","US:USVT","US:USWY","US:USKS","US:USMS","US:USTN","PG","ZW","TG","AO","GN","AT","MN","LA","TW","LK","PK","BN","NP","BD","CI","SN","LR","CG","ML","CD","TD","SL","MA","BA","US:USIN","DO","US:USVA","US:USWV","MK","US:USMO","US:USMD","VE","UZ","EC","HR","NA","BW:BWCE","US:USAR","US:USMA","US:USLA","US:USCT","US:USFL","US:USCA"]); _cjs.Api.boxOverContentHandler.showPlaceholders(); }); });</script></div><script>
+            cjs.Api.loader.get("cjs").call((_cjs) => {
+                _cjs.Api.boxOverContentHandler.showPlaceholders(true);
+                _cjs.Api.loader.get("geoIpResolver").call(function () {
+                    if (!_cjs.geoIP) {
+                        _cjs.Api.boxOverContentHandler.clearPlaceholders();
+                    }
+                });
+            });
+          </script><section class="gambling gambling--aboveLivetable gambling--FR gambling--hidden">
+    <a href="https://www.joueurs-info-service.fr/" class="gambling__content gambling__content--FR">
+        <img class="gambling__image gambling__image--FR" src="https://static.flashscore.com/res/_fs/image/2_others/gambling_france_gouvernement.svg" alt="France gouvernement">
+        <h4 class="gambling__headline gambling__headline--FR">Les jeux d’argent et de hasard peuvent être dangereux : pertes d’argent, conflits familiaux, addiction…</h4>
+        <p class="gambling__description gambling__description--FR">Retrouvez nos conseils sur www.joueurs-info-service.fr (09-74-75-13-13, appel non surtaxé)</p>
+    </a>
+
+    <script type="module">
+        const gambleStyle = document.querySelector(".gambling--aboveLivetable.gambling--" + "FR").style;
+        const bocReviveWrapper = document.getElementById("box-over-content-revive");
+        const breakpoint = 640;
+
+        const mo = new MutationObserver(([entry]) => {
+            if (!entry?.target || !isTargetSticky(entry.target)) {
+                setGamblingIndent();
+                return;
+            }
+
+            setGamblingIndent(entry.target.clientHeight);
+        })
+
+        const ro = new ResizeObserver(([entry]) => {
+            if (!entry?.contentRect || !isTargetSticky(entry.target)) {
+                setGamblingIndent();
+                return;
+            }
+
+            setGamblingIndent(entry.contentRect.height);
+        });
+
+        const isTargetSticky = (element) => {
+            return (
+                (element.classList.contains("isSticky") && !element.classList.contains("fixed") && window.innerWidth >= breakpoint) ||
+                (element.classList.contains("isMobileSticky") && !element.classList.contains("fixed") && window.innerWidth < breakpoint) ||
+                (element.querySelector(".zone--sticky") && !element.classList.contains("fixed"))
+            )
+        }
+
+        const setGamblingIndent = (bannerHeight = 0) => {
+            if (bannerHeight) {
+                gambleStyle.removeProperty('--marginTop-noBoc');
+                gambleStyle.setProperty('--top-stickyIndent', bannerHeight + "px");
+            } else {
+                gambleStyle.setProperty('--marginTop-noBoc', '5px');
+                gambleStyle.removeProperty('--top-stickyIndent');
+            }
+        }
+
+        const handleCountryLegalClassNames = (geoIp) => {
+            document.querySelectorAll(".gambling--" + "FR").forEach((element) => {
+                element.classList.remove("gambling--hidden");
+            });
+            document.body.classList.add("legal" + "FR");
+
+            if (!["FR"].includes(geoIp)) {
+                return;
+            }
+
+            if (bocReviveWrapper.contains(document.getElementById("zoneContainer-detail_box_over_content"))) {
+                bocReviveWrapper.classList.add("fixed");
+            }
+        }
+
+        cjs.Api.loader.get("geoIpResolver").call(function(geoIp) {
+            if (geoIp === "FR") {
+                handleCountryLegalClassNames(geoIp);
+            } else {
+                document.querySelectorAll(".gamblin

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 世界杯预测面板</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <style>
+        :root {
+            --bg-dark: #0b0f1a;
+            --card-bg: rgba(17, 24, 39, 0.85);
+            --card-border: rgba(255, 255, 255, 0.06);
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-gold: #eab308;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --glow-green: rgba(34, 197, 94, 0.15);
+        }
+        * { box-sizing: border-box; }
+        body {
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+        }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+        /* Navbar */
+        .navbar-custom {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-bottom: 1px solid var(--card-border);
+            padding: 0.6rem 1.5rem;
+            backdrop-filter: blur(12px);
+        }
+        .navbar-custom .brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Stats */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 1.5rem;
+        }
+        .hero-stat {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            backdrop-filter: blur(8px);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .hero-stat:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .hero-stat .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .hero-stat .label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        /* Navigation Pills */
+        .nav-pills-custom {
+            display: flex;
+            gap: 6px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 4px;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(8px);
+        }
+        .nav-pills-custom .pill {
+            flex: 1;
+            padding: 0.6rem 0.8rem;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: all 0.25s ease;
+            border: none;
+            background: transparent;
+            text-decoration: none;
+        }
+        .nav-pills-custom .pill:hover {
+            color: var(--text-secondary);
+            background: rgba(255,255,255,0.04);
+        }
+        .nav-pills-custom .pill.active {
+            background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+        }
+        .nav-pills-custom .pill i { margin-right: 5px; }
+
+        /* Card glassmorphism */
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            backdrop-filter: blur(8px);
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .glass-card .card-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        /* Match cards */
+        .match-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 0.8rem 1rem;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+            cursor: default;
+        }
+        .match-card:hover {
+            transform: translateX(4px);
+            border-color: rgba(255,255,255,0.12);
+        }
+        .match-card.bet-tier {
+            border-left: 3px solid var(--accent-green);
+        }
+        .match-card.bet-elite {
+            border-left: 3px solid var(--accent-red);
+        }
+        .match-card.bet-max {
+            border-left: 3px solid var(--accent-purple);
+        }
+        .match-card .teams { font-size: 0.9rem; font-weight: 600; }
+        .match-card .meta { font-size: 0.75rem; color: var(--text-secondary); }
+
+        /* Tier badges */
+        .badge-tier {
+            font-size: 0.65rem;
+            padding: 0.2em 0.5em;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .tier-Max { background: linear-gradient(135deg, #7c3aed, #6366f1); color: #fff; }
+        .tier-Elite { background: linear-gradient(135deg, #dc2626, #ef4444); color: #fff; }
+        .tier-VHigh { background: linear-gradient(135deg, #ea580c, #f97316); color: #fff; }
+        .tier-High { background: #1d4ed8; color: #fff; }
+        .tier-Medium { background: #4b5563; color: #cbd5e1; }
+        .tier-Low { background: #374151; color: #6b7280; }
+
+        .stake-amount { font-weight: 700; font-size: 0.95rem; }
+
+        /* Charts grid in sidebar */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .chart-cell {
+            background: rgba(30, 41, 59, 0.4);
+            border-radius: 10px;
+            padding: 8px;
+            min-height: 130px;
+        }
+        .chart-cell canvas { width: 100% !important; height: 130px !important; }
+        .chart-cell .chart-title {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        /* Group progress bars */
+        .group-bar-container { margin-bottom: 6px; }
+        .group-bar-container .team-name { font-size: 0.75rem; }
+        .group-bar {
+            height: 6px;
+            border-radius: 3px;
+            background: #1e293b;
+            overflow: hidden;
+            margin-top: 2px;
+        }
+        .group-bar .fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.6s ease;
+        }
+        .group-bar .fill.high { background: linear-gradient(90deg, #22c55e, #16a34a); }
+        .group-bar .fill.medium { background: linear-gradient(90deg, #eab308, #ca8a04); }
+        .group-bar .fill.low { background: linear-gradient(90deg, #64748b, #475569); }
+
+        /* Section transitions */
+        .section-content { display: none; animation: fadeIn 0.3s ease; }
+        .section-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Calendar */
+        .calendar-day {
+            margin-bottom: 1.2rem;
+        }
+        .calendar-day .day-header {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid var(--card-border);
+        }
+        .calendar-day.past .day-header { opacity: 0.5; }
+
+        /* Odds badge */
+        .odds-badge {
+            display: inline-block;
+            background: rgba(30, 41, 59, 0.8);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'SF Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .charts-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 576px) {
+            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .hero-stat .value { font-size: 1.3rem; }
+            .nav-pills-custom .pill { font-size: 0.75rem; padding: 0.4rem 0.3rem; }
+            .nav-pills-custom .pill i { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══ Navbar ═══ -->
+<nav class="navbar-custom d-flex justify-content-between align-items-center">
+    <a href="/" class="brand">
+        <i class="bi bi-trophy-fill text-warning"></i> 2026 WC Predictor
+    </a>
+    <div class="d-flex align-items-center gap-3" style="font-size:0.8rem;color:var(--text-secondary)">
+        <i class="bi bi-calendar-event"></i> {{ now.strftime('%m/%d %H:%M') }}
+        <span class="d-none d-md-inline">| 距开赛 <strong style="color:var(--accent-gold)">{{ (dt_module(2026,6,11) - now).days }}</strong> 天</span>
+    </div>
+</nav>
+
+<div class="container-fluid px-3 px-md-4 py-3 py-md-4">
+
+<!-- ═══ Hero Stats ═══ -->
+<div class="hero-stats">
+    <div class="hero-stat">
+        <div class="value" style="color:var(--accent-blue)">{{ predictions|length }}</div>
+        <div class="label">全部比赛</div>
+    </div>
+    <div class="hero-stat">
+        <div class="value" style="color:var(--accent-green)">{{ total_recommended }}</div>
+        <div class="label">推荐投注</div>
+    </div>
+    <div class="hero-stat">
+        <div class="value" style="color:var(--accent-gold)">¥{{ "%.0f"|format(total_stake) }}</div>
+        <div class="label">总计推荐金额</div>
+    </div>
+    <div class="hero-stat">
+        <div class="value" style="color:var(--accent-purple)">
+            {% set ec = stats.tier_counts.get('Elite',0) + stats.tier_counts.get('Max',0) %}
+            {{ ec }}
+        </div>
+        <div class="label">Elite+ 场次</div>
+    </div>
+</div>
+
+<!-- ═══ Navigation Pills ═══ -->
+<div class="nav-pills-custom" role="tablist">
+    <button class="pill active" data-section="today">
+        <i class="bi bi-calendar-check"></i>今日推荐
+    </button>
+    <button class="pill" data-section="all">
+        <i class="bi bi-list-columns"></i>全部赛程
+    </button>
+    <button class="pill" data-section="calendar">
+        <i class="bi bi-calendar3"></i>日历视图
+    </button>
+    <button class="pill" data-section="groups">
+        <i class="bi bi-diagram-3"></i>分组出线
+    </button>
+</div>
+
+<div class="row g-3">
+    <!-- ═══ Left: Main Content ═══ -->
+    <div class="col-lg-8">
+
+        <!-- ── Section: Today ── -->
+        <div id="section-today" class="section-content active">
+            <div class="glass-card">
+                <div class="card-title">
+                    <i class="bi bi-calendar-check me-1"></i>
+                    今日比赛 — {{ now.strftime('%m月%d日') }}
+                </div>
+                {% if today_matches %}
+                <div class="d-flex justify-content-between align-items-center mb-3" style="font-size:0.85rem">
+                    <span style="color:var(--text-secondary)">
+                        推荐 <strong style="color:var(--accent-green)">{{ today_matches|selectattr('suggested_stake')|list|length }}</strong> 场
+                        | 合计 <strong style="color:var(--accent-green)">¥{{ "%.0f"|format(today_matches|sum(attribute='suggested_stake')) }}</strong>
+                    </span>
+                </div>
+                {% for p in today_matches %}
+                {% set s = p.suggested_stake %}
+                <div class="match-card {% if s > 0 and p.tier == 'Max' %}bet-max{% elif s > 0 and p.tier == 'Elite' %}bet-elite{% elif s > 0 %}bet-tier{% endif %}">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="teams">{{ p.home[:14] }} vs {{ p.away[:14] }}</div>
+                        <span class="badge-tier tier-{{ p.tier }}">{{ TIER_CN[p.tier] if p.tier in TIER_CN else p.tier }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div class="meta">
+                            置信度 {{ p.confidence }} | 赔率 <span class="odds-badge">{{ "%.2f"|format(p.fav_odds) }}</span>
+                            | {{ p.group }}
+                        </div>
+                        {% if s > 0 %}
+                        <div class="stake-amount" style="color:var(--accent-green)">¥{{ "%.0f"|format(s) }}</div>
+                        {% else %}
+                        <div class="meta">-</div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+                <div class="text-center py-4" style="color:var(--text-muted)">
+                    <i class="bi bi-calendar2-week" style="font-size:2rem;display:block;margin-bottom:0.5rem"></i>
+                    今天没有比赛
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Summary -->
+            {% set bet_count = today_matches|selectattr('suggested_stake')|list|length %}
+            {% if bet_count > 0 %}
+            <div class="glass-card" style="border-color:rgba(34,197,94,0.2)">
+                <div class="card-title" style="color:var(--accent-green)"><i class="bi bi-pie-chart me-1"></i>今日投注汇总</div>
+                <div class="d-flex justify-content-around text-center">
+                    <div>
+                        <div style="font-size:1.3rem;font-weight:700;color:var(--accent-green)">{{ bet_count }}</div>
+                        <div style="font-size:0.75rem;color:var(--text-secondary)">推荐场次</div>
+                    </div>
+                    <div>
+                        <div style="font-size:1.3rem;font-weight:700;color:var(--accent-gold)">¥{{ "%.0f"|format(today_matches|sum(attribute='suggested_stake')) }}</div>
+                        <div style="font-size:0.75rem;color:var(--text-secondary)">总投入</div>
+                    </div>
+                    <div>
+                        <div style="font-size:1.3rem;font-weight:700;color:var(--accent-blue)">~{{ "%.1f"|format(1.5 * bet_count) }}</div>
+                        <div style="font-size:0.75rem;color:var(--text-secondary)">预期收益(¥)</div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- ── Section: All Matches ── -->
+        <div id="section-all" class="section-content">
+            <div class="glass-card">
+                <div class="card-title d-flex justify-content-between align-items-center">
+                    <span><i class="bi bi-table me-1"></i>全部比赛</span>
+                    <div class="d-flex gap-2">
+                        <select id="groupFilter" class="form-select form-select-sm" style="width:auto;background:#1e293b;color:var(--text-primary);border-color:var(--card-border);font-size:0.75rem">
+                            <option value="">全部小组</option>
+                            {% for g in 'ABCDEFGHIJKL' %}
+                            <option value="{{ g }}">Group {{ g }}</option>
+                            {% endfor %}
+                        </select>
+                        <select id="tierFilter" class="form-select form-select-sm" style="width:auto;background:#1e293b;color:var(--text-primary);border-color:var(--card-border);font-size:0.75rem">
+                            <option value="">全部分级</option>
+                            <option value="Max">Max</option>
+                            <option value="Elite">Elite</option>
+                            <option value="VHigh">VHigh</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="max-height:60vh;overflow-y:auto">
+                <table class="table table-dark table-hover mb-0" style="font-size:0.8rem">
+                    <thead>
+                        <tr style="color:var(--text-secondary);position:sticky;top:0;background:var(--card-bg)">
+                            <th>日期</th><th>组</th><th>主队</th><th>客队</th>
+                            <th>预测</th><th>置信度</th><th>分级</th><th>赔率</th><th>建议</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in predictions %}
+                        {% set s = p.suggested_stake %}
+                        <tr class="match-row" data-group="{{ p.group }}" data-tier="{{ p.tier }}"
+                            style="{% if s > 0 %}border-left:3px solid {% if p.tier=='Max' %}#8b5cf6{% elif p.tier=='Elite' %}#ef4444{% else %}#22c55e{% endif %}{% endif %}">
+                            <td style="white-space:nowrap">{{ p.date[5:10] if p.date else '??-??' }}</td>
+                            <td><strong>{{ p.group }}</strong></td>
+                            <td>{{ p.home[:14] }}</td>
+                            <td>{{ p.away[:14] }}</td>
+                            <td style="color:{% if p.predicted_outcome=='H' %}#22c55e{% elif p.predicted_outcome=='A' %}#ef4444{% else %}#eab308{% endif %}">
+                                {{ {'H':'主胜','D':'平局','A':'客胜'}.get(p.predicted_outcome,'?') }}
+                            </td>
+                            <td><strong>{{ p.confidence }}</strong></td>
+                            <td><span class="badge-tier tier-{{ p.tier }}">{{ TIER_CN[p.tier] if p.tier in TIER_CN else p.tier }}</span></td>
+                            <td><span class="odds-badge">{{ "%.2f"|format(p.fav_odds) }}</span></td>
+                            <td>{% if s > 0 %}<strong style="color:var(--accent-green)">¥{{ "%.0f"|format(s) }}</strong>{% else %}<span style="color:var(--text-muted)">-</span>{% endif %}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Section: Calendar ── -->
+        <div id="section-calendar" class="section-content">
+            <div class="glass-card">
+                <div class="card-title"><i class="bi bi-calendar3 me-1"></i>赛程日历</div>
+                {% set ns = namespace(prev_date='') %}
+                {% for date_key, matches in calendar.items() %}
+                <div class="calendar-day">
+                    <div class="day-header">
+                        <i class="bi bi-calendar-event me-1"></i>
+                        {% set parts = date_key.split('-') %}
+                        {{ parts[1] }}月{{ parts[2] }}日
+                        {% if date_key == now.strftime('%Y-%m-%d') %}
+                        <span class="badge bg-success ms-2" style="font-size:0.65rem">今天</span>
+                        {% endif %}
+                    </div>
+                    {% for p in matches %}
+                    {% set s = p.suggested_stake %}
+                    <div class="match-card {% if s > 0 %}bet-tier{% endif %}">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="teams" style="font-size:0.85rem">{{ p.home[:14] }} vs {{ p.away[:14] }}</div>
+                            <span class="badge-tier tier-{{ p.tier }}">{{ TIER_CN[p.tier] if p.tier in TIER_CN else p.tier }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-1">
+                            <div class="meta">
+                                置信度 {{ p.confidence }} | 赔率 {{ "%.2f"|format(p.fav_odds) }} | {{ p.group }}
+                            </div>
+                            {% if s > 0 %}
+                            <span class="stake-amount" style="color:var(--accent-green);font-size:0.85rem">¥{{ "%.0f"|format(s) }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- ── Section: Group Probs ── -->
+        <div id="section-groups" class="section-content">
+            <div class="glass-card">
+                <div class="card-title d-flex justify-content-between">
+                    <span><i class="bi bi-diagram-3 me-1"></i>小组出线概率</span>
+                    <span style="font-size:0.7rem;color:var(--text-muted)">Monte Carlo 5,000次模拟</span>
+                </div>
+                {% for g in 'ABCDEFGHIJKL' %}
+                {% set group_teams = groups.get(g, []) %}
+                <div class="mb-4">
+                    <h6 style="color:var(--text-primary);font-size:0.85rem;margin-bottom:8px">
+                        Group {{ g }}
+                    </h6>
+                    {% for team in group_teams %}
+                    {% set t_elo = namespace(elo=1800) %}
+                    {% if team in TEAM_ELO %}{% set _ = t_elo.__setitem__('elo', TEAM_ELO[team]) %}{% endif %}
+                    <div class="group-bar-container">
+                        <div class="d-flex justify-content-between">
+                            <span class="team-name">{{ team[:16] }}</span>
+                            <span style="font-size:0.7rem;color:var(--text-secondary)">Elo {{ t_elo.elo }}</span>
+                        </div>
+                        <div class="group-bar">
+                            <div class="fill high" id="adv-bar-{{ g }}-{{ loop.index0 }}" style="width:0%"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ Right Sidebar ═══ -->
+    <div class="col-lg-4">
+                <!-- Confidence Pie (single large chart) -->
+        <div class="glass-card">
+            <div class="card-title"><i class="bi bi-pie-chart me-1"></i>置信度分布</div>
+            <canvas id="chartTier" style="max-height:170px;width:100%"></canvas>
+        </div>
+
+        <!-- Top 5 Picks -->
+        <div class="glass-card">
+            <div class="card-title"><i class="bi bi-star-fill text-warning me-1"></i>热门推荐 TOP 5</div>
+            {% set top_bets = predictions|selectattr('suggested_stake')|list|sort(attribute='suggested_stake', reverse=True) %}
+            {% if top_bets %}
+            {% for p in top_bets[:5] %}
+            <div class="d-flex justify-content-between align-items-center mb-2" style="background:rgba(30,41,59,0.5);border-radius:8px;padding:0.5rem 0.8rem">
+                <div>
+                    <div style="font-size:0.8rem;font-weight:600">{{ p.home[:12] }} vs {{ p.away[:12] }}</div>
+                    <div style="font-size:0.65rem;color:var(--text-secondary)">{{ p.date[5:10] }} | {{ p.confidence }} | +{{ "%.2f"|format(p.fav_odds) }}</div>
+                </div>
+                <div style="text-align:right">
+                    <div style="font-size:0.85rem;font-weight:700;color:var(--accent-green)">{{ "%.0f"|format(p.suggested_stake) }}¥</div>
+                    <div><span class="badge-tier tier-{{ p.tier }}">{{ TIER_CN[p.tier] if p.tier in TIER_CN else p.tier }}</span></div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <div style="text-align:center;padding:1rem;color:var(--text-muted);font-size:0.8rem">暂无推荐</div>
+            {% endif %}
+        </div>
+
+        <!-- Daily Stakes Chart -->
+        <div class="glass-card">
+            <div class="card-title"><i class="bi bi-graph-up me-1"></i>每日推荐金额</div>
+            <canvas id="chartStakes" style="max-height:130px;width:100%"></canvas>
+        </div>
+        
+<!-- Tier Legend -->
+        <div class="glass-card">
+            <div class="card-title"><i class="bi bi-info-circle me-1"></i>分级含义</div>
+            <div style="font-size:0.8rem">
+                {% for tier, label, stake, color in [
+                    ('至尊', '置信度>=80%', '80¥', 'var(--accent-purple)'),
+                    ('\u7cbe\u9009', '\u7f6e\u4fe1\u5ea6>=70%', '50¥', 'var(--accent-red)'),
+                    ('\u9ad8\u4fe1', '\u7f6e\u4fe1\u5ea6>=60%', '30¥', 'var(--accent-green)'),
+                    ('\u5173\u6ce8', '\u7f6e\u4fe1\u5ea6>=50%', '不投', 'var(--accent-blue)'),
+                    ('\u89c2\u671b', '\u7f6e\u4fe1\u5ea6 40-50%', '不投', 'var(--text-muted)'),
+                    ('\u653e\u5f03', '\u7f6e\u4fe1\u5ea6<40%', '不投', '#6b7280'),
+                ] %}
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge-tier tier-{{ tier }} me-2">{{ tier }}</span>
+                    <span style="color:var(--text-secondary);flex:1">{{ label }}</span>
+                    <span style="color:{{ color }};font-weight:600">{{ stake }}</span>
+                </div>
+                {% endfor %}
+                <hr style="border-color:var(--card-border);margin:0.5rem 0">
+                <div style="font-size:0.75rem;color:var(--text-muted)">
+                    策略：只投 VHigh+ | WC2022 \u7cbe\u9009 胜率 88.9%
+                </div>
+            </div>
+        </div>
+
+        <!-- Groups Overview -->
+        <div class="glass-card">
+            <div class="card-title"><i class="bi bi-layers me-1"></i>小组概况</div>
+            <div class="row g-1">
+                {% for g, teams in groups.items() %}
+                <div class="col-4 col-md-3">
+                    <div style="background:rgba(30,41,59,0.5);border-radius:8px;padding:0.4rem;font-size:0.7rem">
+                        <strong>Group {{ g }}</strong>
+                        {% for t in teams %}
+                        <div style="color:var(--text-muted);font-size:0.65rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ t[:14] }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Historical Backtest -->
+        {% if backtest %}
+        <div class="glass-card">
+            <div class="card-title"><i class="bi bi-bar-chart-steps me-1"></i>历史回测</div>
+            {% for year, data in backtest.items() %}
+            <div class="mb-2">
+                <div style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:4px">
+                    WC {{ year }} | 总准确率 <strong>{{ data.overall_accuracy }}</strong>
+                </div>
+                {% for t in ['VHigh','Elite','Max'] %}
+                {% set tp = data.tier_performance.get(t) %}
+                {% if tp %}
+                <div class="d-flex justify-content-between align-items-center mb-1" style="font-size:0.75rem">
+                    <span class="badge-tier tier-{{ t }}">{{ TIER_CN.get(t, t) }}</span>
+                    <span style="color:var(--text-secondary)">{{ tp.matches }}场</span>
+                    <span style="color:{% if '+' in tp.roi %}var(--accent-green){% else %}var(--accent-red){% endif %};font-weight:600">
+                        {{ tp.accuracy }} | {{ tp.roi }}
+                    </span>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<footer class="text-center py-4" style="font-size:0.7rem;color:var(--text-muted)">
+    2026 世界杯预测面板 | 数据来源: football-data.co.uk, FanDuel, RotoWire | 仅供娱乐参考
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ═══ Navigation Pills ═══
+document.querySelectorAll('.pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+        document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        document.querySelectorAll('.section-content').forEach(s => s.classList.remove('active'));
+        const section = document.getElementById('section-' + this.dataset.section);
+        if (section) section.classList.add('active');
+    });
+});
+
+// ═══ Table Filter ═══
+const groupFilter = document.getElementById('groupFilter');
+const tierFilter = document.getElementById('tierFilter');
+
+function filterTable() {
+    const g = groupFilter?.value || '';
+    const t = tierFilter?.value || '';
+    document.querySelectorAll('.match-row').forEach(row => {
+        let show = true;
+        if (g && row.dataset.group !== g) show = false;
+        if (t && row.dataset.tier !== t) show = false;
+        row.style.display = show ? '' : 'none';
+    });
+}
+groupFilter?.addEventListener('change', filterTable);
+tierFilter?.addEventListener('change', filterTable);
+
+// ═══ Group probs data (loaded via fetch) ═══
+const TIER_CN = {Max:"顶级",Elite:"精选",VHigh:"高信",High:"关注",Medium:"观望",Low:"放弃"};
+const TIER_CN = {Max:"顶级",Elite:"精选",VHigh:"高信",High:"关注",Medium:"观望",Low:"放弃"};
+const TIER_COLORS = {
+    Max: '#7c3aed', Elite: '#ef4444', VHigh: '#f97316',
+    High: '#3b82f6', Medium: '#6b7280', Low: '#374151'
+};
+const GROUP_TEAMS = {{ groups_json | safe }};
+
+// Load group probs from API
+fetch('/api/group-probs')
+    .then(r => r.json())
+    .then(data => {
+        for (const [g, teams] of Object.entries(data)) {
+            const sorted = Object.entries(teams).sort((a,b) => b[1].advance - a[1].advance);
+            sorted.forEach(([team, probs], i) => {
+                const bar = document.getElementById(`adv-bar-${g}-${i}`);
+                if (bar) {
+                    const pct = (probs.advance * 100).toFixed(0);
+                    bar.style.width = pct + '%';
+                    bar.title = `${team}: ${pct}%`;
+                }
+            });
+        }
+    })
+    .catch(e => console.log('Group probs load deferred:', e));
+
+// ═══ Charts ═══
+const CHART_COLORS = ['#7c3aed','#ef4444','#f97316','#3b82f6','#6b7280','#374151'];
+const TEXT_COLOR = '#cbd5e1';
+const GRID_COLOR = 'rgba(255,255,255,0.04)';
+
+Chart.defaults.color = TEXT_COLOR;
+Chart.defaults.font.family = "'SF Mono', monospace";
+
+function loadCharts() {
+    fetch('/api/stats')
+        .then(r => r.json())
+        .then(data => {
+            // 1) Tier distribution
+            const tierCtx = document.getElementById('chartTier');
+            if (tierCtx) {
+                const labels = Object.keys(data.tier_counts);
+                const vals = Object.values(data.tier_counts);
+                new Chart(tierCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels,
+                        datasets: [{
+                            data: vals,
+                            backgroundColor: labels.map(l => TIER_COLORS[l] || '#6b7280'),
+                            borderWidth: 0,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        cutout: '65%',
+                    }
+                });
+            }
+
+            // 2) Daily stakes
+            const stakesCtx = document.getElementById('chartStakes');
+            if (stakesCtx && data.daily_stakes.length > 0) {
+                new Chart(stakesCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.daily_stakes.map(d => d.date.slice(5)),
+                        datasets: [{
+                            label: '推荐金额',
+                            data: data.daily_stakes.map(d => d.stake),
+                            backgroundColor: '#3b82f6',
+                            borderRadius: 3,
+                            borderSkipped: false,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            x: { grid: { color: GRID_COLOR }, ticks: { font: {size:9} } },
+                            y: { grid: { color: GRID_COLOR }, beginAtZero: true, ticks: { font: {size:9} } },
+                        }
+                    }
+                });
+            }
+
+            // 3) Group Elo chart
+            /* removed */
+            if (groupCtx) {
+                // Show top 8 teams by Elo
+                const topTeams = Object.entries({{ team_elo_json | safe }})
+                    .filter(([k]) => !k.includes('Playoff') && !k.includes('Congo') && !k.includes('Iraq'))
+                    .sort((a,b) => b[1] - a[1])
+                    .slice(0, 10);
+                new Chart(groupCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: topTeams.map(t => t[0].slice(0, 8)),
+                        datasets: [{
+                            label: 'Elo',
+                            data: topTeams.map(t => t[1]),
+                            backgroundColor: topTeams.map((_, i) => 
+                                i < 3 ? '#22c55e' : i < 6 ? '#3b82f6' : '#6b7280'),
+                            borderRadius: 3,
+                            borderSkipped: false,
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            x: { grid: { color: GRID_COLOR }, beginAtZero: true, ticks: { font: {size:8} } },
+                            y: { grid: { display: false }, ticks: { font: {size:8} } },
+                        }
+                    }
+                });
+            }
+
+            // 4) Scatter
+            // Load charts on page load + retry after 1s for group probs
+setTimeout(loadCharts, 500);
+</script>
+</body>
+</html>

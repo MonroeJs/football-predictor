@@ -113,6 +113,40 @@ def build_csv_rows(api_data: list[dict]) -> list[dict]:
     return rows
 
 
+def fetch_and_save() -> dict:
+    """Fetch odds from API, save to CSV, return summary.
+    Callable from Flask app for refresh-odds endpoint."""
+    data = fetch_odds()
+    rows = build_csv_rows(data)
+    rows.sort(key=lambda r: r['date'])
+
+    csv_path = Path(__file__).parent.parent / 'run_wc_odds.csv'
+    fieldnames = ['date', 'group', 'home', 'away', 'B365H', 'B365D', 'B365A']
+
+    # Write to CSV file (may fail on Windows if file is locked)
+    csv_ok = True
+    try:
+        with open(str(csv_path), 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+    except (PermissionError, OSError) as e:
+        print(f'  Note: CSV write skipped - {e}')
+        csv_ok = False
+
+    # Also update the database (in-memory, avoids Windows file locks)
+    from src.database import import_odds_rows
+    imported = import_odds_rows(rows)
+
+    return {
+        'updated': imported,
+        'total': len(rows),
+        'source': BOOKMAKER,
+        'csv_path': str(csv_path.resolve()),
+    }
+
+
+
 def main():
     t0 = datetime.now()
     print(f'[{t0.strftime("%H:%M:%S")}] Fetching WC odds from Odds API...')
@@ -128,7 +162,8 @@ def main():
 
     csv_path = Path(__file__).parent.parent / 'run_wc_odds.csv'
     fieldnames = ['date', 'group', 'home', 'away', 'B365H', 'B365D', 'B365A']
-    with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+
+    with open(str(csv_path), 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)

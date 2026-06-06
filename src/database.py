@@ -156,6 +156,66 @@ def import_from_csv(csv_path: Path) -> int:
     return count
 
 
+def import_odds_rows(rows: list[dict]) -> int:
+    """从内存中的 odds rows 导入比赛到数据库（绕过 CSV 文件读写，避免 Windows 文件锁）"""
+    from src.betting_system import get_confidence_tier
+    init_db()
+    conn = get_conn()
+
+    count = 0
+    for row in rows:
+        date_val = row.get('date', '')
+        home = row.get('home', '')
+        away = row.get('away', '')
+        group_val = row.get('group', '')
+        h_odds = float(row['B365H']) if str(row.get('B365H', '0')).strip() else 0
+        d_odds = float(row['B365D']) if str(row.get('B365D', '0')).strip() else 0
+        a_odds = float(row['B365A']) if str(row.get('B365A', '0')).strip() else 0
+
+        total_implied = sum(1.0 / max(o, 0.01) for o in [h_odds, d_odds, a_odds])
+        probs = {
+            'H': (1.0 / max(h_odds, 0.01)) / total_implied,
+            'D': (1.0 / max(d_odds, 0.01)) / total_implied,
+            'A': (1.0 / max(a_odds, 0.01)) / total_implied,
+        }
+        max_outcome = max(probs, key=probs.get)
+        max_prob = probs[max_outcome]
+        tier = get_confidence_tier(max_prob)
+
+        stake = 0
+        if tier.value in ('Max',): stake = 80
+        elif tier.value in ('Elite',): stake = 50
+        elif tier.value in ('VHigh',): stake = 30
+
+        existing = conn.execute(
+            "SELECT id FROM matches WHERE date=? AND home_team=? AND away_team=?",
+            (date_val, home, away)
+        ).fetchone()
+
+        if existing:
+            conn.execute("""
+                UPDATE matches SET b365h=?, b365d=?, b365a=?,
+                    predicted_winner=?, confidence=?, tier=?, suggested_stake=?,
+                    updated_at=CURRENT_TIMESTAMP
+                WHERE id=?
+            """, (h_odds, d_odds, a_odds, max_outcome, max_prob, tier.value, stake, existing['id']))
+        else:
+            conn.execute("""
+                INSERT INTO matches (date, group_name, home_team, away_team,
+                    b365h, b365d, b365a,
+                    predicted_winner, confidence, tier, suggested_stake)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (date_val, group_val, home, away,
+                  h_odds, d_odds, a_odds,
+                  max_outcome, max_prob, tier.value, stake))
+            count += 1
+
+    conn.commit()
+    conn.close()
+    print(f'  DB imported: {count} new, {len(rows) - count} updated')
+    return count
+
+
 def get_matches(date_filter: str = '') -> list[dict]:
     """获取比赛列表"""
     conn = get_conn()

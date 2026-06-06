@@ -1,0 +1,4442 @@
+{
+  "summary": {
+    "total_matches": 540,
+    "total_bets": 91,
+    "bet_rate": "16.9%",
+    "win_rate": "0.0%",
+    "total_staked": "0",
+    "total_profit": "+0",
+    "roi": "0.00%",
+    "avg_odds": "1.38",
+    "kelly_roi": "0.00%",
+    "final_bankroll": "10000",
+    "bankroll_change": "+0",
+    "drawdown": "0.0%",
+    "tier_performance": {
+      "Elite": {
+        "bets": 19,
+        "win_rate": "0.0%",
+        "roi": "0.00%",
+        "profit": "+0"
+      },
+      "Max": {
+        "bets": 1,
+        "win_rate": "0.0%",
+        "roi": "0.00%",
+        "profit": "+0"
+      },
+      "VHigh": {
+        "bets": 71,
+        "win_rate": "0.0%",
+        "roi": "0.00%",
+        "profit": "+0"
+      }
+    },
+    "prediction_accuracy_by_tier": {
+      "Elite": "84.2%",
+      "High": "56.8%",
+      "Low": "44.6%",
+      "Max": "100.0%",
+      "Medium": "44.9%",
+      "VHigh": "76.1%"
+    }
+  },
+  "tier_stats": {
+    "Max": {
+      "tier": "Max",
+      "total_bets": 1,
+      "won": 0,
+      "lost": 1,
+      "accuracy": 0.0,
+      "total_staked": 0.0,
+      "total_profit": 0.0,
+      "roi": 0,
+      "avg_odds": 1.13,
+      "avg_edge": 0,
+      "kelly_profit": 0.0
+    },
+    "Elite": {
+      "tier": "Elite",
+      "total_bets": 19,
+      "won": 0,
+      "lost": 19,
+      "accuracy": 0.0,
+      "total_staked": 0.0,
+      "total_profit": 0.0,
+      "roi": 0,
+      "avg_odds": 1.2358,
+      "avg_edge": 0,
+      "kelly_profit": 0.0
+    },
+    "VHigh": {
+      "tier": "VHigh",
+      "total_bets": 71,
+      "won": 0,
+      "lost": 71,
+      "accuracy": 0.0,
+      "total_staked": 0.0,
+      "total_profit": 0.0,
+      "roi": 0,
+      "avg_odds": 1.4211,
+      "avg_edge": 0,
+      "kelly_profit": 0.0
+    }
+  },
+  "tier_prediction_accuracy": {
+    "Max": 1.0,
+    "Elite": 0.8421,
+    "VHigh": 0.7606,
+    "High": 0.5682,
+    "Medium": 0.4487,
+    "Low": 0.4458
+  },
+  "bankroll_history": [
+    {
+      "iter": 0,
+      "bankroll": 10000,
+      "event": "init"
+    },
+    {
+      "iter": 1,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 2,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 3,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 4,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 5,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 6,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 7,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 8,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 9,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 10,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 11,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 12,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 13,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 14,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 15,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 16,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 17,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 18,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 19,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 20,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 21,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 22,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 23,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 24,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 25,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 26,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 27,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 28,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 29,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 30,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 31,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 32,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 33,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 34,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 35,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 36,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 37,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 38,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 39,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 40,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 41,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 42,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 43,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 44,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 45,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 46,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 47,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 48,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 49,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 50,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 51,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 52,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 53,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 54,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 55,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 56,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 57,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 58,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 59,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 60,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 61,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 62,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 63,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 64,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 65,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 66,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 67,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 68,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 69,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 70,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 71,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 72,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 73,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 74,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 75,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 76,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 77,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 78,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 79,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 80,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 81,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 82,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 83,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 84,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 85,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 86,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 87,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 88,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 89,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 90,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 91,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 92,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 93,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 94,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 95,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 96,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 97,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 98,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 99,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 100,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 101,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 102,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 103,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 104,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 105,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 106,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 107,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 108,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 109,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 110,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 111,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 112,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 113,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 114,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 115,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 116,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 117,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 118,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 119,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 120,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 121,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 122,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 123,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 124,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 125,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 126,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 127,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 128,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 129,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 130,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 131,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 132,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 133,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 134,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 135,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 136,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 137,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 138,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 139,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 140,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 141,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 142,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 143,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 144,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 145,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 146,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 147,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 148,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 149,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 150,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 151,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 152,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 153,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 154,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 155,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 156,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 157,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 158,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 159,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 160,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 161,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 162,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 163,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 164,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 165,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 166,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 167,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 168,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 169,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 170,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 171,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 172,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 173,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 174,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 175,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 176,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 177,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 178,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 179,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 180,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 181,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 182,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 183,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 184,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 185,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 186,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 187,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 188,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 189,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 190,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 191,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 192,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 193,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 194,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 195,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 196,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 197,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 198,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 199,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 200,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 201,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 202,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 203,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 204,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 205,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 206,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 207,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 208,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 209,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 210,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 211,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 212,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 213,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 214,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 215,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 216,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 217,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 218,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 219,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 220,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 221,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 222,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 223,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 224,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 225,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 226,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 227,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 228,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 229,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 230,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 231,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 232,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 233,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 234,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 235,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 236,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 237,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 238,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 239,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 240,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 241,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 242,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 243,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 244,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 245,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 246,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 247,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 248,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 249,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 250,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 251,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 252,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 253,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 254,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 255,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 256,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 257,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 258,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 259,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 260,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 261,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 262,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 263,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 264,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 265,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 266,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 267,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 268,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 269,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 270,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 271,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 272,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 273,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 274,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 275,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 276,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 277,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 278,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 279,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 280,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 281,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 282,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 283,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 284,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 285,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 286,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 287,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 288,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 289,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 290,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 291,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 292,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 293,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 294,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 295,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 296,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 297,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 298,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 299,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 300,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 301,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 302,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 303,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 304,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 305,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 306,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 307,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 308,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 309,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 310,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 311,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 312,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 313,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 314,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 315,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 316,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 317,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 318,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 319,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 320,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 321,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 322,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 323,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 324,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 325,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 326,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 327,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 328,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 329,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 330,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 331,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 332,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 333,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 334,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 335,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 336,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 337,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 338,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 339,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 340,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 341,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 342,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 343,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 344,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 345,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 346,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 347,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 348,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 349,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 350,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 351,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 352,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 353,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 354,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 355,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 356,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 357,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 358,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 359,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 360,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 361,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 362,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 363,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 364,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 365,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 366,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 367,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 368,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 369,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 370,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 371,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 372,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 373,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 374,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 375,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 376,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 377,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 378,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 379,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 380,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 381,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 382,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 383,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 384,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 385,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 386,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 387,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 388,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 389,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 390,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 391,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 392,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 393,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 394,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 395,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 396,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 397,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 398,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 399,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 400,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 401,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 402,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 403,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 404,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 405,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 406,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 407,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 408,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 409,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 410,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 411,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 412,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 413,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 414,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 415,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 416,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 417,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 418,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 419,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 420,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 421,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 422,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 423,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 424,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 425,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 426,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 427,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 428,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 429,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 430,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 431,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 432,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 433,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 434,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 435,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 436,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 437,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 438,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 439,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 440,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 441,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 442,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 443,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 444,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 445,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 446,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 447,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 448,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 449,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 450,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 451,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 452,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 453,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 454,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 455,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 456,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 457,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 458,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 459,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 460,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 461,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 462,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 463,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 464,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 465,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 466,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 467,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 468,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 469,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 470,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 471,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 472,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 473,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 474,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 475,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 476,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 477,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 478,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 479,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 480,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 481,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 482,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 483,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 484,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 485,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 486,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 487,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 488,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 489,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 490,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 491,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 492,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 493,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 494,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 495,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 496,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 497,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 498,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 499,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 500,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 501,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 502,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 503,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 504,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 505,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 506,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 507,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 508,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 509,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 510,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 511,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 512,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 513,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 514,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 515,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 516,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 517,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 518,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 519,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 520,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 521,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 522,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 523,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 524,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 525,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 526,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 527,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 528,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 529,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 530,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 531,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 532,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 533,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 534,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 535,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 536,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 537,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 538,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    },
+    {
+      "iter": 539,
+      "bankroll": 10000,
+      "event": "bet",
+      "profit": 0.0
+    },
+    {
+      "iter": 540,
+      "bankroll": 10000,
+      "event": "skip",
+      "profit": 0.0
+    }
+  ],
+  "records_preview": [
+    {
+      "match": "York vs Brackley Town",
+      "tier": "Elite",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.14,
+      "prob": 0.799114826653553,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Yeovil vs Morecambe",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.1,
+      "prob": 0.43026706231454004,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Rochdale vs Tamworth",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.33,
+      "prob": 0.6914433880726015,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Hartlepool vs Eastleigh",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.57,
+      "prob": 0.5771450557906888,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Sutton vs Truro",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.73,
+      "prob": 0.5292352777002512,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Carlisle vs Boston Utd",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.75,
+      "prob": 0.5211419671144621,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Braintree Town vs Scunthorpe",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.6,
+      "prob": 0.5688622754491018,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boreham Wood vs Gateshead",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.4,
+      "prob": 0.6514186450492183,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Altrincham vs Southend",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.65,
+      "prob": 0.5508813633091718,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Woking vs Aldershot",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.3,
+      "prob": 0.39856600590468166,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Forest Green vs Wealdstone",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.55,
+      "prob": 0.5856735245532362,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Halifax vs Carlisle",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.3,
+      "prob": 0.3947368421052632,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Eastleigh vs Sutton",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.3,
+      "prob": 0.3979570121302405,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Gateshead vs York",
+      "tier": "VHigh",
+      "bet_on": "A",
+      "actual": "H",
+      "odds": 1.36,
+      "prob": 0.6682223165040305,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boston Utd vs Altrincham",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.9,
+      "prob": 0.4794520547945205,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Aldershot vs Boreham Wood",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.91,
+      "prob": 0.4783947628362805,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Brackley Town vs Braintree Town",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.75,
+      "prob": 0.515559684161635,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Morecambe vs Hartlepool",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.15,
+      "prob": 0.42450857381848595,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Scunthorpe vs Rochdale",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.0,
+      "prob": 0.45945945945945943,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Southend vs Woking",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.6,
+      "prob": 0.5706354102405923,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Tamworth vs Forest Green",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.9,
+      "prob": 0.4829436565733997,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Truro vs Solihull",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.25,
+      "prob": 0.40515851692638366,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Wealdstone vs Yeovil",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.83,
+      "prob": 0.4970066644075455,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "York vs Woking",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.3,
+      "prob": 0.6962895098488319,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Truro vs Boreham Wood",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.62,
+      "prob": 0.5632582322357019,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Sutton vs Rochdale",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.75,
+      "prob": 0.5227554453692226,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Morecambe vs Aldershot",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.3,
+      "prob": 0.39884749948549086,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Solihull vs Altrincham",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.9,
+      "prob": 0.4794520547945205,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Gateshead vs Yeovil",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.1,
+      "prob": 0.4347826086956522,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Eastleigh vs Forest Green",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.65,
+      "prob": 0.5516898608349902,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Braintree Town vs Carlisle",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.53,
+      "prob": 0.5986999657885733,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Brackley Town vs Tamworth",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.35,
+      "prob": 0.3898689142542513,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Halifax vs Scunthorpe",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.25,
+      "prob": 0.40384615384615385,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Southend vs Yeovil",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.38,
+      "prob": 0.6626530364863227,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Wealdstone vs Hartlepool",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.5,
+      "prob": 0.3626373626373627,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Woking vs Altrincham",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.9,
+      "prob": 0.4829436565733997,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Yeovil vs Truro",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.25,
+      "prob": 0.40390879478827363,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Tamworth vs Solihull",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.15,
+      "prob": 0.42450857381848595,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Southend vs Braintree Town",
+      "tier": "Elite",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.25,
+      "prob": 0.7336244541484715,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Scunthorpe vs Hartlepool",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.9,
+      "prob": 0.4829436565733997,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Rochdale vs Morecambe",
+      "tier": "Elite",
+      "bet_on": "H",
+      "actual": "A",
+      "odds": 1.29,
+      "prob": 0.710750095189745,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Woking vs Eastleigh",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.7,
+      "prob": 0.5362413567718187,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Carlisle vs Gateshead",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "D",
+      "odds": 1.5,
+      "prob": 0.6054852320675106,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boston Utd vs York",
+      "tier": "VHigh",
+      "bet_on": "A",
+      "actual": "A",
+      "odds": 1.48,
+      "prob": 0.6167236223835967,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boreham Wood vs Wealdstone",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.55,
+      "prob": 0.5867289297281013,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Altrincham vs Halifax",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.38,
+      "prob": 0.38529934795494963,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Aldershot vs Sutton",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.1,
+      "prob": 0.43795620437956206,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Forest Green vs Brackley Town",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.36,
+      "prob": 0.6754011781434085,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "York vs Altrincham",
+      "tier": "Elite",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.17,
+      "prob": 0.7907370799209265,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Wealdstone vs Aldershot",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.15,
+      "prob": 0.4257242654612698,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Truro vs Forest Green",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.7,
+      "prob": 0.5399366406039364,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Sutton vs Southend",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.75,
+      "prob": 0.5203750450775333,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Solihull vs Boreham Wood",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.9,
+      "prob": 0.48254698887610276,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Morecambe vs Carlisle",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.75,
+      "prob": 0.5237674500795193,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Hartlepool vs Rochdale",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.83,
+      "prob": 0.4981404260114955,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Gateshead vs Scunthorpe",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.9,
+      "prob": 0.4797047970479704,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Eastleigh vs Yeovil",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.35,
+      "prob": 0.38217343676644827,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Braintree Town vs Woking",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.91,
+      "prob": 0.48660672907591057,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Brackley Town vs Boston Utd",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.05,
+      "prob": 0.44571896763621466,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Halifax vs Tamworth",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 1.9,
+      "prob": 0.4794520547945205,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Scunthorpe vs Brackley Town",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.42,
+      "prob": 0.642443639101991,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Yeovil vs Halifax",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.0,
+      "prob": 0.4518272425249169,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Woking vs Morecambe",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.75,
+      "prob": 0.5188893946290396,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Southend vs Solihull",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "D",
+      "odds": 1.42,
+      "prob": 0.6466606622613937,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Rochdale vs Wealdstone",
+      "tier": "Elite",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.3,
+      "prob": 0.7051546391752577,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Forest Green vs Braintree Town",
+      "tier": "Elite",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.2,
+      "prob": 0.7588482303539292,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Altrincham vs Eastleigh",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.2,
+      "prob": 0.41797976447172003,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boston Utd vs Truro",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.7,
+      "prob": 0.5366269165247018,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Aldershot vs Gateshead",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.8,
+      "prob": 0.5022727272727273,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Tamworth vs York",
+      "tier": "VHigh",
+      "bet_on": "A",
+      "actual": "A",
+      "odds": 1.33,
+      "prob": 0.6731488406881077,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boreham Wood vs Hartlepool",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.55,
+      "prob": 0.5856735245532362,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Carlisle vs Sutton",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.57,
+      "prob": 0.589300600799149,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Aldershot vs Southend",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.83,
+      "prob": 0.49926908804677833,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Wealdstone vs Boston Utd",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.1,
+      "prob": 0.43147208121827413,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Woking vs Solihull",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.0,
+      "prob": 0.4543973941368078,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "York vs Yeovil",
+      "tier": "Max",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.13,
+      "prob": 0.814399124007665,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Braintree Town vs Rochdale",
+      "tier": "Elite",
+      "bet_on": "A",
+      "actual": "A",
+      "odds": 1.27,
+      "prob": 0.7206250474095426,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Wealdstone vs Scunthorpe",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.38,
+      "prob": 0.38543897216274087,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Sutton vs Altrincham",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.91,
+      "prob": 0.48044136239990803,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Solihull vs Boston Utd",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.1,
+      "prob": 0.4357172385283175,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Truro vs Carlisle",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.85,
+      "prob": 0.4896055954925198,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Hartlepool vs Forest Green",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.05,
+      "prob": 0.4450369155045119,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Gateshead vs Woking",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.15,
+      "prob": 0.42358280455519604,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Eastleigh vs Tamworth",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.25,
+      "prob": 0.4056242011077971,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Brackley Town vs Aldershot",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.2,
+      "prob": 0.41420118343195267,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Halifax vs Southend",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.0,
+      "prob": 0.4552845528455285,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Morecambe vs Boreham Wood",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.53,
+      "prob": 0.5986999657885733,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Hartlepool vs Southend",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.83,
+      "prob": 0.4981404260114955,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Tamworth vs Braintree Town",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 1.67,
+      "prob": 0.5505260582334232,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Southend vs Wealdstone",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.45,
+      "prob": 0.6268314434959867,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Scunthorpe vs Eastleigh",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.75,
+      "prob": 0.5203750450775334,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Rochdale vs York",
+      "tier": "Low",
+      "bet_on": null,
+      "actual": "D",
+      "odds": 2.5,
+      "prob": 0.36767394343477794,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Forest Green vs Morecambe",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.33,
+      "prob": 0.6868131868131868,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boreham Wood vs Sutton",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.44,
+      "prob": 0.636766334440753,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Boston Utd vs Hartlepool",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.05,
+      "prob": 0.4491678363745739,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Altrincham vs Gateshead",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "H",
+      "odds": 2.3,
+      "prob": 0.400617538081515,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Aldershot vs Truro",
+      "tier": "High",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 1.73,
+      "prob": 0.5284126651289578,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Woking vs Halifax",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.15,
+      "prob": 0.4179039301310044,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Carlisle vs Brackley Town",
+      "tier": "VHigh",
+      "bet_on": "H",
+      "actual": "H",
+      "odds": 1.36,
+      "prob": 0.6629657821290148,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    },
+    {
+      "match": "Yeovil vs Solihull",
+      "tier": "Medium",
+      "bet_on": null,
+      "actual": "A",
+      "odds": 2.2,
+      "prob": 0.41568296795952775,
+      "stake": 0.0,
+      "profit": 0.0,
+      "won": null
+    }
+  ]
+}

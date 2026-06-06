@@ -1,0 +1,340 @@
+{
+  "league": "Ligue1",
+  "date": "2026-05-28T00:22:22.169004",
+  "train_matches": 2844,
+  "test_matches": 602,
+  "n_features": 59,
+  "results": {
+    "poisson": 0.5349,
+    "rf": {
+      "accuracy": 0.51,
+      "cv_accuracy": 0.4722,
+      "per_class": {
+        "H": 0.6714,
+        "D": 0.0448,
+        "A": 0.6011
+      },
+      "confidence_analysis": {
+        ">=35%": {
+          "count": 591,
+          "accuracy": 0.5195,
+          "coverage": 0.9817
+        },
+        ">=40%": {
+          "count": 459,
+          "accuracy": 0.5621,
+          "coverage": 0.7625
+        },
+        ">=45%": {
+          "count": 334,
+          "accuracy": 0.5928,
+          "coverage": 0.5548
+        },
+        ">=50%": {
+          "count": 224,
+          "accuracy": 0.6295,
+          "coverage": 0.3721
+        },
+        ">=55%": {
+          "count": 146,
+          "accuracy": 0.6781,
+          "coverage": 0.2425
+        },
+        ">=60%": {
+          "count": 92,
+          "accuracy": 0.7174,
+          "coverage": 0.1528
+        },
+        ">=65%": {
+          "count": 60,
+          "accuracy": 0.7,
+          "coverage": 0.0997
+        },
+        ">=70%": {
+          "count": 41,
+          "accuracy": 0.6585,
+          "coverage": 0.0681
+        },
+        ">=75%": {
+          "count": 11,
+          "accuracy": 0.5455,
+          "coverage": 0.0183
+        },
+        ">=80%": {
+          "count": 3,
+          "accuracy": 0.6667,
+          "coverage": 0.005
+        }
+      },
+      "feature_importance": [
+        {
+          "feature": "elo_diff",
+          "importance": 0.0487
+        },
+        {
+          "feature": "ewma_pts_diff",
+          "importance": 0.0342
+        },
+        {
+          "feature": "elo_away",
+          "importance": 0.0328
+        },
+        {
+          "feature": "home_ewma_gd",
+          "importance": 0.0288
+        },
+        {
+          "feature": "elo_home",
+          "importance": 0.0282
+        },
+        {
+          "feature": "avg_shot_diff",
+          "importance": 0.0279
+        },
+        {
+          "feature": "avg_sot_diff",
+          "importance": 0.027
+        },
+        {
+          "feature": "cum_gd_diff",
+          "importance": 0.0267
+        },
+        {
+          "feature": "away_avg_shots",
+          "importance": 0.0255
+        },
+        {
+          "feature": "home_ewma_scored",
+          "importance": 0.0246
+        }
+      ]
+    },
+    "gbdt": {
+      "accuracy": 0.5,
+      "cv_accuracy": 0.4633,
+      "per_class": {
+        "H": 0.6821,
+        "D": 0.0672,
+        "A": 0.5372
+      },
+      "confidence_analysis": {
+        ">=35%": {
+          "count": 600,
+          "accuracy": 0.5,
+          "coverage": 0.9967
+        },
+        ">=40%": {
+          "count": 569,
+          "accuracy": 0.5062,
+          "coverage": 0.9452
+        },
+        ">=45%": {
+          "count": 506,
+          "accuracy": 0.5336,
+          "coverage": 0.8405
+        },
+        ">=50%": {
+          "count": 420,
+          "accuracy": 0.5452,
+          "coverage": 0.6977
+        },
+        ">=55%": {
+          "count": 343,
+          "accuracy": 0.5452,
+          "coverage": 0.5698
+        },
+        ">=60%": {
+          "count": 270,
+          "accuracy": 0.5889,
+          "coverage": 0.4485
+        },
+        ">=65%": {
+          "count": 220,
+          "accuracy": 0.6091,
+          "coverage": 0.3654
+        },
+        ">=70%": {
+          "count": 167,
+          "accuracy": 0.6407,
+          "coverage": 0.2774
+        },
+        ">=75%": {
+          "count": 111,
+          "accuracy": 0.6486,
+          "coverage": 0.1844
+        },
+        ">=80%": {
+          "count": 71,
+          "accuracy": 0.6761,
+          "coverage": 0.1179
+        }
+      },
+      "feature_importance": [
+        {
+          "feature": "elo_diff",
+          "importance": 0.0834
+        },
+        {
+          "feature": "away_sot_rate",
+          "importance": 0.0315
+        },
+        {
+          "feature": "elo_away",
+          "importance": 0.0295
+        },
+        {
+          "feature": "home_sot_rate",
+          "importance": 0.0284
+        },
+        {
+          "feature": "home_hist_conversion",
+          "importance": 0.028
+        },
+        {
+          "feature": "away_avg_shots",
+          "importance": 0.0279
+        },
+        {
+          "feature": "elo_home",
+          "importance": 0.0278
+        },
+        {
+          "feature": "away_hist_conversion",
+          "importance": 0.0258
+        },
+        {
+          "feature": "away_ewma_scored",
+          "importance": 0.0257
+        },
+        {
+          "feature": "avg_shot_diff",
+          "importance": 0.0256
+        }
+      ]
+    },
+    "lr": {
+      "accuracy": 0.4884,
+      "cv_accuracy": 0.4439,
+      "per_class": {
+        "H": 0.5857,
+        "D": 0.1791,
+        "A": 0.5638
+      },
+      "confidence_analysis": {
+        ">=35%": {
+          "count": 585,
+          "accuracy": 0.4923,
+          "coverage": 0.9718
+        },
+        ">=40%": {
+          "count": 459,
+          "accuracy": 0.5316,
+          "coverage": 0.7625
+        },
+        ">=45%": {
+          "count": 310,
+          "accuracy": 0.629,
+          "coverage": 0.515
+        },
+        ">=50%": {
+          "count": 204,
+          "accuracy": 0.6765,
+          "coverage": 0.3389
+        },
+        ">=55%": {
+          "count": 145,
+          "accuracy": 0.7034,
+          "coverage": 0.2409
+        },
+        ">=60%": {
+          "count": 87,
+          "accuracy": 0.7356,
+          "coverage": 0.1445
+        },
+        ">=65%": {
+          "count": 50,
+          "accuracy": 0.68,
+          "coverage": 0.0831
+        },
+        ">=70%": {
+          "count": 30,
+          "accuracy": 0.6,
+          "coverage": 0.0498
+        },
+        ">=75%": {
+          "count": 16,
+          "accuracy": 0.625,
+          "coverage": 0.0266
+        },
+        ">=80%": {
+          "count": 9,
+          "accuracy": 0.5556,
+          "coverage": 0.015
+        }
+      },
+      "feature_importance": []
+    },
+    "xgb": {
+      "accuracy": 0.5083,
+      "cv_accuracy": 0.4595,
+      "per_class": {
+        "H": 0.6964,
+        "D": 0.0522,
+        "A": 0.5532
+      },
+      "confidence_analysis": {
+        ">=35%": {
+          "count": 597,
+          "accuracy": 0.5126,
+          "coverage": 0.9917
+        },
+        ">=40%": {
+          "count": 566,
+          "accuracy": 0.5141,
+          "coverage": 0.9402
+        },
+        ">=45%": {
+          "count": 502,
+          "accuracy": 0.5319,
+          "coverage": 0.8339
+        },
+        ">=50%": {
+          "count": 423,
+          "accuracy": 0.5745,
+          "coverage": 0.7027
+        },
+        ">=55%": {
+          "count": 345,
+          "accuracy": 0.5855,
+          "coverage": 0.5731
+        },
+        ">=60%": {
+          "count": 276,
+          "accuracy": 0.6232,
+          "coverage": 0.4585
+        },
+        ">=65%": {
+          "count": 227,
+          "accuracy": 0.6256,
+          "coverage": 0.3771
+        },
+        ">=70%": {
+          "count": 178,
+          "accuracy": 0.6348,
+          "coverage": 0.2957
+        },
+        ">=75%": {
+          "count": 126,
+          "accuracy": 0.6587,
+          "coverage": 0.2093
+        },
+        ">=80%": {
+          "count": 87,
+          "accuracy": 0.6552,
+          "coverage": 0.1445
+        }
+      },
+      "feature_importance": [
+        {
+          "feature": "elo_diff",
+          "importance": 

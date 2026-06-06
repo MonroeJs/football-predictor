@@ -16,6 +16,10 @@ from collections import defaultdict
 import pandas as pd
 from flask import Flask, render_template, jsonify, request
 
+# Load .env (API keys)
+from dotenv import load_dotenv
+load_dotenv()
+
 sys.path.insert(0, str(Path(__file__).parent.absolute()))
 
 from src.leagues import REGISTRY, get_league, list_leagues
@@ -183,10 +187,15 @@ def api_record_result():
 
 @app.route('/api/wc2026/refresh-odds', methods=['POST'])
 def api_refresh_odds():
-    """手动刷新赔率 — 从 football-data.co.uk 爬取最新数据"""
-    from scripts.update_live_odds import main as fetch_live_odds
-    result = fetch_live_odds()
-    return jsonify(result)
+    """手动刷新赔率 — 从 Odds API 拉取最新 Paddy Power 赔率"""
+    try:
+        from scripts.fetch_wc_odds import fetch_and_save
+        result = fetch_and_save()
+        return jsonify(result)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e), 'updated': 0}), 500
 
 # ─── 模板上下文 ────────────────────────────────────────────
 
@@ -209,8 +218,8 @@ def start_scheduler():
             if now.hour in [10, 14] and now.minute == 0:
                 print(f'[{now.strftime("%H:%M")}] Scheduled odds update...')
                 try:
-                    from scripts.update_live_odds import main as fetch_live
-                    fetch_live()
+                    from scripts.fetch_wc_odds import fetch_and_save
+                    fetch_and_save()
                 except Exception as e:
                     print(f'  Scheduled update error: {e}')
                 time.sleep(61)
@@ -242,4 +251,5 @@ if __name__ == '__main__':
     # 定时赔率更新
     start_scheduler()
     
-    app.run(host='127.0.0.1', port=PORT, debug=True)
+    # debug=True without reloader to avoid Windows file-lock conflicts
+    app.run(host='127.0.0.1', port=PORT, debug=True, use_reloader=False)

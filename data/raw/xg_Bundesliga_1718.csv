@@ -1,0 +1,307 @@
+date,home_team,away_team,home_goals,away_goals,result,xg_home,xg_away,league,season_code
+2017-08-18 19:30:00,Bayern Munich,Bayer Leverkusen,3,1,H,2.77906,1.8866,Bundesliga,1718
+2017-08-19 14:30:00,Hoffenheim,Werder Bremen,1,0,H,0.97427,0.806833,Bundesliga,1718
+2017-08-19 14:30:00,Hertha Berlin,VfB Stuttgart,2,0,H,0.436556,0.879388,Bundesliga,1718
+2017-08-19 14:30:00,Hamburger SV,Augsburg,1,0,H,0.55238,0.573987,Bundesliga,1718
+2017-08-19 14:30:00,Mainz 05,Hannover 96,0,1,A,0.526663,0.610149,Bundesliga,1718
+2017-08-19 14:30:00,Wolfsburg,Borussia Dortmund,0,3,A,0.495065,1.12424,Bundesliga,1718
+2017-08-19 17:30:00,Schalke 04,RasenBallsport Leipzig,2,0,H,1.91233,0.791215,Bundesliga,1718
+2017-08-20 14:30:00,Freiburg,Eintracht Frankfurt,0,0,D,0.231368,1.54296,Bundesliga,1718
+2017-08-20 17:00:00,Borussia M.Gladbach,FC Cologne,1,0,H,1.62503,0.837903,Bundesliga,1718
+2017-08-25 19:30:00,FC Cologne,Hamburger SV,1,3,A,1.88741,1.64554,Bundesliga,1718
+2017-08-26 14:30:00,Werder Bremen,Bayern Munich,0,2,A,0.229698,1.39955,Bundesliga,1718
+2017-08-26 14:30:00,Eintracht Frankfurt,Wolfsburg,0,1,A,0.926888,1.07528,Bundesliga,1718
+2017-08-26 14:30:00,Bayer Leverkusen,Hoffenheim,2,2,D,2.43586,0.68001,Bundesliga,1718
+2017-08-26 14:30:00,Augsburg,Borussia M.Gladbach,2,2,D,2.45658,1.3232,Bundesliga,1718
+2017-08-26 14:30:00,VfB Stuttgart,Mainz 05,1,0,H,2.08775,0.385982,Bundesliga,1718
+2017-08-26 17:30:00,Borussia Dortmund,Hertha Berlin,2,0,H,2.06987,0.406341,Bundesliga,1718
+2017-08-27 14:30:00,RasenBallsport Leipzig,Freiburg,4,1,H,2.85363,0.456207,Bundesliga,1718
+2017-08-27 17:00:00,Hannover 96,Schalke 04,1,0,H,0.805466,0.403031,Bundesliga,1718
+2017-09-08 19:30:00,Hamburger SV,RasenBallsport Leipzig,0,2,A,1.17417,1.37657,Bundesliga,1718
+2017-09-09 14:30:00,Mainz 05,Bayer Leverkusen,3,1,H,1.33781,0.964768,Bundesliga,1718
+2017-09-09 14:30:00,Wolfsburg,Hannover 96,1,1,D,1.13451,0.480156,Bundesliga,1718
+2017-09-09 14:30:00,Freiburg,Borussia Dortmund,0,0,D,0.490076,1.56801,Bundesliga,1718
+2017-09-09 14:30:00,Borussia M.Gladbach,Eintracht Frankfurt,0,1,A,0.632041,0.614198,Bundesliga,1718
+2017-09-09 14:30:00,Augsburg,FC Cologne,3,0,H,2.27655,0.458374,Bundesliga,1718
+2017-09-09 17:30:00,Hoffenheim,Bayern Munich,2,0,H,0.612108,1.51192,Bundesliga,1718
+2017-09-10 14:30:00,Hertha Berlin,Werder Bremen,1,1,D,0.250761,0.569654,Bundesliga,1718
+2017-09-10 17:00:00,Schalke 04,VfB Stuttgart,3,1,H,1.98675,1.30096,Bundesliga,1718
+2017-09-15 19:30:00,Hannover 96,Hamburger SV,2,0,H,2.2982,0.453334,Bundesliga,1718
+2017-09-16 14:30:00,Werder Bremen,Schalke 04,1,2,A,0.982258,0.930766,Bundesliga,1718
+2017-09-16 14:30:00,Eintracht Frankfurt,Augsburg,1,2,A,1.32498,0.72838,Bundesliga,1718
+2017-09-16 14:30:00,Bayern Munich,Mainz 05,4,0,H,4.4171,0.711282,Bundesliga,1718
+2017-09-16 14:30:00,VfB Stuttgart,Wolfsburg,1,0,H,1.13249,0.453375,Bundesliga,1718
+2017-09-16 17:30:00,RasenBallsport Leipzig,Borussia M.Gladbach,2,2,D,0.736279,1.45024,Bundesliga,1718
+2017-09-17 12:30:00,Hoffenheim,Hertha Berlin,1,1,D,0.576053,0.455083,Bundesliga,1718
+2017-09-17 14:30:00,Bayer Leverkusen,Freiburg,4,0,H,2.25411,0.429073,Bundesliga,1718
+2017-09-17 17:00:00,Borussia Dortmund,FC Cologne,5,0,H,3.85155,0.461837,Bundesliga,1718
+2017-09-19 17:30:00,Borussia M.Gladbach,VfB Stuttgart,2,0,H,1.14939,0.49742,Bundesliga,1718
+2017-09-19 19:30:00,Schalke 04,Bayern Munich,0,3,A,1.16279,2.45506,Bundesliga,1718
+2017-09-19 19:30:00,Augsburg,RasenBallsport Leipzig,1,0,H,1.30034,1.00414,Bundesliga,1718
+2017-09-19 19:30:00,Wolfsburg,Werder Bremen,1,1,D,1.01688,1.12581,Bundesliga,1718
+2017-09-20 17:30:00,FC Cologne,Eintracht Frankfurt,0,1,A,1.84333,1.33101,Bundesliga,1718
+2017-09-20 19:30:00,Hertha Berlin,Bayer Leverkusen,2,1,H,0.501808,0.426791,Bundesliga,1718
+2017-09-20 19:30:00,Freiburg,Hannover 96,1,1,D,2.89359,1.03212,Bundesliga,1718
+2017-09-20 19:30:00,Hamburger SV,Borussia Dortmund,0,3,A,0.186271,3.18132,Bundesliga,1718
+2017-09-20 19:30:00,Mainz 05,Hoffenheim,2,3,A,1.1225,0.960305,Bundesliga,1718
+2017-09-22 19:30:00,Bayern Munich,Wolfsburg,2,2,D,2.33812,0.470696,Bundesliga,1718
+2017-09-23 14:30:00,VfB Stuttgart,Augsburg,0,0,D,0.437172,0.373592,Bundesliga,1718
+2017-09-23 14:30:00,Mainz 05,Hertha Berlin,1,0,H,1.17811,0.53695,Bundesliga,1718
+2017-09-23 14:30:00,Werder Bremen,Freiburg,0,0,D,1.41802,0.859674,Bundesliga,1718
+2017-09-23 14:30:00,RasenBallsport Leipzig,Eintracht Frankfurt,2,1,H,1.54654,0.539765,Bundesliga,1718
+2017-09-23 14:30:00,Hoffenheim,Schalke 04,2,0,H,1.31728,1.0397,Bundesliga,1718
+2017-09-23 17:30:00,Borussia Dortmund,Borussia M.Gladbach,6,1,H,4.84433,1.11994,Bundesliga,1718
+2017-09-24 14:30:00,Hannover 96,FC Cologne,0,0,D,1.35909,1.10618,Bundesliga,1718
+2017-09-24 17:00:00,Bayer Leverkusen,Hamburger SV,3,0,H,2.39337,0.443359,Bundesliga,1718
+2017-09-29 19:30:00,Schalke 04,Bayer Leverkusen,1,1,D,0.615732,1.13731,Bundesliga,1718
+2017-09-30 14:30:00,Borussia M.Gladbach,Hannover 96,2,1,H,2.29547,1.37232,Bundesliga,1718
+2017-09-30 14:30:00,Wolfsburg,Mainz 05,1,1,D,0.743969,0.90227,Bundesliga,1718
+2017-09-30 14:30:00,Eintracht Frankfurt,VfB Stuttgart,2,1,H,1.12984,0.884399,Bundesliga,1718
+2017-09-30 14:30:00,Augsburg,Borussia Dortmund,1,2,A,1.04024,1.93835,Bundesliga,1718
+2017-09-30 17:30:00,Hamburger SV,Werder Bremen,0,0,D,0.957096,0.426954,Bundesliga,1718
+2017-10-01 12:30:00,Freiburg,Hoffenheim,3,2,H,1.24882,0.627194,Bundesliga,1718
+2017-10-01 14:30:00,Hertha Berlin,Bayern Munich,2,2,D,1.66354,1.51044,Bundesliga,1718
+2017-10-01 17:00:00,FC Cologne,RasenBallsport Leipzig,1,2,A,1.34012,3.09763,Bundesliga,1718
+2017-10-13 19:30:00,VfB Stuttgart,FC Cologne,2,1,H,2.18945,1.58359,Bundesliga,1718
+2017-10-14 14:30:00,Bayern Munich,Freiburg,5,0,H,1.586,0.345885,Bundesliga,1718
+2017-10-14 14:30:00,Hoffenheim,Augsburg,2,2,D,1.92073,0.918991,Bundesliga,1718
+2017-10-14 14:30:00,Hertha Berlin,Schalke 04,0,2,A,0.0254617,1.85479,Bundesliga,1718
+2017-10-14 14:30:00,Mainz 05,Hamburger SV,3,2,H,1.24944,1.99466,Bundesliga,1718
+2017-10-14 14:30:00,Hannover 96,Eintracht Frankfurt,1,2,A,0.6536,0.876712,Bundesliga,1718
+2017-10-14 17:30:00,Borussia Dortmund,RasenBallsport Leipzig,2,3,A,2.11212,2.39084,Bundesliga,1718
+2017-10-15 14:30:00,Bayer Leverkusen,Wolfsburg,2,2,D,1.45073,0.915577,Bundesliga,1718
+2017-10-15 17:00:00,Werder Bremen,Borussia M.Gladbach,0,2,A,1.52059,1.45235,Bundesliga,1718
+2017-10-20 19:30:00,Schalke 04,Mainz 05,2,0,H,1.78667,0.596599,Bundesliga,1718
+2017-10-21 14:30:00,RasenBallsport Leipzig,VfB Stuttgart,1,0,H,0.865444,0.605992,Bundesliga,1718
+2017-10-21 14:30:00,Borussia M.Gladbach,Bayer Leverkusen,1,5,A,2.49876,2.24178,Bundesliga,1718
+2017-10-21 14:30:00,Eintracht Frankfurt,Borussia Dortmund,2,2,D,2.74141,2.08809,Bundesliga,1718
+2017-10-21 14:30:00,Augsburg,Hannover 96,1,2,A,0.864125,0.804724,Bundesliga,1718
+2017-10-21 17:30:00,Hamburger SV,Bayern Munich,0,1,A,0.162992,2.29592,Bundesliga,1718
+2017-10-22 12:30:00,FC Cologne,Werder Bremen,0,0,D,1.79566,0.948887,Bundesliga,1718
+2017-10-22 14:30:00,Freiburg,Hertha Berlin,1,1,D,2.83818,1.83067,Bundesliga,1718
+2017-10-22 17:00:00,Wolfsburg,Hoffenheim,1,1,D,1.29664,1.91537,Bundesliga,1718
+2017-10-27 19:30:00,Mainz 05,Eintracht Frankfurt,1,1,D,0.284202,0.451566,Bundesliga,1718
+2017-10-28 14:30:00,Hoffenheim,Borussia M.Gladbach,1,3,A,1.08587,1.80818,Bundesliga,1718
+2017-10-28 14:30:00,Hertha Berlin,Hamburger SV,2,1,H,0.827213,0.972895,Bundesliga,1718
+2017-10-28 14:30:00,Schalke 04,Wolfsburg,1,1,D,1.44123,0.979437,Bundesliga,1718
+2017-10-28 14:30:00,Bayer Leverkusen,FC Cologne,2,1,H,1.44263,0.850339,Bundesliga,1718
+2017-10-28 14:30:00,Hannover 96,Borussia Dortmund,4,2,H,2.3406,0.85483,Bundesliga,1718
+2017-10-28 17:30:00,Bayern Munich,RasenBallsport Leipzig,2,0,H,2.03827,0.314536,Bundesliga,1718
+2017-10-29 14:30:00,Werder Bremen,Augsburg,0,3,A,1.05484,2.80574,Bundesliga,1718
+2017-10-29 17:00:00,VfB Stuttgart,Freiburg,3,0,H,1.36244,0.210495,Bundesliga,1718
+2017-11-03 19:30:00,Eintracht Frankfurt,Werder Bremen,2,1,H,1.92121,1.08479,Bundesliga,1718
+2017-11-04 14:30:00,RasenBallsport Leipzig,Hannover 96,2,1,H,1.8547,0.769041,Bundesliga,1718
+2017-11-04 14:30:00,Freiburg,Schalke 04,0,1,A,0.902185,0.749202,Bundesliga,1718
+2017-11-04 14:30:00,Borussia M.Gladbach,Mainz 05,1,1,D,0.786005,0.834092,Bundesliga,1718
+2017-11-04 14:30:00,Augsburg,Bayer Leverkusen,1,1,D,1.40776,1.16695,Bundesliga,1718
+2017-11-04 14:30:00,Hamburger SV,VfB Stuttgart,3,1,H,2.0244,1.21993,Bundesliga,1718
+2017-11-04 17:30:00,Borussia Dortmund,Bayern Munich,1,3,A,1.89107,1.27845,Bundesliga,1718
+2017-11-05 14:30:00,FC Cologne,Hoffenheim,0,3,A,0.857394,3.01942,Bundesliga,1718
+2017-11-05 17:00:00,Wolfsburg,Hertha Berlin,3,3,D,2.40074,1.4853,Bundesliga,1718
+2017-11-17 19:30:00,VfB Stuttgart,Borussia Dortmund,2,1,H,1.14326,1.79368,Bundesliga,1718
+2017-11-18 14:30:00,Bayern Munich,Augsburg,3,0,H,1.91503,0.28233,Bundesliga,1718
+2017-11-18 14:30:00,Hoffenheim,Eintracht Frankfurt,1,1,D,1.30552,0.436613,Bundesliga,1718
+2017-11-18 14:30:00,Bayer Leverkusen,RasenBallsport Leipzig,2,2,D,1.61817,2.02873,Bundesliga,1718
+2017-11-18 14:30:00,Mainz 05,FC Cologne,1,0,H,1.45054,0.577082,Bundesliga,1718
+2017-11-18 14:30:00,Wolfsburg,Freiburg,3,1,H,1.90114,0.803719,Bundesliga,1718
+2017-11-18 17:30:00,Hertha Berlin,Borussia M.Gladbach,2,4,A,2.07401,2.07666,Bundesliga,1718
+2017-11-19 14:30:00,Schalke 04,Hamburger SV,2,0,H,2.0828,0.776725,Bundesliga,1718
+2017-11-19 17:00:00,Werder Bremen,Hannover 96,4,0,H,2.61572,1.13154,Bundesliga,1718
+2017-11-24 19:30:00,Hannover 96,VfB Stuttgart,1,1,D,1.87707,1.59485,Bundesliga,1718
+2017-11-25 14:30:00,Borussia Dortmund,Schalke 04,4,4,D,2.39089,1.2544,Bundesliga,1718
+2017-11-25 14:30:00,RasenBallsport Leipzig,Werder Bremen,2,0,H,1.01767,1.07161,Bundesliga,1718
+2017-11-25 14:30:00,Freiburg,Mainz 05,2,1,H,1.83095,0.713622,Bundesliga,1718
+2017-11-25 14:30:00,Eintracht Frankfurt,Bayer Leverkusen,0,1,A,0.743407,0.943561,Bundesliga,1718
+2017-11-25 14:30:00,Augsburg,Wolfsburg,2,1,H,2.0989,0.210553,Bundesliga,1718
+2017-11-25 17:30:00,Borussia M.Gladbach,Bayern Munich,2,1,H,2.12791,0.900051,Bundesliga,1718
+2017-11-26 14:30:00,Hamburger SV,Hoffenheim,3,0,H,1.8111,0.606966,Bundesliga,1718
+2017-11-26 17:00:00,FC Cologne,Hertha Berlin,0,2,A,0.73674,2.1997,Bundesliga,1718
+2017-12-01 19:30:00,Freiburg,Hamburger SV,0,0,D,0.981146,0.460208,Bundesliga,1718
+2017-12-02 14:30:00,Bayern Munich,Hannover 96,3,1,H,3.86566,1.08319,Bundesliga,1718
+2017-12-02 14:30:00,Hoffenheim,RasenBallsport Leipzig,4,0,H,1.69565,0.284209,Bundesliga,1718
+2017-12-02 14:30:00,Werder Bremen,VfB Stuttgart,1,0,H,0.71301,1.1158,Bundesliga,1718
+2017-12-02 14:30:00,Bayer Leverkusen,Borussia Dortmund,1,1,D,2.1951,1.14867,Bundesliga,1718
+2017-12-02 14:30:00,Mainz 05,Augsburg,1,3,A,0.578034,2.18855,Bundesliga,1718
+2017-12-02 17:30:00,Schalke 04,FC Cologne,2,2,D,2.34535,1.90135,Bundesliga,1718
+2017-12-03 14:30:00,Hertha Berlin,Eintracht Frankfurt,1,2,A,1.14526,0.419465,Bundesliga,1718
+2017-12-03 17:00:00,Wolfsburg,Borussia M.Gladbach,3,0,H,1.57711,1.41032,Bundesliga,1718
+2017-12-08 19:30:00,VfB Stuttgart,Bayer Leverkusen,0,2,A,0.405005,1.90593,Bundesliga,1718
+2017-12-09 14:30:00,Borussia Dortmund,Werder Bremen,1,2,A,1.86761,0.944053,Bundesliga,1718
+2017-12-09 14:30:00,RasenBallsport Leipzig,Mainz 05,2,2,D,1.25461,1.28316,Bundesliga,1718
+2017-12-09 14:30:00,Hamburger SV,Wolfsburg,0,0,D,0.929827,0.0876003,Bundesliga,1718
+2017-12-09 14:30:00,Eintracht Frankfurt,Bayern Munich,0,1,A,0.486786,0.364594,Bundesliga,1718
+2017-12-09 17:30:00,Borussia M.Gladbach,Schalke 04,1,1,D,1.64999,0.771592,Bundesliga,1718
+2017-12-10 12:30:00,FC Cologne,Freiburg,3,4,A,1.45869,3.40591,Bundesliga,1718
+2017-12-10 14:30:00,Hannover 96,Hoffenheim,2,0,H,1.48558,0.750256,Bundesliga,1718
+2017-12-10 17:00:00,Augsburg,Hertha Berlin,1,1,D,1.63195,0.647387,Bundesliga,1718
+2017-12-12 17:30:00,Wolfsburg,RasenBallsport Leipzig,1,1,D,2.38829,0.583517,Bundesliga,1718
+2017-12-12 19:30:00,Freiburg,Borussia M.Gladbach,1,0,H,1.63493,0.222306,Bundesliga,1718
+2017-12-12 19:30:00,Hamburger SV,Eintracht Frankfurt,1,2,A,1.79316,1.02455,Bundesliga,1718
+2017-12-12 19:30:00,Mainz 05,Borussia Dortmund,0,2,A,0.503881,2.02169,Bundesliga,1718
+2017-12-13 17:30:00,Hoffenheim,VfB Stuttgart,1,0,H,2.10144,0.616667,Bundesliga,1718
+2017-12-13 19:30:00,Bayern Munich,FC Cologne,1,0,H,3.34396,0.303914,Bundesliga,1718
+2017-12-13 19:30:00,Hertha Berlin,Hannover 96,3,1,H,2.55607,1.88845,Bundesliga,1718
+2017-12-13 19:30:00,Schalke 04,Augsburg,3,2,H,2.60823,1.41489,Bundesliga,1718
+2017-12-13 19:30:00,Bayer Leverkusen,Werder Bremen,1,0,H,2.27284,0.251631,Bundesliga,1718
+2017-12-15 19:30:00,Borussia M.Gladbach,Hamburger SV,3,1,H,2.64643,0.569992,Bundesliga,1718
+2017-12-16 14:30:00,FC Cologne,Wolfsburg,1,0,H,2.32178,1.15445,Bundesliga,1718
+2017-12-16 14:30:00,Augsburg,Freiburg,3,3,D,2.95093,1.76688,Bundesliga,1718
+2017-12-16 14:30:00,Eintracht Frankfurt,Schalke 04,2,2,D,1.53257,1.82598,Bundesliga,1718
+2017-12-16 14:30:00,Werder Bremen,Mainz 05,2,2,D,1.20149,1.04877,Bundesliga,1718
+2017-12-16 14:30:00,VfB Stuttgart,Bayern Munich,0,1,A,1.0958,1.44251,Bundesliga,1718
+2017-12-16 17:30:00,Borussia Dortmund,Hoffenheim,2,1,H,3.38052,1.31881,Bundesliga,1718
+2017-12-17 14:30:00,Hannover 96,Bayer Leverkusen,4,4,D,2.17843,2.07116,Bundesliga,1718
+2017-12-17 17:00:00,RasenBallsport Leipzig,Hertha Berlin,2,3,A,2.67409,1.85524,Bundesliga,1718
+2018-01-12 19:30:00,Bayer Leverkusen,Bayern Munich,1,3,A,0.615242,1.48773,Bundesliga,1718
+2018-01-13 14:30:00,Werder Bremen,Hoffenheim,1,1,D,2.47477,1.30821,Bundesliga,1718
+2018-01-13 14:30:00,Eintracht Frankfurt,Freiburg,1,1,D,1.81323,0.309107,Bundesliga,1718
+2018-01-13 14:30:00,Augsburg,Hamburger SV,1,0,H,1.32144,0.362892,Bundesliga,1718
+2018-01-13 14:30:00,Hannover 96,Mainz 05,3,2,H,1.80008,0.431335,Bundesliga,1718
+2018-01-13 14:30:00,VfB Stuttgart,Hertha Berlin,1,0,H,0.282511,1.01714,Bundesliga,1718
+2018-01-13 17:30:00,RasenBallsport Leipzig,Schalke 04,3,1,H,2.72958,0.529316,Bundesliga,1718
+2018-01-14 14:30:00,FC Cologne,Borussia M.Gladbach,2,1,H,1.74295,2.11945,Bundesliga,1718
+2018-01-14 17:00:00,Borussia Dortmund,Wolfsburg,0,0,D,2.55723,0.698882,Bundesliga,1718
+2018-01-19 19:30:00,Hertha Berlin,Borussia Dortmund,1,1,D,0.800387,1.64967,Bundesliga,1718
+2018-01-20 14:30:00,Hoffenheim,Bayer Leverkusen,1,4,A,0.638704,2.20181,Bundesliga,1718
+2018-01-20 14:30:00,Freiburg,RasenBallsport Leipzig,2,1,H,0.536057,0.754386,Bundesliga,1718
+2018-01-20 14:30:00,Borussia M.Gladbach,Augsburg,2,0,H,1.58577,1.31181,Bundesliga,1718
+2018-01-20 14:30:00,Mainz 05,VfB Stuttgart,3,2,H,2.3724,0.718389,Bundesliga,1718
+2018-01-20 14:30:00,Wolfsburg,Eintracht Frankfurt,1,3,A,0.7221,1.78303,Bundesliga,1718
+2018-01-20 17:30:00,Hamburger SV,FC Cologne,0,2,A,0.899507,1.38156,Bundesliga,1718
+2018-01-21 14:30:00,Bayern Munich,Werder Bremen,4,2,H,1.89433,0.862595,Bundesliga,1718
+2018-01-21 17:00:00,Schalke 04,Hannover 96,1,1,D,0.635085,0.897268,Bundesliga,1718
+2018-01-26 19:30:00,Eintracht Frankfurt,Borussia M.Gladbach,2,0,H,1.33681,1.41602,Bundesliga,1718
+2018-01-27 14:30:00,Borussia Dortmund,Freiburg,2,2,D,0.675137,0.759035,Bundesliga,1718
+2018-01-27 14:30:00,Bayern Munich,Hoffenheim,5,2,H,2.83832,1.01591,Bundesliga,1718
+2018-01-27 14:30:00,FC Cologne,Augsburg,1,1,D,0.9238,0.688597,Bundesliga,1718
+2018-01-27 14:30:00,RasenBallsport Leipzig,Hamburger SV,1,1,D,1.09746,0.987601,Bundesliga,1718
+2018-01-27 14:30:00,VfB Stuttgart,Schalke 04,0,2,A,0.503564,2.63904,Bundesliga,1718
+2018-01-27 17:30:00,Werder Bremen,Hertha Berlin,0,0,D,1.56245,0.788324,Bundesliga,1718
+2018-01-28 14:30:00,Bayer Leverkusen,Mainz 05,2,0,H,1.5045,0.142135,Bundesliga,1718
+2018-01-28 17:00:00,Hannover 96,Wolfsburg,0,1,A,0.784672,0.25357,Bundesliga,1718
+2018-02-02 19:30:00,FC Cologne,Borussia Dortmund,2,3,A,2.00798,2.4117,Bundesliga,1718
+2018-02-03 14:30:00,Hertha Berlin,Hoffenheim,1,1,D,1.24795,2.05596,Bundesliga,1718
+2018-02-03 14:30:00,Freiburg,Bayer Leverkusen,0,0,D,0.683392,0.761203,Bundesliga,1718
+2018-02-03 14:30:00,Schalke 04,Werder Bremen,1,2,A,0.736859,1.90873,Bundesliga,1718
+2018-02-03 14:30:00,Mainz 05,Bayern Munich,0,2,A,1.12443,1.61624,Bundesliga,1718
+2018-02-03 14:30:00,Wolfsburg,VfB Stuttgart,1,1,D,0.810006,1.85583,Bundesliga,1718
+2018-02-03 17:30:00,Borussia M.Gladbach,RasenBallsport Leipzig,0,1,A,1.46815,1.47738,Bundesliga,1718
+2018-02-04 14:30:00,Augsburg,Eintracht Frankfurt,3,0,H,3.37224,0.35277,Bundesliga,1718
+2018-02-04 17:00:00,Hamburger SV,Hannover 96,1,1,D,1.47817,1.12675,Bundesliga,1718
+2018-02-09 19:30:00,RasenBallsport Leipzig,Augsburg,2,0,H,1.94548,0.813412,Bundesliga,1718
+2018-02-10 14:30:00,Bayer Leverkusen,Hertha Berlin,0,2,A,1.55781,0.935771,Bundesliga,1718
+2018-02-10 14:30:00,Hannover 96,Freiburg,2,1,H,0.974571,1.23823,Bundesliga,1718
+2018-02-10 14:30:00,Borussia Dortmund,Hamburger SV,2,0,H,2.58479,0.4947,Bundesliga,1718
+2018-02-10 14:30:00,Hoffenheim,Mainz 05,4,2,H,2.97721,1.45197,Bundesliga,1718
+2018-02-10 14:30:00,Eintracht Frankfurt,FC Cologne,4,2,H,2.44799,1.30881,Bundesliga,1718
+2018-02-10 17:30:00,Bayern Munich,Schalke 04,2,1,H,1.20152,0.90129,Bundesliga,1718
+2018-02-11 14:30:00,VfB Stuttgart,Borussia M.Gladbach,1,0,H,0.648719,0.467987,Bundesliga,1718
+2018-02-11 17:00:00,Werder Bremen,Wolfsburg,3,1,H,1.13687,1.58428,Bundesliga,1718
+2018-02-16 19:30:00,Hertha Berlin,Mainz 05,0,2,A,0.405793,1.22486,Bundesliga,1718
+2018-02-17 14:30:00,FC Cologne,Hannover 96,1,1,D,0.244916,1.20598,Bundesliga,1718
+2018-02-17 14:30:00,Freiburg,Werder Bremen,1,0,H,1.80201,0.353523,Bundesliga,1718
+2018-02-17 14:30:00,Hamburger SV,Bayer Leverkusen,1,2,A,0.771028,2.12545,Bundesliga,1718
+2018-02-17 14:30:00,Wolfsburg,Bayern Munich,1,2,A,0.469077,3.22804,Bundesliga,1718
+2018-02-17 17:30:00,Schalke 04,Hoffenheim,2,1,H,1.03034,0.4915,Bundesliga,1718
+2018-02-18 14:30:00,Augsburg,VfB Stuttgart,0,1,A,0.321031,1.40418,Bundesliga,1718
+2018-02-18 17:00:00,Borussia M.Gladbach,Borussia Dortmund,0,1,A,1.84628,0.362785,Bundesliga,1718
+2018-02-19 19:30:00,Eintracht Frankfurt,RasenBallsport Leipzig,2,1,H,1.64582,0.650812,Bundesliga,1718
+2018-02-23 19:30:00,Mainz 05,Wolfsburg,1,1,D,0.773004,1.00505,Bundesliga,1718
+2018-02-24 14:30:00,Bayern Munich,Hertha Berlin,0,0,D,1.65693,0.0979538,Bundesliga,1718
+2018-02-24 14:30:00,Hoffenheim,Freiburg,1,1,D,0.564931,1.00896,Bundesliga,1718
+2018-02-24 14:30:00,VfB Stuttgart,Eintracht Frankfurt,1,0,H,1.94602,0.263378,Bundesliga,1718
+2018-02-24 14:30:00,Hannover 96,Borussia M.Gladbach,0,1,A,2.15161,1.51236,Bundesliga,1718
+2018-02-24 17:30:00,Werder Bremen,Hamburger SV,1,0,H,0.888389,0.225135,Bundesliga,1718
+2018-02-25 14:30:00,Bayer Leverkusen,Schalke 04,0,2,A,0.417132,1.99241,Bundesliga,1718
+2018-02-25 17:00:00,RasenBallsport Leipzig,FC Cologne,1,2,A,2.11128,1.31216,Bundesliga,1718
+2018-02-26 19:30:00,Borussia Dortmund,Augsburg,1,1,D,1.19993,1.01277,Bundesliga,1718
+2018-03-02 19:30:00,Borussia M.Gladbach,Werder Bremen,2,2,D,1.85046,2.00266,Bundesliga,1718
+2018-03-03 14:30:00,Schalke 04,Hertha Berlin,1,0,H,0.332588,0.965273,Bundesliga,1718
+2018-03-03 14:30:00,Eintracht Frankfurt,Hannover 96,1,0,H,2.17331,0.775015,Bundesliga,1718
+2018-03-03 14:30:00,Augsburg,Hoffenheim,0,2,A,0.52869,1.84153,Bundesliga,1718
+2018-03-03 14:30:00,Hamburger SV,Mainz 05,0,0,D,1.74881,0.405966,Bundesliga,1718
+2018-03-03 14:30:00,Wolfsburg,Bayer Leverkusen,1,2,A,0.198069,2.04714,Bundesliga,1718
+2018-03-03 17:30:00,RasenBallsport Leipzig,Borussia Dortmund,1,1,D,1.03725,1.66037,Bundesliga,1718
+2018-03-04 14:30:00,FC Cologne,VfB Stuttgart,2,3,A,1.19883,0.510854,Bundesliga,1718
+2018-03-04 17:00:00,Freiburg,Bayern Munich,0,4,A,0.471821,1.98824,Bundesliga,1718
+2018-03-09 19:30:00,Mainz 05,Schalke 04,0,1,A,0.492366,0.213037,Bundesliga,1718
+2018-03-10 14:30:00,Bayern Munich,Hamburger SV,6,0,H,4.9158,0.00671621,Bundesliga,1718
+2018-03-10 14:30:00,Hoffenheim,Wolfsburg,3,0,H,1.41466,0.226156,Bundesliga,1718
+2018-03-10 14:30:00,Hannover 96,Augsburg,1,3,A,0.741256,2.09117,Bundesliga,1718
+2018-03-10 14:30:00,Hertha Berlin,Freiburg,0,0,D,1.08096,0.303864,Bundesliga,1718
+2018-03-10 17:30:00,Bayer Leverkusen,Borussia M.Gladbach,2,0,H,2.72895,0.710644,Bundesliga,1718
+2018-03-11 14:30:00,VfB Stuttgart,RasenBallsport Leipzig,0,0,D,1.1338,0.660324,Bundesliga,1718
+2018-03-11 17:00:00,Borussia Dortmund,Eintracht Frankfurt,3,2,H,1.28057,1.23331,Bundesliga,1718
+2018-03-12 19:30:00,Werder Bremen,FC Cologne,3,1,H,1.35381,0.404235,Bundesliga,1718
+2018-03-16 19:30:00,Freiburg,VfB Stuttgart,1,2,A,0.298809,1.62394,Bundesliga,1718
+2018-03-17 14:30:00,Eintracht Frankfurt,Mainz 05,3,0,H,2.11519,0.527164,Bundesliga,1718
+2018-03-17 14:30:00,Borussia M.Gladbach,Hoffenheim,3,3,D,2.29819,2.23407,Bundesliga,1718
+2018-03-17 14:30:00,Hamburger SV,Hertha Berlin,1,2,A,0.775841,2.42384,Bundesliga,1718
+2018-03-17 14:30:00,Augsburg,Werder Bremen,1,3,A,0.547431,2.27046,Bundesliga,1718
+2018-03-17 17:30:00,Wolfsburg,Schalke 04,0,1,A,1.57629,1.29568,Bundesliga,1718
+2018-03-18 12:30:00,Borussia Dortmund,Hannover 96,1,0,H,2.43612,0.659875,Bundesliga,1718
+2018-03-18 14:30:00,FC Cologne,Bayer Leverkusen,2,0,H,1.50233,0.407088,Bundesliga,1718
+2018-03-18 17:00:00,RasenBallsport Leipzig,Bayern Munich,2,1,H,2.78372,1.40277,Bundesliga,1718
+2018-03-31 14:30:00,Bayern Munich,Borussia Dortmund,6,0,H,4.59926,0.485044,Bundesliga,1718
+2018-03-31 14:30:00,Schalke 04,Freiburg,2,0,H,2.05172,0.223581,Bundesliga,1718
+2018-03-31 14:30:00,Hertha Berlin,Wolfsburg,0,0,D,0.365312,1.17225,Bundesliga,1718
+2018-03-31 14:30:00,Hoffenheim,FC Cologne,6,0,H,3.02461,0.786962,Bundesliga,1718
+2018-03-31 14:30:00,Bayer Leverkusen,Augsburg,0,0,D,0.884077,0.301791,Bundesliga,1718
+2018-03-31 14:30:00,Hannover 96,RasenBallsport Leipzig,2,3,A,1.33572,3.09004,Bundesliga,1718
+2018-03-31 14:30:00,VfB Stuttgart,Hamburger SV,1,1,D,1.08797,0.900691,Bundesliga,1718
+2018-04-01 14:30:00,Werder Bremen,Eintracht Frankfurt,2,1,H,1.06787,0.822039,Bundesliga,1718
+2018-04-01 17:00:00,Mainz 05,Borussia M.Gladbach,0,0,D,0.633771,0.658951,Bundesliga,1718
+2018-04-06 18:30:00,Hannover 96,Werder Bremen,2,1,H,1.60318,1.81065,Bundesliga,1718
+2018-04-07 13:30:00,FC Cologne,Mainz 05,1,1,D,1.31169,1.09441,Bundesliga,1718
+2018-04-07 13:30:00,Freiburg,Wolfsburg,0,2,A,1.20901,0.679271,Bundesliga,1718
+2018-04-07 13:30:00,Borussia M.Gladbach,Hertha Berlin,2,1,H,1.4326,2.30928,Bundesliga,1718
+2018-04-07 13:30:00,Augsburg,Bayern Munich,1,4,A,0.886211,2.32217,Bundesliga,1718
+2018-04-07 16:30:00,Hamburger SV,Schalke 04,3,2,H,2.29435,1.35788,Bundesliga,1718
+2018-04-08 13:30:00,Borussia Dortmund,VfB Stuttgart,3,0,H,1.60177,0.613194,Bundesliga,1718
+2018-04-08 16:00:00,Eintracht Frankfurt,Hoffenheim,1,1,D,1.82811,0.621143,Bundesliga,1718
+2018-04-09 18:30:00,RasenBallsport Leipzig,Bayer Leverkusen,1,4,A,1.57617,2.20677,Bundesliga,1718
+2018-04-13 18:30:00,Wolfsburg,Augsburg,0,0,D,0.789397,0.213724,Bundesliga,1718
+2018-04-14 13:30:00,Hoffenheim,Hamburger SV,2,0,H,3.47924,0.338639,Bundesliga,1718
+2018-04-14 13:30:00,Hertha Berlin,FC Cologne,2,1,H,1.65421,1.41628,Bundesliga,1718
+2018-04-14 13:30:00,Bayer Leverkusen,Eintracht Frankfurt,4,1,H,2.50515,0.856191,Bundesliga,1718
+2018-04-14 13:30:00,VfB Stuttgart,Hannover 96,1,1,D,0.852341,0.382079,Bundesliga,1718
+2018-04-14 16:30:00,Bayern Munich,Borussia M.Gladbach,5,1,H,3.36215,0.196571,Bundesliga,1718
+2018-04-15 13:30:00,Schalke 04,Borussia Dortmund,2,0,H,0.858968,0.925683,Bundesliga,1718
+2018-04-15 16:00:00,Werder Bremen,RasenBallsport Leipzig,1,1,D,0.9886,1.0854,Bundesliga,1718
+2018-04-16 18:30:00,Mainz 05,Freiburg,2,0,H,2.06006,0.3674,Bundesliga,1718
+2018-04-20 18:30:00,Borussia M.Gladbach,Wolfsburg,3,0,H,1.89902,0.18377,Bundesliga,1718
+2018-04-21 13:30:00,RasenBallsport Leipzig,Hoffenheim,2,5,A,1.59229,3.43682,Bundesliga,1718
+2018-04-21 13:30:00,Eintracht Frankfurt,Hertha Berlin,0,3,A,1.16277,1.53898,Bundesliga,1718
+2018-04-21 13:30:00,Hamburger SV,Freiburg,1,0,H,1.72754,0.896138,Bundesliga,1718
+2018-04-21 13:30:00,Hannover 96,Bayern Munich,0,3,A,0.243137,2.00929,Bundesliga,1718
+2018-04-21 13:30:00,VfB Stuttgart,Werder Bremen,2,0,H,2.08957,0.392824,Bundesliga,1718
+2018-04-21 16:30:00,Borussia Dortmund,Bayer Leverkusen,4,0,H,3.53524,0.409487,Bundesliga,1718
+2018-04-22 13:30:00,Augsburg,Mainz 05,2,0,H,1.66389,0.293261,Bundesliga,1718
+2018-04-22 16:00:00,FC Cologne,Schalke 04,2,2,D,0.751725,2.56921,Bundesliga,1718
+2018-04-27 18:30:00,Hoffenheim,Hannover 96,3,1,H,1.88985,1.26677,Bundesliga,1718
+2018-04-28 13:30:00,Bayern Munich,Eintracht Frankfurt,4,1,H,1.89862,1.25053,Bundesliga,1718
+2018-04-28 13:30:00,Hertha Berlin,Augsburg,2,2,D,1.46846,0.668665,Bundesliga,1718
+2018-04-28 13:30:00,Freiburg,FC Cologne,3,2,H,3.3782,1.34976,Bundesliga,1718
+2018-04-28 13:30:00,Schalke 04,Borussia M.Gladbach,1,1,D,1.21432,1.8312,Bundesliga,1718
+2018-04-28 13:30:00,Wolfsburg,Hamburger SV,1,3,A,0.910012,2.91172,Bundesliga,1718
+2018-04-28 16:30:00,Bayer Leverkusen,VfB Stuttgart,0,1,A,2.48527,0.632526,Bundesliga,1718
+2018-04-29 13:30:00,Mainz 05,RasenBallsport Leipzig,3,0,H,2.16729,1.04843,Bundesliga,1718
+2018-04-29 16:00:00,Werder Bremen,Borussia Dortmund,1,1,D,1.2344,2.47525,Bundesliga,1718
+2018-05-05 14:30:00,Augsburg,Schalke 04,1,2,A,0.968124,2.01034,Bundesliga,1718
+2018-05-05 14:30:00,Hannover 96,Hertha Berlin,3,1,H,1.53367,1.07207,Bundesliga,1718
+2018-05-05 14:30:00,VfB Stuttgart,Hoffenheim,2,0,H,0.980831,1.18053,Bundesliga,1718
+2018-05-05 14:30:00,Borussia Dortmund,Mainz 05,1,2,A,0.552018,1.2057,Bundesliga,1718
+2018-05-05 14:30:00,RasenBallsport Leipzig,Wolfsburg,4,1,H,1.88692,0.680762,Bundesliga,1718
+2018-05-05 14:30:00,FC Cologne,Bayern Munich,1,3,A,1.9373,2.76039,Bundesliga,1718
+2018-05-05 14:30:00,Werder Bremen,Bayer Leverkusen,0,0,D,0.175221,0.890747,Bundesliga,1718
+2018-05-05 14:30:00,Borussia M.Gladbach,Freiburg,3,1,H,2.43316,1.45979,Bundesliga,1718
+2018-05-05 14:30:00,Eintracht Frankfurt,Hamburger SV,3,0,H,1.64906,0.848806,Bundesliga,1718
+2018-05-12 14:30:00,Bayern Munich,VfB Stuttgart,1,4,A,1.92541,2.45916,Bundesliga,1718
+2018-05-12 14:30:00,Hoffenheim,Borussia Dortmund,3,1,H,1.07393,1.57779,Bundesliga,1718
+2018-05-12 14:30:00,Hertha Berlin,RasenBallsport Leipzig,2,6,A,1.50613,1.22103,Bundesliga,1718
+2018-05-12 14:30:00,Freiburg,Augsburg,2,0,H,0.707853,0.237381,Bundesliga,1718
+2018-05-12 14:30:00,Schalke 04,Eintracht Frankfurt,1,0,H,1.69009,0.281816,Bundesliga,1718
+2018-05-12 14:30:00,Bayer Leverkusen,Hannover 96,3,2,H,4.42734,1.56701,Bundesliga,1718
+2018-05-12 14:30:00,Hamburger SV,Borussia M.Gladbach,2,1,H,2.35888,1.2463,Bundesliga,1718
+2018-05-12 14:30:00,Mainz 05,Werder Bremen,1,2,A,0.539651,1.0587,Bundesliga,1718
+2018-05-12 14:30:00,Wolfsburg,FC Cologne,4,1,H,1.84524,1.59763,Bundesliga,1718
