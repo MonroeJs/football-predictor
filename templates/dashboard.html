@@ -134,7 +134,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         <span>赔率 {{ "%.2f"|format(p.odds.get('H',0)) if p.odds else '' }}</span>
         <span>平 {{ "%.2f"|format(p.odds.get('D',0)) if p.odds else '' }}</span>
         <span>客 {{ "%.2f"|format(p.odds.get('A',0)) if p.odds else '' }}</span>
-        <span>{{ p.confidence }}</span>
+        <span>{% if p.best_bet %}{{ p.best_bet.label[:10] }}{% endif %}</span>
       </div>
       <!-- Key Players -->
       {% if kh or ka %}
@@ -432,7 +432,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="d-flex justify-content-between align-items-center mb-2" style="background:rgba(30,41,59,.5);border-radius:8px;padding:.5rem .8rem">
       <div>
         <div style="font-size:.8rem;font-weight:600">{{ (p.home or p.home_team)[:12] }} vs {{ (p.away or p.away_team)[:12] }}</div>
-        <div style="font-size:.65rem;color:var(--text2)">{{ p.date[5:10] if p.date else '' }} | {{ p.confidence if p.confidence else '' }}</div>
+        <div style="font-size:.65rem;color:var(--text2)">{{ p.date[5:10] if p.date else '' }}</div>
       </div>
       <div style="text-align:right">
         <div style="font-size:.85rem;font-weight:700;color:var(--grn)">¥{{ "%.0f"|format(p.suggested_stake) }}</div>

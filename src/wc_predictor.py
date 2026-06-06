@@ -395,6 +395,8 @@ class WCPredictor:
             } for o in options_data],
             'suggested_stake': round(stake, 1),
             'stake_unit': f'{int(stake/UNIT)}U' if stake > 0 else '-',
+            'tier': mkt_tier.value,
+            'confidence': f'{best["mkt_prob"]:.1f}%',
             'exp_value': f'{best_ev:.1f}%' if stake > 0 else '-',
             'elo_diff': elo_diff,
             'analysis': self._get_analysis_text(home, away, best['key'], best['mkt_prob'], mkt_tier, elo_diff, best_is_value, best['value_diff'], best_ev),
