@@ -103,21 +103,72 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     {% if data.predictions %}
     {% for p in data.predictions %}
     {% set s = p.suggested_stake|default(0) %}
+    {% set ad = p.analysis_data|default({}) %}
+    {% set kh = p.key_players_home|default([]) %}
+    {% set ka = p.key_players_away|default([]) %}
+    {% set tr_h = p.team_rating_home|default(0) %}
+    {% set tr_a = p.team_rating_away|default(0) %}
     <div class="mc {% if s>0 and p.tier=='Max' %}bet-m{% elif s>0 and p.tier=='Elite' %}bet-e{% elif s>0 %}bet{% endif %}">
+      <!-- Teams & Prediction -->
       <div class="d-flex justify-content-between align-items-center">
-        <div style="font-weight:600;font-size:.9rem">{{ p.home[:16] if p.home else p.home_team[:16] }} vs {{ p.away[:16] if p.away else p.away_team[:16] }}</div>
+        <div style="font-weight:600;font-size:.9rem">{{ p.home[:16] if p.home else p.home_team[:16] }}</div>
+        <div style="font-size:.7rem;color:var(--muted);padding:0 8px">vs</div>
+        <div style="font-weight:600;font-size:.9rem">{{ p.away[:16] if p.away else p.away_team[:16] }}</div>
         {% if p.tier %}
-        <span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span>
+        <span class="badge-t t-{{ p.tier }} ms-2">{{ TIER_CN.get(p.tier,p.tier) }}</span>
         {% endif %}
       </div>
-      <div class="d-flex justify-content-between mt-1">
-        <div style="font-size:.75rem;color:var(--text2)">
-          {% if p.date %}{{ p.date[5:10] if p.date else '' }} | {% endif %}
-          {% if p.confidence %}{{ p.confidence }}{% elif p.prob_H %}H={{ "%.0f"|format(p.prob_H*100) }}% D={{ "%.0f"|format(p.prob_D*100) }}% A={{ "%.0f"|format(p.prob_A*100) }}%{% endif %}
-          {% if p.fav_odds %} | 赔率 {{ "%.2f"|format(p.fav_odds) }}{% endif %}
-          {% if p.group %} | {{ p.group }}{% endif %}
+      <!-- Probability bar -->
+      <div class="mt-2 mb-1 d-flex align-items-center" style="gap:4px">
+        {% if p.probs %}
+        {% set ph = p.probs.get('H','0%')|replace('%','')|float %}
+        {% set pd = p.probs.get('D','0%')|replace('%','')|float %}
+        {% set pa = p.probs.get('A','0%')|replace('%','')|float %}
+        <div style="flex:{{ ph }};height:6px;background:var(--blu);border-radius:3px 0 0 3px"></div>
+        <div style="flex:{{ pd }};height:6px;background:var(--gold);border-radius:0"></div>
+        <div style="flex:{{ pa }};height:6px;background:var(--red);border-radius:0 3px 3px 0"></div>
+        {% endif %}
+      </div>
+      <!-- Odds row -->
+      <div class="d-flex justify-content-between" style="font-size:.7rem;color:var(--text2)">
+        <span>赔率 {{ "%.2f"|format(p.odds.get('H',0)) if p.odds else '' }}</span>
+        <span>平 {{ "%.2f"|format(p.odds.get('D',0)) if p.odds else '' }}</span>
+        <span>客 {{ "%.2f"|format(p.odds.get('A',0)) if p.odds else '' }}</span>
+        <span>{{ p.confidence }}</span>
+      </div>
+      <!-- Key Players -->
+      {% if kh or ka %}
+      <div class="mt-2" style="font-size:.7rem">
+        <div class="d-flex justify-content-between">
+          <span>
+            {% for player in kh[:3] %}
+            <span class="odds-badge me-1">{{ player.name[:10] }}({{ player.rating }})</span>
+            {% endfor %}
+          </span>
+          <span>
+            {% for player in ka[:3] %}
+            <span class="odds-badge me-1">{{ player.name[:10] }}({{ player.rating }})</span>
+            {% endfor %}
+          </span>
         </div>
-        {% if s>0 %}<div style="font-weight:700;color:var(--grn)">¥{{ "%.0f"|format(s) }}</div>{% endif %}
+      </div>
+      {% endif %}
+      <!-- Analysis -->
+      <div class="mt-1" style="font-size:.7rem;color:var(--text2)">
+        {% if ad.factors %}
+        {% for f in ad.factors[:3] %}
+        <div class="d-flex align-items-center" style="gap:4px">
+          <span style="width:4px;height:4px;border-radius:50%;background:{% if f.impact=='high' %}var(--grn){% elif f.impact=='medium' %}var(--gold){% else %}var(--muted){% endif %}"></span>
+          {{ f.detail }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% if tr_h > 0 %}
+        <div class="d-flex justify-content-between mt-1">
+          <span>阵容评分: {{ "%.1f"|format(tr_h) }} vs {{ "%.1f"|format(tr_a) }}</span>
+          {% if s>0 %}<span style="font-weight:700;color:var(--grn)">推荐: ¥{{ "%.0f"|format(s) }}</span>{% endif %}
+        </div>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
@@ -133,20 +184,23 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="ct"><i class="bi bi-table me-1"></i>全部比赛</div>
     {% if data.predictions %}
     <div style="max-height:60vh;overflow-y:auto">
-    <table class="table table-dark mb-0" style="font-size:.8rem">
-      <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>日期</th><th>主队</th><th>客队</th>{% if data.league.show_groups %}<th>组</th>{% endif %}<th>置信度</th><th>分级</th><th>赔率</th><th>建议</th></tr></thead>
+    <table class="table table-dark mb-0" style="font-size:.7rem">
+      <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>日期</th><th>组</th><th>主队</th><th>客队</th><th>隐含概率</th><th>分级</th><th>阵容</th><th>Elo</th><th>建议</th></tr></thead>
       <tbody>
       {% for p in data.predictions %}
       {% set s = p.suggested_stake|default(0) %}
+      {% set tr_h = p.team_rating_home|default(0) %}
+      {% set tr_a = p.team_rating_away|default(0) %}
       <tr {% if s>0 %}style="border-left:3px solid {% if p.tier=='Max' %}#8b5cf6{% elif p.tier=='Elite' %}#ef4444{% else %}#22c55e{% endif %}"{% endif %}>
         <td>{{ p.date[5:10] if p.date else '' }}</td>
-        <td>{{ p.home[:14] if p.home else p.home_team[:14] }}</td>
-        <td>{{ p.away[:14] if p.away else p.away_team[:14] }}</td>
-        {% if data.league.show_groups %}<td>{{ p.group }}</td>{% endif %}
-        <td>{% if p.confidence %}{{ p.confidence }}{% elif p.prob_H %}{{ "%.0f"|format(p.prob_H*100) }}%{% endif %}</td>
+        <td>{{ p.group if p.group else '-' }}</td>
+        <td>{{ p.home[:12] if p.home else '' }}</td>
+        <td>{{ p.away[:12] if p.away else '' }}</td>
+        <td style="font-size:.65rem">{% if p.probs %}H{{ p.probs.get('H','-') }}/D{{ p.probs.get('D','-') }}/A{{ p.probs.get('A','-') }}{% else %}-{% endif %}</td>
         <td>{% if p.tier %}<span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span>{% else %}-{% endif %}</td>
-        <td>{% if p.fav_odds %}<span class="odds-badge">{{ "%.2f"|format(p.fav_odds) }}</span>{% else %}-{% endif %}</td>
-        <td>{% if s>0 %}<strong style="color:var(--grn)">¥{{ "%.0f"|format(s) }}</strong>{% else %}<span style="color:var(--muted)">-</span>{% endif %}</td>
+        <td>{% if tr_h>0 %}{{ "%.0f"|format(tr_h) }} vs {{ "%.0f"|format(tr_a) }}{% else %}-{% endif %}</td>
+        <td>{{ p.elo_diff if p.elo_diff is defined else '-' }}</td>
+        <td>{% if s>0 %}<strong style="color:var(--grn)">¥{{ "%.0f"|format(s) }}</strong>{% else %}-{% endif %}</td>
       </tr>
       {% endfor %}
       </tbody>

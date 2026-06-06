@@ -103,7 +103,31 @@ class WCPredictor:
     def __init__(self):
         self.historical_data = {}  # {year: DataFrame}
         self.kelly = KellyCalculator()
+        self.player_ratings = self._load_player_ratings()
         
+    # ─── 球员数据 ──────────────────────────────────────────────
+
+    def _load_player_ratings(self) -> dict:
+        """加载球员评分数据"""
+        path = Path(__file__).parent.parent / 'data' / 'wc_player_ratings.json'
+        if path.exists():
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    def get_key_players(self, team: str, top_n: int = 5) -> list[dict]:
+        """获取球队核心球员（评分最高的 N 人）"""
+        players = self.player_ratings.get(team, [])
+        return players[:top_n]
+
+    def get_team_avg_rating(self, team: str, top_n: int = 15) -> float:
+        """球队平均评分（前 N 名球员）"""
+        players = self.player_ratings.get(team, [])
+        if not players:
+            return 0
+        top = players[:top_n]
+        return sum(p['rating'] for p in top) / len(top)
+
     # ─── 数据加载 ──────────────────────────────────────────────
 
     def load_historical_data(self) -> None:
@@ -299,6 +323,11 @@ class WCPredictor:
             'suggested_stake': round(stake, 1),
             'stake_unit': f'{int(stake/UNIT)}U' if stake > 0 else '-',
             'analysis': self._get_analysis_text(home, away, max_outcome, max_prob, tier, elo_diff),
+            'analysis_data': self._get_analysis_data(home, away, max_outcome, max_prob, odds, elo_diff),
+            'key_players_home': self.get_key_players(home, 4),
+            'key_players_away': self.get_key_players(away, 4),
+            'team_rating_home': round(self.get_team_avg_rating(home), 1),
+            'team_rating_away': round(self.get_team_avg_rating(away), 1),
         }
 
     def _get_analysis_text(self, home: str, away: str, outcome: str,
@@ -322,7 +351,66 @@ class WCPredictor:
             stronger = home if elo_diff > 0 else away
             parts.append(f'Elo 评级: {stronger} 领先 {abs(elo_diff)} 分')
         
+        # 球员实力分析
+        h_rating = self.get_team_avg_rating(home)
+        a_rating = self.get_team_avg_rating(away)
+        if h_rating > 0 and a_rating > 0:
+            diff = h_rating - a_rating
+            if abs(diff) > 3:
+                stronger = home if diff > 0 else away
+                parts.append(f'阵容评级: {stronger} 平均评分 {abs(diff):.0f} 分领先')
+                # 核心球员
+                key_h = self.get_key_players(home, 2)
+                key_a = self.get_key_players(away, 2)
+                if key_h and key_h[0]['rating'] >= 85:
+                    parts.append(f'{home} 核心: {key_h[0]["name"]}({key_h[0]["rating"]})')
+                if key_a and key_a[0]['rating'] >= 85:
+                    parts.append(f'{away} 核心: {key_a[0]["name"]}({key_a[0]["rating"]})')
+    
         return ' | '.join(parts)
+
+    def _get_analysis_data(self, home, away, outcome, prob, odds, elo_diff) -> dict:
+        """返回结构化分析数据"""
+        h_rating = self.get_team_avg_rating(home)
+        a_rating = self.get_team_avg_rating(away)
+        factors = []
+        
+        # Factor 1: Market odds
+        factors.append({
+            'label': '市场赔率',
+            'detail': f'隐含 {home} {prob:.0%} 胜率',
+            'impact': 'high',
+        })
+        
+        # Factor 2: Elo
+        if abs(elo_diff) > 30:
+            stronger = home if elo_diff > 0 else away
+            factors.append({
+                'label': 'Elo 实力差',
+                'detail': f'{stronger} 领先 {abs(elo_diff)} 分',
+                'impact': 'medium' if abs(elo_diff) < 100 else 'high',
+            })
+        
+        # Factor 3: Squad strength
+        if h_rating > 0 and a_rating > 0:
+            diff = h_rating - a_rating
+            if abs(diff) > 2:
+                stronger = home if diff > 0 else away
+                factors.append({
+                    'label': '阵容深度',
+                    'detail': f'{stronger} 球员平均评分 {abs(diff):.1f} 分领先',
+                    'impact': 'medium' if abs(diff) < 5 else 'high',
+                })
+        
+        return {
+            'prediction': {'H': f'{home} 胜', 'D': '平局', 'A': f'{away} 胜'}.get(outcome, '?'),
+            'confidence_pct': round(prob * 100, 1),
+            'factors': factors,
+            'team_ratings': {
+                home: h_rating,
+                away: a_rating,
+            }
+        }
 
     def predict_2026_group_stage(self, matches: list[dict]) -> list[dict]:
         """
