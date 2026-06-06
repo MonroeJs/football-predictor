@@ -261,7 +261,11 @@ class WCPredictor:
                       b365h: float, b365d: float, b365a: float,
                       neutral_ground: bool = True) -> dict:
         """
-        预测一场比赛
+        预测一场比赛 — 结合市场赔率 + 独立模型（Elo+阵容）的双重评估
+        
+        推荐逻辑（方向A）：
+        - 只推荐开仓当: 独立概率也看好（value_diff > 0）AND 赔率 > 1.5
+        - 投注额基于独立模型的预期价值
         
         参数:
             home, away: 队名
@@ -273,56 +277,93 @@ class WCPredictor:
         """
         odds = {'H': b365h, 'D': b365d, 'A': b365a}
         
-        # 隐含概率
+        # ── 市场隐含概率（含庄家抽水）──
         total = sum(1.0 / max(o, 1.01) for o in odds.values())
-        probs = {k: (1.0 / max(odds[k], 1.01)) / total for k in odds}
+        mkt_probs = {k: (1.0 / max(odds[k], 1.01)) / total for k in odds}
+        max_outcome = max(mkt_probs, key=mkt_probs.get)
+        max_prob = mkt_probs[max_outcome]
         
-        max_outcome = max(probs, key=probs.get)
-        max_prob = probs[max_outcome]
-        tier = get_confidence_tier(max_prob)
+        # ── 独立模型概率（Elo + 阵容评分，不含庄家抽水）──
+        indep = self._get_independent_prob(home, away)
+        ind_prob_h = indep['prob_h']
+        ind_prob_a = indep['prob_a']
+        ind_probs = {'H': ind_prob_h, 'D': indep['prob_d'], 'A': ind_prob_a}
         
-        # Elo 辅助分析（如果有）
+        # ── 分析数据 ──
         home_elo = TEAM_ELO.get(home, 1800)
         away_elo = TEAM_ELO.get(away, 1800)
         elo_diff = home_elo - away_elo
         
-        # 投注决策
-        # 世界杯策略：赔率驱动，根据置信度分级直接投注低赔方
-        # 不使用 Kelly edge 计算（模型 = 市场本身，edge 永远为 0）
-        # 沿用欧冠回测验证的固定投注策略
-        # 单位：人民币 ¥，基础单位 = 10¥
-        UNIT = 10  # 每注基础单位
-        
-        # 置信度分级 -> 固定投注额
-        tier_stakes = {
-            'Max': UNIT * 8,     # 80¥   超高置信度
-            'Elite': UNIT * 5,   # 50¥   高置信度
-            'VHigh': UNIT * 3,   # 30¥   推荐
-            'High': 0,           # 不投
-            'Medium': 0,         # 不投
-            'Low': 0,            # 不投
-        }
-        stake = tier_stakes.get(tier.value, 0)
-        
-        # 计算预期 ROI 参考
         fav_odds_val = odds[max_outcome]
-        expected_value = probs[max_outcome] * (fav_odds_val - 1) - (1 - probs[max_outcome]) * 1
+        
+        # 价值差异：独立模型 vs 市场
+        ind_predicted = max(ind_probs, key=ind_probs.get)
+        ind_max_prob = ind_probs[ind_predicted]
+        
+        # 只在我们和市场的预测方向一致时计算价值
+        if max_outcome == ind_predicted:
+            value_diff = ind_max_prob - max_prob
+        else:
+            # 独立模型和市场预测相反 — 不是价值，是分歧
+            value_diff = -(ind_max_prob + max_prob)  # 负数=不推荐
+        
+        # ── 推荐逻辑（方向A：价值投注）──
+        # 核心：独立模型看好的方向，市场赔率给的比我们预期高 → 有Value
+        # 不要求市场也高置信度（否则赔率太低出不了价值）
+        MIN_ODDS = 1.3  # 最低赔率，1.3以下利润空间太小
+        MIN_VALUE_DIFF = 0.02  # 最小价值差异 2%
+        
+        is_value_bet = (
+            value_diff > MIN_VALUE_DIFF       # 独立模型比市场更看好（价值核心）
+            and max_outcome == ind_predicted  # 两套模型方向一致
+            and ind_max_prob >= 0.50          # 独立模型至少有中等以上把握
+            and fav_odds_val >= MIN_ODDS      # 赔率够高才有利润空间
+        )
+        
+        # ── 投注决策 ──
+        UNIT = 10
+        
+        # 预期价值（使用独立概率）
+        ev_indep = (ind_max_prob * (fav_odds_val - 1) - (1 - ind_max_prob)) * 100
+        
+        # ── 仓位决策 ──
+        # 条件：正价值 + 有利润 + 差价够大
+        if is_value_bet and ev_indep > 1.0 and value_diff > 0.05:
+            if value_diff > 0.10:
+                stake = UNIT * 5  # 50¥   精选
+            elif value_diff > 0.07:
+                stake = UNIT * 3  # 30¥   推荐
+            else:
+                stake = UNIT * 2  # 20¥   关注
+        elif is_value_bet and ev_indep > -2.0 and value_diff > 0.10:
+            # 边界情况：EV 略负但差价巨大
+            stake = UNIT * 1  # 10¥   小额
+        else:
+            stake = 0  # 不推荐
+        
+        ev_indep = round(ev_indep, 1) if stake > 0 else 0
+        
+        # ── 分级（保留市场分级用于展示）──
+        mkt_tier = get_confidence_tier(max_prob)
         
         return {
             'match': f'{home} vs {away}',
             'home': home,
             'away': away,
             'odds': odds,
-            'probs': {k: f'{v:.1%}' for k, v in probs.items()},
+            'probs': {k: f'{v:.1%}' for k, v in mkt_probs.items()},
+            'ind_probs': {k: f'{v:.1%}' for k, v in ind_probs.items()},
             'predicted_outcome': max_outcome,
             'confidence': f'{max_prob:.1%}',
-            'tier': tier.value,
+            'tier': mkt_tier.value,
             'fav_odds': fav_odds_val,
-            'exp_value': f'{expected_value:.2f}' if stake > 0 else '-',
+            'exp_value': f'{ev_indep:.1f}%' if stake > 0 else '-',
             'elo_diff': elo_diff,
             'suggested_stake': round(stake, 1),
             'stake_unit': f'{int(stake/UNIT)}U' if stake > 0 else '-',
-            'analysis': self._get_analysis_text(home, away, max_outcome, max_prob, tier, elo_diff),
+            'is_value_bet': is_value_bet,
+            'value_diff': round(value_diff * 100, 1),
+            'analysis': self._get_analysis_text(home, away, max_outcome, max_prob, mkt_tier, elo_diff, is_value_bet, round(value_diff * 100, 1), ev_indep, indep, fav_odds_val),
             'analysis_data': self._get_analysis_data(home, away, max_outcome, max_prob, odds, elo_diff),
             'key_players_home': self.get_key_players(home, 4),
             'key_players_away': self.get_key_players(away, 4),
@@ -331,25 +372,31 @@ class WCPredictor:
         }
 
     def _get_analysis_text(self, home: str, away: str, outcome: str,
-                           prob: float, tier: ConfidenceTier, elo_diff: float) -> str:
-        """生成分析文本"""
+                           prob: float, tier: ConfidenceTier, elo_diff: float,
+                           is_value: bool = False, value_diff: float = 0,
+                           ev_pct: float = 0, indep: dict = None, fav_odds: float = 0) -> str:
+        """生成分析文本（含价值评估）"""
         outcome_map = {'H': f'{home} 胜', 'D': '平局', 'A': f'{away} 胜'}
         outcome_str = outcome_map[outcome]
         
-        parts = [f'预测: {outcome_str} (置信度 {prob:.0%})']
+        parts = [f'预测: {outcome_str} (市场 {prob:.0%})']
         
-        if tier.value == 'Elite':
-            parts.append('[**] 高置信度推荐')
-        elif tier.value == 'VHigh':
-            parts.append('[**] 推荐投注')
-        elif tier.value == 'High':
-            parts.append('[*] 谨慎关注')
-        elif tier.value == 'Max':
-            parts.append('[*] 超高置信度')
+        if is_value and ev_pct > 0:
+            parts.append(f'[Value] 预期回报 {ev_pct:+.1f}%')
+        elif is_value:
+            parts.append('[Value] 价值发现')
+        elif tier.value in ('Max', 'Elite', 'VHigh'):
+            parts.append('[信息] 市场共识，无价值')
+        
+        # 独立模型对比
+        if indep and value_diff > 2:
+            parts.append(f'独立模型: 看好方向一致，差价+{value_diff:.0f}%')
+        elif indep and value_diff < -2:
+            parts.append(f'独立模型: 与市场分歧 {value_diff:.0f}%')
         
         if abs(elo_diff) > 50:
             stronger = home if elo_diff > 0 else away
-            parts.append(f'Elo 评级: {stronger} 领先 {abs(elo_diff)} 分')
+            parts.append(f'Elo: {stronger} +{abs(elo_diff)}')
         
         # 球员实力分析
         h_rating = self.get_team_avg_rating(home)
@@ -358,31 +405,77 @@ class WCPredictor:
             diff = h_rating - a_rating
             if abs(diff) > 3:
                 stronger = home if diff > 0 else away
-                parts.append(f'阵容评级: {stronger} 平均评分 {abs(diff):.0f} 分领先')
-                # 核心球员
-                key_h = self.get_key_players(home, 2)
-                key_a = self.get_key_players(away, 2)
+                parts.append(f'阵容: {stronger} +{abs(diff):.0f}')
+                key_h = self.get_key_players(home, 1)
                 if key_h and key_h[0]['rating'] >= 85:
-                    parts.append(f'{home} 核心: {key_h[0]["name"]}({key_h[0]["rating"]})')
-                if key_a and key_a[0]['rating'] >= 85:
-                    parts.append(f'{away} 核心: {key_a[0]["name"]}({key_a[0]["rating"]})')
+                    parts.append(key_h[0]['name'])
     
         return ' | '.join(parts)
 
+    def _get_independent_prob(self, home: str, away: str) -> dict:
+        """用 Elo + 球员评分计算独立概率（不依赖市场赔率）
+        返回归一化的 H/D/A 三路概率，总和为 1.0
+        """
+        from src.wc_predictor import TEAM_ELO as ELO
+        h_elo = ELO.get(home, 1800)
+        a_elo = ELO.get(away, 1800)
+        
+        h_squad = self.get_team_avg_rating(home)
+        a_squad = self.get_team_avg_rating(away)
+        
+        # Composite strength: 70% Elo + 30% squad rating (normalized)
+        h_strength = h_elo * 0.7 + h_squad * 20 * 0.3
+        a_strength = a_elo * 0.7 + a_squad * 20 * 0.3
+        
+        # Elo expected score for home win
+        raw_h = 1.0 / (1.0 + 10 ** ((a_strength - h_strength) / 400))
+        raw_a = 1.0 / (1.0 + 10 ** ((h_strength - a_strength) / 400))
+        # Draw: higher when teams are evenly matched
+        strength_diff = abs(h_strength - a_strength) / max(h_strength, a_strength)
+        raw_d = max(0.08, 0.28 * (1 - strength_diff * 2))
+        
+        # Normalize to sum = 1.0
+        total = raw_h + raw_d + raw_a
+        return {
+            'prob_h': round(raw_h / total, 3),
+            'prob_d': round(raw_d / total, 3),
+            'prob_a': round(raw_a / total, 3),
+            'strength_h': round(h_strength),
+            'strength_a': round(a_strength),
+        }
+
     def _get_analysis_data(self, home, away, outcome, prob, odds, elo_diff) -> dict:
-        """返回结构化分析数据"""
+        """返回结构化分析数据（含独立概率对比）"""
         h_rating = self.get_team_avg_rating(home)
         a_rating = self.get_team_avg_rating(away)
+        indep = self._get_independent_prob(home, away)
+        
+        mkt_h = prob if outcome == 'H' else (1 - prob if outcome == 'A' else prob)
+        ind_h = indep['prob_h'] if outcome == 'H' else (indep['prob_a'] if outcome == 'A' else 0.33)
+        value_diff = ind_h - mkt_h  # positive = market undervalues our pick
+        
         factors = []
         
         # Factor 1: Market odds
+        fav_odds = odds[outcome] if outcome in odds else 0
         factors.append({
             'label': '市场赔率',
-            'detail': f'隐含 {home} {prob:.0%} 胜率',
+            'detail': f'隐含 {home if outcome=="H" else away if outcome=="A" else "平局"} {mkt_h:.0%} 胜率' + 
+                      f' (赔率 {fav_odds:.2f})' if fav_odds > 0 else '',
             'impact': 'high',
         })
         
-        # Factor 2: Elo
+        # Factor 2: Independent model
+        diff_pct = value_diff * 100
+        if abs(diff_pct) > 3:
+            direction = '低估' if value_diff > 0 else '高估'
+            factors.append({
+                'label': '独立模型',
+                'detail': f'{direction} {abs(diff_pct):.0f}% (Elo+阵容分析)',
+                'impact': 'high' if abs(diff_pct) > 10 else 'medium',
+            })
+        
+        # Factor 3: Elo
         if abs(elo_diff) > 30:
             stronger = home if elo_diff > 0 else away
             factors.append({
@@ -391,7 +484,7 @@ class WCPredictor:
                 'impact': 'medium' if abs(elo_diff) < 100 else 'high',
             })
         
-        # Factor 3: Squad strength
+        # Factor 4: Squad strength
         if h_rating > 0 and a_rating > 0:
             diff = h_rating - a_rating
             if abs(diff) > 2:
@@ -402,6 +495,10 @@ class WCPredictor:
                     'impact': 'medium' if abs(diff) < 5 else 'high',
                 })
         
+        # Expected value using independent probability
+        fav_odds_val = odds.get(outcome, 0)
+        ev_indep = (ind_h * (fav_odds_val - 1) - (1 - ind_h)) * 100 if fav_odds_val > 1 else 0
+        
         return {
             'prediction': {'H': f'{home} 胜', 'D': '平局', 'A': f'{away} 胜'}.get(outcome, '?'),
             'confidence_pct': round(prob * 100, 1),
@@ -409,7 +506,10 @@ class WCPredictor:
             'team_ratings': {
                 home: h_rating,
                 away: a_rating,
-            }
+            },
+            'independent': indep,
+            'value_diff': round(value_diff * 100, 1),
+            'ev_independent': round(ev_indep, 1),
         }
 
     def predict_2026_group_stage(self, matches: list[dict]) -> list[dict]:

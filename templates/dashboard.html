@@ -163,10 +163,18 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         </div>
         {% endfor %}
         {% endif %}
+        {% if p.exp_value and p.exp_value != '-' %}
+        <div class="d-flex justify-content-between mt-1">
+          <span style="color:{% if p.exp_value|replace('%','')|float > 0 %}var(--grn){% else %}var(--muted){% endif %}">预期回报: {{ p.exp_value }}</span>
+          {% if p.get('value_diff',0)|abs > 5 %}
+          <span style="color:var(--gold)">价值 +{{ p.value_diff }}%</span>
+          {% endif %}
+        </div>
+        {% endif %}
         {% if tr_h > 0 %}
         <div class="d-flex justify-content-between mt-1">
-          <span>阵容评分: {{ "%.1f"|format(tr_h) }} vs {{ "%.1f"|format(tr_a) }}</span>
-          {% if s>0 %}<span style="font-weight:700;color:var(--grn)">推荐: ¥{{ "%.0f"|format(s) }}</span>{% endif %}
+          <span>{{ "%.0f"|format(tr_h) }} vs {{ "%.0f"|format(tr_a) }}</span>
+          {% if s>0 %}<span style="font-weight:700;color:var(--grn)">¥{{ "%.0f"|format(s) }}</span>{% endif %}
         </div>
         {% endif %}
       </div>
@@ -185,7 +193,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     {% if data.predictions %}
     <div style="max-height:60vh;overflow-y:auto">
     <table class="table table-dark mb-0" style="font-size:.7rem">
-      <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>日期</th><th>组</th><th>主队</th><th>客队</th><th>隐含概率</th><th>分级</th><th>阵容</th><th>Elo</th><th>建议</th></tr></thead>
+      <thead><tr style="color:var(--text2);position:sticky;top:0;background:var(--card)"><th>日期</th><th>组</th><th>主队</th><th>客队</th><th>隐含概率</th><th>分级</th><th>预期回报</th><th>阵容</th><th>建议</th></tr></thead>
       <tbody>
       {% for p in data.predictions %}
       {% set s = p.suggested_stake|default(0) %}
@@ -198,6 +206,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         <td>{{ p.away[:12] if p.away else '' }}</td>
         <td style="font-size:.65rem">{% if p.probs %}H{{ p.probs.get('H','-') }}/D{{ p.probs.get('D','-') }}/A{{ p.probs.get('A','-') }}{% else %}-{% endif %}</td>
         <td>{% if p.tier %}<span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span>{% else %}-{% endif %}</td>
+        <td>{% if p.exp_value and p.exp_value != '-' %}<span style="color:{% if p.exp_value|replace('%','')|float > 0 %}var(--grn){% else %}var(--muted){% endif %}">{{ p.exp_value }}</span>{% else %}-{% endif %}</td>
         <td>{% if tr_h>0 %}{{ "%.0f"|format(tr_h) }} vs {{ "%.0f"|format(tr_a) }}{% else %}-{% endif %}</td>
         <td>{{ p.elo_diff if p.elo_diff is defined else '-' }}</td>
         <td>{% if s>0 %}<strong style="color:var(--grn)">¥{{ "%.0f"|format(s) }}</strong>{% else %}-{% endif %}</td>
