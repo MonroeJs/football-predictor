@@ -172,10 +172,14 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         </div>
         {% endif %}
         <!-- Handicap -->
-        {% if p.handicap and p.handicap.is_hcp_value %}
+        {% if p.handicap %}
         <div class="d-flex justify-content-between mt-1" style="font-size:.65rem">
-          <span style="color:var(--purp)">让球 {{ p.handicap.hcp_pick }}-0.5 @ {{ "%.2f"|format(p.handicap.hcp_fav_odds) }}</span>
-          <span style="color:{% if p.handicap.hcp_ev > 0 %}var(--grn){% else %}var(--muted){% endif %}">EV {{ p.handicap.hcp_ev }}%</span>
+          <span>让球: {{ p.handicap.hcp_pick }}-0.5 @ {{ "%.2f"|format(p.handicap.hcp_fav_odds) }}</span>
+          {% if p.handicap.is_hcp_value %}
+          <span style="color:var(--grn)">价值 +{{ "%.1f"|format(p.handicap.hcp_value_diff) }}% EV {{ "%.1f"|format(p.handicap.hcp_ev) }}%</span>
+          {% else %}
+          <span style="color:var(--muted)">EV {{ "%.1f"|format(p.handicap.hcp_ev) }}%</span>
+          {% endif %}
         </div>
         {% endif %}
         {% if tr_h > 0 %}
@@ -214,7 +218,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         <td style="font-size:.65rem">{% if p.probs %}H{{ p.probs.get('H','-') }}/D{{ p.probs.get('D','-') }}/A{{ p.probs.get('A','-') }}{% else %}-{% endif %}</td>
         <td>{% if p.tier %}<span class="badge-t t-{{ p.tier }}">{{ TIER_CN.get(p.tier,p.tier) }}</span>{% else %}-{% endif %}</td>
         <td>{% if p.exp_value and p.exp_value != '-' %}<span style="color:{% if p.exp_value|replace('%','')|float > 0 %}var(--grn){% else %}var(--muted){% endif %}">{{ p.exp_value }}</span>{% else %}-{% endif %}</td>
-        <td>{% if p.handicap and p.handicap.is_hcp_value %}<span style="color:var(--purp);font-size:.65rem">{{ p.handicap.hcp_pick }}-0.5@{{ "%.2f"|format(p.handicap.hcp_fav_odds) }}</span>{% else %}-{% endif %}</td>
+        <td>{% if p.handicap %}<span style="font-size:.65rem">{{ p.handicap.hcp_pick }}-0.5@{{ "%.2f"|format(p.handicap.hcp_fav_odds) }}{% if p.handicap.is_hcp_value %} <span style="color:var(--grn)">✓</span>{% endif %}</span>{% else %}-{% endif %}</td>
         <td>{% if tr_h>0 %}{{ "%.0f"|format(tr_h) }} vs {{ "%.0f"|format(tr_a) }}{% else %}-{% endif %}</td>
         <td>{% if s>0 %}<strong style="color:var(--grn)">¥{{ "%.0f"|format(s) }}</strong>{% else %}-{% endif %}</td>
       </tr>
